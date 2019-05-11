@@ -20,11 +20,9 @@ const App = styled.div`
     }
 ` 
 const Main = styled.div`
-    padding: 0 1rem;
     margin-top: 50px;
     @media (min-width:769px){
         margin-top: 70px;
-        padding: 0 2rem;
     }
     @media (min-width: 1441px){
         grid-column-start: 2;

@@ -60,12 +60,6 @@ p {
   letter-spacing: .32;
 }
 
-.navFont {
-  font-size: 10px;
-  line-height: 1.33;
-  letter-spacing: .4;
-}
-
 
 /* Styles for Breakpoint S*/
 @media  (min-width: 376px) {
@@ -101,12 +95,6 @@ p {
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: .34;
-  }
-  
-  .navFont {
-    font-size: 10px;
-    line-height: 1.2;
-    letter-spacing: .4;
   }
 }
 
@@ -147,11 +135,6 @@ p {
     letter-spacing: .39;
   }
   
-  .navFont {
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 2;
-  }
 }
 
 
@@ -189,11 +172,5 @@ p {
     font-size: 18px;
     line-height: 1.6;
     letter-spacing: .39;
-  }
-  
-  .navFont {
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 2;
   }
 }
