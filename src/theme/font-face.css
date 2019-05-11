@@ -1,30 +1,199 @@
 /* latin-ext */
-@font-face {
+/* @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url('fonts/Ubuntu-Regular.woff2') format('woff2');
-}
+} */
 /* latin-ext */
-@font-face {
+/* @font-face {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: local('Ubuntu Medium'), local('Ubuntu-Medium'), url('fonts/Ubuntu-Medium.woff2') format('woff2');
-}
+} */
 
 body{
-  font-family: 'Ubuntu', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-size: var(--font-size);
-  font-weight: 400;
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-h1,h2,h3,h4{
-  font-weight: 500;
+
+/* Typography */
+/* Styles for Standard Size 0 - 375 */
+h1 {
+  font-size: 28px;
+  line-height: 1.37;
+}
+
+h2 {
+  font-size: 21px;
+  line-height: 1.33;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 1.37;
+}
+
+.smallCaption {
+  font-size: 11px;
+  line-height: 1.25;
+  letter-spacing: 1.55;
+  text-transform: uppercase;
+}
+
+.footerFont {
+  font-size: 9px;
+  line-height: 2.3;
+  letter-spacing: 1.09;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: .32;
+}
+
+.navFont {
+  font-size: 10px;
+  line-height: 1.33;
+  letter-spacing: .4;
+}
+
+
+/* Styles for Breakpoint S*/
+@media  (min-width: 376px) {
+  h1 {
+    font-size: 32px;
+    line-height: 1.37;
+  }
+  
+  h2 {
+    font-size: 24px;
+    line-height: 1.33;
+  }
+  
+  h3 {
+    font-size: 32px;
+    line-height: 1.37;
+  }
+  
+  .smallCaption {
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 1.79;
+    text-transform: uppercase;
+  }
+  
+  .footerFont {
+    font-size: 9px;
+    line-height: 2.3;
+    letter-spacing: 1.09;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: .34;
+  }
+  
+  .navFont {
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: .4;
+  }
+}
+
+
+/* Styles for Breakpoint M*/
+@media  (min-width: 834px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  
+  h3 {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  
+  .smallCaption {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 2;
+    text-transform: uppercase;
+  }
+  
+  .footerFont {
+    font-size: 9px;
+    line-height: 2.3;
+    letter-spacing: 1.09;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: .39;
+  }
+  
+  .navFont {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 2;
+  }
+}
+
+
+/* Styles for Breakpoint L*/
+@media  (min-width: 1441px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 32px;
+    line-height: 1.4;
+  }
+  
+  h3 {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  
+  .smallCaption {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 2;
+    text-transform: uppercase;
+  }
+  
+  .footerFont {
+    font-size: 9px;
+    line-height: 2.3;
+    letter-spacing: 1.09;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: .39;
+  }
+  
+  .navFont {
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 2;
+  }
 }
