@@ -5,24 +5,30 @@ import '../theme/font-face.css'
 import '../theme/variables.css'
 import '../theme/styles.css'
 
-import NavBar from '../components/Navigation/NavBar'
-import MobileMenu from '../components/Navigation/MobileMenu'
+import NavBar from '../components/Navigation'
+// import MobileMenu from '../components/Navigation/MobileMenu'
 import Footer from  '../components/Footer'
 
 
 
 
 const App = styled.div`
-  height:100%;
+    height:100%;
+    @media (min-width: 1441px){
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
 ` 
 const Main = styled.div`
-  padding: 0 1rem;
-  margin-top: 50px;
-  @media (min-width:769px){
-    margin-top: 70px;
-    padding: 0 2rem;
-
-  }
+    padding: 0 1rem;
+    margin-top: 50px;
+    @media (min-width:769px){
+        margin-top: 70px;
+        padding: 0 2rem;
+    }
+    @media (min-width: 1441px){
+        grid-column-start: 2;
+    }
 `
 
 
@@ -46,7 +52,7 @@ class StandardLayout extends React.Component {
               burgerButtonClickHandler={this.burgerButtonToggleClickHandler} 
               showMobileMenu={this.state.mobileMenuOpen}  
               />
-          <MobileMenu showMobileMenu={this.state.mobileMenuOpen} />
+          {/* <MobileMenu showMobileMenu={this.state.mobileMenuOpen} /> */}
           <Main>{this.props.children}</Main>
           <Footer />
         </App>
