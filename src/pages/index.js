@@ -6,6 +6,7 @@ import SEO from '../components/Seo'
 import H1Header from '../components/H1Header'
 import ContactFooter from '../components/ContactFooter'
 import SingleProject from '../components/SingleProject'
+import BlackBGWhiteText from '../components/BlackBGWhiteText';
 
 
 // import Image from '../components/Image'
@@ -30,6 +31,7 @@ class IndexPage extends React.Component {
                 title="Revolutionieren traditionelles Modelbooking"
 
             />
+            <BlackBGWhiteText mainline="Unsere Services" subline="– keine Massenware, nur originelles Design" body="Unsere Herangehensweise an neue Projekte ist immer die gleiche, es ist nie das gleiche! Daher hören wir Ihnen zuerst aufmerksam zu und definieren aus den Resultaten die individuell notwendigen Prozessschritte für Ihr Projekt."/>
             <ContactFooter mainline="Let’s talk business. Schreiben Sie uns jetzt!"/>
         </StandardLayout>
         )

@@ -19,7 +19,7 @@ const StyledSection = styled.section`
 
 const ContactFooter = props => (
     <StyledSection>
-        <h3> {props.mainline} <br/><a href="mailto:hello@pixel-pink.de">hello@pixel-pink.de</a></h3>
+        <h3> {props.mainline} <br/><a href="mailto:hello@pixel-pink.de?subject=Hej PixelPink!👋🏼">hello@pixel-pink.de</a></h3>
     </StyledSection>
 )
 
