@@ -21,9 +21,8 @@ p{
 a{
   color: var(--color-primary-light);
 }
-
+/* This media query only had a wrong max width. Please delete me if there is no other use for me!
 @media  (min-width: 834px) {
   body {
-    max-width: 1168px;
   }
-}
+} */

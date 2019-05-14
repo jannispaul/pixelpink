@@ -15,7 +15,10 @@ import BlackBGWhiteText from '../components/BlackBGWhiteText';
 // import Icon from '../components/layout/Icon'
 // import {ICONS} from '../theme/Icons'
 
-
+let copy = {
+    bwcontainer: ["Unsere Herangehensweise an neue Projekte ist immer die gleiche, es ist nie das gleiche! Daher hören wir Ihnen zuerst aufmerksam zu und definieren aus den Resultaten die individuell notwendigen Prozessschritte für Ihr Projekt.","test", "So viele Absätze wie wir wollen", "Und noch einen – nur weil wir es können"],
+    contact: "Let’s talk business. Schreib uns jetzt!"
+}
 
 
 class IndexPage extends React.Component {
@@ -25,14 +28,17 @@ class IndexPage extends React.Component {
             <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
             <H1Header mainline="Wir machen digitales Produktdesign" subline="ohne Schnickschnack in Berlin"/>
             <SingleProject 
-                image="test"
-                imageAltText="QVSTA Model"
-                company="QVSTA" 
-                title="Revolutionieren traditionelles Modelbooking"
-
+                image = "test"
+                imageAltText = "QVSTA Model"
+                company = "QVSTA" 
+                title = "Revolutionieren traditionelles Modelbooking"
             />
-            <BlackBGWhiteText mainline="Unsere Services" subline="– keine Massenware, nur originelles Design" body="Unsere Herangehensweise an neue Projekte ist immer die gleiche, es ist nie das gleiche! Daher hören wir Ihnen zuerst aufmerksam zu und definieren aus den Resultaten die individuell notwendigen Prozessschritte für Ihr Projekt."/>
-            <ContactFooter mainline="Let’s talk business. Schreiben Sie uns jetzt!"/>
+            <BlackBGWhiteText 
+                mainline = "Unsere Services" 
+                subline = "– keine Massenware, nur originelles Design" 
+                body =  {copy.bwcontainer}
+                />
+            <ContactFooter mainline={copy.contact}/>
         </StandardLayout>
         )
     }

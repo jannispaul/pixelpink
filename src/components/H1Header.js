@@ -9,7 +9,10 @@ const StyledSection = styled.section`
     @media  (min-width: 834px) {
         padding: 130px var(--padding-side);
     }
-
+    &>h1{
+        max-width: 1168px;
+        margin: auto;
+    }
 
     &>h1>span{
         color: var(--color-gray-medium);

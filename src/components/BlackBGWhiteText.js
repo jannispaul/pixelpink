@@ -7,13 +7,19 @@ const StyledSection = styled.section`
     padding-bottom: 130px;
     padding: 42px var(--padding-side);
 
+    &>div{
+        max-width: 1168px;
+        margin: auto;
+        /* padding: 0 var(--padding-side); */
+    }
+
     h2 {
         color: var(--color-white);
     }
 
     p {
         color: var(--color-gray-medium);
-        padding-right: 48px;
+        /* padding-right: 48px; */
     }
 
     &>h2>span{
@@ -24,8 +30,8 @@ const StyledSection = styled.section`
         width: 40px;
         height: 2px;
         margin: 20px 0px;
-        background-color: var(--color-gray-medium);
-        border: none;
+        /* background-color: var(--color-gray-medium); */
+        /* border: none; */
     }
 
     @media  (min-width: 834px) {
@@ -35,10 +41,14 @@ const StyledSection = styled.section`
 
 const BlackBGWhiteText = props => (
     <StyledSection>
-        <h2> {props.mainline} <br/><span >{props.subline}</span></h2>
-        <hr></hr>
-        <p> {props.body}</p>
-        <button>Mehr erfahren ➝</button>
+        <div>
+            <h2> {props.mainline} <br/><span >{props.subline}</span></h2>
+            <hr/>
+            {/* {props.body(paragraph => (<p>{paragraph}</p>))} */}
+            {props.body.map(paragraph => (<p>{paragraph}</p>))}
+
+            <button>Mehr erfahren ➝</button>
+        </div>
     </StyledSection>
 )
 

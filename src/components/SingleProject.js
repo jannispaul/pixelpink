@@ -4,13 +4,22 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 const Project = styled.div`
+
+`
+const StyledImage = styled(Img)`
     max-width: 1168px;
     margin: auto;
-    
-    &>div{
-        padding: 24px var(--padding-side);
-    }
+    max-height: 50vh;
+`
 
+const TextContainer = styled.div`
+        padding: 24px var(--padding-side);
+        margin: auto;
+        max-width: 1168px;
+        @media (min-width: 1216px){
+            padding: 24px 0;
+        }
+        /* margin: 24px var(--padding-side); */
 
 `
 
@@ -26,12 +35,12 @@ const Company = styled.span`
 
 const SingleProject = (props) => (
     <Project>
-        <Img fluid={props.data.imageOne.childImageSharp.fluid} alt={props.imageAltText}/>
-        <div>
+        <StyledImage fluid={props.data.imageOne.childImageSharp.fluid} alt={props.imageAltText}/>
+        <TextContainer>
             <Company>{props.company}</Company>
             <h2>{props.title}</h2>
             <button>Zeig mir mehr ➝</button>
-        </div>    
+        </TextContainer>    
     </Project>
 )
 
