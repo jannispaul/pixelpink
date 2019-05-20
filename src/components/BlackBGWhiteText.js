@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Button from "../components/Button"
 
 const StyledSection = styled.section`
     background-color: var(--color-black);
@@ -9,7 +10,7 @@ const StyledSection = styled.section`
 
     &>div{
         max-width: 1168px;
-        margin: auto;
+        /* margin: auto; */
         /* padding: 0 var(--padding-side); */
     }
 
@@ -47,7 +48,7 @@ const BlackBGWhiteText = props => (
             {/* {props.body(paragraph => (<p>{paragraph}</p>))} */}
             {props.body.map(paragraph => (<p>{paragraph}</p>))}
 
-            <button>Mehr erfahren ➝</button>
+            <Button link="/service" white>Mehr erfahren</Button>
         </div>
     </StyledSection>
 )

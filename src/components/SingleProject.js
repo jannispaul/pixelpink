@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
+import Button from '../components/Button'
 
 const Project = styled.div`
 
@@ -39,7 +40,7 @@ const SingleProject = (props) => (
         <TextContainer>
             <Company>{props.company}</Company>
             <h2>{props.title}</h2>
-            <button>Zeig mir mehr ➝</button>
+            <Button link='/projekte'>Zeig mir mehr</Button>
         </TextContainer>    
     </Project>
 )
