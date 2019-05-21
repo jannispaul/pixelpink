@@ -6,17 +6,16 @@ const StyledSection = styled.section`
     padding-bottom: 130px;
     padding: 42px var(--padding-side);
 
-    &>h3{
+    & > h3 {
         max-width: 1168px;
         margin: auto;
     }
 
-    @media  (min-width: 834px) {
+    @media (min-width: 834px) {
         padding: 130px var(--padding-side);
     }
 
-
-    &>h3>a{
+    & > h3 > a {
         color: var(--color-primary);
         text-decoration: none;
     }
@@ -24,7 +23,13 @@ const StyledSection = styled.section`
 
 const ContactFooter = props => (
     <StyledSection>
-        <h3>{props.mainline}<br/><a href="mailto:hello@pixel-pink.de?subject=Hej PixelPink!👋🏼">hello@pixel-pink.de</a></h3>
+        <h3>
+            {props.mainline}
+            <br />
+            <a href="mailto:hello@pixel-pink.de?subject=Hej PixelPink!👋🏼">
+                hello@pixel-pink.de
+            </a>
+        </h3>
     </StyledSection>
 )
 

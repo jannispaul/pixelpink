@@ -6,22 +6,26 @@ const StyledSection = styled.section`
     padding-bottom: 130px;
     padding: 42px var(--padding-side);
 
-    @media  (min-width: 834px) {
+    @media (min-width: 834px) {
         padding: 130px var(--padding-side);
     }
-    &>h1{
+    & > h1 {
         max-width: 1168px;
         margin: auto;
     }
 
-    &>h1>span{
+    & > h1 > span {
         color: var(--color-gray-medium);
     }
 `
 
 const H1Header = props => (
     <StyledSection>
-        <h1> {props.mainline} <br/><span >{props.subline}</span></h1>
+        <h1>
+            {" "}
+            {props.mainline} <br />
+            <span>{props.subline}</span>
+        </h1>
     </StyledSection>
 )
 

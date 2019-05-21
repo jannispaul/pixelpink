@@ -8,7 +8,7 @@ const StyledSection = styled.section`
     padding-bottom: 130px;
     padding: 42px var(--padding-side);
 
-    &>div{
+    & > div {
         max-width: 1168px;
         /* margin: auto; */
         /* padding: 0 var(--padding-side); */
@@ -23,7 +23,7 @@ const StyledSection = styled.section`
         /* padding-right: 48px; */
     }
 
-    &>h2>span{
+    & > h2 > span {
         color: var(--color-gray-medium);
     }
 
@@ -35,7 +35,7 @@ const StyledSection = styled.section`
         /* border: none; */
     }
 
-    @media  (min-width: 834px) {
+    @media (min-width: 834px) {
         padding: 130px var(--padding-side);
     }
 `
@@ -43,12 +43,20 @@ const StyledSection = styled.section`
 const BlackBGWhiteText = props => (
     <StyledSection>
         <div>
-            <h2> {props.mainline} <br/><span >{props.subline}</span></h2>
-            <hr/>
+            <h2>
+                {" "}
+                {props.mainline} <br />
+                <span>{props.subline}</span>
+            </h2>
+            <hr />
             {/* {props.body(paragraph => (<p>{paragraph}</p>))} */}
-            {props.body.map(paragraph => (<p>{paragraph}</p>))}
+            {props.body.map(paragraph => (
+                <p key={paragraph.key}>{paragraph}</p>
+            ))}
 
-            <Button link="/service" white>Mehr erfahren</Button>
+            <Button link="/service" white>
+                Mehr erfahren
+            </Button>
         </div>
     </StyledSection>
 )

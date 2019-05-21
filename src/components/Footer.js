@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import {Link} from 'gatsby'
+import React from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
 
 const StyledFooter = styled.div`
     background-color: var(--color-lighter);
@@ -17,7 +17,6 @@ const StyledFooter = styled.div`
         margin-right: 1rem;
         text-decoration: none;
     }
-
 `
 const Footer = props => (
     <StyledFooter>

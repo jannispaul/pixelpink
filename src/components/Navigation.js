@@ -1,16 +1,15 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'styled-components'
-import logo from '../../content/images/logo.svg'
-import Icon from './layout/Icon'
-import {ICONS} from '../theme/Icons'
-
+import React from "react"
+import { Link } from "gatsby"
+import styled from "styled-components"
+import logo from "../../content/images/logo.svg"
+import Icon from "./layout/Icon"
+import { ICONS } from "../theme/Icons"
 
 const StyledNav = styled.div`
     overflow: hidden;
     width: 100%;
     position: fixed;
-    bottom:0;
+    bottom: 0;
     z-index: 100;
     background: white;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.05);
@@ -21,24 +20,24 @@ const StyledNav = styled.div`
     -ms-grid-row-align: center;
     align-items: center;
     justify-items: center;
-    padding:0;
+    padding: 0;
 
-    @media (min-width: 834px){
-        top:0;
+    @media (min-width: 834px) {
+        top: 0;
         height: 80px;
-        box-shadow: 0 1px 14px rgba(0,0,0,0.1);
+        box-shadow: 0 1px 14px rgba(0, 0, 0, 0.1);
         -ms-grid-columns: 1fr auto auto auto auto; /*IE grid*/
-        grid-template-columns:  1fr repeat(4,auto);
+        grid-template-columns: 1fr repeat(4, auto);
         justify-items: start;
-        padding:0 var(--space-unit);
+        padding: 0 var(--space-unit);
         font-size: 18px;
     }
-    @media (min-width: 1441px){
+    @media (min-width: 1441px) {
         width: 300px;
         height: 100%;
-        box-shadow: 0 1px 14px rgba(0,0,0,0.1);
-        grid-template-columns:  1fr;
-        grid-template-rows: 1fr repeat(4,auto) 1fr;
+        box-shadow: 0 1px 14px rgba(0, 0, 0, 0.1);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr repeat(4, auto) 1fr;
     }
 `
 
@@ -50,64 +49,61 @@ const NavItem = styled(Link)`
     text-decoration: none;
     color: var(--color-medium);
 
-
-    & svg{
+    & svg {
         fill: var(--color-medium);
         width: 24px;
         height: 24px;
         display: block;
         margin: 4px;
         margin-left: auto;
-        margin-right: auto; 
+        margin-right: auto;
     }
     &.active,
     &.active span,
-    &.active svg{
+    &.active svg {
         color: var(--color-primary-light);
         fill: var(--color-primary-light);
     }
-    &:hover{
+    &:hover {
         color: var(--color-primary-light);
         fill: var(--color-primary-light);
     }
 
-    @media (min-width: 834px){
-        font-size:16px;
+    @media (min-width: 834px) {
+        font-size: 16px;
         display: flex;
         text-transform: uppercase;
         font-weight: 600;
         /*Hide home link on desktop*/
-        :nth-of-type(2){
+        :nth-of-type(2) {
             display: none;
         }
-        & svg{
+        & svg {
             display: none;
         }
     }
 `
 
 const Logo = styled(Link)`
-        display: none; 
-        color: var(--color-primary);
-        text-decoration: none;
-        margin-bottom:0;
+    display: none;
+    color: var(--color-primary);
+    text-decoration: none;
+    margin-bottom: 0;
 
     & img {
         max-height: 50px;
-        margin-bottom:0;
+        margin-bottom: 0;
     }
 
-    @media (min-width:834px) {
+    @media (min-width: 834px) {
         display: flex;
     }
 `
 
-
-
 const Nav = () => (
     <StyledNav>
         <Logo to="/">
-            <img src={logo} alt="PixelPink Logo"/>
+            <img src={logo} alt="PixelPink Logo" />
         </Logo>
         <NavItem to="/" activeClassName="active">
             <Icon icon={ICONS.PHONE} />
@@ -122,7 +118,7 @@ const Nav = () => (
             <span>Services</span>
         </NavItem>
         <NavItem to="/ueber-uns" activeClassName="active">
-            <Icon icon={ICONS.PHONE } />
+            <Icon icon={ICONS.PHONE} />
             <span>Über uns</span>
         </NavItem>
         <NavItem to="/kontakt" activeClassName="active">

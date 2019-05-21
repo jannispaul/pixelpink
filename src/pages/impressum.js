@@ -5,12 +5,12 @@ import StandardLayout from "../components/StandardLayout"
 import SEO from "../components/Seo"
 
 const SecondPage = () => (
-  <StandardLayout>
-    <SEO title="Impressum" />
-    <h1>Impressum</h1>
-    <p>Fülltext</p>
-    <Link to="/">Zurück zur Startseite</Link>
-  </StandardLayout>
+    <StandardLayout>
+        <SEO title="Impressum" />
+        <h1>Impressum</h1>
+        <p>Fülltext</p>
+        <Link to="/">Zurück zur Startseite</Link>
+    </StandardLayout>
 )
 
 export default SecondPage

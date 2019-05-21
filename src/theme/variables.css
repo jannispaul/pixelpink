@@ -1,31 +1,32 @@
 :root {
- /* main colors */
- --color-primary: #E6004E;
- --color-black: #1a1a1a;
- --color-gray-dark: #616161;
- --color-gray-medium: #cbcfd3;
- --color-gray-light: #fafafa;
- --color-white: white;
+    /* main colors */
+    --color-primary: #E6004E;
+    --color-black: #1a1a1a;
+    --color-gray-dark: #616161;
+    --color-gray-medium: #cbcfd3;
+    --color-gray-light: #fafafa;
+    --color-white: white;
 
-  /* Spacing */
-  --space-unit: 1.25em; /*Relative to html font-size*/
-  --space-s: calc(.5 * var(--space-unit));
-  --space-m: calc(1 * var(--space-unit));
-  --space-l: calc(2 * var(--space-unit));
-  --padding-side: 16px;
+    /* Spacing */
+    --space-unit: 1.25em;
+    /*Relative to html font-size*/
+    --space-s: calc(.5 * var(--space-unit));
+    --space-m: calc(1 * var(--space-unit));
+    --space-l: calc(2 * var(--space-unit));
+    --padding-side: 16px;
 
-  /* Timing */
-  --time-fast: 0.2s;
-} 
-
-@media  (min-width: 376px) {
-  :root {
-    --padding-side: 24px;
-  }
+    /* Timing */
+    --time-fast: 0.2s;
 }
 
-@media  (min-width: 834px) {
-  :root {
-    --padding-side: 32px;
-  }
+@media (min-width: 376px) {
+    :root {
+        --padding-side: 24px;
+    }
+}
+
+@media (min-width: 834px) {
+    :root {
+        --padding-side: 32px;
+    }
 }

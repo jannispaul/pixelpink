@@ -1,12 +1,10 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import styled from 'styled-components'
-import Button from '../components/Button'
+import React from "react"
+import { StaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import styled from "styled-components"
+import Button from "../components/Button"
 
-const Project = styled.div`
-
-`
+const Project = styled.div``
 const StyledImage = styled(Img)`
     max-width: 1168px;
     margin: auto;
@@ -14,14 +12,13 @@ const StyledImage = styled(Img)`
 `
 
 const TextContainer = styled.div`
-        padding: 24px var(--padding-side);
-        margin: auto;
-        max-width: 1168px;
-        @media (min-width: 1216px){
-            padding: 24px 0;
-        }
-        /* margin: 24px var(--padding-side); */
-
+    padding: 24px var(--padding-side);
+    margin: auto;
+    max-width: 1168px;
+    @media (min-width: 1216px) {
+        padding: 24px 0;
+    }
+    /* margin: 24px var(--padding-side); */
 `
 
 /*Company Tag*/
@@ -34,31 +31,33 @@ const Company = styled.span`
     text-transform: uppercase;
 `
 
-const SingleProject = (props) => (
+const SingleProject = props => (
     <Project>
-        <StyledImage fluid={props.data.imageOne.childImageSharp.fluid} alt={props.imageAltText}/>
+        <StyledImage
+            fluid={props.data.imageOne.childImageSharp.fluid}
+            alt={props.imageAltText}
+        />
         <TextContainer>
             <Company>{props.company}</Company>
             <h2>{props.title}</h2>
-            <Button link='/projekte'>Zeig mir mehr</Button>
-        </TextContainer>    
+            <Button link="/projekte">Zeig mir mehr</Button>
+        </TextContainer>
     </Project>
 )
-
 
 export default props => (
     <StaticQuery
         query={graphql`
-        query {
-            imageOne: file(relativePath: { eq: "gatsby-astronaut-2.png" }) {
-            childImageSharp {
-                fluid(maxWidth: 1000) {
-                ...GatsbyImageSharpFluid_withWebp
+            query {
+                imageOne: file(relativePath: { eq: "gatsby-astronaut-2.png" }) {
+                    childImageSharp {
+                        fluid(maxWidth: 1000) {
+                            ...GatsbyImageSharpFluid_withWebp
+                        }
+                    }
                 }
             }
-            }
-        }
         `}
-    render={data => <SingleProject data={data} {...props} />}
+        render={data => <SingleProject data={data} {...props} />}
     />
 )
