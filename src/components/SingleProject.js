@@ -25,9 +25,9 @@ const TextContainer = styled.div`
 const Company = styled.span`
     font-weight: 600;
     color: var(--color-gray-dark);
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.25;
-    letter-spacing: 1.79;
+    letter-spacing: 2px;
     text-transform: uppercase;
 `
 
@@ -49,7 +49,7 @@ export default props => (
     <StaticQuery
         query={graphql`
             query {
-                imageOne: file(relativePath: { eq: "gatsby-astronaut-2.png" }) {
+                imageOne: file(relativePath: { eq: "qvstaHeader.jpg" }) {
                     childImageSharp {
                         fluid(maxWidth: 1000) {
                             ...GatsbyImageSharpFluid_withWebp

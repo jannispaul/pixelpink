@@ -10,7 +10,7 @@ const StyledSection = styled.section`
 
     & > div {
         max-width: 1168px;
-        /* margin: auto; */
+        margin: auto; 
         /* padding: 0 var(--padding-side); */
     }
 
