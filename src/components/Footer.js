@@ -43,10 +43,14 @@ const Footer = props => (
                     </p>
                 </div>
                 <div>
-                    <a href="#">Instagram</a>
-                    <a href="#">Behance</a>
+                    <a href="https://www.instagram.com/pixelpink.berlin/">
+                        Instagram
+                    </a>
+                    <a href="https://www.behance.net/pixelpinkberlin">
+                        Behance
+                    </a>
                     <a href="#">Dribbble</a>
-                    <a href="#">Facebook</a>
+                    <a href="http://facebook.com/pixelpinkberlin/">Facebook</a>
                 </div>
             </div>
             <div>
