@@ -4,7 +4,10 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 import Button from "../components/Button"
 
-const Project = styled.div``
+const Project = styled.div`
+    padding-bottom: var(--padding-vertical);
+`
+
 const StyledImage = styled(Img)`
     max-width: 1168px;
     margin: auto;

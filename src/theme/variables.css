@@ -1,6 +1,6 @@
 :root {
     /* main colors */
-    --color-primary: #E6004E;
+    --color-primary: #e6004e;
     --color-black: #1a1a1a;
     --color-gray-dark: #616161;
     --color-gray-medium: #cbcfd3;
@@ -10,10 +10,11 @@
     /* Spacing */
     --space-unit: 1.25em;
     /*Relative to html font-size*/
-    --space-s: calc(.5 * var(--space-unit));
+    --space-s: calc(0.5 * var(--space-unit));
     --space-m: calc(1 * var(--space-unit));
     --space-l: calc(2 * var(--space-unit));
     --padding-side: 16px;
+    --padding-vertical: 30px;
 
     /* Timing */
     --time-fast: 0.2s;
@@ -22,11 +23,13 @@
 @media (min-width: 376px) {
     :root {
         --padding-side: 24px;
+        --padding-vertical: 60px;
     }
 }
 
 @media (min-width: 834px) {
     :root {
         --padding-side: 32px;
+        --padding-vertical: 100px;
     }
 }
