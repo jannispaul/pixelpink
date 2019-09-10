@@ -36,10 +36,7 @@ const Company = styled.span`
 
 const SingleProject = props => (
     <Project>
-        <StyledImage
-            fluid={props.data.imageOne.childImageSharp.fluid}
-            alt={props.imageAltText}
-        />
+        <StyledImage fluid={props.img} alt={props.imageAltText} />
         <TextContainer>
             <Company>{props.company}</Company>
             <h2>{props.title}</h2>
@@ -47,20 +44,20 @@ const SingleProject = props => (
         </TextContainer>
     </Project>
 )
-
-export default props => (
-    <StaticQuery
-        query={graphql`
-            query {
-                imageOne: file(relativePath: { eq: "qvstaHeader.jpg" }) {
-                    childImageSharp {
-                        fluid(maxWidth: 1000) {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
-                }
-            }
-        `}
-        render={data => <SingleProject data={data} {...props} />}
-    />
-)
+export default SingleProject
+// export default props => (
+//     <StaticQuery
+//         query={graphql`
+//             query {
+//                 imageOne: file(relativePath: { eq: "qvstaHeader.jpg" }) {
+//                     childImageSharp {
+//                         fluid(maxWidth: 1000) {
+//                             ...GatsbyImageSharpFluid_withWebp
+//                         }
+//                     }
+//                 }
+//             }
+//         `}
+//         render={data => <SingleProject data={data} {...props} />}
+//     />
+// )
