@@ -5,7 +5,8 @@ import StandardLayout from "../components/StandardLayout"
 import SEO from "../components/Seo"
 import H1Header from "../components/H1Header"
 import ContactFooter from "../components/ContactFooter"
-import SingleProject from "../components/SingleProject"
+// import SingleProject from "../components/SingleProject"
+import HeroProject from "../components/HeroProject"
 import BlackBGWhiteText from "../components/BlackBGWhiteText"
 
 // import Image from '../components/Image'
@@ -36,12 +37,7 @@ class IndexPage extends React.Component {
                     mainline="Wir machen digitales Produktdesign"
                     subline="ohne Schnickschnack in Berlin"
                 />
-                <SingleProject
-                    image="test"
-                    imageAltText="QVSTA Model"
-                    company="QVSTA"
-                    title="Revolutionieren traditionelles Modelbooking"
-                />
+                <HeroProject />
                 <BlackBGWhiteText
                     mainline="Unsere Services"
                     subline="– keine Massenware, nur originelles Design"

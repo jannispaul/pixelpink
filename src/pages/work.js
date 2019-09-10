@@ -38,7 +38,7 @@ export default ({ data }) => {
 
             {PROJECTS.map(PROJECTS => (
                 <SingleProject
-                    img={data.imageOne.childImageSharp.fluid}
+                    img={data.workimages.childImageSharp.fluid}
                     imgAltText={PROJECTS.imgAltText}
                     company={PROJECTS.company}
                     title={PROJECTS.title}
@@ -53,7 +53,7 @@ export default ({ data }) => {
 
 export const query = graphql`
     query {
-        imageOne: file(relativePath: { eq: "qvstaHeader.jpg" }) {
+        workimages: file(relativePath: { eq: "qvstaHeader.jpg" }) {
             childImageSharp {
                 fluid(maxWidth: 1000) {
                     ...GatsbyImageSharpFluid_withWebp
