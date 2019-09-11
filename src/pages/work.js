@@ -1,7 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-// import { Link } from 'gatsby'
-
 import StandardLayout from "../components/StandardLayout"
 import SEO from "../components/Seo"
 import H1Header from "../components/H1Header"
@@ -10,55 +8,90 @@ import SingleProject from "../components/SingleProject"
 
 const PROJECTS = [
     {
-        img: "test",
         imgAltText: "QVSTA Model",
         company: "QVSTA",
         title: "Revolutionieren traditionelles Modelbooking",
         id: "01",
     },
     {
-        img: "test2",
         imgAltText: "QVSTA Model",
         company: "QVSTA2",
-        title: "coole HEADLINE",
+        title: "coole HEADLINE2",
+        id: "02",
+    },
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA2",
+        title: "coole HEADLINE3",
+        id: "02",
+    },
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA2",
+        title: "coole HEADLINE4",
+        id: "02",
+    },
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA2",
+        title: "coole HEADLINE5",
+        id: "02",
+    },
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA2",
+        title: "coole HEADLINE6",
+        id: "02",
+    },
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA2",
+        title: "coole HEADLINE7",
+        id: "02",
+    },
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA2",
+        title: "coole HEADLINE8",
         id: "02",
     },
 ]
-export default ({ data }) => {
-    return (
-        <StandardLayout>
-            <SEO
-                title="Home"
-                keywords={[`PixelPink`, `application`, `react`]}
-            />
-            <H1Header
-                mainline="Eine selektierte Auswahl unserer Arbeiten"
-                subline="made with Love for Friends"
-            />
+const WorkPage = props => (
+    <StandardLayout>
+        <SEO title="Home" keywords={[`PixelPink`, `application`, `react`]} />
+        <H1Header
+            mainline="Eine selektierte Auswahl unserer Arbeiten"
+            subline="made with Love for Friends"
+        />
 
-            {PROJECTS.map(PROJECTS => (
-                <SingleProject
-                    img={data.workimages.childImageSharp.fluid}
-                    imgAltText={PROJECTS.imgAltText}
-                    company={PROJECTS.company}
-                    title={PROJECTS.title}
-                    key={PROJECTS.id}
-                />
-            ))}
-            <ContactFooter mainline="Sind Sie bereit digital durchzustarten?" />
-        </StandardLayout>
-    )
-}
-// export default WorkPage
+        {props.data.allFile.edges.map(({ node }, i) => (
+            <SingleProject
+                img={node.childImageSharp.fluid}
+                imgAltText={PROJECTS[i].imgAltText}
+                company={PROJECTS[i].company}
+                title={PROJECTS[i].title}
+                key={i}
+            />
+        ))}
+        <ContactFooter mainline="Sind Sie bereit digital durchzustarten?" />
+    </StandardLayout>
+)
 
 export const query = graphql`
-    query {
-        workimages: file(relativePath: { eq: "qvstaHeader.jpg" }) {
-            childImageSharp {
-                fluid(maxWidth: 1000) {
-                    ...GatsbyImageSharpFluid_withWebp
+    {
+        allFile(filter: { relativeDirectory: { eq: "work" } }) {
+            edges {
+                node {
+                    id
+                    childImageSharp {
+                        fluid {
+                            ...GatsbyImageSharpFluid_withWebp
+                        }
+                    }
                 }
             }
         }
     }
 `
+
+export default WorkPage

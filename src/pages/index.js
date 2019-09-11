@@ -8,6 +8,7 @@ import ContactFooter from "../components/ContactFooter"
 // import SingleProject from "../components/SingleProject"
 import HeroProject from "../components/HeroProject"
 import BlackBGWhiteText from "../components/BlackBGWhiteText"
+import ComponentName from "../components/ComponentName"
 
 // import Image from '../components/Image'
 // import ImageContainer from '../components/ImageContainer'
@@ -33,6 +34,7 @@ class IndexPage extends React.Component {
                     title="Home"
                     keywords={[`gatsby`, `application`, `react`]}
                 />
+                <ComponentName></ComponentName>
                 <H1Header
                     mainline="Wir machen digitales Produktdesign"
                     subline="ohne Schnickschnack in Berlin"
