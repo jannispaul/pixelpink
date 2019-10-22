@@ -23,7 +23,7 @@ const StyledSection = styled.section`
         /* padding-right: 48px; */
     }
 
-    & > h2 > span {
+    h2 > span {
         color: var(--color-gray-medium);
     }
 

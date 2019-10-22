@@ -14,6 +14,7 @@ const StyledImage = styled(Img)`
 const TextContainer = styled.div`
     padding: 24px var(--padding-side);
     margin: auto;
+    margin-bottom: 92px;
     max-width: 1168px;
     @media (min-width: 1216px) {
         padding: 24px 0;

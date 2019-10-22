@@ -17,9 +17,6 @@ import BlackBGWhiteText from "../components/BlackBGWhiteText"
 let copy = {
     bwcontainer: [
         "Unsere Herangehensweise an neue Projekte ist immer die gleiche, es ist nie das gleiche! Daher hören wir Ihnen zuerst aufmerksam zu und definieren aus den Resultaten die individuell notwendigen Prozessschritte für Ihr Projekt.",
-        "test",
-        "So viele Absätze wie wir wollen",
-        "Und noch einen – nur weil wir es können",
     ],
     contact: "Let’s talk business. Schreib uns jetzt!",
 }
