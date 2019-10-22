@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import logo from "../../content/images/logo.svg"
+import logo from "../../content/logos/logo.svg"
 import Icon from "./layout/Icon"
 import { ICONS } from "../theme/Icons"
 
@@ -42,12 +42,15 @@ const StyledNav = styled.div`
 `
 
 const NavItem = styled(Link)`
-    padding: calc(0.5 * var(--space-s)) 0;
-    font-size: 12px;
+    padding: calc(3 * var(--space-s)) var(--space-s);
+    font-size: 11px;
+    font-weight: 700;
     width: 100%;
     text-align: center;
     text-decoration: none;
     color: var(--color-medium);
+    text-transform: uppercase;
+    
 
     & svg {
         fill: var(--color-medium);
@@ -58,22 +61,23 @@ const NavItem = styled(Link)`
         margin-left: auto;
         margin-right: auto;
     }
+
     &.active,
     &.active span,
     &.active svg {
-        color: var(--color-primary-light);
-        fill: var(--color-primary-light);
+        color: var(--color-primary);
+        fill: var(--color-primary);
     }
     &:hover {
-        color: var(--color-primary-light);
-        fill: var(--color-primary-light);
+        color: var(--color-gray-dark);
+        fill: var(--color-gray-dark);
     }
 
     @media (min-width: 834px) {
-        font-size: 16px;
+        font-size: 14px;
         display: flex;
         text-transform: uppercase;
-        font-weight: 600;
+        font-weight: 700;
         /*Hide home link on desktop*/
         :nth-of-type(2) {
             display: none;
@@ -81,6 +85,10 @@ const NavItem = styled(Link)`
         & svg {
             display: none;
         }
+    }
+    @media (min-width: 1441px) {
+        font-size: 14px;
+
     }
 `
 
@@ -111,7 +119,7 @@ const Nav = () => (
         </NavItem>
         <NavItem to="/work" activeClassName="active">
             <Icon icon={ICONS.PHONE} />
-            <span>Work</span>
+            <span>Projekte</span>
         </NavItem>
         <NavItem to="/services" activeClassName="active">
             <Icon icon={ICONS.PHONE} />

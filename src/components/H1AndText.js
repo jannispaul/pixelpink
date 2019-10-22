@@ -4,6 +4,7 @@ import styled from "styled-components"
 const StyledSection = styled.section`
     max-width: 1168px;
     margin: auto;
+    padding: var(--padding-vertical) var(--padding-side);
     /* padding: var(--padding-vertical) var(--padding-side); */
 
     p {
@@ -28,6 +29,8 @@ const StyledSection = styled.section`
         padding: 130px var(--padding-side);
     } */
 `
+
+
 
 const H1AndText = props => (
     <StyledSection>
