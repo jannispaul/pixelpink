@@ -1,26 +1,97 @@
 import React from "react"
-// import { Link } from 'gatsby'
-
+import { graphql } from "gatsby"
 import StandardLayout from "../components/StandardLayout"
 import SEO from "../components/Seo"
 import H1Header from "../components/H1Header"
 import ContactFooter from "../components/ContactFooter"
+import SingleProject from "../components/SingleProject"
 
-class IndexPage extends React.Component {
-    render() {
-        return (
-            <StandardLayout>
-                <SEO
-                    title="Home"
-                    keywords={[`gatsby`, `application`, `react`]}
-                />
-                <H1Header
-                    mainline="Eine selektierte Auswahl unserer Arbeiten"
-                    subline="made with Love for Friends"
-                />
-                <ContactFooter mainline="Sind Sie bereit digital durchzustarten?" />
-            </StandardLayout>
-        )
+const PROJECTS = [
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA",
+        title: "Revolutionieren traditionelles Modelbooking",
+        id: "01",
+    },
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA2",
+        title: "coole HEADLINE2",
+        id: "02",
+    },
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA2",
+        title: "coole HEADLINE3",
+        id: "02",
+    },
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA2",
+        title: "coole HEADLINE4",
+        id: "02",
+    },
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA2",
+        title: "coole HEADLINE5",
+        id: "02",
+    },
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA2",
+        title: "coole HEADLINE6",
+        id: "02",
+    },
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA2",
+        title: "coole HEADLINE7",
+        id: "02",
+    },
+    {
+        imgAltText: "QVSTA Model",
+        company: "QVSTA2",
+        title: "coole HEADLINE8",
+        id: "02",
+    },
+]
+const WorkPage = props => (
+    <StandardLayout>
+        <SEO title="Home" keywords={[`PixelPink`, `application`, `react`]} />
+        <H1Header
+            mainline="Eine selektierte Auswahl unserer Arbeiten"
+            subline="made with Love for Friends"
+        />
+
+        {props.data.allFile.edges.map(({ node }, i) => (
+            <SingleProject
+                img={node.childImageSharp.fluid}
+                imgAltText={PROJECTS[i].imgAltText}
+                company={PROJECTS[i].company}
+                title={PROJECTS[i].title}
+                key={i}
+            />
+        ))}
+        <ContactFooter mainline="Sind Sie bereit digital durchzustarten?" />
+    </StandardLayout>
+)
+
+export const query = graphql`
+    {
+        allFile(filter: { relativeDirectory: { eq: "work" } }) {
+            edges {
+                node {
+                    id
+                    childImageSharp {
+                        fluid {
+                            ...GatsbyImageSharpFluid_withWebp
+                        }
+                    }
+                }
+            }
+        }
     }
-}
-export default IndexPage
+`
+
+export default WorkPage

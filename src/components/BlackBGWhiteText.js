@@ -4,13 +4,14 @@ import Button from "../components/Button"
 
 const StyledSection = styled.section`
     background-color: var(--color-black);
-    padding-top: 130px;
-    padding-bottom: 130px;
-    padding: 42px var(--padding-side);
+    /* padding-top: 130px;
+    padding-bottom: 130px; */
+    /* padding: 0px var(--padding-side); */
+    padding: var(--padding-vertical) var(--padding-side);
 
     & > div {
         max-width: 1168px;
-        margin: auto; 
+        margin: auto;
         /* padding: 0 var(--padding-side); */
     }
 
@@ -36,7 +37,6 @@ const StyledSection = styled.section`
     }
 
     @media (min-width: 834px) {
-        padding: 130px var(--padding-side);
     }
 `
 

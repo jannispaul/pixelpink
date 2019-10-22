@@ -2,15 +2,21 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
+    grid-column: 2;
     background-color: var(--color-black);
     font-size: var(--small);
-    padding: 1rem;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
+    padding: calc(var(--padding-vertical) / 2) var(--padding-side);
+    color: var(--color-white);
+
+    & > div {
+        max-width: 1168px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* flex-wrap: wrap; */
     @media (min-width: 769px) {
-        padding: 2rem;
     }
     /*Links in footer*/
     a {
@@ -22,14 +28,43 @@ const StyledFooter = styled.div`
 `
 const Footer = props => (
     <StyledFooter>
-        <p>Felix Lebedinzew & Jannis Wicke</p>
-        <a href="mailto:hello@pixel-pink.de">hello@pixel-pink.de</a><br/>
-        <a href="tel: +4917681410001">+49 176 81 41 0001</a><br/>
-        <a href="#">Instagram</a><a href="#">Behance</a><a href="#">Dribbble</a><a href="#">Facebook</a>
-        <p>© 2019 PixelPink Gbr <br/>All Rights Reserved</p>
-        <Link to="/impressum">Impressum</Link>
-        <Link to="/datenschutz">Datenschutz</Link>
-        <Link to="/datenschutz">AGBs</Link>
+        <div>
+            <div>
+                <div>
+                    <p>
+                        Felix Lebedinzew & Jannis Wicke
+                        <br />
+                        <a href="mailto:hello@pixel-pink.de">
+                            hello@pixel-pink.de
+                        </a>
+                        <br />
+                        <a href="tel: +4917681410001">+49 176 81 41 0001</a>
+                        <br />
+                    </p>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/pixelpink.berlin/">
+                        Instagram
+                    </a>
+                    <a href="https://www.behance.net/pixelpinkberlin">
+                        Behance
+                    </a>
+                    <a href="#">Dribbble</a>
+                    <a href="http://facebook.com/pixelpinkberlin/">Facebook</a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        © 2019 PixelPink Gbr <br />
+                        All Rights Reserved
+                    </p>
+                    <Link to="/impressum">Impressum</Link>
+                    <Link to="/datenschutz">Datenschutz</Link>
+                    <Link to="/datenschutz">AGBs</Link>
+                </div>
+            </div>
+        </div>
     </StyledFooter>
 )
 export default Footer

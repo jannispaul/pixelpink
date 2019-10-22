@@ -5,6 +5,7 @@ import StandardLayout from "../components/StandardLayout"
 import SEO from "../components/Seo"
 import H1AndText from "../components/H1AndText"
 import ContactFooter from "../components/ContactFooter"
+import UberUnsImage from "../components/UberUnsImage"
 
 class IndexPage extends React.Component {
     render() {
@@ -14,6 +15,7 @@ class IndexPage extends React.Component {
                     title="Home"
                     keywords={[`gatsby`, `application`, `react`]}
                 />
+                <UberUnsImage />
                 <H1AndText
                     mainline="Wer ist eigentlich PixelPink?"
                     subline="Unsere Geschichte, unsere Herangehensweise."
