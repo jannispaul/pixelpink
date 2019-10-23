@@ -39,7 +39,10 @@ class IndexPage extends React.Component {
                     subline="ohne Schnickschnack in Berlin"
                 />
                 <HeroProject />
-                <LogoWall />
+                <LogoWall 
+                    mainline="Wir sind ein Designstudio für digitale Produkte und Services.
+            Wir arbeiten mit großen Marken, KMUs, Startups und in Agenturen."
+                />
                 <BlackBGWhiteText
                     mainline="Unsere Services"
                     subline="– keine Massenware, nur originelles Design"
