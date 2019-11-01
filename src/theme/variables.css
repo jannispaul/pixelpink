@@ -1,6 +1,7 @@
 :root {
     /* main colors */
     --color-primary: #e6004e;
+    --color-primary-dark: #CC0045;
     --color-black: #1a1a1a;
     --color-gray-dark: #616161;
     --color-gray-medium: #cbcfd3;
@@ -33,3 +34,4 @@
         --padding-vertical: 100px;
     }
 }
+

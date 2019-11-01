@@ -6,23 +6,12 @@ import Icon from "./layout/Icon"
 import { ICONS } from "../theme/Icons"
 
 const StyledNav = styled.div`
-    overflow: hidden;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    z-index: 100;
-    background: white;
-    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.05);
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: repeat(5, 1fr);
-    -ms-grid-row-align: center;
-    align-items: center;
-    justify-items: center;
-    padding: 0;
+    display: none;
 
     @media (min-width: 834px) {
+        display: grid;
+        align-items: center;
+        padding: 0;
         top: 0;
         height: 80px;
         box-shadow: 0 1px 14px rgba(0, 0, 0, 0.1);
@@ -34,23 +23,28 @@ const StyledNav = styled.div`
     }
     @media (min-width: 1441px) {
         width: 300px;
-        height: 100%;
+        max-height: 100%;
+        height: 100vh;
+        position: fixed;
         box-shadow: 0 1px 14px rgba(0, 0, 0, 0.1);
         grid-template-columns: 1fr;
         grid-template-rows: 1fr repeat(4, auto) 1fr;
+
     }
 `
 
 const NavItem = styled(Link)`
-    padding: calc(3 * var(--space-s)) var(--space-s);
     font-size: 11px;
     font-weight: 700;
-    width: 100%;
     text-align: center;
+    margin: auto;
     text-decoration: none;
     color: var(--color-medium);
     text-transform: uppercase;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 30px;
 
     & svg {
         fill: var(--color-medium);
@@ -62,18 +56,25 @@ const NavItem = styled(Link)`
         margin-right: auto;
     }
 
-    &.active,
-    &.active span,
-    &.active svg {
-        color: var(--color-primary);
-        fill: var(--color-primary);
-    }
     &:hover {
         color: var(--color-gray-dark);
         fill: var(--color-gray-dark);
     }
 
     @media (min-width: 834px) {
+
+        &:last-of-type {
+            color: var(--color-white);
+            background: var(--color-primary);
+            border-radius: 200px;
+            transition: all 0.1s ease-in;
+            &:hover {
+                background: var(--color-primary-dark);
+                color: var(--color-white);
+                transition: all 0.1s ease-in;
+            }
+        }
+
         font-size: 14px;
         display: flex;
         text-transform: uppercase;
@@ -85,10 +86,30 @@ const NavItem = styled(Link)`
         & svg {
             display: none;
         }
+        &.active:not(:last-of-type),
+        &.active span:not(:last-of-type),
+        &.active svg {
+        color: var(--color-primary);
+        fill: var(--color-primary);
+    }
+
+        &.active:last-of-type,
+        &.active span:last-of-type {
+        background: none;
+        color: var(--color-primary);
+    }
+
     }
     @media (min-width: 1441px) {
         font-size: 14px;
-
+        text-align: center;
+        display: flex;
+        justify-content:  center;
+        margin-bottom: 1.3vh;
+        
+        &:last-of-type {
+        display: inline-block;
+        }
     }
 `
 
@@ -105,6 +126,11 @@ const Logo = styled(Link)`
 
     @media (min-width: 834px) {
         display: flex;
+
+    }
+
+    @media (min-width: 1441px) {
+        margin: auto;
     }
 `
 
@@ -114,23 +140,18 @@ const Nav = () => (
             <img src={logo} alt="PixelPink Logo" />
         </Logo>
         <NavItem to="/" activeClassName="active">
-            <Icon icon={ICONS.PHONE} />
             <span>Home</span>
         </NavItem>
         <NavItem to="/work" activeClassName="active">
-            <Icon icon={ICONS.PHONE} />
             <span>Projekte</span>
         </NavItem>
         <NavItem to="/services" activeClassName="active">
-            <Icon icon={ICONS.PHONE} />
             <span>Services</span>
         </NavItem>
         <NavItem to="/ueber-uns" activeClassName="active">
-            <Icon icon={ICONS.PHONE} />
             <span>Über uns</span>
         </NavItem>
         <NavItem to="/kontakt" activeClassName="active">
-            <Icon icon={ICONS.PHONE} />
             <span>Kontakt</span>
         </NavItem>
     </StyledNav>

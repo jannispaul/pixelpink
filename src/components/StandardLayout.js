@@ -6,6 +6,8 @@ import "../theme/variables.css"
 import "../theme/styles.css"
 
 import NavBar from "../components/Navigation"
+import NavBarMobile from "../components/NavigationMobile"
+
 // import MobileMenu from '../components/Navigation/MobileMenu'
 import Footer from "../components/Footer"
 
@@ -42,13 +44,8 @@ class StandardLayout extends React.Component {
             <>
                 {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
                 <App>
-                    <NavBar
-                        burgerButtonClickHandler={
-                            this.burgerButtonToggleClickHandler
-                        }
-                        showMobileMenu={this.state.mobileMenuOpen}
-                    />
-                    {/* <MobileMenu showMobileMenu={this.state.mobileMenuOpen} /> */}
+                    <NavBar/>
+                    <NavBarMobile />
                     <Main>{this.props.children}</Main>
                     <Footer />
                 </App>

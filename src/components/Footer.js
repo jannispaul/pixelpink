@@ -12,18 +12,19 @@ const StyledFooter = styled.footer`
     & > div {
         max-width: 1168px;
         margin: auto;
-        display: flex;
-        justify-content: space-between;
+        @media (min-width: 769px) {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     /* flex-wrap: wrap; */
-    @media (min-width: 769px) {
-    }
     /*Links in footer*/
     a {
         color: var(--color-white);
         margin-right: 1rem;
         font-size: var(--small);
         text-decoration: none;
+        
     }
 `
 const Footer = props => (
@@ -54,15 +55,13 @@ const Footer = props => (
                 </div>
             </div>
             <div>
-                <div>
-                    <p>
-                        © 2019 PixelPink Gbr <br />
-                        All Rights Reserved
-                    </p>
-                    <Link to="/impressum">Impressum</Link>
-                    <Link to="/datenschutz">Datenschutz</Link>
-                    <Link to="/datenschutz">AGBs</Link>
-                </div>
+                <p>
+                    © 2019 PixelPink Gbr <br />
+                    All Rights Reserved
+                </p>
+                <Link to="/impressum">Impressum</Link>
+                <Link to="/datenschutz">Datenschutz</Link>
+                <Link to="/datenschutz">AGBs</Link>
             </div>
         </div>
     </StyledFooter>
