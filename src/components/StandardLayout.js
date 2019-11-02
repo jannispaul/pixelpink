@@ -19,7 +19,6 @@ const App = styled.div`
     }
 `
 const Main = styled.div`
-    margin-top: 50px;
     @media (min-width: 769px) {
         margin-top: 70px;
     }

@@ -18,8 +18,12 @@ const StyledNav = styled.div`
         -ms-grid-columns: 1fr auto auto auto auto; /*IE grid*/
         grid-template-columns: 1fr repeat(4, auto);
         justify-items: start;
-        padding: 0 var(--space-unit);
+        padding: 0 var(--padding-side);
         font-size: 18px;
+        position: fixed;
+        width: 100%;
+        z-index: 100; 
+        background: var(--color-white);
     }
     @media (min-width: 1441px) {
         width: 300px;
@@ -45,6 +49,7 @@ const NavItem = styled(Link)`
     flex-direction: column;
     justify-content: center;
     padding: 14px 30px;
+    
 
     & svg {
         fill: var(--color-medium);
