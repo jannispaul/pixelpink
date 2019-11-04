@@ -29,7 +29,7 @@ class IndexPage extends React.Component {
                 />
                 <HeroProject />
                 <LogoWall 
-                    mainline="PixelPink ist ein Designstudio für digitale Produkte und Services.
+                    mainline=" ist ein Designstudio für digitale Produkte und Services.
                                 Wir arbeiten mit großen Marken, KMUs, Startups und in Agenturen."
                 />
                 <ServicesIndex/>

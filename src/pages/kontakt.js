@@ -1,5 +1,7 @@
 import React from "react"
 // import { Link } from 'gatsby'
+import H1AndText from "../components/H1AndText"
+import SocialMedia from "../components/SocialMedia"
 
 import StandardLayout from "../components/StandardLayout"
 import SEO from "../components/Seo"
@@ -14,6 +16,10 @@ class IndexPage extends React.Component {
                     keywords={[`gatsby`, `application`, `react`]}
                 />
                 <ContactFooter mainline="Schreiben Sie uns, wir antworten asap!" />
+                <SocialMedia
+                    mainline="Ja wir stehen auf SM"
+                    subline="Follow us!"
+                />
             </StandardLayout>
         )
     }

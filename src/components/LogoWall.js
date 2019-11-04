@@ -6,6 +6,7 @@ import fuelcastLogo from "../../content/logos/fuelcastLogo.svg"
 import lhhLogo from "../../content/logos/lhhLogo.svg"
 import mediapioneerLogo from "../../content/logos/mediapioneerLogo.svg"
 import telekomLogo from "../../content/logos/telekomLogo.svg"
+import logo from "../../content/logos/logo.svg"
 
 
 const StyledSection = styled.section`
@@ -18,6 +19,14 @@ const StyledSection = styled.section`
         color: var(--color-black);
         margin-bottom: var(--space-l);
         /* padding: 0 var(--padding-side); */
+    }
+
+    & > h2 > img {
+        width: 100px;
+        @media (min-width: 769px) {
+            width: 150px;
+
+        }
     }
 `
 
@@ -42,6 +51,7 @@ const StyledGrid = styled.div`
 const LogoWall = props => (
     <StyledSection>
         <h2>
+            <img src={logo} alt="Logo von Fuelcast"/>
             {" "}
             {props.mainline} <br />
         </h2>

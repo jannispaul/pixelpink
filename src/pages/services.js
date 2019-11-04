@@ -5,6 +5,7 @@ import SEO from "../components/Seo"
 import H1AndText from "../components/H1AndText"
 import ContactFooter from "../components/ContactFooter"
 import FiftyFifty from "../components/layout/FiftyFifty"
+import FiftyFiftyBlackIMG from "../components/layout/FiftyFiftyBlackIMG"
 
 class ServicePage extends React.Component {
     render() {
@@ -17,13 +18,16 @@ class ServicePage extends React.Component {
                 <H1AndText
                     mainline="Das Erlebnis als Erfolgsfaktor"
                     subline="Wir helfen Ihnen in die Digitalisierung"
-                    body="Wir sind Spezialisten für digitales Produktdesign kreieren integrierte Services, erschaffen User Experience-Konzepte und bilden visuelle Gestalt. Ob App, Website oder Plattform: Wir entwickeln individuelle Designlösungen. Stets originell, immer durchdacht und maßgeschneidert entsprechend Ihrer Anforderungen und Bedürfnisse. 
+                    body={[`Wir sind Spezialisten für digitales Produktdesign kreieren integrierte Services, erschaffen User Experience-Konzepte und bilden visuelle Gestalt. Ob App, Website oder E-Commerce Store: Wir entwickeln individuel designte Lösungen. Stets originell, immer durchdacht und maßgeschneidert entsprechend Ihrer Anforderungen und Bedürfnisse. `]}
 
-                    Das Erlebnis als Erfolgsfaktor. In unseren übersättigten Märkte und dem stetigen Überangebot sehen wir das Potenzial der Differenzierung und Abgrenzung in der Gestaltung eines einzigartigen Gesamtergebnisses. Der typische Nutzer ist meist ungeduldig. Reizüberflutung und Ablenkung sind keine Seltenheit heutzutage. Daher wollen wir den Fokus für Ihr Produkt steigern und das wesentliche kräftigen. Dies gelingt uns da wir einen minimalistischen, funktionalen Design-Ansatz verfolgen und praktizieren.
-          
-                    Denn oft ist weniger ebend mehr!"
+                    body2={[`Das Erlebnis als Erfolgsfaktor. In unseren übersättigten Märkten und dem stetigen Überangebot sehen wir das Potenzial der Differenzierung und Abgrenzung in der Gestaltung eines einzigartigen Gesamtergebnisses. Der typische Nutzer ist meist ungeduldig. Reizüberflutung und Ablenkung sind keine Seltenheit heutzutage. Daher wollen wir den Fokus für Ihr Produkt steigern und das wesentliche kräftigen. Dies gelingt uns da wir einen minimalistischen, funktionalen Design-Ansatz verfolgen und praktizieren.`]}
                 />
-                <FiftyFifty></FiftyFifty>
+                <FiftyFifty
+                    mainline="Das Erlebnis als Erfolgsfaktor"
+                    subline="Wir helfen Ihnen in die Digitalisierung"
+                    body={[`Wir sind Spezialisten für digitales Produktdesign kreieren integrierte Services, erschaffen User Experience-Konzepte und bilden visuelle Gestalt. Ob App, Website oder E-Commerce Store: Wir entwickeln individuel designte Lösungen. Stets originell, immer durchdacht und maßgeschneidert entsprechend Ihrer Anforderungen und Bedürfnisse. `]}
+                />
+                <FiftyFiftyBlackIMG/>
                 <ContactFooter mainline="Wo drückt der Schuh? Wir helfen!" />
             </StandardLayout>
         )

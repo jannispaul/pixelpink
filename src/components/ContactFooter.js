@@ -11,7 +11,7 @@ const StyledSection = styled.section`
         margin: auto;
     }
 
-    @media (min-width: 834px) {
+    @media (min-width: 769px) {
         padding: 130px var(--padding-side);
     }
 
