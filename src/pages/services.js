@@ -6,6 +6,7 @@ import H1AndText from "../components/H1AndText"
 import ContactFooter from "../components/ContactFooter"
 import FiftyFifty from "../components/layout/FiftyFifty"
 import FiftyFiftyBlackIMG from "../components/layout/FiftyFiftyBlackIMG"
+import LogoMobile from "../components/LogoMobile"
 
 class ServicePage extends React.Component {
     render() {
@@ -15,6 +16,7 @@ class ServicePage extends React.Component {
                     title="Home"
                     keywords={[`gatsby`, `application`, `react`]}
                 />
+                 <LogoMobile/>
                 <H1AndText
                     mainline="Das Erlebnis als Erfolgsfaktor"
                     subline="Wir helfen Ihnen in die Digitalisierung"

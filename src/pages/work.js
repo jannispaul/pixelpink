@@ -5,6 +5,7 @@ import SEO from "../components/Seo"
 import H1Header from "../components/H1Header"
 import ContactFooter from "../components/ContactFooter"
 import SingleProject from "../components/SingleProject"
+import LogoMobile from "../components/LogoMobile"
 
 const PROJECTS = [
     {
@@ -59,6 +60,7 @@ const PROJECTS = [
 const WorkPage = props => (
     <StandardLayout>
         <SEO title="Home" keywords={[`PixelPink`, `application`, `react`]} />
+        <LogoMobile/>
         <H1Header
             mainline="Eine selektierte Auswahl unserer Arbeiten"
             subline="made with Love for Friends"

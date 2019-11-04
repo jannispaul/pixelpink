@@ -25,7 +25,6 @@ const StyledSection = styled.section`
         width: 100px;
         @media (min-width: 769px) {
             width: 150px;
-
         }
     }
 `
