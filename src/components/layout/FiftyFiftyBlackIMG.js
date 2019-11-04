@@ -56,7 +56,7 @@ const div = props => (
                 <h2>Build <br/>Deliver
                 </h2>
                 <hr />
-                <p>Das Auge isst mit! Neben der Service-Einordnung und der Konzeption ist Branding und charmantes Design das ausschlaggebende Argument für Ihre Marke oder Produkt. Wir treiben Ihre Kommunikationskonzept voran und entwicklen visuell ästhetische Designs. </p>
+                <p>Lorem Text Missing Content</p>
             </ContentContainer>
             <ServiceImage/>
         </div>

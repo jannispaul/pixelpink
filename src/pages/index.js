@@ -10,7 +10,7 @@ import LogoMobile from "../components/LogoMobile"
 
 
 let copy = {
-    contact: "Let’s talk business. Schreib uns jetzt!",
+    contact: "Let’s talk business. Schreiben Sie uns jetzt!",
 }
 
 class IndexPage extends React.Component {
@@ -24,8 +24,8 @@ class IndexPage extends React.Component {
                 {/* <ComponentName></ComponentName> */}
                 <LogoMobile/>
                 <H1Header
-                    mainline="Wir machen digitales Produktdesign"
-                    subline="ohne Schnickschnack in Berlin"
+                    mainline="Wir bauen digitale Produkte"
+                    subline="user-centered und ohne Kompromisse in Berlin."
                 />
                 <HeroProject />
                 <LogoWall 

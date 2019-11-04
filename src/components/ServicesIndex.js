@@ -26,6 +26,7 @@ const StyledSection = styled.section`
     p {
         color: var(--color-gray-medium);
         margin-bottom: 0;
+        max-width: 850px;
     }
 
     h2 > Underline {
@@ -92,7 +93,7 @@ const ServicesIndex = props => (
             <StyledGrid>
                 <Link><Triangle></Triangle><p>Digitale Produkte bauen <br/><Underline>Strategisches Design </Underline></p></Link>
 
-                <Link><Circle></Circle><p>Empatische Customer Experience verbessern <br/><Underline>Design-Thinking</Underline></p></Link>
+                <Link><Circle></Circle><p>Empatische Customer Experience entwickeln <br/><Underline>Design-Thinking</Underline></p></Link>
                 
                 <Link><Square></Square><p>Ihre Markenidentität stärken <br/><Underline>Build & Deliver</Underline></p></Link>
             </StyledGrid>

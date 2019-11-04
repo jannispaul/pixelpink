@@ -67,8 +67,8 @@ const div = props => (
                 <h2>Strategisches <br/>Design
                 </h2>
                 <hr />
-                <p>Wo drückt denn der Schuh? Erweisen sich bestimme Merkmale Ihres Produktes als unverständlich, heben spätestens Ihre Nutzer und Kunden mahnend den Finger. Um diesem wirtschaftlichen Misserfolg vorzubeugen bildet die Ursachenforschung und ein fundamentales Konzept für uns den Grundstein für Ihr erfolgreiches Projekt. Wir wollen, dass Ihre Produkte sinnvoll sind und sich vor allem intuitiv und am besten ohne Erklärung bedienen lassen. Daher gehören die Schritte des Wireframing über den klickbaren Prototypen bis hin zum User-Testing zu unserem Hauptprogramm..</p>
-                <p>Steht’s mit Ihrer Persona-Gruppe im Fokus entwickeln wir kundenzentrierte Mensch-Maschine Konzepte und Interatkionsmuster.</p>
+                <p>Wo drückt denn der Schuh? Erweisen sich bestimme Merkmale Ihres Produktes als unverständlich, heben spätestens Ihre Nutzer und Kunden mahnend den Finger. Um diesem wirtschaftlichen Misserfolg vorzubeugen bildet die Ursachenforschung und ein fundamentales Konzept für uns den Grundstein für Ihr erfolgreiches Projekt. Wir wollen, dass Ihre Produkte sinnvoll sind und sich vor allem intuitiv – am besten ohne Erklärung bedienen lassen. Daher gehören die Schritte des Wireframing über den klickbaren Prototypen bis hin zum User-Testing zu unserem Hauptprogramm.</p>
+                <p>Steht’s mit Ihrer Persona-Gruppe im Fokus entwickeln wir kundenzentrierte Mensch-Maschine Konzepte und Interatkionsmuster in strategischen Designprozessen.</p>
             </div>
             <div>
                 <Circle></Circle>
@@ -78,8 +78,7 @@ const div = props => (
                 <p>Es geht nicht nur um ein Produkt. Es ist die Geschichte, von Anfang bis zum Ende erzählt, welche Ihren Nutzern und Kunden im Kopf bleibt. Wir sprechen von integrierten Services, welche sich in den alltäglichen natürlichen Ablauf integrieren und Ihre Geschichte simpel und charmant erzählen. Wir ergründen Kundenbedürfnisse und verorten diese einem ganzheitlichen Ansatz in Ihrer Customer Journey..</p>                
                 
                 <p>Das Auge isst mit! Neben der Service-Einordnung und der Konzeption ist Branding und charmantes Design das ausschlaggebende Argument für Ihre Marke oder Produkt. Wir treiben Ihre Kommunikationskonzept voran und entwicklen visuell ästhetische Designs.</p>
-                <p>Also was haben Sie zu erzählen? <br/>
-                Let´s talk! </p>
+                <p>Also was haben Sie zu erzählen? <br/></p>
             </div>
         </div> 
         
