@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    user-select: none;
+    /* user-select: none; */
     height: 100%;
     color: var(--color-black);
 }
