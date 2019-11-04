@@ -43,7 +43,7 @@ class StandardLayout extends React.Component {
             <>
                 {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
                 <App>
-                    <NavBar/>
+                    <NavBar />
                     <NavBarMobile />
                     <Main>{this.props.children}</Main>
                     <Footer />

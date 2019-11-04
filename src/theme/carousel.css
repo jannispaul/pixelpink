@@ -1,0 +1,33 @@
+.carousel .control-dots .dot {
+    width: 40px;
+    height: 6px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.carousel .control-disabled.control-arrow {
+    opacity: 1;
+    width: 100px;
+    /* background: black; */
+}
+.carousel.carousel-slider .control-arrow,
+.carousel.carousel-slider .control-arrow:hover {
+    width: 100px;
+    opacity: 1;
+    background: none;
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right: 30px solid #fff;
+}
+.carousel .control-next.control-arrow:before {
+    border-left: 30px solid #fff;
+}
+.carousel .control-arrow:before,
+.carousel.carousel-slider .control-arrow:before {
+    margin: 9px 5px;
+    display: inline-block;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    content: "";
+}
