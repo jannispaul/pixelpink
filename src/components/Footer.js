@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import logoWhite from "../../content/logos/logoWhite.svg"
-
+import Icon from "./layout/Icon"
+import { ICONS } from "../theme/Icons"
 
 
 const StyledFooter = styled.div`
@@ -146,8 +147,9 @@ const Footer = props => (
                 <a href="https://www.instagram.com/pixelpink.berlin/">
                     Instagram
                 </a>
-                <a href="https://www.behance.net/pixelpinkberlin">Behance</a>
                 <a href="http://facebook.com/pixelpinkberlin/">Facebook</a>
+                <a href="https://www.behance.net/pixelpinkberlin">Behance</a>
+                <a href="http://facebook.com/pixelpinkberlin/">LinkedIn</a>
             </SocialMedia>
 
             <LegalContent>
@@ -162,40 +164,6 @@ const Footer = props => (
             </LegalLinks>
         </StyledGrid>
 
-
-        {/* <div>
-            <div>
-                <div>
-                    <p>
-                        Felix Lebedinzew & Jannis Wicke
-                        <br />
-                        <a href="mailto:hello@pixel-pink.de">
-                            hello@pixel-pink.de
-                        </a>
-                        <br />
-                        <a href="tel: +4917681410001">+49 176 81 41 0001</a>
-                        <br />
-                    </p>
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/pixelpink.berlin/">
-                        Instagram
-                    </a>
-                    <a href="https://www.behance.net/pixelpinkberlin">
-                        Behance
-                    </a>
-                    <a href="#">Dribbble</a>
-                    <a href="http://facebook.com/pixelpinkberlin/">Facebook</a>
-                </div>
-            </div>
-            <div>
-                <RightAligned>
-                    <p>© 2019 RightAlignedixelPink Gbr <br />
-                    All Rights Reserved</p>
-                    
-                </RightAligned>
-            </div>
-        </div> */}
     </StyledFooter>
 )
 export default Footer

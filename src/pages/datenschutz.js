@@ -3,10 +3,13 @@ import { Link } from "gatsby"
 
 import StandardLayout from "../components/StandardLayout"
 import SEO from "../components/Seo"
+import LogoMobile from "../components/LogoMobile"
 
 const SecondPage = () => (
     <StandardLayout>
         <SEO title="Datenschutz" />
+        <LogoMobile/>
+
         <h1>Datenschutz</h1>
         <p>Fülltext</p>
         <Link to="/">Zurück zur Startseite</Link>
