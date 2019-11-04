@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import logo from "../../content/logos/logo.svg"
-import Icon from "./layout/Icon"
-import { ICONS } from "../theme/Icons"
+// import Icon from "./layout/Icon"
+// import { ICONS } from "../theme/Icons"
 
 const StyledNav = styled.div`
     display: none;
