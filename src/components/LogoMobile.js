@@ -17,7 +17,7 @@ const StyledLogoMobile = styled.div`
 const LogoMobile = () => (
     <StyledLogoMobile>
        <svg width="96px" height="17px" viewBox="0 0 96 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-            <g id="Final-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Final-Design" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g id="Home-Final" transform="translate(-136.000000, -50.000000)">
                     <g id="Navbar">
                         <g id="Logo" transform="translate(136.000000, 50.000000)">

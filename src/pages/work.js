@@ -66,7 +66,7 @@ const WorkPage = props => (
             subline="made with Love for Friends"
         />
 
-        {props.data.allFile.edges.map(({ node }, i) => (
+        {props.data.theAmericans.edges.map(({ node }, i) => (
             <SingleProject
                 img={node.childImageSharp.fluid}
                 imgAltText={PROJECTS[i].imgAltText}
@@ -75,13 +75,21 @@ const WorkPage = props => (
                 key={i}
             />
         ))}
+        {/* <SingleProject
+                    props.data.heroimage.edges[0].node.childImageSharp.fluid
+                img={props.data.theAmericans.edges[0].node.childImageSharp.fluid}
+                imgAltText={PROJECTS[i].imgAltText}
+                company={PROJECTS[i].company}
+                title={PROJECTS[i].title}
+                key={i}
+            /> */}
         <ContactFooter mainline="Sind Sie bereit digital durchzustarten?" />
     </StandardLayout>
 )
 
 export const query = graphql`
     {
-        allFile(filter: { relativeDirectory: { eq: "work" } }) {
+        theAmericans: allFile(filter: { relativeDirectory: { eq: "work/theAmericans" } }) {
             edges {
                 node {
                     id
