@@ -7,6 +7,7 @@ const StyledSection = styled.div`
     background: var(--color-black);
     color: var(--color-white);
     padding: var(--padding-vertical) var(--padding-side) 0;
+    overflow: hidden;
     @media (min-width: 769px) {
         padding: var(--padding-vertical) var(--padding-side);
     }
