@@ -43,7 +43,7 @@ export default props => (
                         node {
                             id
                             childImageSharp {
-                                fluid(maxWidth: 1000, quality: 80) {
+                                fluid(maxWidth: 1000, quality: 100) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
