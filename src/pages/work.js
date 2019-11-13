@@ -7,93 +7,115 @@ import ContactFooter from "../components/ContactFooter"
 import SingleProject from "../components/SingleProject"
 import LogoMobile from "../components/LogoMobile"
 
-const PROJECTS = [
-    {
-        imgAltText: "QVSTA Model",
-        company: "QVSTA",
-        title: "Revolutionieren traditionelles Modelbooking",
-        id: "01",
-    },
-    {
-        imgAltText: "QVSTA Model",
-        company: "QVSTA2",
-        title: "coole HEADLINE2",
-        id: "02",
-    },
-    {
-        imgAltText: "QVSTA Model",
-        company: "QVSTA2",
-        title: "coole HEADLINE3",
-        id: "02",
-    },
-    {
-        imgAltText: "QVSTA Model",
-        company: "QVSTA2",
-        title: "coole HEADLINE4",
-        id: "02",
-    },
-    {
-        imgAltText: "QVSTA Model",
-        company: "QVSTA2",
-        title: "coole HEADLINE5",
-        id: "02",
-    },
-    {
-        imgAltText: "QVSTA Model",
-        company: "QVSTA2",
-        title: "coole HEADLINE6",
-        id: "02",
-    },
-    {
-        imgAltText: "QVSTA Model",
-        company: "QVSTA2",
-        title: "coole HEADLINE7",
-        id: "02",
-    },
-    {
-        imgAltText: "QVSTA Model",
-        company: "QVSTA2",
-        title: "coole HEADLINE8",
-        id: "02",
-    },
-]
-const WorkPage = props => (
-    <StandardLayout>
-        <SEO title="Home" keywords={[`PixelPink`, `application`, `react`]} />
-        <LogoMobile/>
-        <H1Header
-            mainline="Eine selektierte Auswahl unserer Arbeiten"
-            subline="made with Love for Friends"
-        />
+class WorkPage extends React.Component {
+    // render() {
 
-        {props.data.allFile.edges.map(({ node }, i) => (
-            <SingleProject
-                img={node.childImageSharp.fluid}
-                imgAltText={PROJECTS[i].imgAltText}
-                company={PROJECTS[i].company}
-                title={PROJECTS[i].title}
-                key={i}
-            />
-        ))}
-        <ContactFooter mainline="Sind Sie bereit digital durchzustarten?" />
-    </StandardLayout>
-)
+    constructor(props) {
+        super(props)
+        this.projects = [
+            {
+                images: this.props.data.arztpraxisSchulzendorf,
+                imgAltText: [
+                    "Alt descritopn",
+                    "Alt descritopn 2",
+                    "Alt descritopn 3",
+                ],
+                company: "Arztpraxis Schulzendorf",
+                title: "Revolutionieren traditionelles Modelbooking",
+                id: "01",
+            },
+            {
+                images: this.props.data.belmot,
+                imgAltText: ["QVSTA Model", "QVSTA Model 2"],
+                company: "B!-Das Versicherungsbüro",
+                title: "Belmot Oldtimerversicherung",
+                id: "02",
+            },
+        ]
+    }
+    render() {
+        return (
+            <StandardLayout>
+                <SEO
+                    title="Home"
+                    keywords={[`PixelPink`, `application`, `react`]}
+                />
+                <LogoMobile />
+                <H1Header
+                    mainline="Eine selektierte Auswahl unserer Arbeiten"
+                    subline="made with Love for Friends"
+                />
+
+                {/* {props.data.allFile.edges.map(({ node }, i) => (
+                <SingleProject
+                    img={node.childImageSharp.fluid}
+                    imgAltText={PROJECTS[i].imgAltText}
+                    company={PROJECTS[i].company}
+                    title={PROJECTS[i].title}
+                    key={i}
+                />
+            ))} */}
+                {this.projects.map((project, i) => (
+                    <SingleProject
+                        img={project.images.edges}
+                        imgAltText={project.imgAltText}
+                        company={project.company}
+                        title={project.title}
+                        key={i}
+                    />
+                ))}
+                {/* {
+                    this.projects[0].images.edges[0].node.childImageSharp.fluid
+                        .src
+                } */}
+                <ContactFooter mainline="Sind Sie bereit digital durchzustarten?" />
+            </StandardLayout>
+        )
+    }
+}
 
 export const query = graphql`
-    {
-        allFile(filter: { relativeDirectory: { eq: "work" } }) {
+    query {
+        arztpraxisSchulzendorf: allFile(
+            filter: {
+                relativeDirectory: { eq: "work/arztpraxis-schulzendorf" }
+            }
+        ) {
             edges {
                 node {
-                    id
-                    childImageSharp {
-                        fluid {
-                            ...GatsbyImageSharpFluid_withWebp
-                        }
-                    }
+                    ...ProjectImagesFragment
+                }
+            }
+        }
+        belmot: allFile(filter: { relativeDirectory: { eq: "work/belmot" } }) {
+            edges {
+                node {
+                    ...ProjectImagesFragment
                 }
             }
         }
     }
 `
+
+// export const query = graphql`
+//     {
+//         allFile(
+//             filter: {
+//                 relativeDirectory: { eq: "work/arztpraxis-schulzendorf" }
+//             }
+//         ) {
+//             edges {
+//                 node {
+//                     id
+//                     childImageSharp {
+//                         fluid {
+//                             ...GatsbyImageSharpFluid_withWebp
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// `
 
 export default WorkPage

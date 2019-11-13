@@ -1,8 +1,11 @@
 import React from "react"
-// import { StaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
 import Button from "../components/Button"
+import { Carousel } from "react-responsive-carousel"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import "../theme/carousel.css"
 
 const Project = styled.div`
     padding-bottom: var(--padding-vertical);
@@ -37,7 +40,22 @@ const Company = styled.span`
 
 const SingleProject = props => (
     <Project>
-        <StyledImage fluid={props.img} alt={props.imageAltText} />
+        <Carousel
+            autoPlay={false}
+            showThumbs={false}
+            showArrows={true}
+            useKeyboardArrows
+            showStatus={false}
+            infiniteLoop={true}
+        >
+            {props.img.map((image, i) => (
+                <StyledImage
+                    fluid={image.node.childImageSharp.fluid}
+                    alt={props.imgAltText[i]}
+                    key={i}
+                />
+            ))}
+        </Carousel>
         <TextContainer>
             <Company>{props.company}</Company>
             <h2>{props.title}</h2>
@@ -46,6 +64,17 @@ const SingleProject = props => (
     </Project>
 )
 export default SingleProject
+
+export const query = graphql`
+    fragment ProjectImagesFragment on File {
+        id
+        childImageSharp {
+            fluid {
+                ...GatsbyImageSharpFluid_withWebp
+            }
+        }
+    }
+`
 // export default props => (
 //     <StaticQuery
 //         query={graphql`
