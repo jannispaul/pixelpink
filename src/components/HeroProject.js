@@ -43,7 +43,7 @@ export default props => (
                         node {
                             id
                             childImageSharp {
-                                fluid(maxWidth: 1000) {
+                                fluid(maxWidth: 1000, quality: 100) {
                                     ...GatsbyImageSharpFluid_withWebp
                                 }
                             }
@@ -54,4 +54,5 @@ export default props => (
         `}
         render={data => <HeroProject data={data} {...props} />}
     />
+    
 )

@@ -8,8 +8,8 @@ const StyledIMG = styled(Img)`
 
     @media (min-width: 769px) {
         width: 50vw;
-        margin-left: 0;
-        margin-right: calc(50vw - 1168px);
+        margin-right: 0;
+        margin-left: calc(584px - 50vw);
         margin-top: calc(-1 * var(--padding-vertical));
         margin-bottom: calc(-1 * var(--padding-vertical));
     }
@@ -24,10 +24,10 @@ const Image = () => (
         query={graphql`
             query {
                 serviceimage: file(
-                    relativePath: { eq: "services/pixelpinkAction.jpg" }
+                    relativePath: { eq: "aboutUs/workingHands.jpg" }
                 ) {
                     childImageSharp {
-                        fluid(maxWidth: 1000, quality: 100) {
+                        fluid(maxWidth: 1000, quality: 80) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }

@@ -7,6 +7,8 @@ import H1AndText from "../components/H1AndText"
 import ContactFooter from "../components/ContactFooter"
 import UberUnsImage from "../components/UberUnsImage"
 import LogoMobile from "../components/LogoMobile"
+import FiftyFiftyBlackIMGAboutUs from "../components/layout/FiftyFiftyBlackIMGAboutUs"
+
 
 
 class IndexPage extends React.Component {
@@ -22,8 +24,9 @@ class IndexPage extends React.Component {
                 <H1AndText
                     mainline="Wer steht eigentlich hinter PixelPink?"
                     subline="Unsere Geschichte, unsere Herangehensweise."
-                    body="Alles Begann während unserer gemeinsamen Studienzeit des Medien- und Kommunikationsdesign in Berlin. Zu Beginn gestalteten wir Websites für Familie und Freunde, doch die Leidenschaft hatte uns gepackt und wir konnte nicht mehr aufhören. Wir wollten mehr machen, professioneller arbeiten und größere Projekte umsetzten. PixelPink war geboren. Unser Vorteil liegt in der Zusammenarbeit, die Mischung unserer Expertisen aus Design & Tech bietet die optimale Grundlage für kritische Diskussionen und garantiert fundierte Outputs und Deliverables. Bis heute versuchen wir unseren Klienten den Weg in die Digitalisierung zu erleichtern und die (digitale) Welt jeden Tag ein bisschen bunter, ein bisschen schöner zumachen. Haben Sie Interesse, oder Fragen? Schreiben Sie uns einfach an, wir freuen uns von Ihnen zu hören!"
+                    body="Alles Begann während unserer gemeinsamen Studienzeit des Medien- und Kommunikationsdesign in Berlin. Zu Beginn gestalteten wir Websites für Familie und Freunde, doch die Leidenschaft hatte uns gepackt und wir konnte nicht mehr aufhören. Wir wollten mehr machen, professioneller arbeiten und größere Projekte umsetzten. PixelPink war geboren. Unser Vorteil liegt in der Zusammenarbeit, die Mischung unserer Expertisen aus Design & Tech bietet die optimale Grundlage für kritische Diskussionen und garantiert fundierte Outputs und Deliverables. Bis heute versuchen wir unseren Klienten den Weg in die Digitalisierung zu erleichtern und die (digitale) Welt jeden Tag ein bisschen bunter, ein bisschen sinnvoller zumachen. Wie können wir Ihnen helfen digital durchzustarten?"
                 />
+                <FiftyFiftyBlackIMGAboutUs/>
                 <H1AndText
                     mainline="Unser Prozess"
                     subline="Double Diamond"

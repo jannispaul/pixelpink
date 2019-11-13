@@ -26,7 +26,7 @@ const ContactFooter = props => (
         <h3>
             {props.mainline}
             <br />
-            <a href="mailto:hello@pixel-pink.de?subject=Hej PixelPink!👋🏼">
+            <a href="mailto:hello@pixel-pink.de?subject=Hey PixelPink!👋🏼&body=Hallo Felix und Jannis,">
                 hello@pixel-pink.de
             </a>
         </h3>
