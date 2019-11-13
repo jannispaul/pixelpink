@@ -10,7 +10,7 @@ import LogoMobile from "../components/LogoMobile"
 
 
 let copy = {
-    contact: "Digitalen MVP bauen und User überzeugen?<br/> Let´s go!",
+    contact: "Digitalen MVP bauen und User überzeugen?",
 }
 
 class IndexPage extends React.Component {

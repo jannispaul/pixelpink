@@ -22,9 +22,9 @@ const StyledSection = styled.section`
     }
 
     & > h2 > img {
-        width: 100px;
-        @media (min-width: 769px) {
-            width: 150px;
+        width: 100px;;
+        @media (min-width: 834px) {
+            width: 140px;
         }
     }
 `
