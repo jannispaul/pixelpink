@@ -12,7 +12,7 @@ const Project = styled.div`
 `
 
 const StyledImage = styled(Img)`
-    max-width: 1168px;
+    ${'' /* max-width: 1168px; */}
     margin: auto;
     max-height: 50vh;
 `
@@ -69,7 +69,7 @@ export const query = graphql`
     fragment ProjectImagesFragment on File {
         id
         childImageSharp {
-            fluid {
+            fluid(quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp
             }
         }
@@ -91,3 +91,4 @@ export const query = graphql`
 //         render={data => <SingleProject data={data} {...props} />}
 //     />
 // )
+

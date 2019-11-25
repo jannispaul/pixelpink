@@ -27,7 +27,7 @@ class IndexPage extends React.Component {
                     mainline="Wir bauen digitale Produkte"
                     subline="user-centered und ohne Kompromisse in Berlin."
                 />
-                <HeroProject />
+                {/* <HeroProject /> */}
                 <LogoWall 
                     mainline=" ist ein Designstudio für digitale Produkte und Services.
                                 Wir arbeiten mit großen Marken, KMUs, Startups und in Agenturen."

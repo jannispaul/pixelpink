@@ -29,7 +29,7 @@ export default props => (
             query {
                 imageOne: file(relativePath: { eq: "work/qvsta.jpg" }) {
                     childImageSharp {
-                        fluid(maxWidth: 1000) {
+                        fluid(maxWidth: 1440) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }

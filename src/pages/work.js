@@ -21,7 +21,21 @@ class WorkPage extends React.Component {
         id: "01"
       },
       {
-        images: this.props.data.belmot,
+        images: this.props.data.fuelcast,
+        imgAltText: ["QVSTA Model", "QVSTA Model 2"],
+        company: "B!-Das Versicherungsbüro",
+        title: "Belmot Oldtimerversicherung",
+        id: "02"
+      },
+      {
+        images: this.props.data.qvsta,
+        imgAltText: ["QVSTA Model", "QVSTA Model 2"],
+        company: "B!-Das Versicherungsbüro",
+        title: "Belmot Oldtimerversicherung",
+        id: "02"
+      },
+      {
+        images: this.props.data.mediapioneer,
         imgAltText: ["QVSTA Model", "QVSTA Model 2"],
         company: "B!-Das Versicherungsbüro",
         title: "Belmot Oldtimerversicherung",
@@ -70,22 +84,50 @@ class WorkPage extends React.Component {
 export const query = graphql`
   query {
     arztpraxisSchulzendorf: allFile(
-      filter: { relativeDirectory: { eq: "work/arztpraxis-schulzendorf" } }
-    ) {
+      filter: { relativeDirectory: { eq: "work/arztpraxis-schulzendorf" } }, sort: {fields: name}) {
       edges {
         node {
           ...ProjectImagesFragment
         }
       }
     }
-    belmot: allFile(filter: { relativeDirectory: { eq: "work/belmot" } }) {
+    belmot: allFile(filter: { relativeDirectory: { eq: "work/belmot" } }, sort: {fields: name}) {
       edges {
         node {
           ...ProjectImagesFragment
         }
       }
     }
+
+    fuelcast: allFile(filter: { relativeDirectory: { eq: "work/fuelcast" } }, sort: {fields: name}) {
+      edges {
+        node {
+          ...ProjectImagesFragment
+        }
+      }
+    }
+
+    qvsta: allFile(filter: { relativeDirectory: { eq: "work/qvsta" } }, sort: {fields: name}) {
+      edges {
+        node {
+          ...ProjectImagesFragment
+        }
+      }
+    }
+
+    mediapioneer: allFile(filter: { relativeDirectory: { eq: "work/mediapioneer" } }, sort: {fields: name}) {
+      edges {
+        node {
+          ...ProjectImagesFragment
+        }
+      }
+    }
+
+
+
+
   }
+  
 `;
 
 // export const query = graphql`
