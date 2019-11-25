@@ -8,13 +8,24 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import "../theme/carousel.css"
 
 const Project = styled.div`
-    padding-bottom: var(--padding-vertical);
+    ${'' /* padding-bottom: var(--padding-vertical); */}
+    div > button {
+        visibility: hidden;
+    }
+
+    div > button {
+        @media (min-width: 769px) {
+            visibility: visible;
+        }
+    }
+
 `
 
 const StyledImage = styled(Img)`
     ${'' /* max-width: 1168px; */}
     margin: auto;
-    max-height: 50vh;
+    min-height: 34vh;
+    max-height: 100vh;
 `
 
 const TextContainer = styled.div`
@@ -44,7 +55,7 @@ const SingleProject = props => (
             autoPlay={false}
             showThumbs={false}
             showArrows={true}
-            useKeyboardArrows
+            useKeyboardArrows={false}
             showStatus={false}
             infiniteLoop={true}
         >
@@ -69,7 +80,7 @@ export const query = graphql`
     fragment ProjectImagesFragment on File {
         id
         childImageSharp {
-            fluid(quality: 80) {
+            fluid(quality: 100) {
                 ...GatsbyImageSharpFluid_withWebp
             }
         }

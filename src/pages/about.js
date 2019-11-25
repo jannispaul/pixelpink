@@ -9,6 +9,8 @@ import Button from "../components/Button"
 import Icon from "../components/layout/Icon"
 import { ICONS } from "../theme/Icons"
 
+
+
 const SecondPage = () => (
     <StandardLayout>
         <SEO title="About" />

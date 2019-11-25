@@ -10,7 +10,6 @@ import LogoMobile from "../components/LogoMobile"
 import FiftyFiftyBlackIMGAboutUs from "../components/layout/FiftyFiftyBlackIMGAboutUs"
 
 
-
 class IndexPage extends React.Component {
     render() {
         return (
@@ -19,7 +18,7 @@ class IndexPage extends React.Component {
                     title="Home"
                     keywords={[`gatsby`, `application`, `react`]}
                 />
-                 <LogoMobile/>
+                <LogoMobile/>
                 <UberUnsImage />
                 <H1AndText
                     mainline="Wer steht eigentlich hinter PixelPink?"

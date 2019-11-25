@@ -14,33 +14,36 @@ class WorkPage extends React.Component {
     super(props);
     this.projects = [
       {
-        images: this.props.data.arztpraxisSchulzendorf,
-        imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
-        company: "Arztpraxis Schulzendorf",
-        title: "Revolutionieren traditionelles Modelbooking",
-        id: "01"
-      },
-      {
         images: this.props.data.fuelcast,
-        imgAltText: ["QVSTA Model", "QVSTA Model 2"],
-        company: "B!-Das Versicherungsbüro",
-        title: "Belmot Oldtimerversicherung",
-        id: "02"
+        imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
+        company: "Fuelcast",
+        title: "Nachhaltigkeit in der Maritime-Industrie",
+        id: "01"
       },
       {
         images: this.props.data.qvsta,
         imgAltText: ["QVSTA Model", "QVSTA Model 2"],
-        company: "B!-Das Versicherungsbüro",
-        title: "Belmot Oldtimerversicherung",
+        company: "Qvsta",
+        title: "Revolutionieren das Fashion-Model-Booking",
         id: "02"
       },
       {
-        images: this.props.data.mediapioneer,
-        imgAltText: ["QVSTA Model", "QVSTA Model 2"],
-        company: "B!-Das Versicherungsbüro",
-        title: "Belmot Oldtimerversicherung",
+        images: this.props.data.theamericans,
+        imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
+        company: "The Americans",
+        title: "Podcast über Themen und Geschichten aus dem Amerika von heute",
+        id: "02"
+      },
+      {
+        images: this.props.data.arztpraxisSchulzendorf,
+        imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
+        company: "Arztpraxis-Schulzendorf",
+        title: "Moderne Praxiskommunikation",
         id: "02"
       }
+      
+
+      
     ];
   }
   render() {
@@ -83,22 +86,6 @@ class WorkPage extends React.Component {
 
 export const query = graphql`
   query {
-    arztpraxisSchulzendorf: allFile(
-      filter: { relativeDirectory: { eq: "work/arztpraxis-schulzendorf" } }, sort: {fields: name}) {
-      edges {
-        node {
-          ...ProjectImagesFragment
-        }
-      }
-    }
-    belmot: allFile(filter: { relativeDirectory: { eq: "work/belmot" } }, sort: {fields: name}) {
-      edges {
-        node {
-          ...ProjectImagesFragment
-        }
-      }
-    }
-
     fuelcast: allFile(filter: { relativeDirectory: { eq: "work/fuelcast" } }, sort: {fields: name}) {
       edges {
         node {
@@ -106,7 +93,6 @@ export const query = graphql`
         }
       }
     }
-
     qvsta: allFile(filter: { relativeDirectory: { eq: "work/qvsta" } }, sort: {fields: name}) {
       edges {
         node {
@@ -114,7 +100,29 @@ export const query = graphql`
         }
       }
     }
-
+    theamericans: allFile(filter: { relativeDirectory: { eq: "work/theAmericans" } }, sort: {fields: name}) {
+      edges {
+        node {
+          ...ProjectImagesFragment
+        }
+      }
+    }
+    arztpraxisSchulzendorf: allFile(
+      filter: { relativeDirectory: { eq: "work/arztpraxisSchulzendorf" } }, sort: {fields: name}) {
+      edges {
+        node {
+          ...ProjectImagesFragment
+        }
+      }
+    }
+    dieMasterarbeit: allFile(
+      filter: { relativeDirectory: { eq: "work/dieMasterarbeit" } }, sort: {fields: name}) {
+      edges {
+        node {
+          ...ProjectImagesFragment
+        }
+      }
+    }
     mediapioneer: allFile(filter: { relativeDirectory: { eq: "work/mediapioneer" } }, sort: {fields: name}) {
       edges {
         node {

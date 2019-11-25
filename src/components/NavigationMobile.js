@@ -32,14 +32,14 @@ const NavItem = styled(Link)`
     text-align: center;
     margin: auto;
     text-decoration: none;
-    color: var(--color-gray-dark);
+    color: var(--color-gray-darkmedium);
     text-transform: uppercase;
-    height: 60px;
+    height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     & > svg {
-        fill: var(--color-gray-dark);
+        fill: var(--color-gray-darkmedium);
         margin: 4px auto;
     }
     &.active {

@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
                     keywords={[`gatsby`, `application`, `react`]}
                 />
                 <LogoMobile/>
-                <ContactFooter mainline="Auf der Suche nach innovativen digitalen Konzepten?" />
+                <ContactFooter mainline="Auf der Suche nach innovativen Konzepten?" />
                 <SocialMedia
                     mainline="Riskieren Sie ein Blick hinter die Kulissen"
                     subline="Let´s e-meet and be friends."

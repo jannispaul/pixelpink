@@ -27,7 +27,7 @@ const Image = () => (
                     relativePath: { eq: "aboutUs/workingHands.jpg" }
                 ) {
                     childImageSharp {
-                        fluid(maxWidth: 1000, quality: 80) {
+                        fluid(maxWidth: 1000, quality: 100) {
                             ...GatsbyImageSharpFluid_withWebp
                         }
                     }

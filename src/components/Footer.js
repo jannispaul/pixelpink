@@ -133,7 +133,7 @@ const Footer = props => (
                 <p>
                     Felix Lebedinzew & Jannis Wicke
                     <br />
-                    <a href="mailto:hello@pixel-pink.de">
+                    <a href="mailto:hello@pixel-pink.de?subject=Hey PixelPink!👋🏼&body=Hallo Felix und Jannis,">
                         hello@pixel-pink.de
                     </a>
                     <br />
@@ -144,12 +144,12 @@ const Footer = props => (
             </Address>
 
             <SocialMedia>
-                <a href="https://www.instagram.com/pixelpink.berlin/">
+                <a href="https://www.instagram.com/pixelpink.berlin/" target="_blank">
                     Instagram
                 </a>
-                <a href="http://facebook.com/pixelpinkberlin/">Facebook</a>
-                <a href="https://www.behance.net/pixelpinkberlin">Behance</a>
-                <a href="http://facebook.com/pixelpinkberlin/">LinkedIn</a>
+                <a href="http://facebook.com/pixelpinkberlin/" target="_blank">Facebook</a>
+                <a href="https://www.behance.net/pixelpinkberlin" target="_blank">Behance</a>
+                <a href="http://facebook.com/pixelpinkberlin/" target="_blank">LinkedIn</a>
             </SocialMedia>
 
             <LegalContent>

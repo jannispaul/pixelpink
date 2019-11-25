@@ -27,13 +27,13 @@ body {
 /* Typography */
 /* Styles for Standard Size 0 - 375 */
 h1 {
-    font-size: 28px;
+    font-size: 32px;
     line-height: 1.37;
 }
 
 h2 {
-    font-size: 21px;
-    line-height: 1.33;
+    font-size: 24px;
+    line-height: 1.63;
     margin-bottom: 24px;
 }
 
@@ -56,7 +56,7 @@ h3 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7;
     letter-spacing: .32;
     margin-bottom: 24px;
