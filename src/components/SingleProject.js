@@ -8,7 +8,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"
 import "../theme/carousel.css"
 
 const Project = styled.div`
-    ${'' /* padding-bottom: var(--padding-vertical); */}
+    max-width: 1168px;
+    margin: 0 auto;
+
     div > button {
         visibility: hidden;
     }

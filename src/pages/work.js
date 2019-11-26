@@ -32,15 +32,16 @@ class WorkPage extends React.Component {
         imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
         company: "The Americans",
         title: "Podcast über Themen und Geschichten aus dem Amerika von heute",
-        id: "02"
+        id: "03"
       },
       {
         images: this.props.data.arztpraxisSchulzendorf,
         imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
         company: "Arztpraxis-Schulzendorf",
         title: "Moderne Praxiskommunikation",
-        id: "02"
+        id: "04"
       }
+      
       
 
       
