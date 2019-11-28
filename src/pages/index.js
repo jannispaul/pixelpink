@@ -8,7 +8,6 @@ import ServicesIndex from "../components/ServicesIndex"
 import LogoWall from "../components/LogoWall"
 import LogoMobile from "../components/LogoMobile"
 
-
 let copy = {
     contact: "Digitalen MVP bauen und User überzeugen?",
 }
@@ -22,17 +21,17 @@ class IndexPage extends React.Component {
                     keywords={[`gatsby`, `application`, `react`]}
                 />
                 {/* <ComponentName></ComponentName> */}
-                <LogoMobile/>
+                <LogoMobile />
                 <H1Header
                     mainline="Wir bauen digitale Produkte"
                     subline="user-centered und ohne Kompromisse in Berlin."
                 />
-                {/* <HeroProject /> */}
-                <LogoWall 
+                <HeroProject />
+                <LogoWall
                     mainline=" ist ein Designstudio für digitale Produkte und Services.
                                 Wir arbeiten mit großen Marken, KMUs, Startups und in Agenturen."
                 />
-                <ServicesIndex/>
+                <ServicesIndex />
                 <ContactFooter mainline={copy.contact} />
             </StandardLayout>
         )
