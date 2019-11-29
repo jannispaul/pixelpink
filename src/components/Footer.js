@@ -9,11 +9,22 @@ import { ICONS } from "../theme/Icons"
 const StyledFooter = styled.div`
     background-color: var(--color-black);
     padding: calc(var(--padding-vertical)) var(--padding-side);
+    padding-bottom: 6em;
+    
+    a:hover, a:focus, a:active {
+        color: var(--color-primary);
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
     @media (min-width: 769px) {
         padding: calc(var(--padding-vertical)/2) var(--padding-side) calc(var(--padding-vertical)/9) var(--padding-side);
         grid-column: 2;
 
     }
+    
     @media (min-width: 1441px) {
     }
 `
@@ -41,7 +52,7 @@ const Address = styled.div`
         color: var(--color-gray-medium);
         &>a {
         text-decoration: none;
-    }
+        }
     }
     
     margin-bottom: 2rem;
@@ -68,6 +79,17 @@ const SocialMedia = styled.div`
         margin-bottom: 1rem;
         
     }
+
+    &>svg {
+        fill: #656D78;
+        width: 32px;
+        height: 32px;
+        margin-right: 16px;
+        margin-left: -12px;
+
+    }
+    
+
     @media (min-width: 769px) {
         order: 3;
         &>a {
@@ -108,6 +130,8 @@ const LegalLinks = styled.div`
         margin-bottom: 1rem;
     }
 
+    
+
     @media (min-width: 769px) {
         order: 4;
         display: flex;
@@ -144,8 +168,7 @@ const Footer = props => (
             </Address>
 
             <SocialMedia>
-                <a href="https://www.instagram.com/pixelpink.berlin/" target="_blank">
-                    Instagram
+                <a href="https://www.instagram.com/pixelpink.berlin/" target="_blank">Instagram
                 </a>
                 <a href="http://facebook.com/pixelpinkberlin/" target="_blank">Facebook</a>
                 <a href="https://www.behance.net/pixelpinkberlin" target="_blank">Behance</a>
@@ -160,7 +183,7 @@ const Footer = props => (
             <LegalLinks>
                 <Link to="/impressum">Impressum</Link>
                 <Link to="/datenschutz">Datenschutz</Link>
-                <Link to="/datenschutz">AGB</Link>
+                <Link to="/agb">AGB</Link>
             </LegalLinks>
         </StyledGrid>
 
