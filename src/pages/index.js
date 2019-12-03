@@ -20,7 +20,6 @@ class IndexPage extends React.Component {
                     title="Home"
                     keywords={[`gatsby`, `application`, `react`]}
                 />
-                {/* <ComponentName></ComponentName> */}
                 <LogoMobile />
                 <H1Header
                     mainline="Wir bauen digitale Produkte"

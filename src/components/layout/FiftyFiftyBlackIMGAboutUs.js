@@ -66,7 +66,7 @@ const div = props => (
                 </h2>
                 <hr />
                 <p>
-                Für uns fängt Design nicht erst auf dem Papier oder am Rechner statt. Wir verfolgen und leben einen ganzheitlichen Design-Approach. Wir respektieren Mensch, Natur und Tier und suchen neue Herausforderungen um die Welt ein bisschen besser zu machen. 
+                Für uns fängt Design nicht erst auf dem Papier oder am Rechner an. Wir verfolgen und leben einen ganzheitlichen Design-Approach. Wir respektieren den Mensch, die Natur und suchen neue Herausforderungen um unser Leben auf dieser Welt ein bisschen besser zu machen. 
                 </p>
             </ContentContainer>
         </div>

@@ -21,38 +21,40 @@ class WorkPage extends React.Component {
         link: "https://www.fuelcast.co/"
       },
       {
+        images: this.props.data.mediapioneer,
+        imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
+        company: "Mediapioneer",
+        title: "Gabor Steingarts Vision des Journalismus",
+        link: "https://mediapioneer.com/"
+      },
+      {
         images: this.props.data.qvsta,
         imgAltText: ["QVSTA Model", "QVSTA Model 2"],
         company: "Qvsta",
         title: "Revolutionieren das Fashion-Model-Booking",
+        link: "https://qvsta.com/"
       },
       {
         images: this.props.data.theamericans,
         imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
         company: "The Americans",
         title: "Podcast über Themen und Geschichten aus dem Amerika von heute",
+        link: "https://the-americans.com/"
       },
       {
         images: this.props.data.arztpraxisSchulzendorf,
         imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
         company: "Arztpraxis-Schulzendorf",
         title: "Moderne Praxiskommunikation",
+        link: "https://arztpraxis-schulzendorf.de/"
       },
       {
         images: this.props.data.dieMasterarbeit,
         imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
-        company: "Arztpraxis-Schulzendorf",
-        title: "Moderne Praxiskommunikation",
-      },
-      {
-        images: this.props.data.mediapioneer,
-        imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
-        company: "Arztpraxis-Schulzendorf",
-        title: "Moderne Praxiskommunikation",
+        company: "Die-Masterarbeit.de",
+        title: "Verbindet Studenten mit Unternehmen",
+        link: "https://www.die-masterarbeit.de/"
       }
-      
-      
-
       
     ];
   }
@@ -63,7 +65,7 @@ class WorkPage extends React.Component {
         <LogoMobile />
         <H1Header
           mainline="Eine selektierte Auswahl unserer Arbeiten"
-          subline="made with Love for Friends"
+          subline="made with 💖 for Friends"
         />
 
         {/* {props.data.allFile.edges.map(({ node }, i) => (
@@ -142,32 +144,8 @@ export const query = graphql`
       }
     }
 
-
-
-
   }
   
 `;
-
-// export const query = graphql`
-//     {
-//         allFile(
-//             filter: {
-//                 relativeDirectory: { eq: "work/arztpraxis-schulzendorf" }
-//             }
-//         ) {
-//             edges {
-//                 node {
-//                     id
-//                     childImageSharp {
-//                         fluid {
-//                             ...GatsbyImageSharpFluid_withWebp
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// `
 
 export default WorkPage;

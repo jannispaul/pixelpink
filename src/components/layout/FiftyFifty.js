@@ -98,7 +98,7 @@ const div = props => (
                     welche sich in den alltäglichen natürlichen Ablauf
                     integrieren und Ihre Geschichte simpel und charmant
                     erzählen. Wir ergründen Kundenbedürfnisse und verorten diese
-                    einem ganzheitlichen Ansatz in Ihrer Customer Journey..
+                    einem ganzheitlichen Ansatz in Ihrer Customer Journey.
                 </p>
 
                 <p>
@@ -107,9 +107,6 @@ const div = props => (
                     ausschlaggebende Argument für Ihre Marke oder Produkt. Wir
                     treiben Ihre Kommunikationskonzept voran und entwicklen
                     visuell ästhetische Designs.
-                </p>
-                <p>
-                    Also was haben Sie zu erzählen? <br />
                 </p>
             </div>
         </div>

@@ -74,6 +74,9 @@ const ContactFooter = props => (
             <br />
             <a href="mailto:hello@pixel-pink.de?subject=Hey PixelPink!👋🏼&body=Hallo Felix und Jannis,">
                 hello@pixel-pink.de
+            </a><br/>
+            <a href="tel:+4917681410001">
+                +49 176 81 41 0001
             </a>
         </h3>
     </StyledSection>

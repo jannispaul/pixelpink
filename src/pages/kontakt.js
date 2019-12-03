@@ -23,7 +23,7 @@ class IndexPage extends React.Component {
                 <ContactFooter mainline="Auf der Suche nach innovativen Konzepten?" />
                 <SocialMedia
                     mainline="Riskieren Sie ein Blick hinter die Kulissen"
-                    subline="Let´s e-meet and be friends."
+                    subline="Let's e-meet and be friends."
                 />
                 <UberUnsImageGrid></UberUnsImageGrid>
             </StandardLayout>

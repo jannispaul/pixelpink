@@ -15,7 +15,7 @@ class HeroProject extends React.Component {
                     "Alt descritopn 2",
                     "Alt descritopn 3",
                 ],
-                company: "Startseitencompany",
+                company: "QVSTA",
                 title: "Revolutionieren traditionelles Modelbooking",
                 id: "01",
             },
