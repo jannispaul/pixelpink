@@ -6,7 +6,6 @@ import SEO from "../components/Seo"
 import H1AndText from "../components/H1AndText"
 import ContactFooter from "../components/ContactFooter"
 import UberUnsImage from "../components/UberUnsImage"
-import UberUnsImageGrid from "../components/UberUnsImageGrid"
 import LogoMobile from "../components/LogoMobile"
 import FiftyFiftyBlackIMGAboutUs from "../components/layout/FiftyFiftyBlackIMGAboutUs"
 
@@ -31,7 +30,6 @@ class IndexPage extends React.Component {
                     subline="Double Diamond"
                     body="Der Design-Thinking Prozess (auch gerne als DoubleDiamond dargestellt) bildet für uns das Fundament eines erfolgreichen Projektes. In der Regel durchlaufen wir die unterschiedlichen Phasen von der ”Problemdefinition” über ”Discover & Research” hin zu ”Design” und ”Test” iterativ.  "
                 />
-                <UberUnsImageGrid></UberUnsImageGrid>
                 <ContactFooter mainline="Lassen Sie sich von uns überraschen!" />
             </StandardLayout>
         )

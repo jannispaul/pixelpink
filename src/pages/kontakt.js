@@ -7,6 +7,8 @@ import StandardLayout from "../components/StandardLayout"
 import SEO from "../components/Seo"
 import ContactFooter from "../components/ContactFooter"
 import LogoMobile from "../components/LogoMobile"
+import UberUnsImageGrid from "../components/UberUnsImageGrid"
+
 
 
 class IndexPage extends React.Component {
@@ -23,6 +25,7 @@ class IndexPage extends React.Component {
                     mainline="Riskieren Sie ein Blick hinter die Kulissen"
                     subline="Let´s e-meet and be friends."
                 />
+                <UberUnsImageGrid></UberUnsImageGrid>
             </StandardLayout>
         )
     }

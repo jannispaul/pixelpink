@@ -18,7 +18,6 @@ class WorkPage extends React.Component {
         imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
         company: "Fuelcast",
         title: "Nachhaltigkeit in der Maritime-Industrie",
-        id: "01",
         link: "https://www.fuelcast.co/"
       },
       {
@@ -26,35 +25,30 @@ class WorkPage extends React.Component {
         imgAltText: ["QVSTA Model", "QVSTA Model 2"],
         company: "Qvsta",
         title: "Revolutionieren das Fashion-Model-Booking",
-        id: "02"
       },
       {
         images: this.props.data.theamericans,
         imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
         company: "The Americans",
         title: "Podcast über Themen und Geschichten aus dem Amerika von heute",
-        id: "03"
       },
       {
         images: this.props.data.arztpraxisSchulzendorf,
         imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
         company: "Arztpraxis-Schulzendorf",
         title: "Moderne Praxiskommunikation",
-        id: "04"
       },
       {
         images: this.props.data.dieMasterarbeit,
         imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
         company: "Arztpraxis-Schulzendorf",
         title: "Moderne Praxiskommunikation",
-        id: "04"
       },
       {
         images: this.props.data.mediapioneer,
         imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
         company: "Arztpraxis-Schulzendorf",
         title: "Moderne Praxiskommunikation",
-        id: "04"
       }
       
       

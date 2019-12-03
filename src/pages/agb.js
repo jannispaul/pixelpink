@@ -3,12 +3,19 @@ import { Link } from "gatsby"
 import StandardLayout from "../components/StandardLayout"
 import SEO from "../components/Seo"
 import LogoMobile from "../components/LogoMobile"
+import styled from "styled-components"
 
+const ContentContainer = styled.div`
+    max-width: 1168px;
+    margin: auto;
+`
 
 const SecondPage = () => (
     <StandardLayout>
         <SEO title="Impressum" />
         <LogoMobile/>
+
+        <ContentContainer>
 
         <h1>ALLGEMEINE GESCHÄFTSBEDINGUNGEN</h1>
         <h4>§ 1 Allgemeines</h4>
@@ -116,6 +123,7 @@ const SecondPage = () => (
 
       
         <Link to="/">Zurück zur Startseite</Link>
+        </ContentContainer>
     </StandardLayout>
 )
 
