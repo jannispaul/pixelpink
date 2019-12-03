@@ -59,6 +59,7 @@ const SingleProject = props => (
             showArrows={true}
             useKeyboardArrows={false}
             showStatus={false}
+            emulateTouch={true}
             infiniteLoop={true}
         >
             {props.img.map((image, i) => (
@@ -72,7 +73,7 @@ const SingleProject = props => (
         <TextContainer>
             <Company>{props.company}</Company>
             <h2>{props.title}</h2>
-            <Button link="/projekte">Zeig mir mehr</Button>
+            <Button link={props.link} target="_blank">Zeig mir mehr</Button>
         </TextContainer>
     </Project>
 )

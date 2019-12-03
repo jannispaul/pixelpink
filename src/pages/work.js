@@ -18,7 +18,8 @@ class WorkPage extends React.Component {
         imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
         company: "Fuelcast",
         title: "Nachhaltigkeit in der Maritime-Industrie",
-        id: "01"
+        id: "01",
+        link: "https://www.fuelcast.co/"
       },
       {
         images: this.props.data.qvsta,
@@ -36,6 +37,20 @@ class WorkPage extends React.Component {
       },
       {
         images: this.props.data.arztpraxisSchulzendorf,
+        imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
+        company: "Arztpraxis-Schulzendorf",
+        title: "Moderne Praxiskommunikation",
+        id: "04"
+      },
+      {
+        images: this.props.data.dieMasterarbeit,
+        imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
+        company: "Arztpraxis-Schulzendorf",
+        title: "Moderne Praxiskommunikation",
+        id: "04"
+      },
+      {
+        images: this.props.data.mediapioneer,
         imgAltText: ["Alt descritopn", "Alt descritopn 2", "Alt descritopn 3"],
         company: "Arztpraxis-Schulzendorf",
         title: "Moderne Praxiskommunikation",
@@ -73,6 +88,7 @@ class WorkPage extends React.Component {
             company={project.company}
             title={project.title}
             key={i}
+            link={project.link}
           />
         ))}
         {/* {
