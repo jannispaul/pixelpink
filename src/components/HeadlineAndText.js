@@ -31,23 +31,33 @@ const StyledSection = styled.section`
 
 const Subline = styled.span`
     color: var(--color-gray-medium);
-
 `
 
-
-const H1AndText = props => (
+const HeadlineAndText = (props, { children }) => (
     <StyledSection>
         <div>
-            <h1>
-                {props.mainline} <br />
-                <Subline>{props.subline}</Subline>
-            </h1>
+            {props.h1 ? (
+                <h1>
+                    {props.h1} <br />
+                    <Subline>{props.subline}</Subline>
+                </h1>
+            ) : (
+                ""
+            )}
+            {props.h2 ? (
+                <h2>
+                    {props.h2} <br />
+                    <Subline>{props.subline}</Subline>
+                </h2>
+            ) : (
+                ""
+            )}
             <hr />
             <p> {props.body}</p>
-            <p> {props.body2}</p>
+            {props.body2 ? <p> {props.body2}</p> : ""}
+            {props.children}
         </div>
-        
     </StyledSection>
 )
 
-export default H1AndText
+export default HeadlineAndText
