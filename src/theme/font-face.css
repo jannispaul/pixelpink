@@ -112,7 +112,7 @@ p {
     }
 
     h3 {
-        font-size: 28px;
+        font-size: 48px;
         line-height: 1.2;
     }
 
@@ -132,7 +132,7 @@ p {
     p {
         font-size: 18px;
         line-height: 1.8;
-        letter-spacing: .39;
+        letter-spacing: 0.39;
     }
 }
 
@@ -149,7 +149,7 @@ p {
     }
 
     h3 {
-        font-size: 28px;
+        font-size: 48px;
         line-height: 1.2;
     }
 

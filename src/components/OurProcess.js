@@ -28,6 +28,9 @@ const Phase = styled.div`
     & > p {
         margin-bottom: 0;
     }
+    & > h3 {
+        font-size: 28px;
+    }
 `
 
 const OurProcess = () => (
