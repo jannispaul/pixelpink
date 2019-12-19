@@ -22,16 +22,25 @@ class WorkPage extends React.Component {
                 ],
                 company: "Fuelcast",
                 title: "Nachhaltigkeit in der Maritime-Industrie",
-                id: "01",
-                link: "https://fuelcast.com",
+                link: "https://www.fuelcast.co/",
+            },
+            {
+                images: this.props.data.mediapioneer,
+                imgAltText: [
+                    "Alt descritopn",
+                    "Alt descritopn 2",
+                    "Alt descritopn 3",
+                ],
+                company: "Mediapioneer",
+                title: "Gabor Steingarts Vision des Journalismus",
+                link: "https://mediapioneer.com/",
             },
             {
                 images: this.props.data.qvsta,
                 imgAltText: ["QVSTA Model", "QVSTA Model 2"],
                 company: "Qvsta",
                 title: "Revolutionieren das Fashion-Model-Booking",
-                id: "02",
-                link: "https://qvsta.com",
+                link: "https://qvsta.com/",
             },
             {
                 images: this.props.data.theamericans,
@@ -43,8 +52,7 @@ class WorkPage extends React.Component {
                 company: "The Americans",
                 title:
                     "Podcast über Themen und Geschichten aus dem Amerika von heute",
-                id: "03",
-                link: "https://the-americans.com",
+                link: "https://the-americans.com/",
             },
             {
                 images: this.props.data.arztpraxisSchulzendorf,
@@ -55,8 +63,18 @@ class WorkPage extends React.Component {
                 ],
                 company: "Arztpraxis-Schulzendorf",
                 title: "Moderne Praxiskommunikation",
-                id: "04",
-                link: "https://arztpraxis-schulzendorf.de",
+                link: "https://arztpraxis-schulzendorf.de/",
+            },
+            {
+                images: this.props.data.dieMasterarbeit,
+                imgAltText: [
+                    "Alt descritopn",
+                    "Alt descritopn 2",
+                    "Alt descritopn 3",
+                ],
+                company: "Die-Masterarbeit.de",
+                title: "Verbindet Studenten mit Unternehmen",
+                link: "https://www.die-masterarbeit.de/",
             },
         ]
     }
@@ -101,7 +119,6 @@ class WorkPage extends React.Component {
         )
     }
 }
-
 export const query = graphql`
     query {
         fuelcast: allFile(
@@ -166,26 +183,4 @@ export const query = graphql`
         }
     }
 `
-
-// export const query = graphql`
-//     {
-//         allFile(
-//             filter: {
-//                 relativeDirectory: { eq: "work/arztpraxis-schulzendorf" }
-//             }
-//         ) {
-//             edges {
-//                 node {
-//                     id
-//                     childImageSharp {
-//                         fluid {
-//                             ...GatsbyImageSharpFluid_withWebp
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// `
-
 export default WorkPage
