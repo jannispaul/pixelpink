@@ -76,6 +76,17 @@ class WorkPage extends React.Component {
                 title: "Verbindet Studenten mit Unternehmen",
                 link: "https://www.die-masterarbeit.de/",
             },
+            {
+                images: this.props.data.stuff,
+                imgAltText: [
+                    "Alt descritopn",
+                    "Alt descritopn 2",
+                    "Alt descritopn 3",
+                ],
+                company: "Free Work",
+                title: "Ihr Projekt ist das nächste?",
+                link: "https://www.die-masterarbeit.de/",
+            },
         ]
     }
     render() {
@@ -163,6 +174,16 @@ export const query = graphql`
         }
         dieMasterarbeit: allFile(
             filter: { relativeDirectory: { eq: "work/dieMasterarbeit" } }
+            sort: { fields: name }
+        ) {
+            edges {
+                node {
+                    ...ProjectImagesFragment
+                }
+            }
+        }
+        stuff: allFile(
+            filter: { relativeDirectory: { eq: "work/stuff" } }
             sort: { fields: name }
         ) {
             edges {
