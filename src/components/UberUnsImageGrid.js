@@ -7,26 +7,27 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 
 const StyledSection = styled.div`
-    background: var(--color-black);
 `
 const ImageGrid = styled.div`
     max-width: 1168px;
     margin: auto;
-    margin-bottom: 0;
     & > div:not(:first-of-type) {
         display: none;
     }
     @media (min-width: 834px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 200px 200px;
+        grid-template-rows: 364px 364px;
         grid-gap: 20px;
+        margin-bottom: var(--padding-vertical);
+
         & > div:not(:first-of-type) {
             display: inline-block;
         }
         & > div:first-of-type {
             grid-row: 1/3;
         }
+
     }
 `
 
@@ -41,6 +42,11 @@ class HeroProject extends React.Component {
             },
             {
                 image: this.props.data.ueberUns.edges[1].node.childImageSharp
+                    .fluid,
+                imgAltText: "Alt descritopn 2",
+            },
+            {
+                image: this.props.data.ueberUns.edges[2].node.childImageSharp
                     .fluid,
                 imgAltText: "Alt descritopn 2",
             },
@@ -69,7 +75,7 @@ export default props => (
         query={graphql`
             query {
                 ueberUns: allFile(
-                    filter: { relativeDirectory: { eq: "aboutUs" } }
+                    filter: { relativeDirectory: { eq: "contact" } }
                     sort: { fields: name }
                 ) {
                     edges {

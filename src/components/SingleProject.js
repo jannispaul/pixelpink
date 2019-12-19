@@ -63,6 +63,7 @@ const SingleProject = props => (
             showArrows={true}
             useKeyboardArrows={false}
             showStatus={false}
+            emulateTouch={true}
             infiniteLoop={true}
         >
             {props.img.map((image, i) => (

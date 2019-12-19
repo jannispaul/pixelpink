@@ -60,7 +60,7 @@ const NavItem = styled(Link)`
     }
 
     &:hover {
-        color: var(--color-gray-dark);
+        color: var(--color-primary);
         fill: var(--color-gray-dark);
     }
 

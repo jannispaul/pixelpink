@@ -14,7 +14,7 @@ const StyledButton = styled.a`
     font-size: 18px;
     border-radius: 4px;
     margin-bottom: var(--space-s);
-    margin-right: var(--space-s);
+    ${'' /* margin-right: var(--space-s); */}
     width: 100%;
     transform: translateY(0);
     transition: all var(--time-fast);

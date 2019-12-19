@@ -9,13 +9,17 @@ const StyledIMG = styled(Img)`
     @media (min-width: 769px) {
         width: 50vw;
         margin-right: 0;
-        margin-left: calc(584px - 50vw);
+        ${'' /* margin-left: calc(584px - 50vw); */}
         margin-top: calc(-1 * var(--padding-vertical));
         margin-bottom: calc(-1 * var(--padding-vertical));
+    }
+    @media (min-width: 1230px) {
+        margin-left: calc(584px - 50vw);
     }
     @media (min-width: 1441px) {
         /* Taking sidebar width into account */
         width: calc(50vw - 150px);
+        margin-left: calc(584px - 50vw);
     }
 `
 

@@ -24,6 +24,7 @@ const Main = styled.div`
     }
     @media (min-width: 1441px) {
         grid-column-start: 2;
+        margin-top: 0px;
     }
 `
 

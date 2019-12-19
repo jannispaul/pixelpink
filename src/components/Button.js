@@ -1,5 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
+import { AST_PropAccess } from "terser"
 
 const MoveRight = keyframes`
     from {transform: translateX(0);}
@@ -55,6 +56,7 @@ const Button = props => (
         fullwidth={props.fullwidth}
         white={props.white}
         href={props.link}
+        target={props.target}
     >
         {props.children}
     </StyledButton>

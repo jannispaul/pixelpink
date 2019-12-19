@@ -33,7 +33,7 @@ const GridContainer = styled.div`
     grid-template-columns: 1fr;
 
     @media (min-width: 834px) {
-        grid-column-gap: 16px;
+        grid-column-gap: 20px;
         grid-template-columns: repeat(4, 1fr);
     }
 

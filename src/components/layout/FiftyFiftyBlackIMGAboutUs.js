@@ -6,7 +6,8 @@ const StyledSection = styled.div`
     width: 100%;
     background: var(--color-black);
     color: var(--color-white);
-    padding: var(--padding-vertical) var(--padding-side) 0;
+    overflow: hidden;
+    ${'' /* padding: var(--padding-vertical) var(--padding-side) 0; */}
     @media (min-width: 769px) {
         padding: var(--padding-vertical) var(--padding-side);
     }
@@ -17,7 +18,7 @@ const StyledSection = styled.div`
             padding: 0;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-gap: 100px;
+            grid-gap: 60px;
         }
     }
 
@@ -45,6 +46,13 @@ grid-template-columns: 1fr 1fr;
 const ContentContainer = styled.div`
     display: block;
     position: relative;
+    padding: var(--padding-vertical) var(--padding-side);
+    @media (min-width: 769px) {
+            padding: 0;
+        }
+    @media (min-width: 1440px) {
+        
+        }
 `
 
 const div = props => (
@@ -58,7 +66,7 @@ const div = props => (
                 </h2>
                 <hr />
                 <p>
-                Für uns fängt Design nicht erst auf dem Papier oder am Rechner statt. Wir verfolgen und leben einen ganzheitlichen Design-Approach. Wir respektieren Mensch, Natur und Tier und suchen neue Herausforderungen um die Welt ein bisschen besser zu machen. 
+                Für uns fängt Design nicht erst auf dem Papier oder am Rechner an. Wir verfolgen und leben einen ganzheitlichen Design-Approach. Wir respektieren den Mensch, die Natur und suchen neue Herausforderungen um unser Leben auf dieser Welt ein bisschen besser zu machen. 
                 </p>
             </ContentContainer>
         </div>
