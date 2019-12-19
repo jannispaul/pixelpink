@@ -22,7 +22,7 @@ const StyledNav = styled.div`
         font-size: 18px;
         position: fixed;
         width: 100%;
-        z-index: 100; 
+        z-index: 100;
         background: var(--color-white);
     }
     @media (min-width: 1441px) {
@@ -33,7 +33,6 @@ const StyledNav = styled.div`
         box-shadow: 0 1px 14px rgba(0, 0, 0, 0.1);
         grid-template-columns: 1fr;
         grid-template-rows: 1fr repeat(4, auto) 1fr;
-
     }
 `
 
@@ -49,7 +48,6 @@ const NavItem = styled(Link)`
     flex-direction: column;
     justify-content: center;
     padding: 14px 30px;
-    
 
     & svg {
         fill: var(--color-medium);
@@ -67,9 +65,9 @@ const NavItem = styled(Link)`
     }
 
     @media (min-width: 834px) {
-
         &:last-of-type {
             color: var(--color-white);
+            margin-top: 0.8rem;
             background: var(--color-primary);
             border-radius: 200px;
             transition: all 0.1s ease-in;
@@ -94,26 +92,26 @@ const NavItem = styled(Link)`
         &.active:not(:last-of-type),
         &.active span:not(:last-of-type),
         &.active svg {
-        color: var(--color-primary);
-        fill: var(--color-primary);
-    }
+            color: var(--color-primary);
+            fill: var(--color-primary);
+        }
 
         &.active:last-of-type,
         &.active span:last-of-type {
-        background: none;
-        color: var(--color-primary);
-    }
-
+            background: none;
+            color: var(--color-primary);
+            margin-top: 0;
+        }
     }
     @media (min-width: 1441px) {
         font-size: 14px;
         text-align: center;
         display: flex;
-        justify-content:  center;
+        justify-content: center;
         margin-bottom: 1.3vh;
-        
+
         &:last-of-type {
-        display: inline-block;
+            display: inline-block;
         }
     }
 `
@@ -131,7 +129,6 @@ const Logo = styled(Link)`
 
     @media (min-width: 834px) {
         display: flex;
-
     }
 
     @media (min-width: 1441px) {
