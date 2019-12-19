@@ -70,7 +70,7 @@ class WorkPage extends React.Component {
                 <LogoMobile />
                 <H1Header
                     mainline="Eine selektierte Auswahl unserer Arbeiten"
-                    subline="made with Love for Friends"
+                    subline="made with 💖 for Friends"
                 />
 
                 {/* {props.data.allFile.edges.map(({ node }, i) => (
