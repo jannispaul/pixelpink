@@ -38,6 +38,7 @@ class HeroProject extends React.Component {
                         company={project.company}
                         title={project.title}
                         key={i}
+                        internal="/work"
                     />
                 ))}
             </div>

@@ -2,24 +2,23 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import logoWhite from "../../content/logos/logoWhite.svg"
-import Icon from "./layout/Icon"
-import { ICONS } from "../theme/Icons"
-
+// import Icon from "./layout/Icon"
+// import { ICONS } from "../theme/Icons"
 
 const StyledFooter = styled.div`
     background-color: var(--color-black);
     padding: calc(var(--padding-vertical)) var(--padding-side);
     @media (min-width: 769px) {
-        padding: calc(var(--padding-vertical)/2) var(--padding-side) calc(var(--padding-vertical)/9) var(--padding-side);
+        padding: calc(var(--padding-vertical) / 2) var(--padding-side)
+            calc(var(--padding-vertical) / 9) var(--padding-side);
         grid-column: 2;
-
     }
     @media (min-width: 1441px) {
     }
 `
 
 const StyledGrid = styled.div`
-    margin-bottom:60px;
+    margin-bottom: 60px;
     max-width: 1168px;
     color: var(--color-white);
     margin: auto;
@@ -33,17 +32,17 @@ const StyledGrid = styled.div`
 `
 
 const Address = styled.div`
-    &>img {
+    & > img {
         display: block;
         margin-bottom: 1rem;
     }
-    &>p {
+    & > p {
         color: var(--color-gray-medium);
-        &>a {
-        text-decoration: none;
+        & > a {
+            text-decoration: none;
+        }
     }
-    }
-    
+
     margin-bottom: 2rem;
     @media (min-width: 769px) {
         order: 1;
@@ -61,23 +60,21 @@ const SocialMedia = styled.div`
     text-decoration: none;
     margin-bottom: 2rem;
 
-
-    &>a {
+    & > a {
         display: block;
         text-decoration: none;
         margin-bottom: 1rem;
-        
     }
     @media (min-width: 769px) {
         order: 3;
-        &>a {
-        display: inline-block;
-        :not(:last-of-type) {
-            margin-right: 1rem;
+        & > a {
+            display: inline-block;
+            :not(:last-of-type) {
+                margin-right: 1rem;
+            }
         }
-
-    }
-    @media (min-width: 1441px) {
+        @media (min-width: 1441px) {
+        }
     }
 `
 
@@ -102,7 +99,7 @@ const LegalLinks = styled.div`
     color: var(--color-gray-dark);
     letter-spacing: 1.09px;
 
-    &>a {
+    & > a {
         display: block;
         text-decoration: none;
         margin-bottom: 1rem;
@@ -112,24 +109,22 @@ const LegalLinks = styled.div`
         order: 4;
         display: flex;
         justify-content: flex-end;
-        &>a {
-        display: inline-block;
-        :not(:last-of-type) {
-            margin-right: 1rem;
+        & > a {
+            display: inline-block;
+            :not(:last-of-type) {
+                margin-right: 1rem;
+            }
         }
-    }
-
     }
     @media (min-width: 1441px) {
     }
 `
 
-
 const Footer = props => (
     <StyledFooter>
         <StyledGrid>
             <Address>
-                <img src={logoWhite} alt="Logo von PixelPink"/>
+                <img src={logoWhite} alt="Logo von PixelPink" />
                 <p>
                     Felix Lebedinzew & Jannis Wicke
                     <br />
@@ -140,21 +135,44 @@ const Footer = props => (
                     <a href="tel: +4917681410001">+49 176 81 41 0001</a>
                     <br />
                 </p>
-                
             </Address>
 
             <SocialMedia>
-                <a href="https://www.instagram.com/pixelpink.berlin/" target="_blank">
+                <a
+                    href="https://www.instagram.com/pixelpink.berlin/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     Instagram
                 </a>
-                <a href="http://facebook.com/pixelpinkberlin/" target="_blank">Facebook</a>
-                <a href="https://www.behance.net/pixelpinkberlin" target="_blank">Behance</a>
-                <a href="http://facebook.com/pixelpinkberlin/" target="_blank">LinkedIn</a>
+                <a
+                    href="http://facebook.com/pixelpinkberlin/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Facebook
+                </a>
+                <a
+                    href="https://www.behance.net/pixelpinkberlin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Behance
+                </a>
+                <a
+                    href="http://facebook.com/pixelpinkberlin/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
             </SocialMedia>
 
             <LegalContent>
-                <p>© 2019 PixelPink GbR <br />
-                    All Rights Reserved</p>
+                <p>
+                    © 2019 PixelPink GbR <br />
+                    All Rights Reserved
+                </p>
             </LegalContent>
 
             <LegalLinks>
@@ -163,7 +181,6 @@ const Footer = props => (
                 <Link to="/datenschutz">AGB</Link>
             </LegalLinks>
         </StyledGrid>
-
     </StyledFooter>
 )
 export default Footer

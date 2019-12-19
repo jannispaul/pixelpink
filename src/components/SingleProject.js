@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
 import Button from "../components/Button"
+import StyledLink from "../components/StyledLink"
 import { Carousel } from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import "../theme/carousel.css"
@@ -20,11 +21,10 @@ const Project = styled.div`
             visibility: visible;
         }
     }
-
 `
 
 const StyledImage = styled(Img)`
-    ${'' /* max-width: 1168px; */}
+    ${"" /* max-width: 1168px; */}
     margin: auto;
     min-height: 34vh;
     max-height: 100vh;
@@ -35,20 +35,24 @@ const TextContainer = styled.div`
     margin: auto;
     margin-bottom: 92px;
     max-width: 1168px;
+    h2 {
+        margin-bottom: var(--space-s);
+    }
     @media (min-width: 1216px) {
         padding: 24px 0;
     }
-    /* margin: 24px var(--padding-side); */
 `
 
 /*Company Tag*/
 const Company = styled.span`
+    display: block;
     font-weight: 600;
     color: var(--color-gray-dark);
     font-size: 14px;
     line-height: 1.25;
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin-bottom: var(--space-s);
 `
 
 const SingleProject = props => (
@@ -72,7 +76,16 @@ const SingleProject = props => (
         <TextContainer>
             <Company>{props.company}</Company>
             <h2>{props.title}</h2>
-            <Button link="/projekte">Zeig mir mehr</Button>
+            {props.external ? (
+                <Button link={props.external}>Website öffnen</Button>
+            ) : (
+                ""
+            )}
+            {props.internal ? (
+                <StyledLink to={props.internal}>Zeig mir mehr</StyledLink>
+            ) : (
+                ""
+            )}
         </TextContainer>
     </Project>
 )
@@ -82,26 +95,9 @@ export const query = graphql`
     fragment ProjectImagesFragment on File {
         id
         childImageSharp {
-            fluid(quality: 100) {
+            fluid(quality: 80) {
                 ...GatsbyImageSharpFluid_withWebp
             }
         }
     }
 `
-// export default props => (
-//     <StaticQuery
-//         query={graphql`
-//             query {
-//                 imageOne: file(relativePath: { eq: "qvstaHeader.jpg" }) {
-//                     childImageSharp {
-//                         fluid(maxWidth: 1000) {
-//                             ...GatsbyImageSharpFluid_withWebp
-//                         }
-//                     }
-//                 }
-//             }
-//         `}
-//         render={data => <SingleProject data={data} {...props} />}
-//     />
-// )
-

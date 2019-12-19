@@ -1,12 +1,13 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
+import { Link } from "gatsby"
 
 const MoveRight = keyframes`
     from {transform: translateX(0);}
     to {transform: translateX(5px);}
 `
 
-const StyledButton = styled.a`
+const StyledLinkInternal = styled(Link)`
     text-decoration: none;
     color: ${props =>
         props.white ? "var(--color-white)" : "var(--color-gray-dark)"};
@@ -50,14 +51,15 @@ const StyledButton = styled.a`
     }
 `
 
-const Button = props => (
-    <StyledButton
+const StyledLink = props => (
+    <StyledLinkInternal
         fullwidth={props.fullwidth}
         white={props.white}
         href={props.link}
+        to={props.to}
     >
         {props.children}
-    </StyledButton>
+    </StyledLinkInternal>
 )
 
-export default Button
+export default StyledLink
