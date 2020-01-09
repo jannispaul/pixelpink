@@ -11,6 +11,6 @@ const StyledNav = styled.div`
     }
 `
 
-const Nav = () => <StyledNav></StyledNav>
+const Nav = () => <StyledNav>{/* <Icon icon={ICONS.SQUARE} /> */}</StyledNav>
 
 export default Nav
