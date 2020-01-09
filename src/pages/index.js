@@ -7,6 +7,7 @@ import HeroProject from "../components/HeroProject"
 import ServicesIndex from "../components/ServicesIndex"
 import LogoWall from "../components/LogoWall"
 import LogoMobile from "../components/LogoMobile"
+import CookieNotice from "../components/CookieNotice"
 
 let copy = {
     contact: "Digitalen MVP bauen und User überzeugen?",
@@ -20,6 +21,7 @@ class IndexPage extends React.Component {
                     title="Home"
                     keywords={[`gatsby`, `application`, `react`]}
                 />
+                <CookieNotice />
                 <LogoMobile />
                 <H1Header
                     mainline="Wir bauen digitale Produkte"
