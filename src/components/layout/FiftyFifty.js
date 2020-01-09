@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import ScrollAnchor from "../../components/ScrollAnchor"
 
 const StyledSection = styled.div`
     width: 100%;
@@ -60,6 +61,7 @@ const div = props => (
     <StyledSection>
         <div>
             <div>
+                <ScrollAnchor id="strategisches-design"></ScrollAnchor>
                 <Triangle></Triangle>
                 <h2>
                     Strategisches <br />
@@ -85,6 +87,7 @@ const div = props => (
                 </p>
             </div>
             <div>
+                <ScrollAnchor id="design-thinking"></ScrollAnchor>
                 <Circle></Circle>
                 <h2>
                     Design <br />

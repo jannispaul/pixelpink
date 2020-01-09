@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Button from "../components/Button"
+import StyledLink from "../components/StyledLink"
 import { Link } from "gatsby"
 
 const StyledSection = styled.section`
@@ -18,7 +19,7 @@ const StyledSection = styled.section`
 
     h2 {
         color: var(--color-white);
-        &>span {
+        & > span {
             color: var(--color-gray-medium);
         }
     }
@@ -45,14 +46,13 @@ const StyledSection = styled.section`
 
 const StyledGrid = styled.div`
     margin-top: 40px;
-    &>a {
+    & > a {
         display: grid;
         grid-template-columns: 60px auto;
         align-items: center;
         margin-bottom: 40px;
         justify-content: flex-start;
     }
-    
 `
 
 const Underline = styled.span`
@@ -62,7 +62,7 @@ const Underline = styled.span`
 
 const Triangle = styled.div`
     width: 0px;
-    height: 0px; 
+    height: 0px;
     border-style: solid;
     border-width: 0 20px 36px 20px;
     border-color: transparent transparent var(--color-primary) transparent;
@@ -70,37 +70,62 @@ const Triangle = styled.div`
 
 const Circle = styled.div`
     width: 36px;
-    height: 36px; 
+    height: 36px;
     border-radius: 20px;
     background: var(--color-primary);
 `
 
 const Square = styled.div`
     width: 36px;
-    height: 36px; 
+    height: 36px;
     background: var(--color-primary);
 `
 
 const ServicesIndex = props => (
     <StyledSection>
         <div>
-            <h2>Unsere Services<br />
+            <h2>
+                Unsere Services
+                <br />
                 <span>– keine Massenware, nur originelles Design</span>
             </h2>
             <hr />
-            <p>Unsere Herangehensweise an neue Projekte ist immer die gleiche, es ist nie das gleiche! Daher hören wir Ihnen zuerst aufmerksam zu und definieren aus den Resultaten die individuell notwendigen Prozessschritte für Ihr Projekt.</p>
+            <p>
+                Unsere Herangehensweise an neue Projekte ist immer die gleiche,
+                es ist nie das gleiche! Daher hören wir Ihnen zuerst aufmerksam
+                zu und definieren aus den Resultaten die individuell notwendigen
+                Prozessschritte für Ihr Projekt.
+            </p>
 
             <StyledGrid>
-                <Link><Triangle></Triangle><p>Digitale Produkte bauen <br/><Underline>Strategisches Design </Underline></p></Link>
+                <Link to="/services#strategisches-design">
+                    <Triangle></Triangle>
+                    <p>
+                        Digitale Produkte bauen <br />
+                        <Underline>Strategisches Design </Underline>
+                    </p>
+                </Link>
 
-                <Link><Circle></Circle><p>Empatische Customer Experience entwickeln <br/><Underline>Design-Thinking</Underline></p></Link>
-                
-                <Link><Square></Square><p>Ihre Markenidentität stärken <br/><Underline>Build & Deliver</Underline></p></Link>
+                <Link to="/services#design-thinking">
+                    <Circle></Circle>
+                    <p>
+                        Empatische Customer Experience entwickeln <br />
+                        <Underline>Design-Thinking</Underline>
+                    </p>
+                </Link>
+
+                <Link to="/services#build-and-deliver">
+                    <Square></Square>
+                    <p>
+                        Ihre Markenidentität stärken <br />
+                        <Underline>Build & Deliver</Underline>
+                    </p>
+                </Link>
             </StyledGrid>
 
-            <Button link="/service" white>
+            <StyledLink to="/services" white="true">
                 Alle Services entdecken
-            </Button>
+            </StyledLink>
         </div>
     </StyledSection>
 )

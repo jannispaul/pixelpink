@@ -1,6 +1,6 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
-import { AST_PropAccess } from "terser"
+// import { AST_PropAccess } from "terser"
 
 const MoveRight = keyframes`
     from {transform: translateX(0);}
@@ -10,7 +10,7 @@ const MoveRight = keyframes`
 const StyledButton = styled.a`
     text-decoration: none;
     color: ${props =>
-        props.white ? "var(--color-white)" : "var(--color-gray-dark)"};
+        props.white ? "var(--color-white)" : "var(--color-primary)"};
     margin-bottom: var(--space-s);
     margin-right: var(--space-s);
     width: 100%;
@@ -19,6 +19,7 @@ const StyledButton = styled.a`
     :after {
         margin-left: 5px;
         display: inline-block;
+        /* content: ${props => (props.internal ? "➝" : "➝")}; */
         content: "➝";
         transform: translateX(0);
     }
@@ -31,8 +32,7 @@ const StyledButton = styled.a`
     }
 
     :hover {
-        color: ${props =>
-            props.white ? "var(--color-white)" : "var(--color-black)"};
+
         background: ${props =>
             props.primary ? "none" : "var(--color-accent-light)"};
         border-color: ${props =>

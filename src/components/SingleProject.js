@@ -78,12 +78,16 @@ const SingleProject = props => (
             <Company>{props.company}</Company>
             <h2>{props.title}</h2>
             {props.external ? (
-                <Button link={props.external}>Website öffnen</Button>
+                <Button link={props.external} target="_blank">
+                    Website öffnen
+                </Button>
             ) : (
                 ""
             )}
             {props.internal ? (
-                <StyledLink to={props.internal}>Zeig mir mehr</StyledLink>
+                <StyledLink to={props.internal}>
+                    Alle Projekte ansehen
+                </StyledLink>
             ) : (
                 ""
             )}

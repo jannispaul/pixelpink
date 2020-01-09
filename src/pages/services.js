@@ -8,6 +8,7 @@ import FiftyFifty from "../components/layout/FiftyFifty"
 import FiftyFiftyBlackIMG from "../components/layout/FiftyFiftyBlackIMG"
 import LogoMobile from "../components/LogoMobile"
 
+
 class ServicePage extends React.Component {
     render() {
         return (

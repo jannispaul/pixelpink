@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import ServiceImage from "../ServiceImage"
+import ScrollAnchor from "../../components/ScrollAnchor"
 
 const StyledSection = styled.div`
     width: 100%;
@@ -57,6 +58,7 @@ const ContentContainer = styled.div`
 
 const div = props => (
     <StyledSection>
+        <ScrollAnchor id="build-and-deliver"></ScrollAnchor>
         <div>
             <ContentContainer>
                 <Square></Square>
@@ -66,7 +68,9 @@ const div = props => (
                 </h2>
                 <hr />
                 <p>
-                    Neben der strategischen Platzierung und Konzeption Ihrer Produkte und Services, entwickeln und gestalten wir jeden möglichen State. 
+                    Neben der strategischen Platzierung und Konzeption Ihrer
+                    Produkte und Services, entwickeln und gestalten wir jeden
+                    möglichen State.
                 </p>
             </ContentContainer>
             <ServiceImage />
