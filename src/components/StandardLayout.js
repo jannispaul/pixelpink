@@ -13,14 +13,17 @@ import Footer from "../components/Footer"
 
 const App = styled.div`
     height: 100%;
+
     @media (min-width: 1441px) {
         display: grid;
         grid-template-columns: 300px 1fr;
     }
 `
 const Main = styled.div`
+    z-index: 0;
+    position: relative;
     @media (min-width: 769px) {
-        margin-top: 70px;
+        margin-top: 80px;
     }
     @media (min-width: 1441px) {
         grid-column-start: 2;

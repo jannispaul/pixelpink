@@ -4,9 +4,19 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 const StyledContainer = styled.div`
+    background: var(--color-primary);
     & > div {
         display: flex;
         align-items: center !important;
+        margin: auto;
+        max-width: 1168px;
+        z-index: 0;
+        & > div {
+            margin-left: 0 !important;
+        }
+        & > button {
+            margin-right: 0 !important;
+        }
     }
 `
 

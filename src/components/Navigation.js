@@ -40,6 +40,9 @@ const NavItem = styled(Link)`
     font-size: 11px;
     font-weight: 700;
     text-align: center;
+    &.active {
+        margin: none;
+    }
     margin: auto;
     text-decoration: none;
     color: var(--color-medium);
@@ -67,7 +70,6 @@ const NavItem = styled(Link)`
     @media (min-width: 834px) {
         &:last-of-type {
             color: var(--color-white);
-            margin-top: 0.8rem;
             background: var(--color-primary);
             border-radius: 200px;
             transition: all 0.1s ease-in;
@@ -100,7 +102,7 @@ const NavItem = styled(Link)`
         &.active span:last-of-type {
             background: none;
             color: var(--color-primary);
-            margin-top: 0;
+            /* margin-top: 0; */
         }
     }
     @media (min-width: 1441px) {
@@ -112,6 +114,7 @@ const NavItem = styled(Link)`
 
         &:last-of-type {
             display: inline-block;
+            margin-top: 0.8rem;
         }
     }
 `

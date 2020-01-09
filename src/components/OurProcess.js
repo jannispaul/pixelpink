@@ -4,14 +4,39 @@ import styled from "styled-components"
 // import logo from "../../content/logos/logo.svg"
 // import Icon from "./layout/Icon"
 // import { ICONS } from "../theme/Icons"
+import Icon from "./layout/Icon"
+import { ICONS } from "../theme/Icons"
 
 const ContentContainer = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
-    /* @media (min-width: 834px) {
-        display: none;
-    } */
+    align-items: center;
+    text-align: center;
+    @media (min-width: 834px) {
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    & > div {
+        position: relative;
+        height: 100%;
+    }
+    & > div:not(:last-of-type) ::after {
+        content: "→";
+        color: var(--color-primary);
+        font-size: 30px;
+        position: absolute;
+        /* margin: auto; */
+        bottom: -25px;
+        z-index: 2;
+        transform: rotate(90deg);
+        @media (min-width: 834px) {
+            transform: rotate(0);
+            top: 0;
+            right: -25px;
+            bottom: 0;
+        }
+    }
 `
 
 const Phase = styled.div`
@@ -28,25 +53,49 @@ const Phase = styled.div`
     & > p {
         margin-bottom: 0;
     }
-    & > h3 {
-        font-size: 28px;
-    }
 `
 
 const OurProcess = () => (
     <ContentContainer>
+        <div>
+            <p>
+                <strong>Problem</strong>
+            </p>
+        </div>
         <Phase>
-            <h3>1. Konzept</h3>
-            <p>Lorem ipsum</p>
+            <Icon icon={ICONS.SQUARE} />
+            <p>
+                <strong>1. Entdecken</strong>
+            </p>
+            <p>Research, Analyse</p>
         </Phase>
         <Phase>
-            <h3>2. Konzept</h3>
-            <p>Lorem ipsum</p>
+            <Icon icon={ICONS.SQUARE} />
+            <p>
+                <strong>2. Definieren</strong>
+            </p>
+            <p>Understand, Synthesize</p>
         </Phase>
         <Phase>
-            <h3>3. Konzept</h3>
-            <p>Lorem ipsum</p>
+            <Icon icon={ICONS.SQUARE} />
+            <p>
+                <strong>3. Design</strong>
+            </p>
+            <p>Prototype, test, refine</p>
         </Phase>
+        <Phase>
+            <Icon icon={ICONS.SQUARE} />
+            <p>
+                <strong>4. Test</strong>
+            </p>
+            <p>Prototype, test, refine</p>
+        </Phase>
+
+        <div>
+            <p>
+                <strong>Lösung</strong>
+            </p>
+        </div>
     </ContentContainer>
 )
 

@@ -6,7 +6,6 @@ import SEO from "../components/Seo"
 import HeadlineAndText from "../components/HeadlineAndText"
 import ContactFooter from "../components/ContactFooter"
 import UberUnsImage from "../components/UberUnsImage"
-import UberUnsImageGrid from "../components/UberUnsImageGrid"
 import OurProcess from "../components/OurProcess"
 import LogoMobile from "../components/LogoMobile"
 import FiftyFiftyBlackIMGAboutUs from "../components/layout/FiftyFiftyBlackIMGAboutUs"
@@ -34,7 +33,6 @@ class IndexPage extends React.Component {
                 >
                     <OurProcess></OurProcess>
                 </HeadlineAndText>
-                <UberUnsImageGrid></UberUnsImageGrid>
                 <ContactFooter mainline="Lassen Sie sich von uns überraschen!" />
             </StandardLayout>
         )

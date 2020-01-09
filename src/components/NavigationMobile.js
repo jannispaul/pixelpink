@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Icon from "./layout/Icon"
 import { ICONS } from "../theme/Icons"
 
+
 const StyledNav = styled.div`
     overflow: hidden;
     width: 100%;
