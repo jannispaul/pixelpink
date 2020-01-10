@@ -194,7 +194,7 @@ const Footer = props => (
 
             <LegalContent>
                 <p>
-                    © 2019 PixelPink GbR <br />
+                    © 2020 PixelPink GbR <br />
                     All Rights Reserved
                 </p>
             </LegalContent>
