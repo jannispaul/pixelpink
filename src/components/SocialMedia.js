@@ -52,10 +52,10 @@ const SocialMedia = props => (
             </h1>
             <hr/>
             <GridContainer>
+                <SocialMediaButton><Icon icon={ICONS.LINKEDIN} />LinkedIn</SocialMediaButton> 
                 <SocialMediaButton><Icon icon={ICONS.INSTAGRAM} />Instagram</SocialMediaButton> 
                 <SocialMediaButton><Icon icon={ICONS.FACEBOOK} />Facebook</SocialMediaButton> 
                 <SocialMediaButton><Icon icon={ICONS.BEHANCE} />Behance</SocialMediaButton> 
-                <SocialMediaButton><Icon icon={ICONS.LINKEDIN} />LinkedIn</SocialMediaButton> 
             </GridContainer>
 
         </div>

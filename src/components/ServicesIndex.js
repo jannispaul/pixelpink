@@ -90,8 +90,8 @@ const ServicesIndex = props => (
             </h2>
             <hr />
             <p>
-                Unsere Herangehensweise an neue Projekte ist immer die gleiche,
-                es ist nie das gleiche! Daher hören wir Ihnen zuerst aufmerksam
+                Unsere Herangehensweise an neue Projekte ist immer die gleiche –
+                es ist nie das gleiche!<br/> Daher hören wir Ihnen zuerst aufmerksam
                 zu und definieren aus den Resultaten die individuell notwendigen
                 Prozessschritte für Ihr Projekt.
             </p>

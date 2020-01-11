@@ -39,7 +39,7 @@ class WorkPage extends React.Component {
                 images: this.props.data.qvsta,
                 imgAltText: ["QVSTA Model", "QVSTA Model 2"],
                 company: "Qvsta",
-                title: "Revolutionieren das Fashion-Model-Booking",
+                title: "Revolutionieren die Fashion-Tech Branche",
                 link: "https://qvsta.com/",
             },
             {
@@ -51,7 +51,7 @@ class WorkPage extends React.Component {
                 ],
                 company: "The Americans",
                 title:
-                    "Podcast über Themen und Geschichten aus dem Amerika von heute",
+                    "Podcast und Geschichten aus dem Amerika von heute",
                 link: "https://the-americans.com/",
             },
             {
@@ -84,7 +84,7 @@ class WorkPage extends React.Component {
                     "Alt descritopn 3",
                 ],
                 company: "Free Work",
-                title: "Ihr Projekt ist das nächste?",
+                title: "Ist Ihr Projekt das nächste?",
                 link: "https://www.die-masterarbeit.de/",
             },
         ]

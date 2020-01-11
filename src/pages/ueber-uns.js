@@ -21,15 +21,15 @@ class IndexPage extends React.Component {
                 <LogoMobile />
                 <UberUnsImage />
                 <HeadlineAndText
-                    h1="Wer steht eigentlich hinter PixelPink?"
+                    h1="Wer oder was ist PixelPink eigentlich?"
                     subline="Unsere Geschichte, unsere Herangehensweise."
-                    body="Alles Begann während unserer gemeinsamen Studienzeit des Medien- und Kommunikationsdesign in Berlin. Zu Beginn gestalteten wir Websites für Familie und Freunde, doch die Leidenschaft hatte uns gepackt und wir konnte nicht mehr aufhören. Wir wollten mehr machen und hatten schnell erkannt, dass wir in unserer Teamkonstellation herausragend effizient und kreativ arbeiten konnten. PixelPink war geboren. Unser Vorteil liegt in der Zusammenarbeit, die Mischung unserer Expertisen aus Design & Tech bietet die optimale Grundlage für kritische Diskussionen und garantiert fundierte Outputs und Deliverables. Bis heute versuchen wir unseren Klienten den Weg in die Digitalisierung zu erleichtern und die (digitale) Welt jeden Tag ein bisschen bunter, ein bisschen sinnvoller zumachen. Wie können wir Ihnen helfen digital durchzustarten?"
+                    body="Alles Begann während unserer gemeinsamen Studienzeit des Medien- und Kommunikationsdesign in Berlin. Zu Beginn gestalteten wir Websites für Freunde und Familie, doch die Leidenschaft hatte uns gepackt und wir konnte nicht mehr aufhören. Wir wollten mehr machen und hatten schnell erkannt, dass wir in unserer Teamkonstellation herausragend effizient und kreativ arbeiten konnten. PixelPink war geboren. Unser Vorteil liegt in der Zusammenarbeit, die Mischung unserer Expertisen aus Design & Tech bietet die optimale Grundlage für kritische Diskussionen und garantiert fundierte Outputs und Deliverables. Aktuell begleiten wir unsere Klienten auf dem Weg in die Digitalisierung und bemühen uns dabei die (digitale) Welt jeden Tag ein bisschen bunter, ein bisschen sinnvoller zumachen. Wie können wir Ihnen helfen digital durchzustarten?"
                 />
                 <FiftyFiftyBlackIMGAboutUs />
                 <HeadlineAndText
                     h2="Unser Prozess"
                     subline="Double Diamond"
-                    body="Der Design-Thinking Prozess (auch gerne als DoubleDiamond dargestellt) bildet für uns das Fundament eines erfolgreichen Projektes. In der Regel durchlaufen wir die unterschiedlichen Phasen von der ”Problemdefinition” über ”Discover & Research” hin zu ”Design” und ”Test” iterativ."
+                    body="Der Design-Thinking Prozess bildet für uns das Fundament eines erfolgreichen Projektes. In der Regel durchlaufen wir die unterschiedlichen Phasen von der 'Problemdefinition' über 'Erkunden und Explorieren' hin zu 'Design' und dem 'Test' iterativ."
                 >
                     <OurProcess></OurProcess>
                 </HeadlineAndText>

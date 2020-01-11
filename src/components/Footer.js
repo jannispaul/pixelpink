@@ -150,7 +150,20 @@ const Footer = props => (
             <Address>
                 <img src={logoWhite} alt="Logo von PixelPink" />
                 <p>
-                    Felix Lebedinzew & Jannis Wicke
+                    <a
+                        href="https://www.linkedin.com/in/felix-lebedinzew-8358b8115/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                    Felix Lebedinzew
+                    </a> &&nbsp; 
+                    <a
+                        href="https://www.linkedin.com/in/jannis-wicke/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Jannis Wicke
+                    </a>
                     <br />
                     <a href="mailto:hello@pixel-pink.de?subject=Hey PixelPink!👋🏼&body=Hallo Felix und Jannis,">
                         hello@pixel-pink.de
@@ -160,8 +173,15 @@ const Footer = props => (
                     <br />
                 </p>
             </Address>
-
+            
             <SocialMedia>
+                <a
+                    href="https://de.linkedin.com/company/pixelpink-gbr?trk=public_profile_experience-item_result-card_subtitle-click"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
                 <a
                     href="https://www.instagram.com/pixelpink.berlin/"
                     target="_blank"
@@ -183,13 +203,7 @@ const Footer = props => (
                 >
                     Behance
                 </a>
-                <a
-                    href="http://facebook.com/pixelpinkberlin/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
+               
             </SocialMedia>
 
             <LegalContent>

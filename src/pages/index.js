@@ -24,8 +24,8 @@ class IndexPage extends React.Component {
                 <CookieNotice />
                 <LogoMobile />
                 <H1Header
-                    mainline="Wir bauen digitale Produkte"
-                    subline="user-centered und ohne Kompromisse in Berlin."
+                    mainline="Wir gestalten und entwickeln digitale Produkte,"
+                    subline="nutzerzentriert und ohne Kompromisse in Berlin."
                 />
                 <HeroProject />
                 <LogoWall

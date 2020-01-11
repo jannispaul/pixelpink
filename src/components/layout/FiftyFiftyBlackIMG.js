@@ -69,8 +69,7 @@ const div = props => (
                 <hr />
                 <p>
                     Neben der strategischen Platzierung und Konzeption Ihrer
-                    Produkte und Services, entwickeln und gestalten wir jeden
-                    möglichen State.
+                    Produkte und Services, entwickeln und gestalten wir jeden Ihr Projekt nach modernsten standards. Technologische Exzellenz, performance und effiziente Implementierung stehen für uns im Vordergrund. Unser einzigartiges Zusammenspiel aus Design & Entwicklung garantiert Detailreichtum und Qualität von Anfang bis zum Ende.
                 </p>
             </ContentContainer>
             <ServiceImage />
