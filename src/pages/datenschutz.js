@@ -4,11 +4,20 @@ import { Link } from "gatsby"
 import StandardLayout from "../components/StandardLayout"
 import SEO from "../components/Seo"
 import LogoMobile from "../components/LogoMobile"
+import styled from "styled-components"
+
+
+const ContentContainer = styled.div`
+    max-width: 1168px;
+    margin: auto;
+`
 
 const SecondPage = () => (
     <StandardLayout>
         <SEO title="Datenschutz" />
         <LogoMobile/>
+
+        <ContentContainer>
         <h1>Datenschutzerklärung</h1>
         <p>Verantwortlicher im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:</p>
         <p>PixelPink Gbr</p>
@@ -127,6 +136,7 @@ const SecondPage = () => (
         <p><em>Die Datenschutzerklärung wurde mithilfe der activeMind AG erstellt, den Experten für <a href="https://www.activemind.de/datenschutz/datenschutzhinweis-generator/" target="_blank" rel="noopener">externe Datenschutzbeauftragte</a> (Version #2019-04-10).</em></p>
 
         <Link to="/">Zurück zur Startseite</Link>
+        </ContentContainer>
     </StandardLayout>
 )
 
