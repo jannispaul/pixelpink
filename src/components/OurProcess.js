@@ -8,25 +8,33 @@ import Icon from "./layout/Icon"
 import { ICONS } from "../theme/Icons"
 
 const ContentContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
-    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+    display: flex;
+    align-items: stretch;
     text-align: center;
+    flex-direction: column;
+
     @media (min-width: 834px) {
+        flex-direction: row;
         grid-template-rows: 1fr;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: 6fr 1fr 6fr 1fr 6fr 1fr 6fr 1fr 6fr 1fr 6fr;
+    }
+    & p {
+        margin-bottom: 0;
     }
     & > div {
-        position: relative;
-        height: 100%;
+        /* position: relative;
+        height: 100%; */
+        display: flex;
+        align-items: center;
     }
-    & > div:not(:last-of-type) ::after {
+    /* & > div:not(:last-of-type) ::after {
         content: "→";
         color: var(--color-primary);
         font-size: 30px;
         position: absolute;
-        /* margin: auto; */
+
         bottom: -25px;
         z-index: 2;
         transform: rotate(90deg);
@@ -36,25 +44,34 @@ const ContentContainer = styled.div`
             right: -25px;
             bottom: 0;
         }
-    }
+    } */
 `
 
 const Phase = styled.div`
     display: inline-block;
+    flex: 1;
     background: #f6f6f6;
     border-radius: 10px;
+    width: 100%;
     min-width: 100px;
     padding: var(--space-m);
     text-align: center;
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    & > p {
-        margin-bottom: 0;
+    @media (min-width: 834px) {
+        max-width: 180px;
     }
 `
-
+const Arrow = styled.div`
+    color: var(--color-primary);
+    font-size: 30px;
+    z-index: 2;
+    transform: rotate(90deg);
+    margin: 10px;
+    @media (min-width: 834px) {
+        transform: rotate(0);
+    }
+`
 const OurProcess = () => (
     <ContentContainer>
         <div>
@@ -62,6 +79,7 @@ const OurProcess = () => (
                 <strong>Problem</strong>
             </p>
         </div>
+        <Arrow>→</Arrow>
         <Phase>
             <Icon icon={ICONS.SQUARE} />
             <p>
@@ -69,6 +87,7 @@ const OurProcess = () => (
             </p>
             <p>Research, Analyse</p>
         </Phase>
+        <Arrow>→</Arrow>
         <Phase>
             <Icon icon={ICONS.SQUARE} />
             <p>
@@ -76,6 +95,7 @@ const OurProcess = () => (
             </p>
             <p>Understand, Synthesize</p>
         </Phase>
+        <Arrow>→</Arrow>
         <Phase>
             <Icon icon={ICONS.SQUARE} />
             <p>
@@ -83,6 +103,7 @@ const OurProcess = () => (
             </p>
             <p>Prototype, test, refine</p>
         </Phase>
+        <Arrow>→</Arrow>
         <Phase>
             <Icon icon={ICONS.SQUARE} />
             <p>
@@ -90,6 +111,7 @@ const OurProcess = () => (
             </p>
             <p>Prototype, test, refine</p>
         </Phase>
+        <Arrow>→</Arrow>
 
         <div>
             <p>
