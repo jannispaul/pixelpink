@@ -125,7 +125,7 @@ class WorkPage extends React.Component {
                     this.projects[0].images.edges[0].node.childImageSharp.fluid
                         .src
                 } */}
-                <ContactFooter mainline="Sind Sie bereit digital durchzustarten?" />
+                <ContactFooter mainline="Digitalen MVP bauen und User überzeugen?" />
             </StandardLayout>
         )
     }
