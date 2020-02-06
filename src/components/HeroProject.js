@@ -9,14 +9,18 @@ class HeroProject extends React.Component {
         super(props)
         this.projects = [
             {
-                images: this.props.data.qvsta.edges,
+                images: this.props.data.indexProjects.edges,
                 imgAltText: [
-                    "Alt descritopn",
-                    "Alt descritopn 2",
-                    "Alt descritopn 3",
+                    "Fuelcast Application in front of a container ship",
+                    "Die-Masterarbeit.com website inside a blue Windows computer",
+                    "Gabor Steingarts mediapioneer platform inside pink macbook",
+                    "QVSTA website inside iPad in front of female model",
+                    "Arztpraxis schulzendorf website inside macpro",
+                    "The Americans website inside red macbook",
+                    "Wall Street Weekly website inside chromebook and pixel3"
                 ],
-                company: "QVSTA",
-                title: "Revolutionieren die Fashion-Tech Branche",
+                company: "",
+                title: "App, Website oder Platform… was darf's sein?",
                 id: "01",
             },
         ]
@@ -50,8 +54,8 @@ export default props => (
     <StaticQuery
         query={graphql`
             query {
-                qvsta: allFile(
-                    filter: { relativeDirectory: { eq: "work/qvsta" } }
+                indexProjects: allFile(
+                    filter: { relativeDirectory: { eq: "work/indexProjects" } }
                     sort: { fields: name }
                 ) {
                     edges {

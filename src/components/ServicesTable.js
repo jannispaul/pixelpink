@@ -68,12 +68,12 @@ const StyledHeader3 = styled.div`
     grid-area: header3;
 `
 const RowTitle = styled.h3`
-    font-size: 24px;
-    line-height: 32px;
-    /* transform-origin: 100% 0; */
+    font-size: 16px;
+    line-height: 22px;
     color: #616161;
+    margin-left: 160px;
+
     transform: rotate(-90deg);
-    margin-left: 100px;
     :nth-of-type(1) {
         grid-area: rowtitle1;
     }
@@ -82,6 +82,12 @@ const RowTitle = styled.h3`
     }
     :nth-of-type(3) {
         grid-area: rowtitle3;
+    }
+
+    @media (min-width: 834px) {
+        font-size: 24px;
+        line-height: 32px;
+        margin-left: 100px;
     }
 `
 const StyledServices1 = styled.div`
@@ -98,7 +104,6 @@ const StyledServices3 = styled.div`
 `
 const StyledServices4 = styled.div`
     color: #cbcfd3;
-
     grid-area: service4;
 `
 const StyledServices5 = styled.div`
@@ -124,43 +129,73 @@ const StyledServices9 = styled.div`
 const StyledColumn1 = styled.div`
     background: #190d11;
     border: 1px solid;
-    border-image: conic-gradient(#33ebfc, #ffe14c, #f96c1f, #f71766, #33ebfc) 1;
+    ${'' /* border-image: conic-gradient(#33ebfc, #ffe14c, #f96c1f, #f71766, #33ebfc) 1; */}
     border-image: conic-gradient(
-            rgba(122, 122, 42, 0.5),
-            rgba(122, 122, 42, 0.1),
-            rgba(122, 122, 42, 0.9)
+            rgba(51,235,252, 0.5),
+            rgba(255,225,76, 0.5),
+            rgba(249,108,31, 0.5),
+            rgba(247,23,102, 0.5),
+            rgba(51,235,252, 0.5)
         )
         1;
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.5);
     grid-column: 2/3;
     grid-row: 2/5;
-    margin-left: -40px;
-    margin-top: -40px;
+    margin-left: -20px;
+    margin-top: -20px;
+
+    @media (min-width: 834px) {
+        margin-left: -40px;
+        margin-top: -40px;
+    }
 `
 const StyledColumn2 = styled.div`
     background: #190d11;
     border: 1px solid;
-    border-image: conic-gradient(#33ebfc, #ffe14c, #f96c1f, #f71766, #33ebfc) 1;
+    border-image: conic-gradient(
+            rgba(51,235,252, 0.5),
+            rgba(247,23,102, 0.5),
+            rgba(249,108,31, 0.5),
+            rgba(255,225,76, 0.5),
+            rgba(51,235,252, 0.5)
+        )
+        1;
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.5);
     grid-column: 4/5;
     grid-row: 2/5;
-    margin-left: -40px;
-    margin-top: -40px;
+    margin-left: -20px;
+    margin-top: -20px;
+
+    @media (min-width: 834px) {
+        margin-left: -40px;
+        margin-top: -40px;
+    }
 `
 const StyledColumn3 = styled.div`
     background: #190d11;
     border: 1px solid;
-    border-image: conic-gradient(#33ebfc, #ffe14c, #f96c1f, #f71766, #33ebfc) 1;
+    border-image: conic-gradient(
+            rgba(255,225,76, 0.5),
+            rgba(51,235,252, 0.5),
+            rgba(249,108,31, 0.5),
+            rgba(247,23,102, 0.5),
+            rgba(255,225,76, 0.5)
+        )
+        1;
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.5);
     grid-column: 6/8;
     grid-row: 2/5;
-    margin-left: -40px;
-    margin-top: -40px;
+    margin-left: -20px;
+    margin-top: -20px;
+
+    @media (min-width: 834px) {
+        margin-left: -40px;
+        margin-top: -40px;
+    }
 `
 const StyledIcon = styled(Icon)`
     svg {
         fill: var(--color-pimary);
-        fill: red;
     }
 `
 
@@ -184,7 +219,7 @@ const ServicesTable = () => (
             <RowTitle>Marketing deliverables</RowTitle>
             <StyledHeader1>
                 <StyledIcon icon={ICONS.TRIANGLE} />
-                <h2>Strategisches Design</h2>
+                <h2>Strategisches <br /> Design</h2>
             </StyledHeader1>
             <StyledHeader2>
                 <StyledIcon icon={ICONS.CIRCLE} />

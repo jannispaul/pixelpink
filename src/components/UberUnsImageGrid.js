@@ -38,17 +38,17 @@ class HeroProject extends React.Component {
             {
                 image: this.props.data.ueberUns.edges[0].node.childImageSharp
                     .fluid,
-                imgAltText: "Alt descritopn 1",
+                imgAltText: "Felix Lebedinzew and Jannis Wicke working in office environment looking at screen",
             },
             {
                 image: this.props.data.ueberUns.edges[1].node.childImageSharp
                     .fluid,
-                imgAltText: "Alt descritopn 2",
+                imgAltText: "PixelPink office view with 3 apple computers and plants on white desk",
             },
             {
                 image: this.props.data.ueberUns.edges[2].node.childImageSharp
                     .fluid,
-                imgAltText: "Alt descritopn 2",
+                imgAltText: "art director action figure",
             },
         ]
     }

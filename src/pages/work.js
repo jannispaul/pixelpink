@@ -16,9 +16,14 @@ class WorkPage extends React.Component {
             {
                 images: this.props.data.fuelcast,
                 imgAltText: [
-                    "Alt descritopn",
-                    "Alt descritopn 2",
-                    "Alt descritopn 3",
+                    "Fuelcast Application in front of a container ship",
+                    "Fuelcast App Icon Logo",
+                    "Fuelcast Application Dashboard",
+                    "Fuelcast Founder Jurek Herwig at Entrepreneur First Pitch Event in London 2019",
+                    "Felix Lebedinzew, Mattias Nilsson, Jurek Herwig at Meeting",
+                    "Fuelcast Application technical design specifications",
+                    "Fuelcast Application design screenflow",
+                    "Fuelcast Application Measurement and Profile Screen inside blue phones",
                 ],
                 company: "Fuelcast",
                 title: "Nachhaltigkeit in der Maritime-Industrie",
@@ -27,9 +32,11 @@ class WorkPage extends React.Component {
             {
                 images: this.props.data.mediapioneer,
                 imgAltText: [
-                    "Alt descritopn",
-                    "Alt descritopn 2",
-                    "Alt descritopn 3",
+                    "Gabor Steingarts mediapioneer platform inside pink macbook",
+                    "mediapioneer logo",
+                    "mediapioneer Website inside white macbook",
+                    "mediapioneer Website inside white iPad",
+                    "mediapioneer Website wireframes and design iterations",
                 ],
                 company: "Mediapioneer",
                 title: "Gabor Steingarts Vision des Journalismus",
@@ -37,7 +44,16 @@ class WorkPage extends React.Component {
             },
             {
                 images: this.props.data.qvsta,
-                imgAltText: ["QVSTA Model", "QVSTA Model 2"],
+                imgAltText: [
+                    "QVSTA website inside iPad in front of female model",
+                    "QVSTA Logo",
+                    "QVSTA website inside a black iMac showing Model booking process",
+                    "QVSTA website dashboard",
+                    "QVSTA website wireframes and design iterations",
+                    "QVSTA website login-screen, briefing-screen and dashboard",
+                    "QVSTA logo versions",
+                    "QVSTA design system elements",
+                ],
                 company: "Qvsta",
                 title: "Revolutionieren die Fashion-Tech Branche",
                 link: "https://qvsta.com/",
@@ -45,9 +61,11 @@ class WorkPage extends React.Component {
             {
                 images: this.props.data.theamericans,
                 imgAltText: [
-                    "Alt descritopn",
-                    "Alt descritopn 2",
-                    "Alt descritopn 3",
+                    "The Americans website inside red macbook",
+                    "The Americans by mediapioneer logo",
+                    "The Americans podcast inside iPhone next to player",
+                    "The Americans website design iterations and versions",
+                    "The Americans website inside iPhone and iPad showing the responsive mobile version and clean code"
                 ],
                 company: "The Americans",
                 title:
@@ -57,9 +75,12 @@ class WorkPage extends React.Component {
             {
                 images: this.props.data.arztpraxisSchulzendorf,
                 imgAltText: [
-                    "Alt descritopn",
-                    "Alt descritopn 2",
-                    "Alt descritopn 3",
+                    "Arztpraxis schulzendorf website inside macpro",
+                    "Arztpraxis schulzendorf logo",
+                    "Arztpraxis schulzendorf website inside iphone and ranking on first page on google",
+                    "Arztpraxis schulzendorf peggy niederhäusern examining a child and the entrance to the practice",
+                    "Arztpraxis schulzendorf logo variations",
+                    "Arztpraxis schulzendorf color palette"
                 ],
                 company: "Arztpraxis-Schulzendorf",
                 title: "Moderne Praxiskommunikation",
@@ -68,9 +89,11 @@ class WorkPage extends React.Component {
             {
                 images: this.props.data.dieMasterarbeit,
                 imgAltText: [
-                    "Alt descritopn",
-                    "Alt descritopn 2",
-                    "Alt descritopn 3",
+                    "Die-Masterarbeit.com website inside a blue Windows computer",
+                    "Die-Masterarbeit.com logo",
+                    "Die-Masterarbeit.com website inside two iPhones",
+                    "Die-Masterarbeit.com website showing homepage, contact and company profile screens",
+                    "Die-Masterarbeit.com styleguide and design system elements"
                 ],
                 company: "Die-Masterarbeit.de",
                 title: "Verbindet Studenten mit Unternehmen",
@@ -79,9 +102,17 @@ class WorkPage extends React.Component {
             {
                 images: this.props.data.stuff,
                 imgAltText: [
-                    "Alt descritopn",
-                    "Alt descritopn 2",
-                    "Alt descritopn 3",
+                    "silence emoji",
+                    "surf application concept inside two iphones",
+                    "paradise app icon concept",
+                    "fashion design social media kit screens inside phone",
+                    "conceptual golden depot brokerage overview",
+                    "architecture photography in bangkok, asia",
+                    "vinyl cover with black architecture",
+                    "vinyl cover with yellow 3D pattern",
+                    "vinyl cover with simple bauhause shapes",
+                    "fashion application concept inside iphone and applewatch",
+                    "desert application concept inside two iphones"
                 ],
                 company: "Free Work",
                 title: "Ist Ihr Projekt das nächste?",
