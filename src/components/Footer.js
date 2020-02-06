@@ -9,8 +9,10 @@ const StyledFooter = styled.div`
     background-color: var(--color-black);
     padding: calc(var(--padding-vertical)) var(--padding-side);
     padding-bottom: 6em;
-    
-    a:hover, a:focus, a:active {
+
+    a:hover,
+    a:focus,
+    a:active {
         color: var(--color-primary);
         -webkit-transition-duration: 0.2s;
         transition-duration: 0.2s;
@@ -23,7 +25,7 @@ const StyledFooter = styled.div`
             calc(var(--padding-vertical) / 9) var(--padding-side);
         grid-column: 2;
     }
-    
+
     @media (min-width: 1441px) {
     }
 `
@@ -77,15 +79,13 @@ const SocialMedia = styled.div`
         margin-bottom: 1rem;
     }
 
-    &>svg {
-        fill: #656D78;
+    & > svg {
+        fill: #656d78;
         width: 32px;
         height: 32px;
         margin-right: 16px;
         margin-left: -12px;
-
     }
-    
 
     @media (min-width: 769px) {
         order: 3;
@@ -127,8 +127,6 @@ const LegalLinks = styled.div`
         margin-bottom: 1rem;
     }
 
-    
-
     @media (min-width: 769px) {
         order: 4;
         display: flex;
@@ -155,8 +153,9 @@ const Footer = props => (
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                    Felix Lebedinzew
-                    </a> &&nbsp; 
+                        Felix Lebedinzew
+                    </a>{" "}
+                    &&nbsp;
                     <a
                         href="https://www.linkedin.com/in/jannis-wicke/"
                         target="_blank"
@@ -173,10 +172,10 @@ const Footer = props => (
                     <br />
                 </p>
             </Address>
-            
+
             <SocialMedia>
                 <a
-                    href="https://de.linkedin.com/company/pixelpink-gbr?trk=public_profile_experience-item_result-card_subtitle-click"
+                    href="https://de.linkedin.com/company/pixelpink-gbr"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
@@ -203,7 +202,6 @@ const Footer = props => (
                 >
                     Behance
                 </a>
-               
             </SocialMedia>
 
             <LegalContent>

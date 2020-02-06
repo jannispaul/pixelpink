@@ -58,6 +58,8 @@ const Button = props => (
         fullwidth={props.fullwidth}
         white={props.white}
         href={props.link}
+        target="_blank"
+        rel="noopener noreferrer"
     >
         {props.children}
     </StyledButton>
