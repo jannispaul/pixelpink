@@ -45,6 +45,9 @@
     transform: scale(-1, 1);
 }
 
+.carousel .slide {
+    background: #fff;
+}
 @media (min-width: 834px) {
     .carousel.carousel-slider .control-arrow,
     .carousel.carousel-slider .control-arrow:hover {
