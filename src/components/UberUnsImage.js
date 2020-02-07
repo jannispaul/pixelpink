@@ -15,7 +15,7 @@ const Image = () => (
                 }
             }
         `}
-        render={data => <Img fluid={data.aboutusimage.childImageSharp.fluid} />}
+        render={data => <Img alt="Felix Lebedinzew, Managing Director Design and Jannis Wicke, Managing Director Technology PixelPink" fluid={data.aboutusimage.childImageSharp.fluid} />}
     />
 )
 export default Image

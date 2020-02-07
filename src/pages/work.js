@@ -114,9 +114,9 @@ class WorkPage extends React.Component {
                     "fashion application concept inside iphone and applewatch",
                     "desert application concept inside two iphones"
                 ],
-                company: "Free Work",
+                company: "Freie arbeiten",
                 title: "Ist Ihr Projekt das nächste?",
-                link: "https://www.die-masterarbeit.de/",
+                link: "",
             },
         ]
     }

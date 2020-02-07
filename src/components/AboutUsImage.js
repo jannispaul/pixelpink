@@ -39,7 +39,7 @@ const Image = () => (
             }
         `}
         render={data => (
-            <StyledIMG fluid={data.serviceimage.childImageSharp.fluid} />
+            <StyledIMG alt="hands on white desk working on iMac" fluid={data.serviceimage.childImageSharp.fluid} />
         )}
     />
 )
