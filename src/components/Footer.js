@@ -214,7 +214,9 @@ const Footer = props => (
             <LegalLinks>
                 <Link to="/impressum">Impressum</Link>
                 <Link to="/datenschutz">Datenschutz</Link>
-                <Link to="/agb">AGB</Link>
+                <a href="../AGB.pdf" target="_blank" rel="noopener noreferrer">
+                    AGB
+                </a>
             </LegalLinks>
         </StyledGrid>
     </StyledFooter>
