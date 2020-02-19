@@ -83,13 +83,17 @@ const Square = styled.div`
 const ServicesIndex = props => (
     <StyledSection>
         <div>
-            <h2>
+            <h2 data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease">
                 Unsere Services
                 <br />
                 <span>– keine Massenware, nur originelles Design</span>
             </h2>
             <hr />
-            <p>
+            <p data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease">
                 Unsere Herangehensweise an neue Projekte ist immer die gleiche –
                 es ist nie das gleiche!<br/> Daher hören wir Ihnen zuerst aufmerksam
                 zu und definieren aus den Resultaten die individuell notwendigen
@@ -99,7 +103,9 @@ const ServicesIndex = props => (
             <StyledGrid>
                 <Link to="/services#strategisches-design">
                     <Triangle></Triangle>
-                    <p>
+                    <p data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease">
                         Digitale Produkte bauen <br />
                         <Underline>Strategisches Design </Underline>
                     </p>
@@ -107,7 +113,9 @@ const ServicesIndex = props => (
 
                 <Link to="/services#design-thinking">
                     <Circle></Circle>
-                    <p>
+                    <p data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease">
                         Empatische Customer Experience entwickeln <br />
                         <Underline>Design-Thinking</Underline>
                     </p>
@@ -115,7 +123,9 @@ const ServicesIndex = props => (
 
                 <Link to="/services#build-and-deliver">
                     <Square></Square>
-                    <p>
+                    <p data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease">
                         Ihre Markenidentität stärken <br />
                         <Underline>Build & Deliver</Underline>
                     </p>

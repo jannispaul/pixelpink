@@ -49,7 +49,9 @@ const StyledGrid = styled.div`
 
 const LogoWall = props => (
     <StyledSection>
-        <h2>
+        <h2 data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease">
             <img src={logo} alt="Logo von Fuelcast" /> {props.mainline} <br />
         </h2>
         <StyledGrid>

@@ -28,7 +28,9 @@ class HeroProject extends React.Component {
 
     render() {
         return (
-            <div>
+            <div data-sal="slide-up"
+            data-sal-delay="0"
+            data-sal-easing="ease">
                 {/* <SingleProject
                     img={this.projects[0].images}
                     imgAltText={this.projects[0].imgAltText}

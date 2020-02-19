@@ -146,8 +146,12 @@ const Footer = props => (
     <StyledFooter>
         <StyledGrid>
             <Address>
-                <img src={logoWhite} alt="Logo von PixelPink" />
-                <p>
+                <img data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease" src={logoWhite} alt="Logo von PixelPink" />
+                <p data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease">
                     <a
                         href="https://www.linkedin.com/in/felix-lebedinzew-8358b8115/"
                         target="_blank"
@@ -205,7 +209,9 @@ const Footer = props => (
             </SocialMedia>
 
             <LegalContent>
-                <p>
+                <p data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease">
                     © 2020 PixelPink GbR <br />
                     All Rights Reserved
                 </p>
