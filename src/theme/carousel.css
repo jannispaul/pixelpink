@@ -47,6 +47,7 @@
 
 .carousel .slide {
     background: #fff;
+    cursor: grab;
 }
 @media (min-width: 834px) {
     .carousel.carousel-slider .control-arrow,
