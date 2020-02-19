@@ -8,12 +8,12 @@ import mediapioneerLogo from "../../content/logos/mediapioneerLogo.svg"
 import telekomLogo from "../../content/logos/telekomLogo.svg"
 import logo from "../../content/logos/logo.svg"
 
-
 const StyledSection = styled.section`
     background: var(--color-gray-light);
     padding: var(--padding-vertical) var(--padding-side);
 
-    & > div, h2 {
+    & > div,
+    h2 {
         max-width: 1168px;
         margin: auto;
         color: var(--color-black);
@@ -22,7 +22,7 @@ const StyledSection = styled.section`
     }
 
     & > h2 > img {
-        width: 100px;;
+        width: 100px;
         @media (min-width: 834px) {
             width: 140px;
         }
@@ -36,31 +36,65 @@ const StyledGrid = styled.div`
     align-items: center;
     justify-content: center;
 
-    &>img {
+    & > img {
         margin: auto;
         max-width: 70%;
         max-height: 40px;
     }
     @media (min-width: 769px) {
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 110px);
-        }
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 110px);
+    }
 `
 
 const LogoWall = props => (
     <StyledSection>
         <h2>
-            <img src={logo} alt="Logo von Fuelcast"/>
-            {" "}
-            {props.mainline} <br />
+            <img src={logo} alt="Logo von Fuelcast" /> {props.mainline} <br />
         </h2>
         <StyledGrid>
-            <img src={fuelcastLogo} alt="Logo von Fuelcast"/>
-            <img src={commerzbankLogo} alt="Logo von Commerzbank"/>
-            <img src={telekomLogo} alt="Logo von Telekom"/>
-            <img src={mediapioneerLogo} alt="Logo von Mediapioneer"/>
-            <img src={boschLogo} alt="Logo von Bosch"/>
-            <img src={lhhLogo} alt="Logo von Lee Hecht Harrison"/>
+            <img
+                src={fuelcastLogo}
+                alt="Logo von Fuelcast"
+                data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease"
+            />
+            <img
+                src={commerzbankLogo}
+                alt="Logo von Commerzbank"
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease"
+            />
+            <img
+                src={telekomLogo}
+                alt="Logo von Telekom"
+                data-sal="slide-up"
+                data-sal-delay="100"
+                data-sal-easing="ease"
+            />
+            <img
+                src={mediapioneerLogo}
+                alt="Logo von Mediapioneer"
+                data-sal="slide-up"
+                data-sal-delay="150"
+                data-sal-easing="ease"
+            />
+            <img
+                src={boschLogo}
+                alt="Logo von Bosch"
+                data-sal="slide-up"
+                data-sal-delay="200"
+                data-sal-easing="ease"
+            />
+            <img
+                src={lhhLogo}
+                alt="Logo von Lee Hecht Harrison"
+                data-sal="slide-up"
+                data-sal-delay="250"
+                data-sal-easing="ease"
+            />
         </StyledGrid>
     </StyledSection>
 )

@@ -17,7 +17,7 @@ class HeroProject extends React.Component {
                     "QVSTA website inside iPad in front of female model",
                     "Arztpraxis schulzendorf website inside macpro",
                     "The Americans website inside red macbook",
-                    "Wall Street Weekly website inside chromebook and pixel3"
+                    "Wall Street Weekly website inside chromebook and pixel3",
                 ],
                 company: "",
                 title: "App, Website oder Platform… was darf's sein?",
@@ -43,6 +43,9 @@ class HeroProject extends React.Component {
                         title={project.title}
                         key={i}
                         internal="/work"
+                        data-sal="slide-up"
+                        data-sal-delay="250"
+                        data-sal-easing="ease"
                     />
                 ))}
             </div>

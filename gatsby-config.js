@@ -32,6 +32,7 @@ module.exports = {
         `gatsby-plugin-offline`,
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-preact`,
+        `gatsby-plugin-scroll-reveal`,
         {
             resolve: `gatsby-plugin-robots-txt`,
             options: {
