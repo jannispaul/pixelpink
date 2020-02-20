@@ -5,25 +5,18 @@ import styled from "styled-components"
 
 const StyledContainer = styled.div`
     background: var(--color-primary);
-    padding: 16px var(--padding-side) 16px;
     & > div {
-        display: flex;
-        align-items: center !important;
+        max-width: calc(1168px + 32px);
         margin: auto;
-        max-width: 1168px;
-        z-index: 0;
-        padding: 0 !important;
-        & > button {
-            margin-right: 0 !important;
-        }
-        & > div {
-            margin-left: 0 !important;
-            margin-top: 0 !important;
-        }
-        @media (min-width: 492px) {
-            & > div {
-                margin: 0 !important;
-            }
+    }
+    & button {
+        margin-bottom: 16px !important;
+        margin-left: 16px !important;
+        width: calc(100% - 32px) !important;
+        @media (min-width: 592px) {
+            width: auto !important;
+            margin-top: 16px !important;
+            margin-right: 16px !important;
         }
     }
 `
@@ -41,6 +34,7 @@ const CookieNotice = () => (
                 position: "relative",
                 zIndex: "200",
                 display: "flex",
+                alignItems: "center",
             }}
             buttonStyle={{
                 background: "white",
