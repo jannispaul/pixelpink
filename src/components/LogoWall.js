@@ -52,49 +52,49 @@ const LogoWall = props => (
         <h2 data-sal="slide-up"
                 data-sal-delay="0"
                 data-sal-easing="ease">
-            <img src={logo} alt="Logo von Fuelcast" /> {props.mainline} <br />
+            <img src={logo} alt="Logo von PixelPink" /> {props.mainline} <br />
         </h2>
         <StyledGrid>
             <img
                 src={fuelcastLogo}
                 alt="Logo von Fuelcast"
                 data-sal="slide-up"
-                data-sal-delay="0"
+                data-sal-delay="50"
                 data-sal-easing="ease"
             />
             <img
                 src={commerzbankLogo}
                 alt="Logo von Commerzbank"
                 data-sal="slide-up"
-                data-sal-delay="50"
+                data-sal-delay="100"
                 data-sal-easing="ease"
             />
             <img
                 src={telekomLogo}
                 alt="Logo von Telekom"
                 data-sal="slide-up"
-                data-sal-delay="100"
+                data-sal-delay="150"
                 data-sal-easing="ease"
             />
             <img
                 src={mediapioneerLogo}
                 alt="Logo von Mediapioneer"
                 data-sal="slide-up"
-                data-sal-delay="150"
+                data-sal-delay="200"
                 data-sal-easing="ease"
             />
             <img
                 src={boschLogo}
                 alt="Logo von Bosch"
                 data-sal="slide-up"
-                data-sal-delay="200"
+                data-sal-delay="250"
                 data-sal-easing="ease"
             />
             <img
                 src={lhhLogo}
                 alt="Logo von Lee Hecht Harrison"
                 data-sal="slide-up"
-                data-sal-delay="250"
+                data-sal-delay="300"
                 data-sal-easing="ease"
             />
         </StyledGrid>
