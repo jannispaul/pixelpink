@@ -40,6 +40,23 @@ const StyledGrid = styled.div`
         margin: auto;
         max-width: 70%;
         max-height: 40px;
+        -webkit-filter: grayscale(100%) opacity(70%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%) opacity(70%);
+        -webkit-transition: filter .1s ease-in;
+        -moz-transition: filter .1s ease-in;
+        -o-transition: filter .1s ease-in;
+        -ms-transition: filter .1s ease-in;
+        transition: filter .1s ease-in;
+    }
+
+    & > img:hover {
+        -webkit-filter: grayscale(0%) opacity(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%) opacity(100%);
+        -webkit-transition: filter .1s ease-in;
+        -moz-transition: filter .1s ease-in;
+        -o-transition: filter .1s ease-in;
+        -ms-transition: filter .1s ease-in;
+        transition: filter .1s ease-in;
     }
     @media (min-width: 769px) {
         grid-template-columns: repeat(3, 1fr);

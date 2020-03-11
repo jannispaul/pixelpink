@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const Image = () => (
-    <StaticQuery
+    <StaticQuery 
         query={graphql`
             query {
                 aboutusimage: file(relativePath: { eq: "aboutUs/ueberuns.jpg" }) {

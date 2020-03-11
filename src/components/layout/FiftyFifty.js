@@ -58,17 +58,17 @@ const Circle = styled.div`
 // `
 
 const div = props => (
-    <StyledSection>
+    <StyledSection >
         <div>
             <div>
                 <ScrollAnchor id="strategisches-design"></ScrollAnchor>
-                <Triangle></Triangle>
-                <h2>
+                <Triangle data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in"></Triangle>
+                <h2 data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in">
                     Strategisches <br />
                     Design
                 </h2>
-                <hr />
-                <p>
+                <hr data-sal="slide-up" data-sal-delay="75" data-sal-easing="ease-in"/>
+                <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
                     Wo drückt denn der Schuh? Erweisen sich bestimme Merkmale
                     Ihres Produktes als unverständlich, heben spätestens Ihre
                     Nutzer und Kunden mahnend den Finger. Um diesem
@@ -80,7 +80,7 @@ const div = props => (
                     Schritte des Wireframing über den klickbaren Prototypen bis
                     hin zum User-Testing zu unserem Hauptprogramm.
                 </p>
-                <p>
+                <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
                     Steht’s mit Ihrer Persona-Gruppe im Fokus entwickeln wir
                     kundenzentrierte Mensch-Maschine Konzepte und
                     Interatkionsmuster in strategischen Designprozessen.
@@ -88,13 +88,13 @@ const div = props => (
             </div>
             <div>
                 <ScrollAnchor id="design-thinking"></ScrollAnchor>
-                <Circle></Circle>
-                <h2>
+                <Circle data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in"></Circle>
+                <h2 data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in">
                     Design <br />
                     Thinking
                 </h2>
-                <hr />
-                <p>
+                <hr data-sal="slide-up" data-sal-delay="75" data-sal-easing="ease-in"/>
+                <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
                     Es geht nicht nur um ein Produkt. Es ist die Geschichte, von
                     Anfang bis zum Ende erzählt, welche Ihren Nutzern und Kunden
                     im Kopf bleibt. Wir sprechen von integrierten Services,
@@ -104,7 +104,7 @@ const div = props => (
                     einem ganzheitlichen Ansatz in Ihrer Customer Journey.
                 </p>
 
-                <p>
+                <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
                     Das Auge isst mit! Neben der Service-Einordnung und der
                     Konzeption ist Branding und charmantes Design das
                     ausschlaggebende Argument für Ihre Marke oder Produkt. Wir

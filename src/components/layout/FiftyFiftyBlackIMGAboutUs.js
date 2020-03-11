@@ -60,12 +60,12 @@ const div = props => (
         <div>
             <AboutUsImage />
             <ContentContainer>
-                <h2>
+                <h2 data-sal="slide-up" data-sal-delay="00" data-sal-easing="ease-in">
                     Design Thinking <br />
                     Approach
                 </h2>
-                <hr />
-                <p>
+                <hr data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in"/>
+                <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
                 Für uns fängt Design nicht erst auf dem Papier oder am Computer an. Wir verfolgen und leben einen ganzheitlichen Design-Approach. Wir respektieren den Mensch, die Natur und suchen stets nach neuen Herausforderungen und Problemen um unser Leben auf dieser Erde ein bisschen besser zu gestalten. 
                 </p>
             </ContentContainer>

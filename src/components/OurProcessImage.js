@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 
 const StyledIMG = styled(Img)`
+    margin-top: 150px;
     @media (min-width: 769px) {
     }
     @media (min-width: 1230px) {

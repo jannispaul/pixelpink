@@ -56,9 +56,10 @@ class HeroProject extends React.Component {
     render() {
         return (
             <StyledSection>
-                <ImageGrid>
+                <ImageGrid >
                     {this.images.map((project, i) => (
                         <Img
+                            data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in"
                             fluid={project.image}
                             alt={project.imgAltText}
                             key={i}
