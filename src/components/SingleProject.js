@@ -56,7 +56,7 @@ const Company = styled.span`
 `
 
 const SingleProject = props => (
-    <Project>
+    <Project data-sal="fade" data-sal-delay="0" data-sal-easing="ease">
         <Carousel
             autoPlay={false}
             showThumbs={false}
