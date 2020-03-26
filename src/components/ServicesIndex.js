@@ -45,6 +45,8 @@ const StyledSection = styled.section`
 
 const StyledGrid = styled.div`
     margin-top: 40px;
+    width: 40%;
+
     & > a {
         display: grid;
         grid-template-columns: 60px auto;
@@ -52,6 +54,30 @@ const StyledGrid = styled.div`
         margin-bottom: 40px;
         justify-content: flex-start;
     }
+
+    a {
+        padding: 10px;
+        -webkit-filter: opacity(100%); /* Safari 6.0 - 9.0 */
+        filter: opacity(100%);
+        -webkit-transition: filter .1s ease-in;
+        -moz-transition: filter .1s ease-in;
+        -o-transition: filter .1s ease-in;
+        -ms-transition: filter .1s ease-in;
+        transition: filter .1s ease-in;
+    }
+
+    a:hover {
+        background: #333333;
+        border-radius: 8px;
+        -webkit-filter: opacity(10%); /* Safari 6.0 - 9.0 */
+        filter: opacity(100%);
+        -webkit-transition: filter .1s ease-in;
+        -moz-transition: filter .1s ease-in;
+        -o-transition: filter .1s ease-in;
+        -ms-transition: filter .1s ease-in;
+        transition: filter .1s ease-in;
+    }
+  
 `
 
 const Underline = styled.span`
