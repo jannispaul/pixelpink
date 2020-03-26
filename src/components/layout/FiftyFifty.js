@@ -90,7 +90,7 @@ const div = props => (
                 <ScrollAnchor id="design-thinking"></ScrollAnchor>
                 <Circle data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in"></Circle>
                 <h2 data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in">
-                    Design
+                Design
                 </h2>
                 <hr data-sal="slide-up" data-sal-delay="75" data-sal-easing="ease-in"/>
                 <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">

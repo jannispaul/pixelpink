@@ -5,6 +5,9 @@ import SEO from "../components/Seo"
 import HeadlineAndText from "../components/HeadlineAndText"
 import ContactFooter from "../components/ContactFooter"
 import FiftyFifty from "../components/layout/FiftyFifty"
+import FiftyFifty2 from "../components/layout/FiftyFifty2"
+import ServiceImage2 from "../components/ServiceImage2"
+
 import FiftyFiftyBlackIMG from "../components/layout/FiftyFiftyBlackIMG"
 import LogoMobile from "../components/LogoMobile"
 import ServicesTable from "../components/ServicesTable"
@@ -29,6 +32,8 @@ class ServicePage extends React.Component {
                     ]}
                 />
                 <FiftyFifty />
+                <FiftyFifty2 />
+                <ServiceImage2 />
                 <FiftyFiftyBlackIMG />
                 <ServicesTable />
                 <ContactFooter mainline="Wo drückt der Schuh? Wir helfen!" />
