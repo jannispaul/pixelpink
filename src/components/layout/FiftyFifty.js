@@ -64,8 +64,8 @@ const div = props => (
                 <ScrollAnchor id="strategisches-design"></ScrollAnchor>
                 <Triangle data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in"></Triangle>
                 <h2 data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in">
-                    Strategisches <br />
-                    Design
+                    Konzeption 
+                    
                 </h2>
                 <hr data-sal="slide-up" data-sal-delay="75" data-sal-easing="ease-in"/>
                 <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
@@ -90,26 +90,11 @@ const div = props => (
                 <ScrollAnchor id="design-thinking"></ScrollAnchor>
                 <Circle data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in"></Circle>
                 <h2 data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in">
-                    Design <br />
-                    Thinking
+                    Design
                 </h2>
                 <hr data-sal="slide-up" data-sal-delay="75" data-sal-easing="ease-in"/>
                 <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
-                    Es geht nicht nur um ein Produkt. Es ist die Geschichte, von
-                    Anfang bis zum Ende erzählt, welche Ihren Nutzern und Kunden
-                    im Kopf bleibt. Wir sprechen von integrierten Services,
-                    welche sich in den alltäglichen natürlichen Ablauf
-                    integrieren und Ihre Geschichte simpel und charmant
-                    erzählen. Wir ergründen Kundenbedürfnisse und verorten diese
-                    einem ganzheitlichen Ansatz in Ihrer Customer Journey.
-                </p>
-
-                <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
-                    Das Auge isst mit! Neben der Service-Einordnung und der
-                    Konzeption ist Branding und charmantes Design das
-                    ausschlaggebende Argument für Ihre Marke oder Produkt. Wir
-                    treiben Ihr Kommunikationskonzept voran und entwicklen
-                    visuell ästhetische Designs.
+                    Wir machen nicht nur hübsch! Klar, das Endergebnis sieht bei uns immer ästhetisch und ansprechend aus, aber unter Design verstehen wir sehr viel mehr: Vom ersten Konzept bis zum fertigen Design sind es viele Schritte. Beim Userresearch definieren wir die wichtigsten Merkmale der Zielgruppe und ihre Verbindung zum Produkt. In den sogenannten Customer Journeys wird der Weg der Kunden mit allen Berührungspunkten zur Marke aufgezeigt und in der Phase des Userexperiencedesigns geformt. Das Screendesign bringt letztlich Form und Funktion zusammen. In visuell ansprechender Gestaltung werden Typografie, Farben und Formen so verwendet, dass sie im Einklang mit Nutzung und Marke stehen. 
                 </p>
             </div>
         </div>
