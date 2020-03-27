@@ -10,7 +10,8 @@ import ServiceImage2 from "../components/ServiceImage2"
 
 import FiftyFiftyBlackIMG from "../components/layout/FiftyFiftyBlackIMG"
 import LogoMobile from "../components/LogoMobile"
-import ServicesTable from "../components/ServicesTable"
+// import ServicesTable from "../components/ServicesTable"
+import ServicesTableNew from "../components/ServicesTableNew"
 
 class ServicePage extends React.Component {
     render() {
@@ -35,7 +36,8 @@ class ServicePage extends React.Component {
                 <FiftyFifty2 />
                 <ServiceImage2 />
                 <FiftyFiftyBlackIMG />
-                <ServicesTable />
+                {/* <ServicesTable /> */}
+                <ServicesTableNew />
                 <ContactFooter mainline="Wo drückt der Schuh? Wir helfen!" />
             </StandardLayout>
         )
