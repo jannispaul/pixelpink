@@ -7,6 +7,7 @@ import HeadlineAndText from "../components/HeadlineAndText"
 import ContactFooter from "../components/ContactFooter"
 import UberUnsImage from "../components/UberUnsImage"
 import OurProcess from "../components/OurProcess"
+import OurTools from "../components/OurTools"
 import LogoMobile from "../components/LogoMobile"
 import FiftyFiftyBlackIMGAboutUs from "../components/layout/FiftyFiftyBlackIMGAboutUs"
 
@@ -33,6 +34,13 @@ class IndexPage extends React.Component {
                     body="Als eingespieltes Team ist unserer vom Design Thinking inspirierter Prozessablauf mittlerweile für uns ganz selbstverständlich: Wir analysieren das Projekt und die Details in ihrem Kontext, erstellen einen Lösungsansatz und verbessern ihn. Wenn wir dann nicht zufrieden sind, geht es in die nächste Runde. Durch diese iterative Arbeitsweise perfektionieren wir das Produkt Schritt für Schritt bis zum Ziel."
                 >
                     <OurProcess></OurProcess>
+                </HeadlineAndText>
+                <HeadlineAndText
+                    h2="Unser Tools"
+                    subline=""
+                    body="Für uns ist es wichtig, das richtige Tool für den richtigen Job zu haben. Deshalb arbeiten wir mit einer Vielzahl an Tools. Hier findest du eine Auswahl unserer liebsten und meist genutzen."
+                >
+                    <OurTools></OurTools>
                 </HeadlineAndText>
                 <ContactFooter mainline="Lassen Sie sich von uns überraschen!" />
             </StandardLayout>
