@@ -34,10 +34,10 @@ const Subline = styled.span`
 `
 
 const HeadlineAndText = (props, { children }) => (
-    <StyledSection>
+    <StyledSection >
         <div>
             {props.h1 ? (
-                <h1>
+                <h1 data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in">
                     {props.h1} <br />
                     <Subline>{props.subline}</Subline>
                 </h1>
@@ -45,16 +45,16 @@ const HeadlineAndText = (props, { children }) => (
                 ""
             )}
             {props.h2 ? (
-                <h2>
+                <h2 data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in">
                     {props.h2} <br />
                     <Subline>{props.subline}</Subline>
                 </h2>
             ) : (
                 ""
             )}
-            <hr />
-            <p> {props.body}</p>
-            {props.body2 ? <p> {props.body2}</p> : ""}
+            <hr data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-in"/>
+            <p data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-in"> {props.body}</p>
+            {props.body2 ? <p data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-in"> {props.body2}</p> : ""}
             {props.children}
         </div>
     </StyledSection>

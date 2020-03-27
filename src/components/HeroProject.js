@@ -29,8 +29,8 @@ class HeroProject extends React.Component {
     render() {
         return (
             <div data-sal="slide-up"
-            data-sal-delay="0"
-            data-sal-easing="ease">
+            data-sal-delay="100"
+            data-sal-easing="ease-in">
                 {/* <SingleProject
                     img={this.projects[0].images}
                     imgAltText={this.projects[0].imgAltText}
@@ -45,9 +45,7 @@ class HeroProject extends React.Component {
                         title={project.title}
                         key={i}
                         internal="/work"
-                        data-sal="slide-up"
-                        data-sal-delay="250"
-                        data-sal-easing="ease"
+                        
                     />
                 ))}
             </div>

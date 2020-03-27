@@ -21,15 +21,16 @@ class IndexPage extends React.Component {
                 <LogoMobile />
                 <UberUnsImage />
                 <HeadlineAndText
-                    h1="Wer oder was ist PixelPink eigentlich?"
+                    h1="Wer steht eigentlich hinter PixelPink?"
                     subline="Unsere Geschichte, unsere Herangehensweise."
-                    body="Alles Begann während unserer gemeinsamen Studienzeit des Medien- und Kommunikationsdesign in Berlin. Zu Beginn gestalteten wir Websites für Freunde und Familie, doch die Leidenschaft hatte uns gepackt und wir konnte nicht mehr aufhören. Wir wollten mehr machen und hatten schnell erkannt, dass wir in unserer Teamkonstellation herausragend effizient und kreativ arbeiten konnten. PixelPink war geboren. Unser Vorteil liegt in der Zusammenarbeit, die Mischung unserer Expertisen aus Design & Tech bietet die optimale Grundlage für kritische Diskussionen und garantiert fundierte Outputs und Deliverables. Aktuell begleiten wir unsere Klienten auf dem Weg in die Digitalisierung und bemühen uns dabei die (digitale) Welt jeden Tag ein bisschen bunter, ein bisschen sinnvoller zumachen. Wie können wir Ihnen helfen digital durchzustarten?"
+                    body="
+                    PixelPink, das sind wir, Felix und Jannis, Design- und Technik-Enthusiasten. Alles begann während unseres gemeinsamen Medien- und Kommunikationsdesignstudiums in Berlin. Wir gestalteten zunächst Websites für Freunde und Familie, doch die Leidenschaft hatte uns gepackt und wir konnte nicht mehr aufhören. Wir wollten mehr machen und haben schnell erkannt, dass wir in unserer Konstellation sehr effizient und kreativ arbeiten konnten. Seit 2015 bilden wir, gemeinsam mit unserem Netzwerk aus Freischaffenden, PixelPink. Unser Vorteil liegt in der Zusammenarbeit: Die Mischung unserer Expertisen aus Design & Tech bietet die optimale Grundlage für kritische Diskussionen und qualitativ hochwertigen Output. Aktuell begleiten wir unsere Kunden bei der Unternehmensdigitalisierung und bemühen uns dabei, die (digitale) Welt jeden Tag ein bisschen bunter und sinnvoller zumachen. Wie können wir Dir helfen, digital durchzustarten? "
                 />
                 <FiftyFiftyBlackIMGAboutUs />
                 <HeadlineAndText
                     h2="Unser Prozess"
                     subline="Double Diamond"
-                    body="Der Design-Thinking Prozess bildet für uns das Fundament eines erfolgreichen Projektes. In der Regel durchlaufen wir die unterschiedlichen Phasen von der 'Problemdefinition' über 'Erkunden und Explorieren' hin zu 'Design' und dem 'Test' iterativ."
+                    body="Als eingespieltes Team ist unserer vom Design Thinking inspirierter Prozessablauf mittlerweile für uns ganz selbstverständlich: Wir analysieren das Projekt und die Details in ihrem Kontext, erstellen einen Lösungsansatz und verbessern ihn. Wenn wir dann nicht zufrieden sind, geht es in die nächste Runde. Durch diese iterative Arbeitsweise perfektionieren wir das Produkt Schritt für Schritt bis zum Ziel."
                 >
                     <OurProcess></OurProcess>
                 </HeadlineAndText>

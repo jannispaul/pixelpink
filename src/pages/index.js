@@ -24,13 +24,12 @@ class IndexPage extends React.Component {
                 <CookieNotice />
                 <LogoMobile />
                 <H1Header
-                    mainline="Wir gestalten und entwickeln digitale Produkte,"
-                    subline="nutzerzentriert und ohne Kompromisse in Berlin."
+                    mainline="Wir gestalten und entwickeln digitale Lösungen,"
+                    subline="die Deine Kunden lieben."
                 />
                 <HeroProject />
                 <LogoWall
-                    mainline=" ist ein Designstudio für digitale Produkte und Services.
-                                Wir arbeiten mit großen Marken, KMUs, Startups und in Agenturen."
+                    mainline=" ist ein auf Design und Technologie spezialisiertes Studio für digitale Medien in Berlin. Wir arbeiten mit großen Marken, KMUs, Startups, in Agenturen und kreieren Landingpages, Corporate und E-Commerce-Websites, Appdesigns und Marketing-Kampagnen."
                 />
                 <ServicesIndex />
                 <ContactFooter mainline={copy.contact} />

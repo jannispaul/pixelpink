@@ -40,14 +40,14 @@ const Subline = styled.span`
     color: var(--color-gray-medium);
 `
 const SocialMedia = props => (
-    <StyledSection>
+    <StyledSection >
         <div>
-            <h1>
+            <h1 data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in">
                 {props.mainline} <br />
                 <Subline>{props.subline}</Subline>
             </h1>
-            <hr />
-            <GridContainer>
+            <hr data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in"/>
+            <GridContainer data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
                 <SocialMediaButton link="https://de.linkedin.com/company/pixelpink-gbr">
                     <Icon icon={ICONS.LINKEDIN} />
                     LinkedIn

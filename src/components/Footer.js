@@ -212,7 +212,7 @@ const Footer = props => (
                 <p data-sal="slide-up"
                 data-sal-delay="0"
                 data-sal-easing="ease">
-                    © 2020 PixelPink GbR <br />
+                    © 2020 PixelPink<br />
                     All Rights Reserved
                 </p>
             </LegalContent>
