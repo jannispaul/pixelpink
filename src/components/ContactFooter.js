@@ -6,7 +6,7 @@ const StyledSection = styled.section`
     padding-bottom: 130px;
     padding: 42px var(--padding-side);
 
-    & > h3 {
+    & > h1 {
         max-width: 1168px;
         margin: auto;
     }
@@ -15,7 +15,7 @@ const StyledSection = styled.section`
         padding: 130px var(--padding-side);
     }
 
-    & > h3 > a {
+    & > h1 > a {
         color: var(--color-primary);
         text-decoration: none;
     }
@@ -36,6 +36,7 @@ const StyledSection = styled.section`
         transition-property: color;
         -webkit-transition-duration: 0.3s;
         transition-duration: 0.3s;
+        margin-right: 0px;
     }
     a:before {
         content: "";
@@ -69,7 +70,7 @@ const StyledSection = styled.section`
 
 const ContactFooter = props => (
     <StyledSection>
-        <h3 data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in">
+        <h1 data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in">
             {props.mainline}
             <br />
             <a href="mailto:hello@pixel-pink.de?subject=Hey PixelPink!👋🏼&body=Hallo Felix und Jannis,">
@@ -78,7 +79,7 @@ const ContactFooter = props => (
             <a href="tel:+4917681410001">
                 +49 176 81 41 0001
             </a>
-        </h3>
+        </h1>
     </StyledSection>
 )
 

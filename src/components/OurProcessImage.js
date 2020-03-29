@@ -14,7 +14,7 @@ const StyledIMG = styled(Img)`
 `
 
 const Image = () => (
-    <StaticQuery
+    <StaticQuery 
         query={graphql`
             query {
                 serviceimage: file(relativePath: { eq: "our-process.png" }) {

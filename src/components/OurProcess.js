@@ -5,7 +5,7 @@ import OurProcessImage from "./OurProcessImage"
 const ContentContainer = styled.div``
 
 const OurProcess = () => (
-    <ContentContainer>
+    <ContentContainer data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in">
         <OurProcessImage></OurProcessImage>
     </ContentContainer>
 )

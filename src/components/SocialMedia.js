@@ -47,20 +47,20 @@ const SocialMedia = props => (
                 <Subline>{props.subline}</Subline>
             </h1>
             <hr data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in"/>
-            <GridContainer data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
-                <SocialMediaButton link="https://de.linkedin.com/company/pixelpink-gbr">
+            <GridContainer >
+                <SocialMediaButton data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in" link="https://de.linkedin.com/company/pixelpink-gbr">
                     <Icon icon={ICONS.LINKEDIN} />
                     LinkedIn
                 </SocialMediaButton>
-                <SocialMediaButton link="https://www.instagram.com/pixelpink.berlin/">
+                <SocialMediaButton data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-in" link="https://www.instagram.com/pixelpink.berlin/">
                     <Icon icon={ICONS.INSTAGRAM} />
                     Instagram
                 </SocialMediaButton>
-                <SocialMediaButton link="https://www.facebook.com/pixelpinkberlin/">
+                <SocialMediaButton data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-in" link="https://www.facebook.com/pixelpinkberlin/">
                     <Icon icon={ICONS.FACEBOOK} />
                     Facebook
                 </SocialMediaButton>
-                <SocialMediaButton link="https://www.behance.net/pixelpinkberlin">
+                <SocialMediaButton data-sal="slide-up" data-sal-delay="250" data-sal-easing="ease-in" link="https://www.behance.net/pixelpinkberlin">
                     <Icon icon={ICONS.BEHANCE} />
                     Behance
                 </SocialMediaButton>
