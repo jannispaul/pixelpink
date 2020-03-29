@@ -22,6 +22,7 @@ class ServicePage extends React.Component {
                     keywords={[`gatsby`, `application`, `react`]}
                 />
                 <LogoMobile />
+                <ServiceImage2 />
                 <HeadlineAndText
                     h1="Das Erlebnis als Erfolgsfaktor"
                     subline="Wir helfen Dir in die Digitalisierung"
@@ -34,8 +35,7 @@ class ServicePage extends React.Component {
                 />
                 <FiftyFifty />
                 <FiftyFifty2 />
-                <ServiceImage2 />
-                <FiftyFiftyBlackIMG />
+                {/* <FiftyFiftyBlackIMG /> */}
                 {/* <ServicesTable /> */}
                 <ServicesTableNew />
                 <ContactFooter mainline="Wo drückt der Schuh? Wir helfen!" />

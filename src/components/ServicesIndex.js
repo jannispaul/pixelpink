@@ -106,6 +106,35 @@ const Square = styled.div`
     background: var(--color-primary);
 `
 
+const Hexagon = styled.div`
+    position: relative;
+    width: 36px; 
+    height: 20.78px;
+    background: var(--color-primary);
+    margin: 17.39px 0;
+    
+    :before,
+    :after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    }
+
+    :before {
+    bottom: 100%;
+    border-bottom: 10.39px solid #e6004e;
+    }
+
+    :after {
+    top: 100%;
+    width: 0;
+    border-top: 10.39px solid #e6004e;
+    }
+`
+
+
 const ServicesIndex = props => (
     <StyledSection>
         <div>
@@ -132,8 +161,8 @@ const ServicesIndex = props => (
                     <p data-sal="slide-up"
                 data-sal-delay="0"
                 data-sal-easing="ease">
-                        Digitale Produkte bauen <br />
-                        <Underline>Strategisches Design </Underline>
+                        <h4>Konzeption</h4>
+                        Wir entwerfen das passende Grundgerüst für dein Produkt.
                     </p>
                 </Link>
 
@@ -142,8 +171,8 @@ const ServicesIndex = props => (
                     <p data-sal="slide-up"
                 data-sal-delay="0"
                 data-sal-easing="ease">
-                        Empatische Customer Experience entwickeln <br />
-                        <Underline>Design-Thinking</Underline>
+                        <h4>Design</h4>
+                        Wir entwerfen das passende Grundgerüst für dein Produkt.
                     </p>
                 </Link>
 
@@ -152,8 +181,18 @@ const ServicesIndex = props => (
                     <p data-sal="slide-up"
                 data-sal-delay="0"
                 data-sal-easing="ease">
-                        Ihre Markenidentität stärken <br />
-                        <Underline>Build & Deliver</Underline>
+                        <h4>Entwicklung</h4>
+                        Wir entwerfen das passende Grundgerüst für dein Produkt.
+                    </p>
+                </Link>
+
+                <Link to="/services#build-and-deliver">
+                    <Hexagon></Hexagon>
+                    <p data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease">
+                        <h4>Marketing</h4>
+                        Wir entwerfen das passende Grundgerüst für dein Produkt.
                     </p>
                 </Link>
             </StyledGrid>
