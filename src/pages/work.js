@@ -124,8 +124,8 @@ class WorkPage extends React.Component {
         return (
             <StandardLayout>
                 <SEO
-                    title="Home"
-                    keywords={[`PixelPink`, `application`, `react`]}
+                    title="Projekte"
+                    keywords={[`projekte`, `pixelpink`, `arbeiten`, `referenzen`, `klienten`]}
                 />
                 <LogoMobile />
                 <H1Header

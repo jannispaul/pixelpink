@@ -13,8 +13,8 @@ class IndexPage extends React.Component {
         return (
             <StandardLayout>
                 <SEO
-                    title="Home"
-                    keywords={[`gatsby`, `application`, `react`]}
+                    title="Kontakt"
+                    keywords={[`kontakt`, `pixelpink`]}
                 />
                 <LogoMobile />
                 <ContactFooter mainline="Auf der Suche nach innovativen Konzepten?" />

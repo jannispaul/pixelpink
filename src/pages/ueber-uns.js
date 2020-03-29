@@ -16,8 +16,8 @@ class IndexPage extends React.Component {
         return (
             <StandardLayout>
                 <SEO
-                    title="Home"
-                    keywords={[`gatsby`, `application`, `react`]}
+                    title="Über Uns"
+                    keywords={[`über uns`, `pixelpink`, `team`, `prozess`, `tools`, `tech-stack`]}
                 />
                 <LogoMobile />
                 <UberUnsImage />

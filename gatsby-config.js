@@ -1,10 +1,10 @@
 module.exports = {
     siteMetadata: {
-        title: `My Gatsby Starter`,
-        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-        author: `@Jannis Wicke`,
+        title: `PixelPink`,
+        description: `PixelPink ist ein auf Design und Technologie spezialisiertes Studio für digitale Medien in Berlin. `,
+        author: `@FelixLebedinzew @Jannis Wicke`,
         //    image: "/images/gatsby-astronaut-2.png", // Path to your image you placed in the 'static' folder
-        siteUrl: `https://www.example.com`,
+        siteUrl: `https://www.pixel-pink.de`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,

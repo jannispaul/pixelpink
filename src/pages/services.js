@@ -18,8 +18,8 @@ class ServicePage extends React.Component {
         return (
             <StandardLayout>
                 <SEO
-                    title="Home"
-                    keywords={[`gatsby`, `application`, `react`]}
+                    title="Services"
+                    keywords={[`services`, `pixelpink`, `angebot`]}
                 />
                 <LogoMobile />
                 <ServiceImage2 />
