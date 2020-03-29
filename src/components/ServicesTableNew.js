@@ -167,7 +167,7 @@ class ServicesTable extends React.Component {
         ]
         return (
             <StyledContainer>
-                <HeadlineContainer>
+                <HeadlineContainer data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in">
                     <h2>
                         Unsere Services
                         <br />
@@ -178,7 +178,7 @@ class ServicesTable extends React.Component {
                 <ScrollContainer>
                     <div>
                         {CONTENT.map((category, i) => (
-                            <ServiceColumn key={i}>
+                            <ServiceColumn data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in" key={i}>
                                 <StyledIcon icon={category.icon} />
 
                                 <h2>{category.name}</h2>
