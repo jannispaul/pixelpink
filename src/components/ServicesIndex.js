@@ -159,7 +159,7 @@ const ServicesIndex = props => (
                     </p>
                 </Link>
 
-                <Link to="/services#build-and-deliver">
+                <Link to="/services#entwicklung">
                     <Square></Square>
                     <p
                         data-sal="slide-up"
@@ -172,7 +172,7 @@ const ServicesIndex = props => (
                     </p>
                 </Link>
 
-                <Link to="/services#build-and-deliver">
+                <Link to="/services#marketing">
                     <Hexagon></Hexagon>
                     <p
                         data-sal="slide-up"
@@ -185,7 +185,7 @@ const ServicesIndex = props => (
                 </Link>
             </StyledGrid>
 
-            <StyledLink to="/services" white="true">
+            <StyledLink to="/services#alle-services" white="true">
                 Alle Services entdecken
             </StyledLink>
         </div>
