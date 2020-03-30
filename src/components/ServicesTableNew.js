@@ -120,7 +120,7 @@ class ServicesTable extends React.Component {
                     "UX-Design",
                     "Heuristische Evaluation",
                     "Market UX Audit",
-                    "Marken- Kommunikationsstrategie",
+                    "Kommunikationsstrategie",
                     "Markenidentität",
                     "Service-Design",
                     "Storytelling",
@@ -209,7 +209,6 @@ class ServicesTable extends React.Component {
                                 </ul>
                             </ServiceColumn>
                         ))}
-                        <div></div>
                     </div>
                 </ScrollContainer>
             </StyledContainer>
