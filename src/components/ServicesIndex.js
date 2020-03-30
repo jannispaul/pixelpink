@@ -45,7 +45,6 @@ const StyledSection = styled.section`
 
 const StyledGrid = styled.div`
     margin-top: 40px;
-    /* width: 40%; */
     display: grid;
     @media (min-width: 834px) {
         grid-template-columns: repeat(2, 1fr);
@@ -57,35 +56,15 @@ const StyledGrid = styled.div`
         align-items: center;
         margin-bottom: 40px;
         justify-content: flex-start;
-    }
-
-    a {
         padding: 10px;
-        -webkit-filter: opacity(100%); /* Safari 6.0 - 9.0 */
-        filter: opacity(100%);
-        -webkit-transition: filter 0.1s ease-in;
-        -moz-transition: filter 0.1s ease-in;
-        -o-transition: filter 0.1s ease-in;
-        -ms-transition: filter 0.1s ease-in;
-        transition: filter 0.1s ease-in;
+        transition: background 0.2s ease;
+        :hover {
+            transition: background 0.2s ease;
+            background: #333333;
+            border-radius: 8px;
+            text-decoration: none;
+        }
     }
-
-    a:hover {
-        background: #333333;
-        border-radius: 8px;
-        -webkit-filter: opacity(10%); /* Safari 6.0 - 9.0 */
-        filter: opacity(100%);
-        -webkit-transition: filter 0.1s ease-in;
-        -moz-transition: filter 0.1s ease-in;
-        -o-transition: filter 0.1s ease-in;
-        -ms-transition: filter 0.1s ease-in;
-        transition: filter 0.1s ease-in;
-    }
-`
-
-const Underline = styled.span`
-    text-decoration: underline;
-    font-weight: 700;
 `
 
 const Triangle = styled.div`
