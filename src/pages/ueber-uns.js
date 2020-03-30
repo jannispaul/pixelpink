@@ -17,7 +17,14 @@ class IndexPage extends React.Component {
             <StandardLayout>
                 <SEO
                     title="Über Uns"
-                    keywords={[`über uns`, `pixelpink`, `team`, `prozess`, `tools`, `tech-stack`]}
+                    keywords={[
+                        `über uns`,
+                        `pixelpink`,
+                        `team`,
+                        `prozess`,
+                        `tools`,
+                        `tech-stack`,
+                    ]}
                 />
                 <LogoMobile />
                 <UberUnsImage />
@@ -36,7 +43,7 @@ class IndexPage extends React.Component {
                     <OurProcess></OurProcess>
                 </HeadlineAndText>
                 <HeadlineAndText
-                    h2="Unser Tools"
+                    h2="Unsere Tools"
                     subline=""
                     body="Für uns ist es wichtig, das richtige Tool für den richtigen Job zu haben. Deshalb arbeiten wir mit einer Vielzahl an Tools. Hier findest du eine Auswahl unserer liebsten und meist genutzen."
                 >
