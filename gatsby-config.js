@@ -2,7 +2,7 @@ module.exports = {
     siteMetadata: {
         title: `PixelPink`,
         description: `PixelPink ist ein auf Design und Technologie spezialisiertes Studio für digitale Medien in Berlin. `,
-        author: `@FelixLebedinzew @Jannis Wicke`,
+        author: `FelixLebedinzew, Jannis Wicke`,
         //    image: "/images/gatsby-astronaut-2.png", // Path to your image you placed in the 'static' folder
         siteUrl: `https://www.pixel-pink.de`,
     },

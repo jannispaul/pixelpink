@@ -12,13 +12,34 @@ const StyledSection = styled.section`
     background: var(--color-gray-light);
     padding: var(--padding-vertical) var(--padding-side);
 
+
+    p {
+        color: var(--color-gray-dark);
+        margin-bottom: var(--space-l);
+        max-width: 850px;
+    }
+
+    h2 > Underline {
+        color: var(--color-gray-medium);
+    }
+
+    hr {
+        width: 40px;
+        height: 2px;
+        margin: 20px 0px;
+    }
+
+
     & > div,
     h2 {
         max-width: 1168px;
         margin: auto;
         color: var(--color-black);
-        margin-bottom: var(--space-l);
+        ${'' /* margin-bottom: var(--space-l); */}
         /* padding: 0 var(--padding-side); */
+        & > span {
+            color: var(--color-gray-medium);
+        }
     }
 
     & > h2 > img {
@@ -66,11 +87,13 @@ const StyledGrid = styled.div`
 
 const LogoWall = props => (
     <StyledSection>
-        <h2 data-sal="slide-up"
-                data-sal-delay="0"
-                data-sal-easing="ease">
-            <img src={logo} alt="Logo von PixelPink" /> {props.mainline} <br />
-        </h2>
+        <h2 data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease">
+                <img src={logo} alt="Logo von PixelPink" /> ist ein auf Design und Technologie spezialisiertes Studio für digitale Medien in Berlin.
+            </h2>
+            <hr />
+            <p data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+                Wir arbeiten mit Unternehmen, Start-Ups, in Agenturen und kreieren Landingpages, Corporate und E-Commerce-Websites, Appdesigns und Marketing-Kampagnen. Unsere Stärken liegen in den Bereichen Konzept, Design, Entwicklung und digitales Marketing. Von der ersten Anfrage bis über den Launch hinaus stehen wir unseren Kunden beratend und auf Augenhöhe zur Seite. 
+            </p>
         <StyledGrid>
             <img
                 src={fuelcastLogo}

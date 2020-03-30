@@ -28,9 +28,7 @@ class IndexPage extends React.Component {
                     subline="die Deine Kunden lieben."
                 />
                 <HeroProject />
-                <LogoWall
-                    mainline=" ist ein auf Design und Technologie spezialisiertes Studio für digitale Medien in Berlin. Wir arbeiten mit großen Marken, KMUs, Startups, in Agenturen und kreieren Landingpages, Corporate und E-Commerce-Websites, Appdesigns und Marketing-Kampagnen."
-                />
+                <LogoWall/>
                 <ServicesIndex />
                 <ContactFooter mainline={copy.contact} />
             </StandardLayout>
