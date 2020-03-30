@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Icon from "./layout/Icon"
 import { ICONS } from "../theme/Icons"
+import ScrollAnchor from "../components/ScrollAnchor"
 
 const HeadlineContainer = styled.div`
     max-width: 1168px;
@@ -175,6 +176,8 @@ class ServicesTable extends React.Component {
         ]
         return (
             <StyledContainer>
+                <ScrollAnchor id="alle-services"></ScrollAnchor>
+
                 <HeadlineContainer
                     data-sal="slide-up"
                     data-sal-delay="0"
