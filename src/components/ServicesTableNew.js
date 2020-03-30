@@ -6,7 +6,7 @@ import { ICONS } from "../theme/Icons"
 const HeadlineContainer = styled.div`
     max-width: 1168px;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: calc(var(--padding-vertical) / 2);
     & > h2 {
         color: var(--color-white);
         & > span {
@@ -35,7 +35,7 @@ const StyledContainer = styled.div`
     padding-top: 100px;
 
     /* Added stuff */
-    padding: var(--padding-vertical) var(--padding-side) 0;
+    padding: var(--padding-vertical) var(--padding-side);
     @media (min-width: 769px) {
         padding: var(--padding-vertical) var(--padding-side);
     }
@@ -43,6 +43,7 @@ const StyledContainer = styled.div`
 const ScrollContainer = styled.div`
     margin: 0 calc(-1 * var(--padding-side));
     max-width: calc(100% + 2 * var(--padding-side));
+    overflow: visible;
 
     @media (min-width: 1168px) {
         margin: 0;
@@ -70,8 +71,10 @@ const ScrollContainer = styled.div`
 `
 
 const ServiceColumn = styled.div`
-    display: inline-block;
+    display: grid;
+    grid-template-rows: 50px 70px auto;
     scroll-snap-align: start;
+
     & svg {
         fill: var(--color-primary);
         height: 40px;
@@ -92,6 +95,11 @@ const ServiceColumn = styled.div`
             )
             1;
         box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.5);
+    }
+    & li {
+        margin-bottom: 16px;
+        line-height: 1.3;
+        word-break: break-word;
     }
 `
 const StyledIcon = styled(Icon)`
@@ -167,7 +175,11 @@ class ServicesTable extends React.Component {
         ]
         return (
             <StyledContainer>
-                <HeadlineContainer data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in">
+                <HeadlineContainer
+                    data-sal="slide-up"
+                    data-sal-delay="0"
+                    data-sal-easing="ease-in"
+                >
                     <h2>
                         Unsere Services
                         <br />
@@ -178,7 +190,12 @@ class ServicesTable extends React.Component {
                 <ScrollContainer>
                     <div>
                         {CONTENT.map((category, i) => (
-                            <ServiceColumn data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in" key={i}>
+                            <ServiceColumn
+                                // data-sal="slide-up"
+                                // data-sal-delay="0"
+                                // data-sal-easing="ease-in"
+                                key={i}
+                            >
                                 <StyledIcon icon={category.icon} />
 
                                 <h2>{category.name}</h2>
