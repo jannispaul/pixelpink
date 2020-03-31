@@ -29,14 +29,11 @@ const StyledSection = styled.section`
         max-width: 850px;
     }
 
-    h2 > Underline {
-        color: var(--color-gray-medium);
-    }
-
     hr {
         width: 40px;
         height: 2px;
         margin: 20px 0px;
+        border: 1px solid var(--color-gray-medium);
     }
 
     @media (min-width: 834px) {

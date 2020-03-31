@@ -194,9 +194,6 @@ class ServicesTable extends React.Component {
                     <div>
                         {CONTENT.map((category, i) => (
                             <ServiceColumn
-                                // data-sal="slide-up"
-                                // data-sal-delay="0"
-                                // data-sal-easing="ease-in"
                                 key={i}
                             >
                                 <StyledIcon icon={category.icon} />
