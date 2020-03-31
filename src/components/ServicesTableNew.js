@@ -51,7 +51,7 @@ const ScrollContainer = styled.div`
     }
     & > div {
         display: grid;
-        grid-template-columns: repeat(4, 70vw) 2vw;
+        grid-template-columns: repeat(4, 70vw) 10vw;
         grid-gap: 20px;
         overflow-x: scroll;
         scroll-padding: 0 10%;
@@ -209,6 +209,7 @@ class ServicesTable extends React.Component {
                                 </ul>
                             </ServiceColumn>
                         ))}
+                        <div></div>
                     </div>
                 </ScrollContainer>
             </StyledContainer>
