@@ -18,6 +18,7 @@ import wordpress from "../../content/images/tools/wordpress.svg"
 import zeplin from "../../content/images/tools/zeplin.svg"
 
 const ContentContainer = styled.div`
+    padding-top: 40px;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 100px);
@@ -36,6 +37,11 @@ const ContentContainer = styled.div`
         }
         & > p {
             margin: 0 -100px;
+        }
+
+        img {
+            height: 70px;
+            width: 70px;
         }
     }
     @media (min-width: 769px) {

@@ -139,7 +139,7 @@ const ServicesIndex = props => (
                         data-sal-easing="ease"
                     >
                         <h4>Konzeption</h4>
-                        Wir entwerfen das passende Grundgerüst für dein Produkt.
+                        Wir entwerfen das passende Grundgerüst für Dein Produkt.
                     </p>
                 </Link>
 
@@ -151,7 +151,7 @@ const ServicesIndex = props => (
                         data-sal-easing="ease"
                     >
                         <h4>Design</h4>
-                        Wir bilden ästetische Gestalt im Einklang mit deiner
+                        Wir bilden ästetische Gestalt im Einklang mit Deiner
                         Marke.
                     </p>
                 </Link>
@@ -164,7 +164,7 @@ const ServicesIndex = props => (
                         data-sal-easing="ease"
                     >
                         <h4>Entwicklung</h4>
-                        Wir implementieren dein Design mit technischer
+                        Wir implementieren Dein Design mit technischer
                         Exzellenz.
                     </p>
                 </Link>
@@ -177,7 +177,7 @@ const ServicesIndex = props => (
                         data-sal-easing="ease"
                     >
                         <h4>Marketing</h4>
-                        Wir brigen dein Produkt in den Markt.
+                        Wir brigen Dein Produkt in den Markt.
                     </p>
                 </Link>
             </StyledGrid>
