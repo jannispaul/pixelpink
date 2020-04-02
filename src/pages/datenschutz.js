@@ -29,7 +29,7 @@ const ContentContainer = styled.div`
 
 const SecondPage = () => (
     <StandardLayout>
-        <SEO title="Datenschutz" />
+        <SEO title="Datenschutz" index="noindex" />
         <LogoMobile />
 
         <ContentContainer>

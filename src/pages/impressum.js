@@ -28,7 +28,7 @@ const ContentContainer = styled.div`
 
 const SecondPage = () => (
     <StandardLayout>
-        <SEO title="Impressum" />
+        <SEO title="Impressum" index="noindex" />
         <LogoMobile />
 
         <ContentContainer>
