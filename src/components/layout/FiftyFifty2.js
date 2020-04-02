@@ -4,11 +4,14 @@ import ScrollAnchor from "../../components/ScrollAnchor"
 
 const StyledSection = styled.div`
     width: 100%;
-    padding: var(--padding-side);
+    padding: 0 var(--padding-side);
 
     & > div {
         max-width: 1168px;
         margin: auto;
+        & > div {
+            margin-bottom: 80px;
+        }
     }
 
     p {
@@ -32,22 +35,22 @@ const StyledSection = styled.div`
     }
 `
 
-const Triangle = styled.div`
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0 20px 36px 20px;
-    border-color: transparent transparent var(--color-primary) transparent;
-    margin-bottom: 20px;
-`
+// const Triangle = styled.div`
+//     width: 0px;
+//     height: 0px;
+//     border-style: solid;
+//     border-width: 0 20px 36px 20px;
+//     border-color: transparent transparent var(--color-primary) transparent;
+//     margin-bottom: 20px;
+// `
 
-const Circle = styled.div`
-    width: 36px;
-    height: 36px;
-    border-radius: 20px;
-    background: var(--color-primary);
-    margin-bottom: 20px;
-`
+// const Circle = styled.div`
+//     width: 36px;
+//     height: 36px;
+//     border-radius: 20px;
+//     background: var(--color-primary);
+//     margin-bottom: 20px;
+// `
 
 const Square = styled.div`
     width: 36px;

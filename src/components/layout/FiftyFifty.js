@@ -4,11 +4,14 @@ import ScrollAnchor from "../../components/ScrollAnchor"
 
 const StyledSection = styled.div`
     width: 100%;
-    padding: var(--padding-side);
+    padding: 0 var(--padding-side);
 
     & > div {
         max-width: 1168px;
         margin: auto;
+        & > div {
+            margin-bottom: 80px;
+        }
     }
 
     p {
@@ -58,17 +61,32 @@ const Circle = styled.div`
 // `
 
 const div = props => (
-    <StyledSection >
+    <StyledSection>
         <div>
             <div>
                 <ScrollAnchor id="strategisches-design"></ScrollAnchor>
-                <Triangle data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in"></Triangle>
-                <h2 data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in">
-                    Konzeption 
-                    
+                <Triangle
+                    data-sal="slide-up"
+                    data-sal-delay="0"
+                    data-sal-easing="ease-in"
+                ></Triangle>
+                <h2
+                    data-sal="slide-up"
+                    data-sal-delay="50"
+                    data-sal-easing="ease-in"
+                >
+                    Konzeption
                 </h2>
-                <hr data-sal="slide-up" data-sal-delay="75" data-sal-easing="ease-in"/>
-                <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
+                <hr
+                    data-sal="slide-up"
+                    data-sal-delay="75"
+                    data-sal-easing="ease-in"
+                />
+                <p
+                    data-sal="slide-up"
+                    data-sal-delay="100"
+                    data-sal-easing="ease-in"
+                >
                     Wo drückt denn der Schuh? Erweisen sich bestimme Merkmale
                     Ihres Produktes als unverständlich, heben spätestens Ihre
                     Nutzer und Kunden mahnend den Finger. Um diesem
@@ -80,7 +98,11 @@ const div = props => (
                     Schritte des Wireframing über den klickbaren Prototypen bis
                     hin zum User-Testing zu unserem Hauptprogramm.
                 </p>
-                <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
+                <p
+                    data-sal="slide-up"
+                    data-sal-delay="100"
+                    data-sal-easing="ease-in"
+                >
                     Steht’s mit Ihrer Persona-Gruppe im Fokus entwickeln wir
                     kundenzentrierte Mensch-Maschine Konzepte und
                     Interatkionsmuster in strategischen Designprozessen.
@@ -88,13 +110,41 @@ const div = props => (
             </div>
             <div>
                 <ScrollAnchor id="design-thinking"></ScrollAnchor>
-                <Circle data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in"></Circle>
-                <h2 data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in">
-                Design
+                <Circle
+                    data-sal="slide-up"
+                    data-sal-delay="0"
+                    data-sal-easing="ease-in"
+                ></Circle>
+                <h2
+                    data-sal="slide-up"
+                    data-sal-delay="50"
+                    data-sal-easing="ease-in"
+                >
+                    Design
                 </h2>
-                <hr data-sal="slide-up" data-sal-delay="75" data-sal-easing="ease-in"/>
-                <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
-                    Wir machen nicht nur hübsch! Klar, das Endergebnis sieht bei uns immer ästhetisch und ansprechend aus, aber unter Design verstehen wir sehr viel mehr: Vom ersten Konzept bis zum fertigen Design sind es viele Schritte. Beim Userresearch definieren wir die wichtigsten Merkmale der Zielgruppe und ihre Verbindung zum Produkt. In den sogenannten Customer Journeys wird der Weg der Kunden mit allen Berührungspunkten zur Marke aufgezeigt und in der Phase des Userexperiencedesigns geformt. Das Screendesign bringt letztlich Form und Funktion zusammen. In visuell ansprechender Gestaltung werden Typografie, Farben und Formen so verwendet, dass sie im Einklang mit Nutzung und Marke stehen. 
+                <hr
+                    data-sal="slide-up"
+                    data-sal-delay="75"
+                    data-sal-easing="ease-in"
+                />
+                <p
+                    data-sal="slide-up"
+                    data-sal-delay="100"
+                    data-sal-easing="ease-in"
+                >
+                    Wir machen nicht nur hübsch! Klar, das Endergebnis sieht bei
+                    uns immer ästhetisch und ansprechend aus, aber unter Design
+                    verstehen wir sehr viel mehr: Vom ersten Konzept bis zum
+                    fertigen Design sind es viele Schritte. Beim Userresearch
+                    definieren wir die wichtigsten Merkmale der Zielgruppe und
+                    ihre Verbindung zum Produkt. In den sogenannten Customer
+                    Journeys wird der Weg der Kunden mit allen Berührungspunkten
+                    zur Marke aufgezeigt und in der Phase des
+                    Userexperiencedesigns geformt. Das Screendesign bringt
+                    letztlich Form und Funktion zusammen. In visuell
+                    ansprechender Gestaltung werden Typografie, Farben und
+                    Formen so verwendet, dass sie im Einklang mit Nutzung und
+                    Marke stehen.
                 </p>
             </div>
         </div>
