@@ -9,8 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import defaultOpenGraphImage from "../../content/images/social-image.jpg"
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, lang, meta, keywords, title, index, ogImage }) {
     const { site } = useStaticQuery(
         graphql`
             query {
@@ -19,6 +20,7 @@ function SEO({ description, lang, meta, keywords, title }) {
                         title
                         description
                         author
+                        siteUrl
                     }
                 }
             }
@@ -26,6 +28,7 @@ function SEO({ description, lang, meta, keywords, title }) {
     )
 
     const metaDescription = description || site.siteMetadata.description
+    const ogImageUrl = defaultOpenGraphImage
 
     return (
         <Helmet
@@ -36,8 +39,16 @@ function SEO({ description, lang, meta, keywords, title }) {
             titleTemplate={`%s | ${site.siteMetadata.title}`}
             meta={[
                 {
+                    name: `robots`,
+                    content: index,
+                },
+                {
                     name: `description`,
                     content: metaDescription,
+                },
+                {
+                    name: `viewport`,
+                    content: `width=device-width, initial-scale=1.0`,
                 },
                 {
                     property: `og:title`,
@@ -67,6 +78,18 @@ function SEO({ description, lang, meta, keywords, title }) {
                     name: `twitter:description`,
                     content: metaDescription,
                 },
+                {
+                    name: `twitter:image`,
+                    content: `${ogImageUrl}`,
+                },
+                {
+                    property: `og:image`,
+                    content: `${ogImageUrl}`,
+                },
+                {
+                    itemprop: `image`,
+                    content: `${ogImageUrl}`,
+                },
             ]
                 .concat(
                     keywords.length > 0
@@ -82,7 +105,7 @@ function SEO({ description, lang, meta, keywords, title }) {
 }
 
 SEO.defaultProps = {
-    lang: `en`,
+    lang: `de`,
     meta: [],
     keywords: [],
 }
@@ -93,6 +116,7 @@ SEO.propTypes = {
     meta: PropTypes.array,
     keywords: PropTypes.arrayOf(PropTypes.string),
     title: PropTypes.string.isRequired,
+    index: PropTypes.string,
 }
 
 export default SEO

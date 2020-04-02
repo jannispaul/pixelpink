@@ -65,11 +65,10 @@ class WorkPage extends React.Component {
                     "The Americans by mediapioneer logo",
                     "The Americans podcast inside iPhone next to player",
                     "The Americans website design iterations and versions",
-                    "The Americans website inside iPhone and iPad showing the responsive mobile version and clean code"
+                    "The Americans website inside iPhone and iPad showing the responsive mobile version and clean code",
                 ],
                 company: "The Americans",
-                title:
-                    "Podcast und Geschichten aus dem Amerika von heute",
+                title: "Podcast und Geschichten aus dem Amerika von heute",
                 link: "https://the-americans.com/",
             },
             {
@@ -80,7 +79,7 @@ class WorkPage extends React.Component {
                     "Arztpraxis schulzendorf website inside iphone and ranking on first page on google",
                     "Arztpraxis schulzendorf peggy niederhäusern examining a child and the entrance to the practice",
                     "Arztpraxis schulzendorf logo variations",
-                    "Arztpraxis schulzendorf color palette"
+                    "Arztpraxis schulzendorf color palette",
                 ],
                 company: "Arztpraxis-Schulzendorf",
                 title: "Moderne Praxiskommunikation",
@@ -93,7 +92,7 @@ class WorkPage extends React.Component {
                     "Die-Masterarbeit.com logo",
                     "Die-Masterarbeit.com website inside two iPhones",
                     "Die-Masterarbeit.com website showing homepage, contact and company profile screens",
-                    "Die-Masterarbeit.com styleguide and design system elements"
+                    "Die-Masterarbeit.com styleguide and design system elements",
                 ],
                 company: "Die-Masterarbeit.de",
                 title: "Verbindet Studenten mit Unternehmen",
@@ -112,7 +111,7 @@ class WorkPage extends React.Component {
                     "vinyl cover with yellow 3D pattern",
                     "vinyl cover with simple bauhause shapes",
                     "fashion application concept inside iphone and applewatch",
-                    "desert application concept inside two iphones"
+                    "desert application concept inside two iphones",
                 ],
                 company: "Freie arbeiten",
                 title: "Ist Ihr Projekt das nächste?",
@@ -125,7 +124,14 @@ class WorkPage extends React.Component {
             <StandardLayout>
                 <SEO
                     title="Projekte"
-                    keywords={[`projekte`, `pixelpink`, `arbeiten`, `referenzen`, `klienten`]}
+                    keywords={[
+                        `projekte`,
+                        `pixelpink`,
+                        `arbeiten`,
+                        `referenzen`,
+                        `klienten`,
+                    ]}
+                    description="Eine selektierte Auswahl der Arbeiten von PixelPink"
                 />
                 <LogoMobile />
                 <H1Header

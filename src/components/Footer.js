@@ -58,7 +58,7 @@ const Address = styled.div`
 
     margin-bottom: 2rem;
     @media (min-width: 769px) {
-        order: 1;
+        /* order: 1; */
     }
     @media (min-width: 1441px) {
     }
@@ -146,12 +146,18 @@ const Footer = props => (
     <StyledFooter>
         <StyledGrid>
             <Address>
-                <img data-sal="slide-up"
-                data-sal-delay="0"
-                data-sal-easing="ease" src={logoWhite} alt="Logo von PixelPink" />
-                <p data-sal="slide-up"
-                data-sal-delay="0"
-                data-sal-easing="ease">
+                <img
+                    data-sal="slide-up"
+                    data-sal-delay="0"
+                    data-sal-easing="ease"
+                    src={logoWhite}
+                    alt="Logo von PixelPink"
+                />
+                <p
+                    data-sal="slide-up"
+                    data-sal-delay="0"
+                    data-sal-easing="ease"
+                >
                     <a
                         href="https://www.linkedin.com/in/felix-lebedinzew-8358b8115/"
                         target="_blank"
@@ -209,10 +215,13 @@ const Footer = props => (
             </SocialMedia>
 
             <LegalContent>
-                <p data-sal="slide-up"
-                data-sal-delay="0"
-                data-sal-easing="ease">
-                    © 2020 PixelPink<br />
+                <p
+                    data-sal="slide-up"
+                    data-sal-delay="0"
+                    data-sal-easing="ease"
+                >
+                    © 2020 PixelPink
+                    <br />
                     All Rights Reserved
                 </p>
             </LegalContent>
