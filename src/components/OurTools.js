@@ -38,11 +38,6 @@ const ContentContainer = styled.div`
         & > p {
             margin: 0 -100px;
         }
-
-        img {
-            height: 70px;
-            width: 70px;
-        }
     }
     @media (min-width: 769px) {
         grid-template-columns: repeat(6, 100px);
