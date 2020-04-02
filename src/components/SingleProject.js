@@ -33,13 +33,14 @@ const StyledImage = styled(Img)`
 const TextContainer = styled.div`
     padding: 24px var(--padding-side);
     margin: auto;
-    margin-bottom: 92px;
+    margin-bottom: 20px;
     max-width: 1168px;
     h2 {
         margin-bottom: var(--space-s);
     }
     @media (min-width: 1216px) {
         padding: 24px 0;
+        margin-bottom: 80px;
     }
 `
 
