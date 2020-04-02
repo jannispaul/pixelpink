@@ -38,7 +38,7 @@ module.exports = {
             options: {
                 host: "https://pixel-pink.de",
                 sitemap: "https://pixel-pink.de/sitemap.xml",
-                policy: [{ userAgent: "*", disallow: "/" }],
+                policy: [{ userAgent: "*", allow: "/" }],
             },
         },
         {
