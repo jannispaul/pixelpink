@@ -52,32 +52,39 @@ const StyledGrid = styled.div`
     grid-template-rows: repeat(3, 110px);
     align-items: center;
     justify-content: center;
+    grid-gap: 20px;
 
-    & > img {
-        margin: auto;
-        max-width: 70%;
-        max-height: 40px;
-        -webkit-filter: grayscale(100%) opacity(70%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%) opacity(70%);
-        -webkit-transition: filter 0.1s ease-in;
-        -moz-transition: filter 0.1s ease-in;
-        -o-transition: filter 0.1s ease-in;
-        -ms-transition: filter 0.1s ease-in;
-        transition: filter 0.1s ease-in;
-    }
-
-    & > img:hover {
-        -webkit-filter: grayscale(0%) opacity(100%); /* Safari 6.0 - 9.0 */
-        filter: grayscale(0%) opacity(100%);
-        -webkit-transition: filter 0.1s ease-in;
-        -moz-transition: filter 0.1s ease-in;
-        -o-transition: filter 0.1s ease-in;
-        -ms-transition: filter 0.1s ease-in;
-        transition: filter 0.1s ease-in;
-    }
     @media (min-width: 769px) {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 110px);
+    }
+
+    & > div {
+        background: #fff;
+        box-shadow: 9px 10px 67px -17px rgba(51, 51, 51, 0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border-radius: 8px;
+    }
+    & > div {
+        & > img {
+            margin: auto;
+            max-width: 70%;
+            max-height: 40px;
+            /* filter: grayscale(100%) opacity(70%); */
+            transition: filter 0.1s ease-in;
+        }
+        &:hover img {
+            -webkit-filter: grayscale(0%) opacity(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%) opacity(100%);
+            -webkit-transition: filter 0.1s ease-in;
+            -moz-transition: filter 0.1s ease-in;
+            -o-transition: filter 0.1s ease-in;
+            -ms-transition: filter 0.1s ease-in;
+            transition: filter 0.1s ease-in;
+        }
     }
 `
 
@@ -100,48 +107,24 @@ const LogoWall = props => (
             </p>
         </div>
         <StyledGrid>
-            <img
-                src={fuelcastLogo}
-                alt="Logo von Fuelcast"
-                data-sal="slide-up"
-                data-sal-delay="50"
-                data-sal-easing="ease"
-            />
-            <img
-                src={commerzbankLogo}
-                alt="Logo von Commerzbank"
-                data-sal="slide-up"
-                data-sal-delay="100"
-                data-sal-easing="ease"
-            />
-            <img
-                src={telekomLogo}
-                alt="Logo von Telekom"
-                data-sal="slide-up"
-                data-sal-delay="150"
-                data-sal-easing="ease"
-            />
-            <img
-                src={mediapioneerLogo}
-                alt="Logo von Mediapioneer"
-                data-sal="slide-up"
-                data-sal-delay="200"
-                data-sal-easing="ease"
-            />
-            <img
-                src={boschLogo}
-                alt="Logo von Bosch"
-                data-sal="slide-up"
-                data-sal-delay="250"
-                data-sal-easing="ease"
-            />
-            <img
-                src={lhhLogo}
-                alt="Logo von Lee Hecht Harrison"
-                data-sal="slide-up"
-                data-sal-delay="300"
-                data-sal-easing="ease"
-            />
+            <div data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+                <img src={fuelcastLogo} alt="Logo von Fuelcast" />
+            </div>
+            <div data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+                <img src={commerzbankLogo} alt="Logo von Commerzbank" />
+            </div>
+            <div data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+                <img src={telekomLogo} alt="Logo von Telekom" />
+            </div>
+            <div data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+                <img src={mediapioneerLogo} alt="Logo von Mediapioneer" />
+            </div>
+            <div data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+                <img src={boschLogo} alt="Logo von Bosch" />
+            </div>
+            <div data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+                <img src={lhhLogo} alt="Logo von Lee Hecht Harrison" />
+            </div>
         </StyledGrid>
     </StyledSection>
 )
