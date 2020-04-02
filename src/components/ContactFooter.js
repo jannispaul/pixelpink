@@ -6,16 +6,23 @@ const StyledSection = styled.section`
     padding-bottom: 130px;
     padding: 42px var(--padding-side);
 
-    & > h1 {
+    & > h2 {
         max-width: 1168px;
         margin: auto;
+        font-size: 32px;
+        line-height: 1.37;
+
+        @media (min-width: 834px) {
+            font-size: 48px;
+            line-height: 1.2;
+        }
     }
 
     @media (min-width: 769px) {
         padding: 130px var(--padding-side);
     }
 
-    & > h1 > a {
+    & > h2 > a {
         color: var(--color-primary);
         text-decoration: none;
     }
@@ -58,28 +65,30 @@ const StyledSection = styled.section`
         -webkit-transition-timing-function: ease-out;
         transition-timing-function: ease-out;
     }
-    a:hover, a:focus, a:active {
+    a:hover,
+    a:focus,
+    a:active {
         color: white;
     }
-    a:hover:before, a:focus:before, a:active:before {
+    a:hover:before,
+    a:focus:before,
+    a:active:before {
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
     }
-    
 `
 
 const ContactFooter = props => (
     <StyledSection>
-        <h1 data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in">
+        <h2 data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in">
             {props.mainline}
             <br />
             <a href="mailto:hello@pixel-pink.de?subject=Hey PixelPink!👋🏼&body=Hallo Felix und Jannis,">
                 hello@pixel-pink.de
-            </a><br/>
-            <a href="tel:+4917681410001">
-                +49 176 81 41 0001
             </a>
-        </h1>
+            <br />
+            <a href="tel:+4917681410001">+49 176 81 41 0001</a>
+        </h2>
     </StyledSection>
 )
 
