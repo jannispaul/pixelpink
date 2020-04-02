@@ -36,8 +36,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-robots-txt`,
             options: {
-                host: "https://www.pixel-pink.de",
-                sitemap: "https://www.pixel-pink.de/sitemap.xml",
+                host: "https://pixel-pink.de",
+                sitemap: "https://pixel-pink.de/sitemap.xml",
                 policy: [{ userAgent: "*", disallow: "/" }],
             },
         },
