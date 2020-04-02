@@ -22,6 +22,10 @@ const StyledSection = styled.section`
             color: var(--color-gray-medium);
         }
     }
+    h3 {
+        font-size: 18px;
+        font-weight: 700;
+    }
 
     p {
         color: var(--color-gray-medium);
@@ -55,6 +59,8 @@ const StyledGrid = styled.div`
         justify-content: flex-start;
         padding: 10px;
         transition: background 0.2s ease;
+        text-decoration: none;
+
         :hover {
             transition: background 0.2s ease;
             background: #333333;
@@ -138,7 +144,7 @@ const ServicesIndex = props => (
                         data-sal-delay="0"
                         data-sal-easing="ease"
                     >
-                        <h4>Konzeption</h4>
+                        <h3>Konzeption</h3>
                         Wir entwerfen das passende Grundgerüst für Dein Produkt.
                     </p>
                 </Link>
@@ -150,7 +156,7 @@ const ServicesIndex = props => (
                         data-sal-delay="0"
                         data-sal-easing="ease"
                     >
-                        <h4>Design</h4>
+                        <h3>Design</h3>
                         Wir bilden ästetische Gestalt im Einklang mit Deiner
                         Marke.
                     </p>
@@ -163,7 +169,7 @@ const ServicesIndex = props => (
                         data-sal-delay="0"
                         data-sal-easing="ease"
                     >
-                        <h4>Entwicklung</h4>
+                        <h3>Entwicklung</h3>
                         Wir implementieren Dein Design mit technischer
                         Exzellenz.
                     </p>
@@ -176,7 +182,7 @@ const ServicesIndex = props => (
                         data-sal-delay="0"
                         data-sal-easing="ease"
                     >
-                        <h4>Marketing</h4>
+                        <h3>Marketing</h3>
                         Wir brigen Dein Produkt in den Markt.
                     </p>
                 </Link>
