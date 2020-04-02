@@ -11,13 +11,13 @@ class HeroProject extends React.Component {
             {
                 images: this.props.data.indexProjects.edges,
                 imgAltText: [
-                    "Fuelcast Application in front of a container ship",
+                    "Wall Street Weekly website inside chromebook and pixel3",
                     "Die-Masterarbeit.com website inside a blue Windows computer",
                     "Gabor Steingarts mediapioneer platform inside pink macbook",
                     "QVSTA website inside iPad in front of female model",
                     "Arztpraxis schulzendorf website inside macpro",
                     "The Americans website inside red macbook",
-                    "Wall Street Weekly website inside chromebook and pixel3",
+                    " Fuelcast Application in front of a container ship",
                 ],
                 company: "",
                 title: "App, Website oder Platform… was darf's sein?",
