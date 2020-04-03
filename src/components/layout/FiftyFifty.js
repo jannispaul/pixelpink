@@ -87,7 +87,7 @@ const div = props => (
                     data-sal-delay="100"
                     data-sal-easing="ease-in"
                 >
-                    Wo drückt denn der Schuh? Erweisen sich bestimme Merkmale
+                    Wo drückt denn der Schuh? Erweisen sich bestimmte Merkmale
                     Deines Produktes als unverständlich, heben spätestens Deine
                     Nutzer und Kunden mahnend den Finger. Um diesem
                     wirtschaftlichen Misserfolg vorzubeugen bildet die
@@ -95,17 +95,8 @@ const div = props => (
                     Grundstein für Dein erfolgreiches Projekt. Wir wollen, dass
                     Deine Produkte sinnvoll sind und sich vor allem intuitiv – am
                     besten ohne Erklärung bedienen lassen. Daher gehören die
-                    Schritte des Wireframing über den klickbaren Prototypen bis
+                    Schritte des wireframings über den klickbaren Prototypen bis
                     hin zum User-Testing zu unserem Hauptprogramm.
-                </p>
-                <p
-                    data-sal="slide-up"
-                    data-sal-delay="100"
-                    data-sal-easing="ease-in"
-                >
-                    Steht’s mit Ihrer Persona-Gruppe im Fokus entwickeln wir
-                    kundenzentrierte Mensch-Maschine Konzepte und
-                    Interatkionsmuster in strategischen Designprozessen.
                 </p>
             </div>
             <div>

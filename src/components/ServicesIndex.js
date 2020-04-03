@@ -127,13 +127,13 @@ const ServicesIndex = props => (
             <h2 data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease">
                 Unsere Services
                 <br />
-                <span>– keine Massenware, nur originelles Design</span>
+                <span>keine Massenware, nur originelles Design</span>
             </h2>
             <hr />
             <p data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
-                Unsere Herangehensweise an neue Projekte ist immer die gleiche –
-                es ist nie das gleiche!
-                <br /> Daher hören wir Ihnen zuerst aufmerksam zu und definieren
+                Unsere Herangehensweise an neue Projekte ist immer die Gleiche –
+                es ist nie das Gleiche!
+                <br /> Daher hören wir Dir zuerst aufmerksam zu und definieren
                 aus den Resultaten die individuell notwendigen Prozessschritte
                 für Dein Projekt.
             </p>
@@ -159,7 +159,7 @@ const ServicesIndex = props => (
                         data-sal-easing="ease"
                     >
                         <h3>Design</h3>
-                        Wir bilden ästetische Gestalt im Einklang mit Deiner
+                        Wir bilden ästhetische Gestalt im Einklang mit Deiner
                         Marke.
                     </p>
                 </Link>
@@ -185,7 +185,7 @@ const ServicesIndex = props => (
                         data-sal-easing="ease"
                     >
                         <h3>Marketing</h3>
-                        Wir brigen Dein Produkt in den Markt.
+                        Wir bringen Dein Produkt in den Markt.
                     </p>
                 </Link>
             </StyledGrid>

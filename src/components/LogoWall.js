@@ -101,7 +101,7 @@ const LogoWall = props => (
                 Wir arbeiten mit Unternehmen, Start-Ups, in Agenturen und
                 kreieren Landingpages, Corporate und E-Commerce-Websites,
                 Appdesigns und Marketing-Kampagnen. Unsere Stärken liegen in den
-                Bereichen Konzept, Design, Entwicklung und digitales Marketing.
+                Bereichen Konzeption, Design, Entwicklung und digitales Marketing.
                 Von der ersten Anfrage bis über den Launch hinaus stehen wir
                 unseren Kunden beratend und auf Augenhöhe zur Seite.
             </p>

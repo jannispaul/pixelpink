@@ -10,7 +10,7 @@ import LogoMobile from "../components/LogoMobile"
 import CookieNotice from "../components/CookieNotice"
 
 let copy = {
-    contact: "Bereit digital durchzustarten?",
+    contact: "Bist Du bereit digital durchzustarten?",
 }
 
 class IndexPage extends React.Component {
@@ -25,7 +25,7 @@ class IndexPage extends React.Component {
                 <LogoMobile />
                 <H1Header
                     mainline="Wir gestalten und entwickeln digitale Lösungen,"
-                    subline="die Deine Kunden lieben."
+                    subline="die Deine Kunden lieben"
                 />
                 <HeroProject />
                 <LogoWall/>
