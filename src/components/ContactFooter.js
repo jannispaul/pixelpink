@@ -80,7 +80,7 @@ const StyledSection = styled.section`
 
 const ContactFooter = props => (
     <StyledSection>
-        <h2 data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in">
+        <h2 data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-out">
             {props.mainline}
             <br />
             <a href="mailto:hello@pixel-pink.de?subject=Hey PixelPink!👋🏼&body=Hallo Felix und Jannis,">

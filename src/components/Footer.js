@@ -149,14 +149,14 @@ const Footer = props => (
                 <img
                     data-sal="slide-up"
                     data-sal-delay="0"
-                    data-sal-easing="ease"
+                    data-sal-easing="ease-out"
                     src={logoWhite}
                     alt="Logo von PixelPink"
                 />
                 <p
                     data-sal="slide-up"
                     data-sal-delay="0"
-                    data-sal-easing="ease"
+                    data-sal-easing="ease-out"
                 >
                     <a
                         href="https://www.linkedin.com/in/felix-lebedinzew-8358b8115/"
@@ -218,7 +218,7 @@ const Footer = props => (
                 <p
                     data-sal="slide-up"
                     data-sal-delay="0"
-                    data-sal-easing="ease"
+                    data-sal-easing="ease-out"
                 >
                     © 2020 PixelPink
                     <br />

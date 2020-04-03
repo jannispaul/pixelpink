@@ -6,8 +6,7 @@ import "../theme/carousel.css"
 import Img from "gatsby-image"
 import styled from "styled-components"
 
-const StyledSection = styled.div`
-`
+const StyledSection = styled.div``
 const ImageGrid = styled.div`
     max-width: 1168px;
     margin: auto;
@@ -27,7 +26,6 @@ const ImageGrid = styled.div`
         & > div:first-of-type {
             grid-row: 1/3;
         }
-
     }
 `
 
@@ -38,12 +36,14 @@ class HeroProject extends React.Component {
             {
                 image: this.props.data.ueberUns.edges[0].node.childImageSharp
                     .fluid,
-                imgAltText: "Felix Lebedinzew and Jannis Wicke working in office environment looking at screen",
+                imgAltText:
+                    "Felix Lebedinzew and Jannis Wicke working in office environment looking at screen",
             },
             {
                 image: this.props.data.ueberUns.edges[1].node.childImageSharp
                     .fluid,
-                imgAltText: "PixelPink office view with 3 apple computers and plants on white desk",
+                imgAltText:
+                    "PixelPink office view with 3 apple computers and plants on white desk",
             },
             {
                 image: this.props.data.ueberUns.edges[2].node.childImageSharp
@@ -56,10 +56,12 @@ class HeroProject extends React.Component {
     render() {
         return (
             <StyledSection>
-                <ImageGrid >
+                <ImageGrid>
                     {this.images.map((project, i) => (
                         <Img
-                            data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in"
+                            data-sal="slide-up"
+                            data-sal-delay="0"
+                            data-sal-easing="ease-out"
                             fluid={project.image}
                             alt={project.imgAltText}
                             key={i}

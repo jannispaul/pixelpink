@@ -68,24 +68,24 @@ const div = props => (
                 <Triangle
                     data-sal="slide-up"
                     data-sal-delay="0"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 ></Triangle>
                 <h2
                     data-sal="slide-up"
                     data-sal-delay="50"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 >
                     Konzeption
                 </h2>
                 <hr
                     data-sal="slide-up"
                     data-sal-delay="75"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 />
                 <p
                     data-sal="slide-up"
                     data-sal-delay="100"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 >
                     Wo drückt denn der Schuh? Erweisen sich bestimmte Merkmale
                     Deines Produktes als unverständlich, heben spätestens Deine
@@ -104,24 +104,24 @@ const div = props => (
                 <Circle
                     data-sal="slide-up"
                     data-sal-delay="0"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 ></Circle>
                 <h2
                     data-sal="slide-up"
                     data-sal-delay="50"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 >
                     Design
                 </h2>
                 <hr
                     data-sal="slide-up"
                     data-sal-delay="75"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 />
                 <p
                     data-sal="slide-up"
                     data-sal-delay="100"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 >
                     Wir machen nicht nur hübsch! Klar, das Endergebnis sieht bei
                     uns immer ästhetisch und ansprechend aus, aber unter Design

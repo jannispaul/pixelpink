@@ -7,7 +7,7 @@ const StyledSection = styled.div`
     background: var(--color-black);
     color: var(--color-white);
     overflow: hidden;
-    ${'' /* padding: var(--padding-vertical) var(--padding-side) 0; */}
+    ${"" /* padding: var(--padding-vertical) var(--padding-side) 0; */}
     @media (min-width: 769px) {
         padding: var(--padding-vertical) var(--padding-side);
     }
@@ -48,11 +48,10 @@ const ContentContainer = styled.div`
     position: relative;
     padding: var(--padding-vertical) var(--padding-side);
     @media (min-width: 769px) {
-            padding: 0;
-        }
+        padding: 0;
+    }
     @media (min-width: 1440px) {
-        
-        }
+    }
 `
 
 const div = props => (
@@ -60,12 +59,16 @@ const div = props => (
         <div>
             <AboutUsImage />
             <ContentContainer>
-                <h2 data-sal="slide-up" data-sal-delay="00" data-sal-easing="ease-in">
+                <h2
+                    data-sal="slide-up"
+                    data-sal-delay="00"
+                    data-sal-easing="ease-out"
+                >
                     Design Thinking <br />
                     Approach
                 </h2>
-                <hr data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in"/>
-                <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
+                <hr data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-out"/>
+                <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-out">
                 Für uns fängt Design nicht erst auf dem Papier oder am Computer an. Wir verfolgen und leben einen ganzheitlichen Design-Approach. Wir respektieren den Mensch, die Natur und suchen stets nach neuen Herausforderungen und Problemen, um unser Leben auf dieser Erde ein bisschen besser zu gestalten. 
                 </p>
             </ContentContainer>

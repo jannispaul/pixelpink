@@ -95,24 +95,24 @@ const div = props => (
                 <Square
                     data-sal="slide-up"
                     data-sal-delay="0"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 ></Square>
                 <h2
                     data-sal="slide-up"
                     data-sal-delay="50"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 >
                     Entwicklung
                 </h2>
                 <hr
                     data-sal="slide-up"
                     data-sal-delay="75"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 />
                 <p
                     data-sal="slide-up"
                     data-sal-delay="100"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 >
                     Auch technisch finden wir für Dich die beste Lösung: Sei es
                     ein individuelles Content-Management-System (CMS), ein
@@ -136,24 +136,24 @@ const div = props => (
                 <Hexagon
                     data-sal="slide-up"
                     data-sal-delay="0"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 ></Hexagon>
                 <h2
                     data-sal="slide-up"
                     data-sal-delay="50"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 >
                     Marketing
                 </h2>
                 <hr
                     data-sal="slide-up"
                     data-sal-delay="75"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 />
                 <p
                     data-sal="slide-up"
                     data-sal-delay="100"
-                    data-sal-easing="ease-in"
+                    data-sal-easing="ease-out"
                 >
                     Mehr Menschen erreichen? Die richtigen Menschen erreichen?
                     Uns ist es wichtig, dass deine Zielgruppe Dich findet und deshalb
