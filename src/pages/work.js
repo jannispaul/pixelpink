@@ -14,13 +14,25 @@ class WorkPage extends React.Component {
         super(props)
         this.projects = [
             {
+                images: this.props.data.ueberstunde,
+                imgAltText: [
+                    "Uberstunde inside iPhone in a dark room",
+                    "Uberstunde Website inside iMac",
+                    "Uberstunde by Mediapioneer Logo ",
+                    "Uberstunde Podcast Mockup",
+                ],
+                company: "Überstunde",
+                title: "Der Feierabend-Talk mit Marina Weisband und Michael Bröcker",
+                link: "https://überstunde.com",
+            },
+            {
                 images: this.props.data.wallStreetWeekly,
                 imgAltText: [
+                    "wallStreetWeekly Website in Chromebook and Pixel4",
                     "wallStreetWeekly Website inside iPhone showing resposnive home-layout",
-                    "wallStreetWeekly by Mediapioneer Logo ",
+                    "wallStreetWeekly by Mediapioneer Logo",
                     "wallStreetWeekly Website in MacBook Pro and iPhone laying on a white table",
                     "wallStreetWeekly Webdesign progress from first iteration to final state",
-                    "wallStreetWeekly Website in Chromebook and Pixel4"
                 ],
                 company: "Wall Street Weekly",
                 title: "Börsen-Reporterin Sophie Schimansky berichtet live aus New York",
@@ -29,14 +41,14 @@ class WorkPage extends React.Component {
             {
                 images: this.props.data.fuelcast,
                 imgAltText: [
-                    "Fuelcast Application in front of a container ship",
-                    "Fuelcast App Icon Logo",
                     "Fuelcast Application Dashboard",
-                    "Fuelcast Founder Jurek Herwig at Entrepreneur First Pitch Event in London 2019",
-                    "Felix Lebedinzew, Mattias Nilsson, Jurek Herwig at Meeting",
+                    "Fuelcast App Icon Logo",
+                    "Fuelcast Application in front of a container ship",
+                    "Fuelcast Application Measurement and Profile Screen inside blue phones",
                     "Fuelcast Application technical design specifications",
                     "Fuelcast Application design screenflow",
-                    "Fuelcast Application Measurement and Profile Screen inside blue phones",
+                    "Fuelcast Founder Jurek Herwig at Entrepreneur First Pitch Event in London 2019",
+                    "Felix Lebedinzew, Mattias Nilsson, Jurek Herwig at Meeting",
                 ],
                 company: "Fuelcast",
                 title: "Nachhaltigkeit in der Maritime-Industrie",
@@ -45,10 +57,10 @@ class WorkPage extends React.Component {
             {
                 images: this.props.data.mediapioneer,
                 imgAltText: [
-                    "Gabor Steingarts mediapioneer platform inside pink macbook",
-                    "mediapioneer logo",
                     "mediapioneer Website inside white macbook",
+                    "mediapioneer logo",
                     "mediapioneer Website inside white iPad",
+                    "Gabor Steingarts mediapioneer platform inside white iPad",
                     "mediapioneer Website wireframes and design iterations",
                 ],
                 company: "Mediapioneer",
@@ -58,13 +70,13 @@ class WorkPage extends React.Component {
             {
                 images: this.props.data.qvsta,
                 imgAltText: [
-                    "QVSTA website inside iPad in front of female model",
-                    "QVSTA Logo",
                     "QVSTA website inside a black iMac showing Model booking process",
-                    "QVSTA website dashboard",
-                    "QVSTA website wireframes and design iterations",
-                    "QVSTA website login-screen, briefing-screen and dashboard",
+                    "QVSTA Logo",
                     "QVSTA logo versions",
+                    "QVSTA website dashboard",
+                    "QVSTA website login-screen, briefing-screen and dashboard",
+                    "QVSTA website inside iPad in front of female model",
+                    "QVSTA website wireframes and design iterations",
                     "QVSTA design system elements",
                 ],
                 company: "Qvsta",
@@ -89,10 +101,10 @@ class WorkPage extends React.Component {
                 imgAltText: [
                     "Arztpraxis schulzendorf website inside macpro",
                     "Arztpraxis schulzendorf logo",
-                    "Arztpraxis schulzendorf website inside iphone and ranking on first page on google",
-                    "Arztpraxis schulzendorf peggy niederhäusern examining a child and the entrance to the practice",
                     "Arztpraxis schulzendorf logo variations",
                     "Arztpraxis schulzendorf color palette",
+                    "Arztpraxis schulzendorf website inside iphone and ranking on first page on google",
+                    "Arztpraxis schulzendorf peggy niederhäusern examining a child and the entrance to the practice",
                 ],
                 company: "Arztpraxis-Schulzendorf",
                 title: "Moderne Praxiskommunikation",
@@ -110,25 +122,6 @@ class WorkPage extends React.Component {
                 company: "Die-Masterarbeit.de",
                 title: "Studenten mit Unternehmen verbinden",
                 link: "https://www.die-masterarbeit.de/",
-            },
-            {
-                images: this.props.data.stuff,
-                imgAltText: [
-                    "silence emoji",
-                    "surf application concept inside two iphones",
-                    "paradise app icon concept",
-                    "fashion design social media kit screens inside phone",
-                    "conceptual golden depot brokerage overview",
-                    "architecture photography in bangkok, asia",
-                    "vinyl cover with black architecture",
-                    "vinyl cover with yellow 3D pattern",
-                    "vinyl cover with simple bauhause shapes",
-                    "fashion application concept inside iphone and applewatch",
-                    "desert application concept inside two iphones",
-                ],
-                company: "Freie arbeiten",
-                title: "Ist Dein Projekt das nächste?",
-                link: "",
             },
         ]
     }
@@ -182,6 +175,18 @@ class WorkPage extends React.Component {
 }
 export const query = graphql`
     query {
+        ueberstunde: allFile(
+            filter: { relativeDirectory: { eq: "work/ueberstunde" } }
+            sort: { fields: name }
+        ) {
+            edges {
+                node {
+                    ...ProjectImagesFragment
+                }
+            }
+        }
+
+
         wallStreetWeekly: allFile(
             filter: { relativeDirectory: { eq: "work/wallStreetWeekly" } }
             sort: { fields: name }
@@ -192,6 +197,7 @@ export const query = graphql`
                 }
             }
         }
+
         fuelcast: allFile(
             filter: { relativeDirectory: { eq: "work/fuelcast" } }
             sort: { fields: name }
@@ -202,56 +208,7 @@ export const query = graphql`
                 }
             }
         }
-        qvsta: allFile(
-            filter: { relativeDirectory: { eq: "work/qvsta" } }
-            sort: { fields: name }
-        ) {
-            edges {
-                node {
-                    ...ProjectImagesFragment
-                }
-            }
-        }
-        theamericans: allFile(
-            filter: { relativeDirectory: { eq: "work/theAmericans" } }
-            sort: { fields: name }
-        ) {
-            edges {
-                node {
-                    ...ProjectImagesFragment
-                }
-            }
-        }
-        arztpraxisSchulzendorf: allFile(
-            filter: { relativeDirectory: { eq: "work/arztpraxisSchulzendorf" } }
-            sort: { fields: name }
-        ) {
-            edges {
-                node {
-                    ...ProjectImagesFragment
-                }
-            }
-        }
-        dieMasterarbeit: allFile(
-            filter: { relativeDirectory: { eq: "work/dieMasterarbeit" } }
-            sort: { fields: name }
-        ) {
-            edges {
-                node {
-                    ...ProjectImagesFragment
-                }
-            }
-        }
-        stuff: allFile(
-            filter: { relativeDirectory: { eq: "work/stuff" } }
-            sort: { fields: name }
-        ) {
-            edges {
-                node {
-                    ...ProjectImagesFragment
-                }
-            }
-        }
+
         mediapioneer: allFile(
             filter: { relativeDirectory: { eq: "work/mediapioneer" } }
             sort: { fields: name }
@@ -262,6 +219,52 @@ export const query = graphql`
                 }
             }
         }
+
+        qvsta: allFile(
+            filter: { relativeDirectory: { eq: "work/qvsta" } }
+            sort: { fields: name }
+        ) {
+            edges {
+                node {
+                    ...ProjectImagesFragment
+                }
+            }
+        }
+
+        theamericans: allFile(
+            filter: { relativeDirectory: { eq: "work/theAmericans" } }
+            sort: { fields: name }
+        ) {
+            edges {
+                node {
+                    ...ProjectImagesFragment
+                }
+            }
+        }
+
+        arztpraxisSchulzendorf: allFile(
+            filter: { relativeDirectory: { eq: "work/arztpraxisSchulzendorf" } }
+            sort: { fields: name }
+        ) {
+            edges {
+                node {
+                    ...ProjectImagesFragment
+                }
+            }
+        }
+
+        dieMasterarbeit: allFile(
+            filter: { relativeDirectory: { eq: "work/dieMasterarbeit" } }
+            sort: { fields: name }
+        ) {
+            edges {
+                node {
+                    ...ProjectImagesFragment
+                }
+            }
+        }
+
+
     }
 `
 export default WorkPage

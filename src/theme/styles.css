@@ -19,6 +19,16 @@ a {
     color: var(--color-primary-light);
 }
 
+
+::selection {
+    background: #000000; /* WebKit/Blink Browsers */
+    color: #e6004e;
+  }
+  ::-moz-selection {
+    background: #000000; /* Gecko Browsers */
+    color: #e6004e;
+
+  }
 /* This media query only had a wrong max width. Please delete me if there is no other use for me!
 @media  (min-width: 834px) {
   body {

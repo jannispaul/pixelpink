@@ -11,13 +11,14 @@ class HeroProject extends React.Component {
             {
                 images: this.props.data.indexProjects.edges,
                 imgAltText: [
+                    "Uberstunde website inside Display on black",
                     "Wall Street Weekly website inside chromebook and pixel3",
-                    "Die-Masterarbeit.com website inside a blue Windows computer",
+                    "Fuelcast Application in front of a container ship",
                     "Gabor Steingarts mediapioneer platform inside pink macbook",
                     "QVSTA website inside iPad in front of female model",
-                    "Arztpraxis schulzendorf website inside macpro",
                     "The Americans website inside red macbook",
-                    " Fuelcast Application in front of a container ship",
+                    "Arztpraxis schulzendorf website inside macpro",
+                    "Die-Masterarbeit.com website inside a blue Windows computer",
                 ],
                 company: "",
                 title: "Eine selektierte Auswahl unserer Arbeiten",
