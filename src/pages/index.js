@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
         return (
             <StandardLayout>
                 <SEO
-                    title="DesignStudio Berlin"
+                    title="Design Studio Berlin"
                     keywords={[`pixelpink`, `design studio`, `berlin`, `werbeagentur`, `marketingagentur`, `design`]}
                 />
                 <CookieNotice />
