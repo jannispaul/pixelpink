@@ -2,8 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 const BurgerContainer = styled.div`
+    @media (min-width: 834px) {
+        display: none;
+    }
     position: fixed;
-    bottom: 50px;
+    bottom: 40px;
     right: var(--padding-side);
     z-index: 999;
     background: var(--color-primary);
