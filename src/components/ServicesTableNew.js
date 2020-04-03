@@ -56,6 +56,8 @@ const ScrollContainer = styled.div`
         overflow-x: scroll;
         scroll-padding: 0 10%;
         scroll-snap-type: x mandatory;
+        -webkit-scroll-snap-type: mandatory;
+        -webkit-scroll-snap-points-x: 50% 50%;
         padding: 0 var(--padding-side);
         @media (min-width: 500px) {
             grid-template-columns: repeat(4, 40vw) 2vw;
