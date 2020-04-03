@@ -3,38 +3,38 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const MobileNav = styled.div`
+    padding: 50px var(--padding-side);
     height: 100vh;
     position: fixed;
-    top:0;
-    left:0;
-    padding-top: 100px;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 100%;
     z-index: 2;
     background: var(--color-white);
-    /* background: ${props => (props.showMobileMenu ? "blue" : "green")}; */
     transform: ${props =>
-        props.showMobileMenu ? "translateY(0%)" : "translateY(-100%)"};
-    transition: transform 400ms cubic-bezier(0.215, 0.610, 0.355, 1);
-    & a{
-          transform: ${props =>
-              props.showMobileMenu ? "translateY(0%)" : "translateY(-100px)"};
+        props.showMobileMenu ? "translateY(0%)" : "translateY(100%)"};
+    transition: transform 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    & a {
+        transform: ${props =>
+            props.showMobileMenu ? "translateY(0%)" : "translateY(-100px)"};
     }
 `
 
 /*Mobile Nav Links with animation based on prop */
 const StyledLink = styled(Link)`
-    /* transform: ${props =>
-        props.showMobileMenu ? "translateY(0%)" : "translateY(-100px)"}; */
     color: var(--color-black);
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
     display: block;
     text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
+    /* text-transform: uppercase; */
+    font-weight: 600;
     text-align: center;
 
     &.active {
-        color: var(--color-primary-light);
+        color: var(--color-primary);
     }
 
     /*animation of Menu items flying in slightly delayed*/
@@ -57,45 +57,22 @@ const StyledLink = styled(Link)`
 `
 
 const MobileMenu = props => {
-    // if(props.showMobileMenu){
-    //     console.log("test")
-    // }
     return (
         <MobileNav showMobileMenu={props.showMobileMenu}>
-            <StyledLink
-                to="/"
-                // showMobileMenu={props.showMobileMenu}
-                activeClassName="active"
-            >
+            <StyledLink to="/" activeClassName="active">
                 Home
             </StyledLink>
-            <StyledLink
-                to="/anfrage/"
-                // showMobileMenu={props.showMobileMenu}
-                activeClassName="active"
-            >
-                Online-Anfrage
+            <StyledLink to="/work/" activeClassName="active">
+                Projekte
             </StyledLink>
-            <StyledLink
-                to="/kontakt/"
-                // showMobileMenu={props.showMobileMenu}
-                activeClassName="active"
-            >
+            <StyledLink to="/services/" activeClassName="active">
+                Services
+            </StyledLink>
+            <StyledLink to="/ueber-uns/" activeClassName="active">
+                Über uns
+            </StyledLink>
+            <StyledLink to="/kontakt/" activeClassName="active">
                 Kontakt
-            </StyledLink>
-            <StyledLink
-                to="/faq/"
-                // showMobileMenu={props.showMobileMenu}
-                activeClassName="active"
-            >
-                FAQ
-            </StyledLink>
-            <StyledLink
-                to="/versicherungsbedingungen/"
-                // showMobileMenu={props.showMobileMenu}
-                activeClassName="active"
-            >
-                Versicherungsbedingungen
             </StyledLink>
         </MobileNav>
     )

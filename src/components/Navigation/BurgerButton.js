@@ -6,7 +6,7 @@ const BurgerContainer = styled.div`
     bottom: 50px;
     right: var(--padding-side);
     z-index: 999;
-    background: white;
+    background: var(--color-primary);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     display: inline-block;
     height: 50px;
@@ -34,7 +34,7 @@ const Burger = styled.div`
         height: 2px;
         display: block;
         position: relative;
-        background: var(--color-black);
+        background: var(--color-white);
         transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
         transition-delay: 0s;
     }
