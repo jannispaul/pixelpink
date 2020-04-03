@@ -10,7 +10,7 @@ import LogoMobile from "../components/LogoMobile"
 import CookieNotice from "../components/CookieNotice"
 
 let copy = {
-    contact: "Sind Sie bereit digital durchzustarten?",
+    contact: "Bereit digital durchzustarten?",
 }
 
 class IndexPage extends React.Component {

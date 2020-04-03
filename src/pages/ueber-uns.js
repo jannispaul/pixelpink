@@ -49,7 +49,7 @@ class IndexPage extends React.Component {
                 >
                     <OurTools></OurTools>
                 </HeadlineAndText>
-                <ContactFooter mainline="Lassen Sie sich von uns überraschen!" />
+                <ContactFooter mainline="Lass Dich von uns überraschen!" />
             </StandardLayout>
         )
     }

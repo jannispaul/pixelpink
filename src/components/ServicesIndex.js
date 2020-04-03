@@ -8,7 +8,9 @@ const StyledSection = styled.section`
     /* padding-top: 130px;
     padding-bottom: 130px; */
     /* padding: 0px var(--padding-side); */
-    padding: var(--padding-vertical) var(--padding-side);
+    ${'' /* padding: var(--padding-vertical) var(--padding-side); */}
+    padding: 60px var(--padding-side);
+
 
     & > div {
         max-width: 1168px;

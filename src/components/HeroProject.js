@@ -20,7 +20,7 @@ class HeroProject extends React.Component {
                     " Fuelcast Application in front of a container ship",
                 ],
                 company: "",
-                title: "App, Website oder Platform… was darf's sein?",
+                title: "Eine selektierte Auswahl unserer Arbeiten",
                 id: "01",
             },
         ]

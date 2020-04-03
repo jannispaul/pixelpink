@@ -88,12 +88,12 @@ const div = props => (
                     data-sal-easing="ease-in"
                 >
                     Wo drückt denn der Schuh? Erweisen sich bestimme Merkmale
-                    Ihres Produktes als unverständlich, heben spätestens Ihre
+                    Deines Produktes als unverständlich, heben spätestens Deine
                     Nutzer und Kunden mahnend den Finger. Um diesem
                     wirtschaftlichen Misserfolg vorzubeugen bildet die
                     Ursachenforschung und ein fundamentales Konzept für uns den
-                    Grundstein für Ihr erfolgreiches Projekt. Wir wollen, dass
-                    Ihre Produkte sinnvoll sind und sich vor allem intuitiv – am
+                    Grundstein für Dein erfolgreiches Projekt. Wir wollen, dass
+                    Deine Produkte sinnvoll sind und sich vor allem intuitiv – am
                     besten ohne Erklärung bedienen lassen. Daher gehören die
                     Schritte des Wireframing über den klickbaren Prototypen bis
                     hin zum User-Testing zu unserem Hauptprogramm.

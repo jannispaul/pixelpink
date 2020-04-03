@@ -68,7 +68,7 @@ class WorkPage extends React.Component {
                     "QVSTA design system elements",
                 ],
                 company: "Qvsta",
-                title: "Revolutionieren die Fashion-Tech Branche",
+                title: "QVSTA revolutionieren die Fashion-Tech Branche",
                 link: "https://qvsta.com/",
             },
             {
@@ -108,7 +108,7 @@ class WorkPage extends React.Component {
                     "Die-Masterarbeit.com styleguide and design system elements",
                 ],
                 company: "Die-Masterarbeit.de",
-                title: "Verbindet Studenten mit Unternehmen",
+                title: "Studenten mit Unternehmen verbinden",
                 link: "https://www.die-masterarbeit.de/",
             },
             {
@@ -127,7 +127,7 @@ class WorkPage extends React.Component {
                     "desert application concept inside two iphones",
                 ],
                 company: "Freie arbeiten",
-                title: "Ist Ihr Projekt das nächste?",
+                title: "Ist Dein Projekt das nächste?",
                 link: "",
             },
         ]
