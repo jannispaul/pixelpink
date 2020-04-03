@@ -61,15 +61,36 @@ const div = props => (
         <ScrollAnchor id="build-and-deliver"></ScrollAnchor>
         <div>
             <ContentContainer>
-                <Square data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in"></Square>
-                <h2 data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in">
+                <Square
+                    data-sal="slide-up"
+                    data-sal-delay="0"
+                    data-sal-easing="ease-out"
+                ></Square>
+                <h2
+                    data-sal="slide-up"
+                    data-sal-delay="50"
+                    data-sal-easing="ease-out"
+                >
                     Build & <br />
                     Deliver
                 </h2>
-                <hr data-sal="slide-up" data-sal-delay="75" data-sal-easing="ease-in"/>
-                <p data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in">
+                <hr
+                    data-sal="slide-up"
+                    data-sal-delay="75"
+                    data-sal-easing="ease-out"
+                />
+                <p
+                    data-sal="slide-up"
+                    data-sal-delay="100"
+                    data-sal-easing="ease-out"
+                >
                     Neben der strategischen Platzierung und Konzeption Ihrer
-                    Produkte und Services, entwickeln und gestalten wir jeden Ihr Projekt nach modernsten standards. Technologische Exzellenz, performance und effiziente Implementierung stehen für uns im Vordergrund. Unser einzigartiges Zusammenspiel aus Design & Entwicklung garantiert Detailreichtum und Qualität von Anfang bis zum Ende.
+                    Produkte und Services, entwickeln und gestalten wir jeden
+                    Ihr Projekt nach modernsten standards. Technologische
+                    Exzellenz, performance und effiziente Implementierung stehen
+                    für uns im Vordergrund. Unser einzigartiges Zusammenspiel
+                    aus Design & Entwicklung garantiert Detailreichtum und
+                    Qualität von Anfang bis zum Ende.
                 </p>
             </ContentContainer>
             <ServiceImage />

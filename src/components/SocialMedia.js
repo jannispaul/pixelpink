@@ -40,27 +40,55 @@ const Subline = styled.span`
     color: var(--color-gray-medium);
 `
 const SocialMedia = props => (
-    <StyledSection >
+    <StyledSection>
         <div>
-            <h1 data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease-in">
+            <h1
+                data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease-out"
+            >
                 {props.mainline} <br />
                 <Subline>{props.subline}</Subline>
             </h1>
-            <hr data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-in"/>
-            <GridContainer >
-                <SocialMediaButton data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-in" link="https://de.linkedin.com/company/pixelpink-gbr">
+            <hr
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease-out"
+            />
+            <GridContainer>
+                <SocialMediaButton
+                    data-sal="slide-up"
+                    data-sal-delay="100"
+                    data-sal-easing="ease-out"
+                    link="https://de.linkedin.com/company/pixelpink-gbr"
+                >
                     <Icon icon={ICONS.LINKEDIN} />
                     LinkedIn
                 </SocialMediaButton>
-                <SocialMediaButton data-sal="slide-up" data-sal-delay="150" data-sal-easing="ease-in" link="https://www.instagram.com/pixelpink.berlin/">
+                <SocialMediaButton
+                    data-sal="slide-up"
+                    data-sal-delay="150"
+                    data-sal-easing="ease-out"
+                    link="https://www.instagram.com/pixelpink.berlin/"
+                >
                     <Icon icon={ICONS.INSTAGRAM} />
                     Instagram
                 </SocialMediaButton>
-                <SocialMediaButton data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-in" link="https://www.facebook.com/pixelpinkberlin/">
+                <SocialMediaButton
+                    data-sal="slide-up"
+                    data-sal-delay="200"
+                    data-sal-easing="ease-out"
+                    link="https://www.facebook.com/pixelpinkberlin/"
+                >
                     <Icon icon={ICONS.FACEBOOK} />
                     Facebook
                 </SocialMediaButton>
-                <SocialMediaButton data-sal="slide-up" data-sal-delay="250" data-sal-easing="ease-in" link="https://www.behance.net/pixelpinkberlin">
+                <SocialMediaButton
+                    data-sal="slide-up"
+                    data-sal-delay="250"
+                    data-sal-easing="ease-out"
+                    link="https://www.behance.net/pixelpinkberlin"
+                >
                     <Icon icon={ICONS.BEHANCE} />
                     Behance
                 </SocialMediaButton>

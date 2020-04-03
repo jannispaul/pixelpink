@@ -20,7 +20,11 @@ const StyledSection = styled.section`
 `
 
 const H1Header = props => (
-    <StyledSection data-sal="fade" data-sal-delay="0" data-sal-easing="ease-in">
+    <StyledSection
+        data-sal="fade"
+        data-sal-delay="0"
+        data-sal-easing="ease-out"
+    >
         <h1>
             {" "}
             {props.mainline} <br />

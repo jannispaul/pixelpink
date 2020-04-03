@@ -122,13 +122,21 @@ const Hexagon = styled.div`
 const ServicesIndex = props => (
     <StyledSection>
         <div>
-            <h2 data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease">
+            <h2
+                data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease-out"
+            >
                 Unsere Services
                 <br />
                 <span>– keine Massenware, nur originelles Design</span>
             </h2>
             <hr />
-            <p data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+            <p
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease-out"
+            >
                 Unsere Herangehensweise an neue Projekte ist immer die gleiche –
                 es ist nie das gleiche!
                 <br /> Daher hören wir Ihnen zuerst aufmerksam zu und definieren
@@ -142,7 +150,7 @@ const ServicesIndex = props => (
                     <p
                         data-sal="slide-up"
                         data-sal-delay="0"
-                        data-sal-easing="ease"
+                        data-sal-easing="ease-out"
                     >
                         <h3>Konzeption</h3>
                         Wir entwerfen das passende Grundgerüst für Dein Produkt.
@@ -154,7 +162,7 @@ const ServicesIndex = props => (
                     <p
                         data-sal="slide-up"
                         data-sal-delay="0"
-                        data-sal-easing="ease"
+                        data-sal-easing="ease-out"
                     >
                         <h3>Design</h3>
                         Wir bilden ästetische Gestalt im Einklang mit Deiner
@@ -167,7 +175,7 @@ const ServicesIndex = props => (
                     <p
                         data-sal="slide-up"
                         data-sal-delay="0"
-                        data-sal-easing="ease"
+                        data-sal-easing="ease-out"
                     >
                         <h3>Entwicklung</h3>
                         Wir implementieren Dein Design mit technischer
@@ -180,7 +188,7 @@ const ServicesIndex = props => (
                     <p
                         data-sal="slide-up"
                         data-sal-delay="0"
-                        data-sal-easing="ease"
+                        data-sal-easing="ease-out"
                     >
                         <h3>Marketing</h3>
                         Wir brigen Dein Produkt in den Markt.

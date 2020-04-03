@@ -91,13 +91,21 @@ const StyledGrid = styled.div`
 const LogoWall = props => (
     <StyledSection>
         <div>
-            <h2 data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease">
+            <h2
+                data-sal="slide-up"
+                data-sal-delay="0"
+                data-sal-easing="ease-out"
+            >
                 <img src={logo} alt="PixelPink-Logo" /> ist ein auf Design und
                 Technologie spezialisiertes Studio für digitale Medien in
                 Berlin.
             </h2>
             <hr />
-            <p data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+            <p
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease-out"
+            >
                 Wir arbeiten mit Unternehmen, Start-Ups, in Agenturen und
                 kreieren Landingpages, Corporate und E-Commerce-Websites,
                 Appdesigns und Marketing-Kampagnen. Unsere Stärken liegen in den
@@ -107,22 +115,46 @@ const LogoWall = props => (
             </p>
         </div>
         <StyledGrid>
-            <div data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+            <div
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease-out"
+            >
                 <img src={fuelcastLogo} alt="Logo von Fuelcast" />
             </div>
-            <div data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+            <div
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease-out"
+            >
                 <img src={commerzbankLogo} alt="Logo von Commerzbank" />
             </div>
-            <div data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+            <div
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease-out"
+            >
                 <img src={telekomLogo} alt="Logo von Telekom" />
             </div>
-            <div data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+            <div
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease-out"
+            >
                 <img src={mediapioneerLogo} alt="Logo von Mediapioneer" />
             </div>
-            <div data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+            <div
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease-out"
+            >
                 <img src={boschLogo} alt="Logo von Bosch" />
             </div>
-            <div data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease">
+            <div
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease-out"
+            >
                 <img src={lhhLogo} alt="Logo von Lee Hecht Harrison" />
             </div>
         </StyledGrid>
