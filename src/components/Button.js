@@ -9,6 +9,7 @@ const MoveRight = keyframes`
 
 const StyledButton = styled.a`
     text-decoration: none;
+    font-weight: 600;
     color: ${props =>
         props.white ? "var(--color-white)" : "var(--color-primary)"};
     margin-bottom: var(--space-s);
@@ -32,7 +33,8 @@ const StyledButton = styled.a`
     }
 
     :hover {
-
+        color: ${props =>
+            props.white ? "var(--color-white)" : "var(--color-black)"};
         background: ${props =>
             props.primary ? "none" : "var(--color-accent-light)"};
         border-color: ${props =>

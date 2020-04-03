@@ -14,6 +14,19 @@ class WorkPage extends React.Component {
         super(props)
         this.projects = [
             {
+                images: this.props.data.wallStreetWeekly,
+                imgAltText: [
+                    "wallStreetWeekly Website inside iPhone showing resposnive home-layout",
+                    "wallStreetWeekly by Mediapioneer Logo ",
+                    "wallStreetWeekly Website in MacBook Pro and iPhone laying on a white table",
+                    "wallStreetWeekly Webdesign progress from first iteration to final state",
+                    "wallStreetWeekly Website in Chromebook and Pixel4"
+                ],
+                company: "Wall Street Weekly",
+                title: "Börsen-Reporterin Sophie Schimansky berichtet live aus New York",
+                link: "https://wall-street-weekly.com",
+            },
+            {
                 images: this.props.data.fuelcast,
                 imgAltText: [
                     "Fuelcast Application in front of a container ship",
@@ -169,6 +182,16 @@ class WorkPage extends React.Component {
 }
 export const query = graphql`
     query {
+        wallStreetWeekly: allFile(
+            filter: { relativeDirectory: { eq: "work/wallStreetWeekly" } }
+            sort: { fields: name }
+        ) {
+            edges {
+                node {
+                    ...ProjectImagesFragment
+                }
+            }
+        }
         fuelcast: allFile(
             filter: { relativeDirectory: { eq: "work/fuelcast" } }
             sort: { fields: name }

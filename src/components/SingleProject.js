@@ -10,7 +10,7 @@ import "../theme/carousel.css"
 
 const Project = styled.div`
     max-width: 1168px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
 
     div > button {
         visibility: hidden;
@@ -36,7 +36,7 @@ const TextContainer = styled.div`
     margin-bottom: 20px;
     max-width: 1168px;
     h2 {
-        margin-bottom: var(--space-s);
+        margin-bottom: 15px;
     }
     @media (min-width: 1216px) {
         padding: 24px 0;
@@ -57,7 +57,7 @@ const Company = styled.span`
 `
 
 const SingleProject = props => (
-    <Project data-sal="slide-up" data-sal-delay="75" data-sal-easing="ease-in">
+    <Project>
         <Carousel
             autoPlay={false}
             showThumbs={false}

@@ -22,6 +22,7 @@ const App = styled.div`
 const Main = styled.div`
     z-index: 0;
     position: relative;
+    overflow: hidden;
     @media (min-width: 834px) {
         margin-top: 80px;
     }

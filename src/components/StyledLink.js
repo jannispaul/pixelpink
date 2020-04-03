@@ -9,8 +9,8 @@ const MoveRight = keyframes`
 
 const StyledLinkInternal = styled(Link)`
     text-decoration: none;
-    color: ${props =>
-        props.white ? "var(--color-white)" : "var(--color-gray-dark)"};
+    font-weight: 600;
+    color: var(--color-primary);
     margin-bottom: var(--space-s);
     margin-right: var(--space-s);
     width: 100%;
