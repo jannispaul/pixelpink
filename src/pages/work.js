@@ -17,9 +17,10 @@ class WorkPage extends React.Component {
                 images: this.props.data.ueberstunde,
                 imgAltText: [
                     "Uberstunde inside iPhone in a dark room",
-                    "Uberstunde Website inside iMac",
                     "Uberstunde by Mediapioneer Logo ",
+                    "Uberstunde Website inside iMac",
                     "Uberstunde Podcast Mockup",
+                    "Uberstunde Gerhard Schröder Podcast",
                 ],
                 company: "Überstunde",
                 title: "Der Feierabend-Talk mit Marina Weisband und Michael Bröcker",
@@ -29,8 +30,8 @@ class WorkPage extends React.Component {
                 images: this.props.data.wallStreetWeekly,
                 imgAltText: [
                     "wallStreetWeekly Website in Chromebook and Pixel4",
-                    "wallStreetWeekly Website inside iPhone showing resposnive home-layout",
                     "wallStreetWeekly by Mediapioneer Logo",
+                    "wallStreetWeekly Website inside iPhone showing resposnive home-layout",
                     "wallStreetWeekly Website in MacBook Pro and iPhone laying on a white table",
                     "wallStreetWeekly Webdesign progress from first iteration to final state",
                 ],
@@ -43,10 +44,10 @@ class WorkPage extends React.Component {
                 imgAltText: [
                     "Fuelcast Application Dashboard",
                     "Fuelcast App Icon Logo",
-                    "Fuelcast Application in front of a container ship",
-                    "Fuelcast Application Measurement and Profile Screen inside blue phones",
-                    "Fuelcast Application technical design specifications",
+                    "Fuelcast Application Profile and Scan-Screen",
                     "Fuelcast Application design screenflow",
+                    "Fuelcast Application technical design specifications",
+                    "Fuelcast Application in front of a container ship",
                     "Fuelcast Founder Jurek Herwig at Entrepreneur First Pitch Event in London 2019",
                     "Felix Lebedinzew, Mattias Nilsson, Jurek Herwig at Meeting",
                 ],
@@ -110,6 +111,7 @@ class WorkPage extends React.Component {
                 title: "Moderne Praxiskommunikation",
                 link: "https://arztpraxis-schulzendorf.de/",
             },
+
             {
                 images: this.props.data.dieMasterarbeit,
                 imgAltText: [
@@ -121,7 +123,7 @@ class WorkPage extends React.Component {
                 ],
                 company: "Die-Masterarbeit.de",
                 title: "Studenten mit Unternehmen verbinden",
-                link: "https://www.die-masterarbeit.de/",
+                link: "https://www.die-masterarbeit.de",
             },
         ]
     }
