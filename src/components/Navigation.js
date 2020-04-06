@@ -132,6 +132,8 @@ const Logo = styled(Link)`
 
     @media (min-width: 834px) {
         display: flex;
+        height: 100%;
+        align-items: center;
     }
 
     @media (min-width: 1441px) {
