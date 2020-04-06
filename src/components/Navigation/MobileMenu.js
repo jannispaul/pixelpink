@@ -68,11 +68,11 @@ const MobileMenu = props => {
             <StyledLink to="/work/" activeClassName="active">
                 Projekte
             </StyledLink>
-            <StyledLink to="/services/" activeClassName="active">
-                Services
-            </StyledLink>
             <StyledLink to="/ueber-uns/" activeClassName="active">
                 Über uns
+            </StyledLink>
+            <StyledLink to="/services/" activeClassName="active">
+                Services
             </StyledLink>
             <StyledLink to="/kontakt/" activeClassName="active">
                 Kontakt

@@ -150,11 +150,11 @@ const Nav = () => (
         <NavItem to="/work" activeClassName="active">
             <span>Projekte</span>
         </NavItem>
-        <NavItem to="/services" activeClassName="active">
-            <span>Services</span>
-        </NavItem>
         <NavItem to="/ueber-uns" activeClassName="active">
             <span>Über uns</span>
+        </NavItem>
+        <NavItem to="/services" activeClassName="active">
+            <span>Services</span>
         </NavItem>
         <NavItem to="/kontakt" activeClassName="active">
             <span>Kontakt</span>
