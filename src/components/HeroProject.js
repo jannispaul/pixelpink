@@ -30,12 +30,6 @@ class HeroProject extends React.Component {
     render() {
         return (
             <div>
-                {/* <SingleProject
-                    img={this.projects[0].images}
-                    imgAltText={this.projects[0].imgAltText}
-                    company={this.projects[0].company}
-                    title={this.projects[0].title}
-                /> */}
                 {this.projects.map((project, i) => (
                     <SingleProject
                         img={project.images}

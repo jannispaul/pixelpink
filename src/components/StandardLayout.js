@@ -14,6 +14,7 @@ import Footer from "../components/Footer"
 
 const App = styled.div`
     height: 100%;
+    position: relative;
 
     @media (min-width: 1441px) {
         display: grid;
@@ -21,9 +22,10 @@ const App = styled.div`
     }
 `
 const Main = styled.div`
-    z-index: 0;
+    z-index: 1;
     position: relative;
     overflow: hidden;
+    background: var(--color-white);
     @media (min-width: 834px) {
         margin-top: 80px;
     }

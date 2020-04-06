@@ -5,6 +5,7 @@ const StyledSection = styled.section`
     padding-top: 130px;
     padding-bottom: 130px;
     padding: 42px var(--padding-side);
+    background: var(--color-white);
 
     & > h2 {
         max-width: 1168px;

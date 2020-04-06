@@ -10,7 +10,9 @@ import "../theme/carousel.css"
 
 const Project = styled.div`
     max-width: 1168px;
-    margin: 0 auto 60px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    background: var(--color-white);
 
     div > button {
         visibility: hidden;
