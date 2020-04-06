@@ -127,8 +127,8 @@ const div = props => (
                     sind, also auf verschiedenen Display-Größen funktionieren,
                     versteht sich bei uns von selbst. Sobald die Entwicklung
                     dann abgeschlossen ist, können wir für Dich das Hosting
-                    übernehmen, sodass Du Dich auf das konzentrieren kannst,
-                    was Dir wirklich wichtig ist.
+                    übernehmen, sodass Du Dich auf das konzentrieren kannst, was
+                    Dir wirklich wichtig ist.
                 </p>
             </div>
             <div>
@@ -156,8 +156,8 @@ const div = props => (
                     data-sal-easing="ease-out"
                 >
                     Mehr Menschen erreichen? Die richtigen Menschen erreichen?
-                    Uns ist es wichtig, dass deine Zielgruppe Dich findet und deshalb
-                    achten wir darauf, unsere Websites für Suchmaschinen
+                    Uns ist es wichtig, dass Deine Zielgruppe Dich findet und
+                    deshalb achten wir darauf, unsere Websites für Suchmaschinen
                     zu optimieren (SEO). Wie kann man noch mehr Leads
                     (potentielle Kunden) generieren? Suchmaschinen- und
                     Social-Media-Marketing machen es möglich: Mit individuellen
