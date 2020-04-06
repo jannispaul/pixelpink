@@ -10,7 +10,7 @@ const MobileNav = styled.div`
     left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: stretch;
     width: 100%;
     z-index: 2;
     background: var(--color-white);
@@ -19,19 +19,22 @@ const MobileNav = styled.div`
     transition: transform 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
     & a {
         transform: ${props =>
-            props.showMobileMenu ? "translateY(0%)" : "translateY(-100px)"};
+            props.showMobileMenu ? "translateY(0%)" : "translateY(100px)"};
     }
 `
 
 /*Mobile Nav Links with animation based on prop */
 const StyledLink = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--color-black);
-    /* margin-top: 5vh; */
-    display: block;
     text-decoration: none;
     /* text-transform: uppercase; */
     font-weight: 600;
+    font-size: 24px;
     text-align: center;
+    flex-grow: 1;
 
     &.active {
         color: var(--color-primary);

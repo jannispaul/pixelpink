@@ -1,11 +1,11 @@
 :root {
     /* main colors */
     --color-primary: #e6004e;
-    --color-primary-dark: #CC0045;
+    --color-primary-dark: #cc0045;
     --color-black: #1a1a1a;
     --color-gray-dark: #616161;
     --color-gray-darkmedium: #999999;
-    --color-gray-medium: #cbcfd3;
+    --color-gray-medium: #b6babd;
     --color-gray-light: #fafafa;
     --color-white: white;
 
@@ -35,4 +35,3 @@
         --padding-vertical: 100px;
     }
 }
-
