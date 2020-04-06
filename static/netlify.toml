@@ -1,0 +1,14 @@
+[[redirects]]
+  from = "https://pixelpink.netlify.com/*"
+  to ="https://pixel-pink.de/:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://www.pixel-pink.de/*"
+  to ="https://pixel-pink.de/:splat"
+  status = 301
+
+  [[redirects]]
+  from = "/more.html"
+  status = 410
+

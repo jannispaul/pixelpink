@@ -1,8 +1,0 @@
-# Redirect netlify domain  to primary domain
-https://pixelpink.netlify.com/* https://pixel-pink.de/:splat 301!
-
-# Redirect www-domain to primary domain
-https://www.pixel-pink.de/* https://pixel-pink.de/:splat 301!
-
-# Old pages that got deleted
-/more.html / 410
