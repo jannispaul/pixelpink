@@ -45,7 +45,7 @@ class IndexPage extends React.Component {
                 <HeadlineAndText
                     h2="Unsere Tools"
                     subline="Modernes Teck-Stack"
-                    body="Für uns ist es wichtig, das richtige Werkzeug für den richtigen Job zu haben. Deshalb arbeiten wir mit einer Vielzahl an Tools. Hier findest du eine Auswahl unserer liebsten und meist genutzen."
+                    body="Für uns ist es wichtig, das richtige Werkzeug für den richtigen Job zu haben. Deshalb arbeiten wir mit einer Vielzahl an Tools. Hier findest du eine Auswahl unserer liebsten und meist genutzten."
                 >
                     <OurTools></OurTools>
                 </HeadlineAndText>
