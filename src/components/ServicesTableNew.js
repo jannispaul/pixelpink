@@ -132,13 +132,13 @@ class ServicesTable extends React.Component {
                 name: "Design",
                 icon: ICONS.CIRCLE,
                 services: [
-                    "Visual Design",
-                    "Product Design",
+                    "Visual-Design",
+                    "Product-Design",
                     "UI-Design",
                     "Branding + Logo",
                     "Prototyping",
-                    "User Testing",
-                    "Design systems",
+                    "User-Testing",
+                    "Design-Systems",
                     "Wireframing",
                     "Pitch-Decks",
                 ],
@@ -186,9 +186,9 @@ class ServicesTable extends React.Component {
                     data-sal-easing="ease-out"
                 >
                     <h2>
-                        Unsere Services
+                        Übersicht aller Leistungen
                         <br />
-                        <span>keine Massenware, nur originelles Design</span>
+                        <span>Typische Methoden, typische Outputs</span>
                     </h2>
                     <hr />
                 </HeadlineContainer>

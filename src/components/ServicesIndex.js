@@ -8,7 +8,9 @@ const StyledSection = styled.section`
     /* padding-top: 130px;
     padding-bottom: 130px; */
     /* padding: 0px var(--padding-side); */
-    padding: var(--padding-vertical) var(--padding-side);
+    ${'' /* padding: var(--padding-vertical) var(--padding-side); */}
+    padding: 60px var(--padding-side);
+
 
     & > div {
         max-width: 1168px;
@@ -129,17 +131,13 @@ const ServicesIndex = props => (
             >
                 Unsere Services
                 <br />
-                <span>– keine Massenware, nur originelles Design</span>
+                <span>keine Massenware, nur originelles Design</span>
             </h2>
             <hr />
-            <p
-                data-sal="slide-up"
-                data-sal-delay="50"
-                data-sal-easing="ease-out"
-            >
-                Unsere Herangehensweise an neue Projekte ist immer die gleiche –
-                es ist nie das gleiche!
-                <br /> Daher hören wir Ihnen zuerst aufmerksam zu und definieren
+            <p data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-out">
+                Unsere Herangehensweise an neue Projekte ist immer die Gleiche –
+                es ist nie das Gleiche!
+                <br /> Daher hören wir Dir zuerst aufmerksam zu und definieren
                 aus den Resultaten die individuell notwendigen Prozessschritte
                 für Dein Projekt.
             </p>
@@ -165,7 +163,7 @@ const ServicesIndex = props => (
                         data-sal-easing="ease-out"
                     >
                         <h3>Design</h3>
-                        Wir bilden ästetische Gestalt im Einklang mit Deiner
+                        Wir bilden ästhetische Gestalt im Einklang mit Deiner
                         Marke.
                     </p>
                 </Link>
@@ -191,7 +189,7 @@ const ServicesIndex = props => (
                         data-sal-easing="ease-out"
                     >
                         <h3>Marketing</h3>
-                        Wir brigen Dein Produkt in den Markt.
+                        Wir bringen Dein Produkt in den Markt.
                     </p>
                 </Link>
             </StyledGrid>

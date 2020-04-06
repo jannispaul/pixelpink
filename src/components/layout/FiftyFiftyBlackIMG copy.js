@@ -71,8 +71,8 @@ const div = props => (
             <p>
                 Das Auge isst mit! Neben der Service-Einordnung und der
                 Konzeption ist Branding und charmantes Design das
-                ausschlaggebende Argument für Ihre Marke oder Produkt. Wir
-                treiben Ihre Kommunikationskonzept voran und entwicklen visuell
+                ausschlaggebende Argument für Deine Marke oder Produkt. Wir
+                treiben Dein Kommunikationskonzept voran und entwicklen visuell
                 ästhetische Designs.
             </p>
         </ContentContainer>

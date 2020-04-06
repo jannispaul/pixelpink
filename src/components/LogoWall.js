@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import StyledLink from "../components/StyledLink"
+import { Link } from "gatsby"
 import boschLogo from "../../content/logos/boschLogo.svg"
 import commerzbankLogo from "../../content/logos/commerzbankLogo.svg"
 import fuelcastLogo from "../../content/logos/fuelcastLogo.svg"
@@ -109,10 +111,15 @@ const LogoWall = props => (
                 Wir arbeiten mit Unternehmen, Start-Ups, in Agenturen und
                 kreieren Landingpages, Corporate und E-Commerce-Websites,
                 Appdesigns und Marketing-Kampagnen. Unsere Stärken liegen in den
-                Bereichen Konzept, Design, Entwicklung und digitales Marketing.
+                Bereichen Konzeption, Design, Entwicklung und digitales Marketing.
                 Von der ersten Anfrage bis über den Launch hinaus stehen wir
                 unseren Kunden beratend und auf Augenhöhe zur Seite.
+                <br/><br/>
+                <StyledLink to="/ueber-uns" >
+                Alles Über uns erfahren
+            </StyledLink>
             </p>
+            
         </div>
         <StyledGrid>
             <div
@@ -157,6 +164,7 @@ const LogoWall = props => (
             >
                 <img src={lhhLogo} alt="Logo von Lee Hecht Harrison" />
             </div>
+            
         </StyledGrid>
     </StyledSection>
 )

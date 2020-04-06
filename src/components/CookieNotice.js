@@ -48,7 +48,7 @@ const CookieNotice = () => (
             }}
             expires={365}
         >
-            Wir nutzen Cookies um Ihr Erlebnis noch besser zu machen.{" "}
+            Wir nutzen Cookies um Dein Erlebnis noch besser zu machen.{" "}
             <Link
                 to="/datenschutz"
                 style={{ color: "white" }}

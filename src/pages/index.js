@@ -10,7 +10,7 @@ import LogoMobile from "../components/LogoMobile"
 import CookieNotice from "../components/CookieNotice"
 
 let copy = {
-    contact: "Sind Sie bereit digital durchzustarten?",
+    contact: "Bist Du bereit digital durchzustarten?",
 }
 
 class IndexPage extends React.Component {
@@ -18,14 +18,14 @@ class IndexPage extends React.Component {
         return (
             <StandardLayout>
                 <SEO
-                    title="DesignStudio Berlin"
+                    title="Design Studio Berlin"
                     keywords={[`pixelpink`, `design studio`, `berlin`, `werbeagentur`, `marketingagentur`, `design`]}
                 />
                 <CookieNotice />
                 <LogoMobile />
                 <H1Header
                     mainline="Wir gestalten und entwickeln digitale Lösungen,"
-                    subline="die Deine Kunden lieben."
+                    subline="die Deine Kunden lieben"
                 />
                 <HeroProject />
                 <LogoWall/>

@@ -6,6 +6,10 @@ import styled from "styled-components"
 const StyledIMG = styled(Img)`
     height: 40%;
 
+    @media (min-width: 1041px) {
+        max-height: 40vh;
+    }
+
 `
 
 const Image = () => (

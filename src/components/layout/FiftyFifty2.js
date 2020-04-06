@@ -117,17 +117,17 @@ const div = props => (
                     Auch technisch finden wir für Dich die beste Lösung: Sei es
                     ein individuelles Content-Management-System (CMS), ein
                     Online-Shop oder möchtest Du einen Wordpressblog? Auch den
-                    können wir für dich natürlich einrichten, wobei wir für
+                    können wir für Dich natürlich einrichten, wobei wir für
                     viele „einfache Seiten“ mit Dir modernere und effizientere
                     Wege einschlagen möchten. Wir sind Fans vom JAM-Stack
                     (Javascript, APIs, Markup): Das sind statische Seiten mit
                     vielen Vorteilen. Sie sind zum Beispiel sehr schnell und
                     sicher, da sie nicht bei jedem Aufruf vom Server neu
-                    generiert werden müssen. Dass alle unsere Seiten responsive
+                    generiert werden müssen. Dass alle unsere Seiten responsiv
                     sind, also auf verschiedenen Display-Größen funktionieren,
-                    versteht sich bei uns von selbst. Und – wenn die Entwicklung
-                    dann abgeschlossen ist, können wir für Dich auch das Hosting
-                    übernehmen. So, dass Du Dich auf das konzentrieren kannst,
+                    versteht sich bei uns von selbst. Sobald die Entwicklung
+                    dann abgeschlossen ist, können wir für Dich das Hosting
+                    übernehmen, sodass Du Dich auf das konzentrieren kannst,
                     was Dir wirklich wichtig ist.
                 </p>
             </div>
@@ -156,16 +156,16 @@ const div = props => (
                     data-sal-easing="ease-out"
                 >
                     Mehr Menschen erreichen? Die richtigen Menschen erreichen?
-                    Uns ist es wichtig, dass eben diese Dich finden und deshalb
-                    achten wir darauf, dass unsere Websites für Suchmaschinen
-                    optimiert sind (SEO). Wie kann man noch mehr Leads
+                    Uns ist es wichtig, dass deine Zielgruppe Dich findet und deshalb
+                    achten wir darauf, unsere Websites für Suchmaschinen
+                    zu optimieren (SEO). Wie kann man noch mehr Leads
                     (potentielle Kunden) generieren? Suchmaschinen- und
-                    Social-Media-Marketing machen es möglich. Mit individuellen
+                    Social-Media-Marketing machen es möglich: Mit individuellen
                     Kampagnen kannst Du Deine Nutzer direkt zum Ziel führen und
                     Deine Conversions steigern. Wir messen Deine Erfolge mit
                     Google Analytics und dem Tag Manager und passen die
                     Parameter für qualitativ hochwertigen Traffic an, damit das
-                    Kosten/Nutzen-Verhältnis am Ende auch stimmt.
+                    Kosten/Nutzen-Verhältnis am Ende stimmt.
                 </p>
             </div>
         </div>
