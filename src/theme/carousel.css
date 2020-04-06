@@ -50,11 +50,15 @@
     cursor: grab;
 }
 @media (min-width: 834px) {
-    .carousel.carousel-slider .control-arrow,
-    .carousel.carousel-slider .control-arrow:hover {
+    .carousel.carousel-slider .control-arrow {
         width: 100px;
         opacity: 0.85;
         background: none;
+    }
+    .carousel.carousel-slider .control-arrow:hover {
+        width: 100px;
+        opacity: 0.85;
+        opacity: 1;
     }
 
     .carousel .control-dots .dot {
