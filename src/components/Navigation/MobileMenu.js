@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const MobileNav = styled.div`
-    padding: 50px var(--padding-side);
+    padding: 100px var(--padding-side);
     height: 100vh;
     position: fixed;
     top: 0;
@@ -15,11 +15,11 @@ const MobileNav = styled.div`
     z-index: 2;
     background: var(--color-white);
     transform: ${props =>
-        props.showMobileMenu ? "translateY(0%)" : "translateY(100%)"};
+        props.showMobileMenu ? "translateY(0%)" : "translateY(-100%)"};
     transition: transform 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
     & a {
         transform: ${props =>
-            props.showMobileMenu ? "translateY(0%)" : "translateY(100px)"};
+            props.showMobileMenu ? "translateY(0%)" : "translateY(-100px)"};
     }
 `
 

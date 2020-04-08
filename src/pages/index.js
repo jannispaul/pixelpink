@@ -6,7 +6,7 @@ import ContactFooter from "../components/ContactFooter"
 import HeroProject from "../components/HeroProject"
 import ServicesIndex from "../components/ServicesIndex"
 import LogoWall from "../components/LogoWall"
-import LogoMobile from "../components/LogoMobile"
+
 import CookieNotice from "../components/CookieNotice"
 
 let copy = {
@@ -19,16 +19,23 @@ class IndexPage extends React.Component {
             <StandardLayout>
                 <SEO
                     title="Design Studio Berlin"
-                    keywords={[`pixelpink`, `design studio`, `berlin`, `werbeagentur`, `marketingagentur`, `design`]}
+                    keywords={[
+                        `pixelpink`,
+                        `design studio`,
+                        `berlin`,
+                        `werbeagentur`,
+                        `marketingagentur`,
+                        `design`,
+                    ]}
                 />
                 <CookieNotice />
-                <LogoMobile />
+
                 <H1Header
                     mainline="Wir gestalten und entwickeln digitale Lösungen,"
                     subline="die Deine Kunden lieben"
                 />
                 <HeroProject />
-                <LogoWall/>
+                <LogoWall />
                 <ServicesIndex />
                 <ContactFooter mainline={copy.contact} />
             </StandardLayout>

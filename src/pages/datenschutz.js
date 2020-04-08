@@ -3,7 +3,7 @@ import React from "react"
 
 import StandardLayout from "../components/StandardLayout"
 import SEO from "../components/Seo"
-import LogoMobile from "../components/LogoMobile"
+
 import styled from "styled-components"
 
 const ContentContainer = styled.div`
@@ -30,7 +30,6 @@ const ContentContainer = styled.div`
 const SecondPage = () => (
     <StandardLayout>
         <SEO title="Datenschutz" index="noindex" />
-        <LogoMobile />
 
         <ContentContainer>
             <h1>Datenschutzerklärung</h1>

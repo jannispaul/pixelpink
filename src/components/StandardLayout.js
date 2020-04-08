@@ -6,10 +6,10 @@ import "../theme/variables.css"
 import "../theme/styles.css"
 
 import NavBar from "../components/Navigation"
-// import NavBarMobile from "../components/NavigationMobile"
+import MobileNav from "../components/Navigation/MobileNav"
 
 import MobileMenu from "../components/Navigation/MobileMenu"
-import BurgerButton from "../components/Navigation/BurgerButton"
+// import BurgerButton from "../components/Navigation/BurgerButton"
 import Footer from "../components/Footer"
 
 const App = styled.div`
@@ -49,15 +49,15 @@ class StandardLayout extends React.Component {
     render() {
         return (
             <>
-                {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
                 <App>
                     <NavBar />
-                    {/* <NavBarMobile /> */}
-                    <MobileMenu showMobileMenu={this.state.mobileMenuOpen} />
-                    <BurgerButton
-                        click={this.burgerButtonToggleClickHandler}
+                    <MobileNav
+                        burgerButtonClickHandler={
+                            this.burgerButtonToggleClickHandler
+                        }
                         showMobileMenu={this.state.mobileMenuOpen}
                     />
+                    <MobileMenu showMobileMenu={this.state.mobileMenuOpen} />
                     <Main>{this.props.children}</Main>
                     <Footer />
                 </App>

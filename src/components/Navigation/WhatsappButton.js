@@ -2,7 +2,15 @@ import React from "react"
 import styled from "styled-components"
 
 const BurgerContainer = styled.div`
-    position: relative;
+    @media (min-width: 834px) {
+        display: none;
+    }
+    position: fixed;
+    bottom: 40px;
+    right: var(--padding-side);
+    z-index: 999;
+    background: var(--color-primary);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     display: inline-block;
     height: 50px;
     width: 50px;
@@ -29,7 +37,7 @@ const Burger = styled.div`
         height: 2px;
         display: block;
         position: relative;
-        background: var(--color-black);
+        background: var(--color-white);
         transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
         transition-delay: 0s;
     }

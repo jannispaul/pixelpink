@@ -2,7 +2,7 @@ import React from "react"
 // import { Link } from "gatsby"
 import StandardLayout from "../components/StandardLayout"
 import SEO from "../components/Seo"
-import LogoMobile from "../components/LogoMobile"
+
 import styled from "styled-components"
 
 const ContentContainer = styled.div`
@@ -29,7 +29,6 @@ const ContentContainer = styled.div`
 const SecondPage = () => (
     <StandardLayout>
         <SEO title="Impressum" index="noindex" />
-        <LogoMobile />
 
         <ContentContainer>
             <h1>Impressum</h1>

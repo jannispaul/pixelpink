@@ -9,7 +9,7 @@ import FiftyFifty2 from "../components/layout/FiftyFifty2"
 import ServiceImage2 from "../components/ServiceImage2"
 
 // import FiftyFiftyBlackIMG from "../components/layout/FiftyFiftyBlackIMG"
-import LogoMobile from "../components/LogoMobile"
+
 // import ServicesTable from "../components/ServicesTable"
 import ServicesTableNew from "../components/ServicesTableNew"
 
@@ -21,7 +21,7 @@ class ServicePage extends React.Component {
                     title="Services"
                     keywords={[`services`, `pixelpink`, `angebot`]}
                 />
-                <LogoMobile />
+
                 <ServiceImage2 />
                 <HeadlineAndText
                     h1="Das Erlebnis als Erfolgsfaktor"

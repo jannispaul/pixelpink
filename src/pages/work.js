@@ -5,7 +5,6 @@ import SEO from "../components/Seo"
 import H1Header from "../components/H1Header"
 import ContactFooter from "../components/ContactFooter"
 import SingleProject from "../components/SingleProject"
-import LogoMobile from "../components/LogoMobile"
 
 class WorkPage extends React.Component {
     // render() {
@@ -23,7 +22,8 @@ class WorkPage extends React.Component {
                     "Uberstunde Gerhard Schröder Podcast",
                 ],
                 company: "Überstunde",
-                title: "Der Feierabend-Talk mit Marina Weisband und Michael Bröcker",
+                title:
+                    "Der Feierabend-Talk mit Marina Weisband und Michael Bröcker",
                 link: "https://überstunde.com",
             },
             {
@@ -36,7 +36,8 @@ class WorkPage extends React.Component {
                     "wallStreetWeekly Webdesign progress from first iteration to final state",
                 ],
                 company: "Wall Street Weekly",
-                title: "Börsen-Reporterin Sophie Schimansky berichtet live aus New York",
+                title:
+                    "Börsen-Reporterin Sophie Schimansky berichtet live aus New York",
                 link: "https://wall-street-weekly.com",
             },
             {
@@ -141,7 +142,7 @@ class WorkPage extends React.Component {
                     ]}
                     description="Eine selektierte Auswahl der Arbeiten von PixelPink"
                 />
-                <LogoMobile />
+
                 <H1Header
                     mainline="Eine selektierte Auswahl unserer Arbeiten"
                     subline="made with 💖 for Friends"
@@ -187,7 +188,6 @@ export const query = graphql`
                 }
             }
         }
-
 
         wallStreetWeekly: allFile(
             filter: { relativeDirectory: { eq: "work/wallStreetWeekly" } }
@@ -265,8 +265,6 @@ export const query = graphql`
                 }
             }
         }
-
-
     }
 `
 export default WorkPage

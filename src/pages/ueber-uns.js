@@ -8,7 +8,7 @@ import ContactFooter from "../components/ContactFooter"
 import UberUnsImage from "../components/UberUnsImage"
 import OurProcess from "../components/OurProcess"
 import OurTools from "../components/OurTools"
-import LogoMobile from "../components/LogoMobile"
+
 import FiftyFiftyBlackIMGAboutUs from "../components/layout/FiftyFiftyBlackIMGAboutUs"
 
 class IndexPage extends React.Component {
@@ -26,7 +26,7 @@ class IndexPage extends React.Component {
                         `tech-stack`,
                     ]}
                 />
-                <LogoMobile />
+
                 <UberUnsImage />
                 <HeadlineAndText
                     h1="Wer steht eigentlich hinter PixelPink?"
