@@ -149,13 +149,13 @@ const Nav = () => (
         <NavItem to="/" activeClassName="active">
             <span>Home</span>
         </NavItem>
-        <NavItem to="/work" activeClassName="active">
+        <NavItem to="/projekte/" activeClassName="active">
             <span>Projekte</span>
         </NavItem>
-        <NavItem to="/ueber-uns" activeClassName="active">
+        <NavItem to="/ueber-uns/" activeClassName="active">
             <span>Über uns</span>
         </NavItem>
-        <NavItem to="/services" activeClassName="active">
+        <NavItem to="/services/" activeClassName="active">
             <span>Services</span>
         </NavItem>
         <NavItem to="/kontakt" activeClassName="active">

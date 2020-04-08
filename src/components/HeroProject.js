@@ -21,7 +21,7 @@ class HeroProject extends React.Component {
                     "Die-Masterarbeit.com website inside a blue Windows computer",
                 ],
                 company: "",
-                title: "Eine selektierte Auswahl unserer Arbeiten",
+                title: "Eine kleine Auswahl unserer Arbeiten",
                 id: "01",
             },
         ]
@@ -37,8 +37,7 @@ class HeroProject extends React.Component {
                         company={project.company}
                         title={project.title}
                         key={i}
-                        internal="/work"
-                        
+                        internal="/projekte/"
                     />
                 ))}
             </div>

@@ -118,29 +118,29 @@ class ServicesTable extends React.Component {
                 name: "Konzeption",
                 icon: ICONS.TRIANGLE,
                 services: [
-                    "User-Research",
-                    "UX-Design",
                     "Heuristische Evaluation",
-                    "Market UX Audit",
                     "Kommunikationsstrategie",
                     "Markenidentität",
+                    "Market UX Audit",
                     "Service-Design",
                     "Storytelling",
+                    "User-Research",
+                    "UX-Design",
                 ],
             },
             {
                 name: "Design",
                 icon: ICONS.CIRCLE,
                 services: [
-                    "Visual-Design",
-                    "Product-Design",
-                    "UI-Design",
                     "Branding + Logo",
-                    "Prototyping",
-                    "User-Testing",
                     "Design-Systems",
-                    "Wireframing",
                     "Pitch-Decks",
+                    "Product-Design",
+                    "Prototyping",
+                    "UI-Design",
+                    "User-Testing",
+                    "Visual-Design",
+                    "Wireframing",
                 ],
             },
             {
@@ -148,13 +148,13 @@ class ServicesTable extends React.Component {
                 icon: ICONS.SQUARE,
                 services: [
                     "Frontend-Development",
-                    "Webflow",
-                    "Responsive Design",
                     "Gatsby / React",
                     "Headless-CMS",
-                    "Wordpress",
-                    "Shopify",
                     "Quality Assurance Test",
+                    "Responsive Design",
+                    "Shopify",
+                    "Webflow",
+                    "Wordpress",
                     // "Sapper / Svelte",
                     // "Contentful",
                     // "Netlify-CMS",
@@ -164,15 +164,15 @@ class ServicesTable extends React.Component {
                 name: "Marketing",
                 icon: ICONS.HEXAGONE,
                 services: [
-                    "SEO",
-                    "Search Engine Marketing",
-                    "Social Media Marketing",
                     "Content Marketing",
-                    "E-Mail Marketing",
                     "Display Ads",
+                    "E-Mail Marketing",
                     "Google Webmaster Tools",
                     "Google Analytics",
                     "Intercomm",
+                    "SEO",
+                    "Search Engine Marketing",
+                    "Social Media Marketing",
                 ],
             },
         ]
@@ -188,7 +188,7 @@ class ServicesTable extends React.Component {
                     <h2>
                         Übersicht aller Leistungen
                         <br />
-                        <span>Typische Methoden, typische Outputs</span>
+                        <span>Von Konzept bis Marketing</span>
                     </h2>
                     <hr />
                 </HeadlineContainer>

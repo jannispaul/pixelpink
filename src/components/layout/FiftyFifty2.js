@@ -125,10 +125,10 @@ const div = props => (
                     sicher, da sie nicht bei jedem Aufruf vom Server neu
                     generiert werden müssen. Dass alle unsere Seiten responsiv
                     sind, also auf verschiedenen Display-Größen funktionieren,
-                    versteht sich bei uns von selbst. Sobald die Entwicklung
-                    dann abgeschlossen ist, können wir für Dich das Hosting
-                    übernehmen, sodass Du Dich auf das konzentrieren kannst, was
-                    Dir wirklich wichtig ist.
+                    versteht sich bei uns von selbst. Und – wenn die Entwicklung
+                    dann abgeschlossen ist, können wir für Dich auch das Hosting
+                    übernehmen. So, dass Du Dich auf das konzentrieren kannst,
+                    was Dir wirklich wichtig ist.
                 </p>
             </div>
             <div>

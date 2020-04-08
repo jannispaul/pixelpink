@@ -8,9 +8,8 @@ const StyledSection = styled.section`
     /* padding-top: 130px;
     padding-bottom: 130px; */
     /* padding: 0px var(--padding-side); */
-    ${'' /* padding: var(--padding-vertical) var(--padding-side); */}
+    ${"" /* padding: var(--padding-vertical) var(--padding-side); */}
     padding: 60px var(--padding-side);
-
 
     & > div {
         max-width: 1168px;
@@ -134,12 +133,15 @@ const ServicesIndex = props => (
                 <span>keine Massenware, nur originelles Design</span>
             </h2>
             <hr />
-            <p data-sal="slide-up" data-sal-delay="50" data-sal-easing="ease-out">
-                Unsere Herangehensweise an neue Projekte ist immer die Gleiche –
-                es ist nie das Gleiche!
-                <br /> Daher hören wir Dir zuerst aufmerksam zu und definieren
-                aus den Resultaten die individuell notwendigen Prozessschritte
-                für Dein Projekt.
+            <p
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease-out"
+            >
+                Was tun wir? In einem Satz: Wir helfen Dir, eine passende
+                Digital-Strategie zu finden! Unsere interdisziplinären
+                Kompetenzen ermöglichen es uns, für unsere Kunden besondere
+                Konzepte zu kreieren, von denen die Nutzer begeistert sind.
             </p>
 
             <StyledGrid>
@@ -151,7 +153,7 @@ const ServicesIndex = props => (
                         data-sal-easing="ease-out"
                     >
                         <h3>Konzeption</h3>
-                        Wir entwerfen das passende Grundgerüst für Dein Produkt.
+                        Wir erarbeiten eine passende Digital-Strategie.
                     </p>
                 </Link>
 
@@ -163,8 +165,7 @@ const ServicesIndex = props => (
                         data-sal-easing="ease-out"
                     >
                         <h3>Design</h3>
-                        Wir bilden ästhetische Gestalt im Einklang mit Deiner
-                        Marke.
+                        Wir gestalten für den Einklang von Nutzung und Marke.
                     </p>
                 </Link>
 
@@ -176,8 +177,7 @@ const ServicesIndex = props => (
                         data-sal-easing="ease-out"
                     >
                         <h3>Entwicklung</h3>
-                        Wir implementieren Dein Design mit technischer
-                        Exzellenz.
+                        Wir finden für Dich die technisch beste Lösung.
                     </p>
                 </Link>
 

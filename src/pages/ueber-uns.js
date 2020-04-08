@@ -32,7 +32,7 @@ class IndexPage extends React.Component {
                     h1="Wer steht eigentlich hinter PixelPink?"
                     subline="Unsere Geschichte, unsere Herangehensweise"
                     body="
-                    PixelPink, das sind wir, Felix und Jannis, Design- und Technik-Enthusiasten. Alles begann während unseres gemeinsamen Medien- und Kommunikationsdesignstudiums in Berlin. Wir gestalteten zunächst Websites für Freunde und Familie, doch die Leidenschaft hatte uns gepackt und wir konnte nicht mehr aufhören. Wir wollten mehr machen und haben schnell erkannt, dass wir in unserer Konstellation sehr effizient und kreativ arbeiten können. Seit 2015 bilden wir gemeinsam mit unserem Netzwerk aus Freischaffenden, PixelPink. Unser Vorteil liegt in der Zusammenarbeit: Die Mischung unserer Expertisen aus Design & Tech bietet die optimale Grundlage für kritische Diskussionen und qualitativ hochwertigen Output. Aktuell begleiten wir unsere Kunden bei der Unternehmensdigitalisierung und bemühen uns, die (digitale) Welt jeden Tag ein bisschen bunter und sinnvoller zumachen. Wie können wir Dir helfen digital durchzustarten? "
+                    PixelPink, das sind wir, Felix und Jannis, Design- und Technik-Enthusiasten. Alles begann während unseres gemeinsamen Medien- und Kommunikationsdesignstudiums in Berlin. Wir gestalteten zunächst Websites für Freunde und Familie, doch die Leidenschaft hatte uns gepackt und wir konnte nicht mehr aufhören. Wir wollten mehr machen und haben schnell erkannt, dass wir in unserer Konstellation sehr effizient und kreativ arbeiten können. Seit 2015 bilden wir, gemeinsam mit unserem Netzwerk aus Freischaffenden, PixelPink. Unser Vorteil liegt in der Zusammenarbeit: Die Mischung unserer Expertisen aus Design & Tech bietet die optimale Grundlage für kritische Diskussionen und qualitativ hochwertigen Output. Aktuell begleiten wir unsere Kunden bei der Unternehmensdigitalisierung und bemühen uns dabei, die (digitale) Welt jeden Tag ein bisschen bunter und sinnvoller zumachen. Wie können wir Dir helfen, digital durchzustarten?"
                 />
                 <FiftyFiftyBlackIMGAboutUs />
                 <HeadlineAndText
@@ -44,8 +44,8 @@ class IndexPage extends React.Component {
                 </HeadlineAndText>
                 <HeadlineAndText
                     h2="Unsere Tools"
-                    subline="Modernes Teck-Stack"
-                    body="Für uns ist es wichtig, das richtige Werkzeug für den richtigen Job zu haben. Deshalb arbeiten wir mit einer Vielzahl an Tools. Hier findest du eine Auswahl unserer liebsten und meist genutzten."
+                    subline="Design- und Tech-Stack"
+                    body="Für uns ist es wichtig, das richtige Werkzeug für den richtigen Job zu haben. Deshalb arbeiten wir mit einer Vielzahl an Tools. Hier findest Du eine Auswahl unserer liebsten und meistgenutzten."
                 >
                     <OurTools></OurTools>
                 </HeadlineAndText>

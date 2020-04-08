@@ -53,7 +53,7 @@ class WorkPage extends React.Component {
                     "Felix Lebedinzew, Mattias Nilsson, Jurek Herwig at Meeting",
                 ],
                 company: "Fuelcast",
-                title: "Nachhaltigkeit in der Maritime-Industrie",
+                title: "Nachhaltigkeit und Effizienz in der Frachtschifffahrt",
                 link: "https://www.fuelcast.co/",
             },
             {
@@ -82,7 +82,7 @@ class WorkPage extends React.Component {
                     "QVSTA design system elements",
                 ],
                 company: "Qvsta",
-                title: "QVSTA revolutionieren die Fashion-Tech Branche",
+                title: "QVSTA revolutionieren die Fashion-Tech-Branche",
                 link: "https://qvsta.com/",
             },
             {
@@ -140,12 +140,13 @@ class WorkPage extends React.Component {
                         `referenzen`,
                         `klienten`,
                     ]}
-                    description="Eine selektierte Auswahl der Arbeiten von PixelPink"
+                    description="Eine kleine Auswahl der Arbeiten von PixelPink"
                 />
 
                 <H1Header
-                    mainline="Eine selektierte Auswahl unserer Arbeiten"
-                    subline="made with 💖 for Friends"
+                    mainline="Eine kleine Auswahl unserer Arbeiten"
+                    subline="von der Website bis zum Appdesign"
+                    // subline="made with 💖 for Friends"
                 />
 
                 {/* {props.data.allFile.edges.map(({ node }, i) => (

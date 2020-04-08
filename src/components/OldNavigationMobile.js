@@ -4,7 +4,6 @@ import styled from "styled-components"
 import Icon from "./layout/Icon"
 import { ICONS } from "../theme/Icons"
 
-
 const StyledNav = styled.div`
     overflow: hidden;
     width: 100%;
@@ -75,20 +74,20 @@ const Nav = () => (
             <Icon icon={ICONS.SQUARE} />
             <span>Home</span>
         </NavItem>
-        <NavItem to="/work" activeClassName="active">
+        <NavItem to="/projekte/" activeClassName="active">
             <Icon icon={ICONS.CIRCLE} />
             <span>Projekte</span>
         </NavItem>
-        <NavItem to="/kontakt" activeClassName="active">
+        <NavItem to="/kontakt/" activeClassName="active">
             <ContactCircle>
                 <Icon icon={ICONS.MAIL} />
             </ContactCircle>
         </NavItem>
-        <NavItem to="/services" activeClassName="active">
+        <NavItem to="/services/" activeClassName="active">
             <Icon icon={ICONS.TRIANGLE} />
             <span>Services</span>
         </NavItem>
-        <NavItem to="/ueber-uns" activeClassName="active">
+        <NavItem to="/ueber-uns/" activeClassName="active">
             <Icon icon={ICONS.POLYGON} />
             <span>About</span>
         </NavItem>

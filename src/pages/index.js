@@ -10,7 +10,7 @@ import LogoWall from "../components/LogoWall"
 import CookieNotice from "../components/CookieNotice"
 
 let copy = {
-    contact: "Bist Du bereit digital durchzustarten?",
+    contact: "Bist Du bereit, digital durchzustarten?",
 }
 
 class IndexPage extends React.Component {
