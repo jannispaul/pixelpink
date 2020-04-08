@@ -1,7 +1,9 @@
 import React from "react"
 import styled from "styled-components"
+import Icon from "../layout/Icon"
+import { ICONS } from "../../theme/Icons"
 
-const BurgerContainer = styled.div`
+const StyledButton = styled.div`
     @media (min-width: 834px) {
         display: none;
     }
@@ -11,65 +13,28 @@ const BurgerContainer = styled.div`
     z-index: 999;
     background: var(--color-primary);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    display: inline-block;
     height: 50px;
     width: 50px;
-    cursor: pointer;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-`
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-const Burger = styled.div`
-    width: 18px;
-    height: 8px;
-    position: relative;
-    display: block;
-    margin: -4px auto 0;
-    top: 50%;
-    & > div {
-        width: 100%;
-        height: 2px;
+    border-radius: 100px;
+
+    & svg {
+        fill: var(--color-white);
+        width: 26px;
+        height: 26px;
         display: block;
-        position: relative;
-        background: var(--color-white);
-        transition: all 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-        transition-delay: 0s;
+        margin: 0 auto;
     }
 `
 
-const TopBar = styled.div`
-    transform: ${props =>
-        props.showMobileMenu
-            ? "translateY(4px) rotate(45deg)"
-            : "translateY(0px) rotate(0deg)"};
-    -webkit-transform: ${props =>
-        props.showMobileMenu
-            ? "translateY(4px) rotate(45deg)"
-            : "translateY(0px) rotate(0deg)"};
-`
-const BottomBar = styled.div`
-    transform: ${props =>
-        props.showMobileMenu
-            ? "translateY(2px) rotate(-45deg)"
-            : "translateY(6px) rotate(0deg)"};
-    -webkit-transform: ${props =>
-        props.showMobileMenu
-            ? " translateY(2px) rotate(-45deg)"
-            : "translateY(6px) rotate(0deg)"};
-`
-
-const BurgerButton = props => (
-    <BurgerContainer onClick={props.click}>
-        <Burger>
-            <TopBar showMobileMenu={props.showMobileMenu} />
-            <BottomBar showMobileMenu={props.showMobileMenu} />
-        </Burger>
-    </BurgerContainer>
+const WhatsappButtton = props => (
+    <StyledButton>
+        <a href="https://api.whatsapp.com/send?phone=4917681410001‬">
+            <Icon icon={ICONS.WHATSAPP} />
+        </a>
+    </StyledButton>
 )
-export default BurgerButton
+export default WhatsappButtton

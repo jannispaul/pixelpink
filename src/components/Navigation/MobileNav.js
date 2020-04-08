@@ -16,6 +16,9 @@ const StyledNav = styled.div`
     z-index: 100;
     background: var(--color-white);
     width: 100%;
+    @media (min-width: 834px) {
+        display: none;
+    }
 `
 const StyledLogoMobile = styled(Link)`
     display: block;

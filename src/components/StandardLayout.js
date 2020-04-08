@@ -9,7 +9,7 @@ import NavBar from "../components/Navigation"
 import MobileNav from "../components/Navigation/MobileNav"
 
 import MobileMenu from "../components/Navigation/MobileMenu"
-// import BurgerButton from "../components/Navigation/BurgerButton"
+import WhatsappButton from "../components/Navigation/WhatsappButton"
 import Footer from "../components/Footer"
 
 const App = styled.div`
@@ -58,6 +58,7 @@ class StandardLayout extends React.Component {
                         showMobileMenu={this.state.mobileMenuOpen}
                     />
                     <MobileMenu showMobileMenu={this.state.mobileMenuOpen} />
+                    <WhatsappButton></WhatsappButton>
                     <Main>{this.props.children}</Main>
                     <Footer />
                 </App>
