@@ -115,7 +115,7 @@ const LogoWall = props => (
                 unseren Kunden beratend und auf Augenhöhe zur Seite.
                 <br />
                 <br />
-                <StyledLink to="/ueber-uns">Alles Über uns erfahren</StyledLink>
+                <StyledLink to="/ueber-uns">Mehr über uns erfahren</StyledLink>
             </p>
         </div>
         <StyledGrid>
