@@ -3,7 +3,7 @@ import styled from "styled-components"
 import Icon from "../layout/Icon"
 import { ICONS } from "../../theme/Icons"
 
-const StyledButton = styled.div`
+const StyledButton = styled.a`
     @media (min-width: 834px) {
         display: none;
     }
@@ -30,11 +30,9 @@ const StyledButton = styled.div`
     }
 `
 
-const WhatsappButtton = props => (
-    <StyledButton>
-        <a href="https://api.whatsapp.com/send?phone=4917681410001‬">
-            <Icon icon={ICONS.WHATSAPP} />
-        </a>
+const WhatsappButtton = () => (
+    <StyledButton href="https://api.whatsapp.com/send?phone=4917681410001‬">
+        <Icon icon={ICONS.WHATSAPP} />
     </StyledButton>
 )
 export default WhatsappButtton

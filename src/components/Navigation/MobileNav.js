@@ -12,6 +12,7 @@ const StyledNav = styled.div`
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    top: 0;
     height: 60px;
     z-index: 100;
     background: var(--color-white);
