@@ -6,7 +6,7 @@ import logoWhite from "../../content/logos/logoWhite.svg"
 // import { ICONS } from "../theme/Icons"
 
 const StyledFooter = styled.div`
-    position: sticky;
+    position: relative;
     z-index: 0;
     bottom: 0;
     width: 100%;

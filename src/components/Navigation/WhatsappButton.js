@@ -11,7 +11,7 @@ const StyledButton = styled.a`
     bottom: 40px;
     right: var(--padding-side);
     z-index: 999;
-    background: var(--color-primary);
+    background: #27d366;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     height: 50px;
     width: 50px;
