@@ -29,7 +29,7 @@ const ContentContainer = styled.div`
 
 const SecondPage = () => (
     <StandardLayout>
-        <SEO title="Datenschutz" index="noindex" />
+        <SEO title="Datenschutz"/>
 
         <ContentContainer>
             <h1>Datenschutzerklärung</h1>

@@ -28,7 +28,7 @@ const ContentContainer = styled.div`
 
 const SecondPage = () => (
     <StandardLayout>
-        <SEO title="Impressum" index="noindex" />
+        <SEO title="Impressum"/>
 
         <ContentContainer>
             <h1>Impressum</h1>
