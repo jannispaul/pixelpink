@@ -87,16 +87,16 @@ const div = props => (
                     data-sal-delay="100"
                     data-sal-easing="ease-out"
                 >
-                    Wo drückt denn der Schuh? Erweisen sich bestimmte Merkmale
-                    Deines Produktes als unverständlich, heben spätestens Deine
-                    Nutzer und Kunden mahnend den Finger. Um diesem
-                    wirtschaftlichen Misserfolg vorzubeugen bildet die
-                    Ursachenforschung und ein fundamentales Konzept für uns den
-                    Grundstein für Dein erfolgreiches Projekt. Wir wollen, dass
-                    Deine Produkte sinnvoll sind und sich vor allem intuitiv – am
-                    besten ohne Erklärung bedienen lassen. Daher gehören die
-                    Schritte des wireframings über den klickbaren Prototypen bis
-                    hin zum User-Testing zu unserem Hauptprogramm.
+                    Der Transformationsprozess der Digitalisierung kann schnell
+                    überwältigend wirken. Ein klares Konzept bildet den
+                    Grundstein für Dein erfolgreiches Projekt und beugt
+                    Unverständlichkeiten und somit wirtschaftlichem Misserfolg
+                    vor. Deshalb erarbeiten wir gemeinsam mit Dir die für Dich
+                    passende Digital-Strategie. Wir analysieren Deine Abläufe
+                    und beraten Dich ehrlich: Von der Optimierung interner
+                    Prozesse bis zum Außenauftritt der Marke gibt es häufig
+                    großes Verbesserungspotential, das wir mit Dir nutzen
+                    möchten.
                 </p>
             </div>
             <div>

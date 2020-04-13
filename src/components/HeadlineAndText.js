@@ -79,7 +79,6 @@ const HeadlineAndText = (props, { children }) => (
                     data-sal-delay="150"
                     data-sal-easing="ease-out"
                 >
-                    {" "}
                     {props.body2}
                 </p>
             ) : (

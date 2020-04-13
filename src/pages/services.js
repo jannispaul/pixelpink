@@ -26,7 +26,7 @@ class ServicePage extends React.Component {
                         `Was tun wir? In einem Satz: Wir helfen Dir, eine passende Digital-Strategie zu finden! Unsere interdisziplinären Kompetenzen ermöglichen es uns, für unsere Kunden besondere Konzepte zu kreieren, von denen ihre Nutzer begeistert sind.`,
                     ]}
                     body2={[
-                        `Das Erlebnis als Erfolgsfaktor: In unseren übersättigten Märkten und dem stetigen Überangebot sehen wir das Potenzial der Differenzierung und Abgrenzung in der Gestaltung eines einzigartigen, hollistischen Erlebnis. Der typische Nutzer ist meist ungeduldig. Reizüberflutung und Ablenkung sind keine Seltenheit heutzutage. Daher wollen wir den Fokus für Dein Produkt steigern und Das wesentliche kräftigen. Dies gelingt uns, da wir einen minimalistischen, funktionalen Design-Ansatz verfolgen und praktizieren. Die folgenden vier Kernbereiche stellen eine bewiesen sinnvolle Strukturplanung Deiner Möglichkeiten dar:`,
+                        `Wir verfolgen einen emphatischen Design-Ansatz. So, dass wir immer die Sicht Deiner Nutzer im Blick haben und unsere diesbezüglichen Erkenntnisse in allen Phasen Deines Projektes einfließen lassen. Unsere Services Konzeption, Design, Entwicklung und Marketing sind so miteinander verbunden und profitieren durch den Austausch voneinander.`,
                     ]}
                 />
                 <FiftyFifty />
