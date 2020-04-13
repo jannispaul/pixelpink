@@ -196,7 +196,7 @@ const Footer = props => (
                     LinkedIn
                 </a>
                 <a
-                    href="https://www.instagram.com/pixelpink.berlin/"
+                    href="https://www.instagram.com/pixelpink.designstudio/"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

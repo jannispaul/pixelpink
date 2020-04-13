@@ -69,7 +69,7 @@ const SocialMedia = props => (
                     data-sal="slide-up"
                     data-sal-delay="150"
                     data-sal-easing="ease-out"
-                    link="https://www.instagram.com/pixelpink.berlin/"
+                    link="https://www.instagram.com/pixelpink.designstudio/"
                 >
                     <Icon icon={ICONS.INSTAGRAM} />
                     Instagram
