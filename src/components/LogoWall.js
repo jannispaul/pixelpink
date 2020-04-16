@@ -108,12 +108,7 @@ const LogoWall = props => (
                 data-sal-delay="50"
                 data-sal-easing="ease-out"
             >
-                Wir kreieren Landingpages, Corporate- und E-Commerce-Websites,
-                Appdesigns und Marketing-Kampagnen, arbeiten in Start-Ups,
-                Agenturen und für große Unternehmen. Unsere Stärken liegen in
-                den Bereichen Konzept, Design, Entwicklung und digitales
-                Marketing. Von der ersten Anfrage bis über den Launch hinaus
-                stehen wir unseren Kunden beratend und auf Augenhöhe zur Seite.
+                Wir arbeiten arbeiten mit Start-Ups, in Agenturen, für große Unternehmen und kreieren Landingpages, Corporate- und E-Commerce-Websites, Appdesigns und Marketing-Kampagnen. Unsere Stärken liegen in den Bereichen Konzept, Design, Entwicklung und digitales Marketing. Von der ersten Anfrage bis über den Launch hinaus stehen wir unseren Kunden beratend und auf Augenhöhe zur Seite.
                 <br />
                 <br />
                 <StyledLink to="/ueber-uns">Mehr über uns erfahren</StyledLink>
