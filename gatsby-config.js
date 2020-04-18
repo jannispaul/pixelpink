@@ -29,6 +29,13 @@ module.exports = {
                 icon: `content/images/favicon.png`, // This path is relative to the root of the site.
             },
         },
+        {
+            resolve: "gatsby-plugin-i18n",
+            options: {
+                langKeyDefault: "en",
+                useLangKeyLayout: false,
+            },
+        },
         `gatsby-plugin-offline`,
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-preact`,
