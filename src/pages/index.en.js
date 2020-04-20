@@ -20,52 +20,52 @@ const content = {
         cta: "🍪Got it!",
     },
     intro: {
-        mainline: "We develop and create digital solutions",
-        subline: "die Deine Kunden lieben",
+        mainline: "We create and develop digital solutions",
+        subline: "that your customers love",
     },
     heroProject: {
-        title: "Eine kleine Auswahl unserer Arbeiten",
-        linkText: "Alle Projekte ansehen",
+        title: "Take a look at our selected work",
+        linkText: "Discover here",
         link: "/en/projects",
     },
     logoWall: {
         title:
-            "ist ein auf Design und Technologie spezialisiertes Studio für digitale Medien in Berlin.",
+            " is a Berlin-based design studio specialized in digital media and technology.",
         copy:
-            "Wir kreieren Landingpages, Corporate- und E-Commerce-Websites, Appdesigns und Marketing-Kampagnen, arbeiten in Start-Ups, Agenturen und für große Unternehmen. Unsere Stärken liegen in den Bereichen Konzept, Design, Entwicklung und digitales Marketing. Von der ersten Anfrage bis über den Launch hinaus stehen wir unseren Kunden beratend und auf Augenhöhe zur Seite.",
-        linkText: "Mehr über uns erfahren",
+            "We create landing pages, websites for corporations and e-commerce businesses, marketing campaigns, and app designs. We work with start-ups, design agencies, and major companies. Our strengths lie in conceptualization, design, frontend development, and digital marketing. From the first point of contact to product launch and beyond, we support our customers with sound guidance and advice.",
+        linkText: "Get to know us a bit better",
         link: "/en/about-us",
     },
     services: {
-        mainline: "Unsere Services",
-        subline: "keine Massenware, nur originelles Design",
+        mainline: "Our Services",
+        subline: "no mass production, only original designs",
         copy:
-            "Was tun wir? In einem Satz: Wir helfen Dir, eine passende Digital-Strategie zu finden! Unsere interdisziplinären Kompetenzen ermöglichen es uns, für unsere Kunden besondere Konzepte zu kreieren, von denen die Nutzer begeistert sind.",
+            "So, what do we have to offer? Simply put, we help you find the digital strategy that works best for you! Our interdisciplinary expertise enables us to create custom-tailored solutions that are sure to excite your users.",
         service1: {
-            title: "Konzeption",
-            copy: "Wir erarbeiten eine passende Digital-Strategie.",
+            title: "Concept",
+            copy: "We develop the right digital strategy.",
             link: "/services#strategisches-design",
         },
         service2: {
             title: "Design",
-            copy: "Wir gestalten für den Einklang von Nutzung und Marke.",
+            copy: "We design to unify branding and usability.",
             link: "/services#design-thinking",
         },
         service3: {
-            title: "Entwicklung",
-            copy: "Wir finden für Dich die technisch beste Lösung.",
+            title: "Development",
+            copy: "We find technical solutions that work for you.",
             link: "/services#entwicklung",
         },
         service4: {
             title: "Marketing",
-            copy: " Wir bringen Dein Produkt in den Markt.",
+            copy: "We introduce your product to the public.",
             link: "/services#marketing",
         },
-        linkText: "Alle Services entdecken",
+        linkText: "Learn more about our services",
         link: "/services#alle-services",
     },
     footer: {
-        title: "Bist Du bereit, digital durchzustarten?",
+        title: "Are you ready to go digital?",
     },
 }
 
