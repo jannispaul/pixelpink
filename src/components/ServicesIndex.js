@@ -120,7 +120,7 @@ const Hexagon = styled.div`
     }
 `
 
-const ServicesIndex = props => (
+const ServicesIndex = (props) => (
     <StyledSection>
         <div>
             <h2
@@ -128,9 +128,9 @@ const ServicesIndex = props => (
                 data-sal-delay="0"
                 data-sal-easing="ease-out"
             >
-                Unsere Services
+                {props.mainline}
                 <br />
-                <span>keine Massenware, nur originelles Design</span>
+                <span>{props.subline}</span>
             </h2>
             <hr />
             <p
@@ -138,64 +138,61 @@ const ServicesIndex = props => (
                 data-sal-delay="50"
                 data-sal-easing="ease-out"
             >
-                Was tun wir? In einem Satz: Wir helfen Dir, eine passende
-                Digital-Strategie zu finden! Unsere interdisziplinären
-                Kompetenzen ermöglichen es uns, für unsere Kunden besondere
-                Konzepte zu kreieren, von denen die Nutzer begeistert sind.
+                {props.copy}
             </p>
 
             <StyledGrid>
-                <Link to="/services#strategisches-design">
+                <Link to={props.service1.link}>
                     <Triangle></Triangle>
                     <p
                         data-sal="slide-up"
                         data-sal-delay="0"
                         data-sal-easing="ease-out"
                     >
-                        <h3>Konzeption</h3>
-                        Wir erarbeiten eine passende Digital-Strategie.
+                        <h3>{props.service1.title}</h3>
+                        {props.service1.copy}
                     </p>
                 </Link>
 
-                <Link to="/services#design-thinking">
+                <Link to={props.service2.link}>
                     <Circle></Circle>
                     <p
                         data-sal="slide-up"
                         data-sal-delay="0"
                         data-sal-easing="ease-out"
                     >
-                        <h3>Design</h3>
-                        Wir gestalten für den Einklang von Nutzung und Marke.
+                        <h3>{props.service2.title}</h3>
+                        {props.service2.copy}
                     </p>
                 </Link>
 
-                <Link to="/services#entwicklung">
+                <Link to={props.service3.link}>
                     <Square></Square>
                     <p
                         data-sal="slide-up"
                         data-sal-delay="0"
                         data-sal-easing="ease-out"
                     >
-                        <h3>Entwicklung</h3>
-                        Wir finden für Dich die technisch beste Lösung.
+                        <h3>{props.service3.title}</h3>
+                        {props.service3.copy}
                     </p>
                 </Link>
 
-                <Link to="/services#marketing">
+                <Link to={props.service4.link}>
                     <Hexagon></Hexagon>
                     <p
                         data-sal="slide-up"
                         data-sal-delay="0"
                         data-sal-easing="ease-out"
                     >
-                        <h3>Marketing</h3>
-                        Wir bringen Dein Produkt in den Markt.
+                        <h3>{props.service4.title}</h3>
+                        {props.service4.copy}
                     </p>
                 </Link>
             </StyledGrid>
 
-            <StyledLink to="/services#alle-services" white="true">
-                Alle Services entdecken
+            <StyledLink to={props.link} white="true">
+                {props.linkText}
             </StyledLink>
         </div>
     </StyledSection>

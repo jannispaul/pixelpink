@@ -17,17 +17,32 @@ const IndexPage = (props) => (
             cta={props.cookieNotice.cta}
         />
 
-        <H1Header mainline={props.mainline} subline={props.subline} />
+        <H1Header
+            mainline={props.intro.mainline}
+            subline={props.intro.subline}
+        />
         <HeroProject
-            projectTitle={props.projectTitle}
-            linkText={props.linkText}
+            projectTitle={props.heroProject.projectTitle}
+            linkText={props.heroProject.linkText}
+            link={props.heroProject.link}
         />
         <LogoWall
-            headline={props.headline}
-            copy={props.copy}
-            link={props.link}
+            headline={props.logoWall.title}
+            copy={props.logoWall.copy}
+            linkText={props.logoWall.linkText}
+            link={props.logoWall.link}
         />
-        <ServicesIndex />
+        <ServicesIndex
+            mainline={props.services.mainline}
+            subline={props.services.subline}
+            copy={props.services.copy}
+            service1={props.services.service1}
+            service2={props.services.service2}
+            service3={props.services.service3}
+            service4={props.services.service4}
+            linkText={props.services.linkText}
+            link={props.services.link}
+        />
         <ContactFooter mainline={props.footer} />
     </StandardLayout>
 )

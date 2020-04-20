@@ -109,7 +109,7 @@ const LogoWall = (props) => (
                 {props.copy}
                 <br />
                 <br />
-                <StyledLink to="/ueber-uns">{props.link}</StyledLink>
+                <StyledLink to={props.link}>{props.linkText}</StyledLink>
             </p>
         </div>
         <StyledGrid>
