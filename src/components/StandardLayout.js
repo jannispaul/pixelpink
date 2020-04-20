@@ -5,7 +5,7 @@ import "../theme/font-face.css"
 import "../theme/variables.css"
 import "../theme/styles.css"
 
-import NavBar from "../components/Navigation"
+import NavBar from "../components/Navigation/Navigation"
 import MobileNav from "../components/Navigation/MobileNav"
 
 import MobileMenu from "../components/Navigation/MobileMenu"
@@ -40,7 +40,7 @@ class StandardLayout extends React.Component {
         mobileMenuOpen: false,
     }
     burgerButtonToggleClickHandler = () => {
-        this.setState(prevState => {
+        this.setState((prevState) => {
             // console.log('toggle')
             return { mobileMenuOpen: !prevState.mobileMenuOpen }
         })

@@ -1,5 +1,7 @@
 import React from "react"
 import IndexPage from "../components/pages/IndexPage"
+import { LanguageContext, languages } from "../components/context/index"
+
 const content = {
     seo: {
         title: "Design Studio Berlin",
@@ -68,16 +70,18 @@ const content = {
 }
 
 const Index = (props) => (
-    <IndexPage
-        title={content.seo.title}
-        keywords={content.seo.keywords}
-        cookieNotice={content.cookieNotice}
-        intro={content.intro}
-        heroProject={content.heroProject}
-        logoWall={content.logoWall}
-        services={content.services}
-        footer={content.footer.title}
-    ></IndexPage>
+    <LanguageContext.Provider value={languages.en}>
+        <IndexPage
+            title={content.seo.title}
+            keywords={content.seo.keywords}
+            cookieNotice={content.cookieNotice}
+            intro={content.intro}
+            heroProject={content.heroProject}
+            logoWall={content.logoWall}
+            services={content.services}
+            footer={content.footer.title}
+        ></IndexPage>
+    </LanguageContext.Provider>
 )
 
 export default Index

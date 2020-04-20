@@ -1,9 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import logo from "../../content/logos/logo.svg"
-// import Icon from "./layout/Icon"
-// import { ICONS } from "../theme/Icons"
+import logo from "../../../content/logos/logo.svg"
+import { LanguageContext } from "../context"
 
 const StyledNav = styled.div`
     display: none;
@@ -141,27 +140,33 @@ const Logo = styled(Link)`
     }
 `
 
-const Nav = () => (
-    <StyledNav>
-        <Logo to="/">
-            <img src={logo} alt="PixelPink Logo" />
-        </Logo>
-        <NavItem to="/" activeClassName="active">
-            <span>Home</span>
-        </NavItem>
-        <NavItem to="/projekte/" activeClassName="active">
-            <span>Projekte</span>
-        </NavItem>
-        <NavItem to="/ueber-uns/" activeClassName="active">
-            <span>Über uns</span>
-        </NavItem>
-        <NavItem to="/services/" activeClassName="active">
-            <span>Services</span>
-        </NavItem>
-        <NavItem to="/kontakt" activeClassName="active">
-            <span>Kontakt</span>
-        </NavItem>
-    </StyledNav>
-)
+class Nav extends React.Component {
+    render() {
+        let language = this.context
+        return (
+            <StyledNav>
+                <Logo to={language.home.link}>
+                    <img src={logo} alt="PixelPink Logo" />
+                </Logo>
+                <NavItem to={language.home.link} activeClassName="active">
+                    <span>Home</span>
+                </NavItem>
+                <NavItem to={language.projects.link} activeClassName="active">
+                    <span>{language.projects.title}</span>
+                </NavItem>
+                <NavItem to={language.aboutUs.link} activeClassName="active">
+                    <span>{language.aboutUs.title} </span>
+                </NavItem>
+                <NavItem to={language.services.link} activeClassName="active">
+                    <span>{language.services.title}</span>
+                </NavItem>
+                <NavItem to={language.contact.link} activeClassName="active">
+                    <span>{language.contact.title}</span>
+                </NavItem>
+            </StyledNav>
+        )
+    }
+}
+Nav.contextType = LanguageContext
 
 export default Nav
