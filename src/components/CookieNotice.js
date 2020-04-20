@@ -21,12 +21,12 @@ const StyledContainer = styled.div`
     }
 `
 
-const CookieNotice = () => (
+const CookieNotice = (props) => (
     <StyledContainer>
         <CookieConsent
             debug={false}
             location="bottom"
-            buttonText="🍪Alles klar!"
+            buttonText={props.cta}
             cookieName="PixelPinkCookieNoticeAccepted"
             style={{
                 background: "var(--color-primary)",
@@ -48,13 +48,13 @@ const CookieNotice = () => (
             }}
             expires={365}
         >
-            Wir nutzen Cookies um Dein Erlebnis noch besser zu machen.{" "}
+            {props.copy}{" "}
             <Link
                 to="/datenschutz"
                 style={{ color: "white" }}
                 aria-label="Link zum Datenschutz"
             >
-                Mehr erfahren
+                {props.linkText}
             </Link>
         </CookieConsent>
     </StyledContainer>

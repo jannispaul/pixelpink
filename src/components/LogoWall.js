@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import StyledLink from "../components/StyledLink"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import boschLogo from "../../content/logos/boschLogo.svg"
 import commerzbankLogo from "../../content/logos/commerzbankLogo.svg"
 import fuelcastLogo from "../../content/logos/fuelcastLogo.svg"
@@ -90,7 +90,7 @@ const StyledGrid = styled.div`
     }
 `
 
-const LogoWall = props => (
+const LogoWall = (props) => (
     <StyledSection>
         <div>
             <h2
@@ -98,9 +98,7 @@ const LogoWall = props => (
                 data-sal-delay="0"
                 data-sal-easing="ease-out"
             >
-                <img src={logo} alt="PixelPink-Logo" /> ist ein auf Design und
-                Technologie spezialisiertes Studio für digitale Medien in
-                Berlin.
+                <img src={logo} alt="PixelPink-Logo" /> {props.headline}
             </h2>
             <hr />
             <p
@@ -108,15 +106,10 @@ const LogoWall = props => (
                 data-sal-delay="50"
                 data-sal-easing="ease-out"
             >
-                Wir kreieren Landingpages, Corporate- und E-Commerce-Websites,
-                Appdesigns und Marketing-Kampagnen, arbeiten in Start-Ups,
-                Agenturen und für große Unternehmen. Unsere Stärken liegen in
-                den Bereichen Konzept, Design, Entwicklung und digitales
-                Marketing. Von der ersten Anfrage bis über den Launch hinaus
-                stehen wir unseren Kunden beratend und auf Augenhöhe zur Seite.
+                {props.copy}
                 <br />
                 <br />
-                <StyledLink to="/ueber-uns">Mehr über uns erfahren</StyledLink>
+                <StyledLink to="/ueber-uns">{props.link}</StyledLink>
             </p>
         </div>
         <StyledGrid>

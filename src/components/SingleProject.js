@@ -89,7 +89,7 @@ const SingleProject = props => (
             )}
             {props.internal ? (
                 <StyledLink to={props.internal}>
-                    Alle Projekte ansehen
+                    {props.linkText}
                 </StyledLink>
             ) : (
                 ""

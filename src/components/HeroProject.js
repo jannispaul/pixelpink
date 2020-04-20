@@ -21,7 +21,7 @@ class HeroProject extends React.Component {
                     "Die-Masterarbeit.com website inside a blue Windows computer",
                 ],
                 company: "",
-                title: "Eine kleine Auswahl unserer Arbeiten",
+                title: this.props.projectTitle,
                 id: "01",
             },
         ]
@@ -38,6 +38,7 @@ class HeroProject extends React.Component {
                         title={project.title}
                         key={i}
                         internal="/projekte/"
+                        linkText={this.props.linkText}
                     />
                 ))}
             </div>
@@ -45,7 +46,7 @@ class HeroProject extends React.Component {
     }
 }
 
-export default props => (
+export default (props) => (
     <StaticQuery
         query={graphql`
             query {
@@ -61,6 +62,6 @@ export default props => (
                 }
             }
         `}
-        render={data => <HeroProject data={data} {...props} />}
+        render={(data) => <HeroProject data={data} {...props} />}
     />
 )
