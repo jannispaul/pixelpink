@@ -1,57 +1,60 @@
 import React from "react"
-// import { Link } from 'gatsby'
+import UeberUnsPage from "../components/pages/UeberUnsPage"
 
-import StandardLayout from "../components/StandardLayout"
-import SEO from "../components/Seo"
-import HeadlineAndText from "../components/HeadlineAndText"
-import ContactFooter from "../components/ContactFooter"
-import UberUnsImage from "../components/UberUnsImage"
-import OurProcess from "../components/OurProcess"
-import OurTools from "../components/OurTools"
-
-import FiftyFiftyBlackIMGAboutUs from "../components/layout/FiftyFiftyBlackIMGAboutUs"
-
-class IndexPage extends React.Component {
-    render() {
-        return (
-            <StandardLayout>
-                <SEO
-                    title="Über Uns"
-                    keywords={[
-                        `über uns`,
-                        `pixelpink`,
-                        `team`,
-                        `prozess`,
-                        `tools`,
-                        `tech-stack`,
-                    ]}
-                />
-
-                <UberUnsImage />
-                <HeadlineAndText
-                    h1="Wer steht eigentlich hinter PixelPink?"
-                    subline="Unsere Geschichte, unsere Herangehensweise"
-                    body="
-                    PixelPink, das sind wir, Felix und Jannis, Design- und Technik-Enthusiasten. Alles begann während unseres gemeinsamen Medien- und Kommunikationsdesignstudiums in Berlin. Wir gestalteten zunächst Websites für Freunde und Familie, doch die Leidenschaft hatte uns gepackt und wir konnten nicht mehr aufhören. Wir wollten mehr machen und haben schnell erkannt, dass wir in unserer Konstellation sehr effizient und kreativ arbeiten können. Seit 2015 bilden wir, gemeinsam mit unserem Netzwerk aus Freischaffenden, PixelPink."
-                />
-                <FiftyFiftyBlackIMGAboutUs />
-                <HeadlineAndText
-                    h2="Unser Prozess"
-                    subline="Double Diamond"
-                    body="Als eingespieltes Team ist unserer vom Design Thinking inspirierter Prozessablauf mittlerweile selbstverständlich: Wir analysieren das Projekt und die Details in ihrem Kontext, erstellen einen Lösungsansatz und verbessern ihn. Wenn wir dann nicht zufrieden sind, geht es in die nächste Runde. Durch diese iterative Arbeitsweise perfektionieren wir das Produkt Schritt für Schritt bis zum Ziel."
-                >
-                    <OurProcess></OurProcess>
-                </HeadlineAndText>
-                <HeadlineAndText
-                    h2="Unsere Tools"
-                    subline="Design- und Tech-Stack"
-                    body="Für uns ist es wichtig, das richtige Werkzeug für den richtigen Job zu haben. Deshalb arbeiten wir mit einer Vielzahl an Tools. Hier findest Du eine Auswahl unserer liebsten und meistgenutzten."
-                >
-                    <OurTools></OurTools>
-                </HeadlineAndText>
-                <ContactFooter mainline="Lass Dich von uns überraschen!" />
-            </StandardLayout>
-        )
-    }
+const content = {
+    seo: {
+        title: "Über uns",
+        keywords: [
+            `über uns`,
+            `pixelpink`,
+            `team`,
+            `prozess`,
+            `tools`,
+            `tech-stack`,
+        ],
+    },
+    cookieNotice: {
+        copy: "We use cookies to improve your browsing experience.",
+        linkText: "Learn more",
+        cta: "🍪Got it!",
+    },
+    headlineAndText1: {
+        mainline: "Wer steht eigentlich hinter PixelPink?",
+        subline: "Unsere Geschichte, unsere Herangehensweise",
+        copy:
+            "PixelPink, das sind wir, Felix und Jannis, Design- und Technik-Enthusiasten. Alles begann während unseres gemeinsamen Medien- und Kommunikationsdesignstudiums in Berlin. Wir gestalteten zunächst Websites für Freunde und Familie, doch die Leidenschaft hatte uns gepackt und wir konnten nicht mehr aufhören. Wir wollten mehr machen und haben schnell erkannt, dass wir in unserer Konstellation sehr effizient und kreativ arbeiten können. Seit 2015 bilden wir, gemeinsam mit unserem Netzwerk aus Freischaffenden, PixelPink.",
+    },
+    headlineAndText2: {
+        mainline: "Unser Vorteil",
+        copy:
+            "Unser Vorteil liegt in der Zusammenarbeit: Die Mischung unserer Expertisen aus Design & Tech bietet die optimale Grundlage für kritische Diskussionen und qualitativ hochwertigen Output. Aktuell begleiten wir unsere Kunden bei der Unternehmensdigitalisierung und bemühen uns dabei, die (digitale) Welt jeden Tag ein bisschen bunter und sinnvoller zumachen. Wie können wir Dir helfen, digital durchzustarten?",
+    },
+    headlineAndText3: {
+        mainline: "Unser Prozess",
+        subline: "Double Diamond",
+        copy:
+            "Als eingespieltes Team ist unserer vom Design Thinking inspirierter Prozessablauf mittlerweile selbstverständlich: Wir analysieren das Projekt und die Details in ihrem Kontext, erstellen einen Lösungsansatz und verbessern ihn. Wenn wir dann nicht zufrieden sind, geht es in die nächste Runde. Durch diese iterative Arbeitsweise perfektionieren wir das Produkt Schritt für Schritt bis zum Ziel.",
+    },
+    headlineAndText4: {
+        mainline: "Unsere Tools",
+        subline: "Design- und Tech-Stack",
+        copy:
+            "Für uns ist es wichtig, das richtige Werkzeug für den richtigen Job zu haben. Deshalb arbeiten wir mit einer Vielzahl an Tools. Hier findest Du eine Auswahl unserer liebsten und meistgenutzten.",
+    },
+    footer: {
+        title: "Lass Dich von uns überraschen!",
+    },
 }
-export default IndexPage
+const UeberUns = (props) => (
+    <UeberUnsPage
+        seo={content.seo}
+        cookieNotice={content.cookieNotice}
+        headlineAndText1={content.headlineAndText1}
+        headlineAndText2={content.headlineAndText2}
+        headlineAndText3={content.headlineAndText3}
+        headlineAndText4={content.headlineAndText4}
+        footer={content.footer.title}
+    />
+)
+
+export default UeberUns
