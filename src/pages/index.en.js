@@ -74,7 +74,6 @@ const Index = (props) => (
         <IndexPage
             title={content.seo.title}
             keywords={content.seo.keywords}
-            cookieNotice={content.cookieNotice}
             intro={content.intro}
             heroProject={content.heroProject}
             logoWall={content.logoWall}

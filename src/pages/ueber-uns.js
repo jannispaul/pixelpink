@@ -13,11 +13,6 @@ const content = {
             `tech-stack`,
         ],
     },
-    cookieNotice: {
-        copy: "We use cookies to improve your browsing experience.",
-        linkText: "Learn more",
-        cta: "🍪Got it!",
-    },
     headlineAndText1: {
         mainline: "Wer steht eigentlich hinter PixelPink?",
         subline: "Unsere Geschichte, unsere Herangehensweise",
@@ -27,7 +22,7 @@ const content = {
     headlineAndText2: {
         mainline: "Unser Vorteil",
         copy:
-            "Unser Vorteil liegt in der Zusammenarbeit: Die Mischung unserer Expertisen aus Design & Tech bietet die optimale Grundlage für kritische Diskussionen und qualitativ hochwertigen Output. Aktuell begleiten wir unsere Kunden bei der Unternehmensdigitalisierung und bemühen uns dabei, die (digitale) Welt jeden Tag ein bisschen bunter und sinnvoller zumachen. Wie können wir Dir helfen, digital durchzustarten?",
+            "Unser Vorteil liegt in der Zusammenarbeit: Die Mischung unserer Expertisen aus Design und Tech bietet die optimale Grundlage für kritische Diskussionen und qualitativ hochwertigen Output. Aktuell begleiten wir unsere Kunden bei der Unternehmensdigitalisierung und bemühen uns dabei, die (digitale) Welt jeden Tag ein bisschen bunter und sinnvoller zumachen. Wie können wir Dir helfen, digital durchzustarten?",
     },
     headlineAndText3: {
         mainline: "Unser Prozess",
@@ -48,7 +43,6 @@ const content = {
 const UeberUns = (props) => (
     <UeberUnsPage
         seo={content.seo}
-        cookieNotice={content.cookieNotice}
         headlineAndText1={content.headlineAndText1}
         headlineAndText2={content.headlineAndText2}
         headlineAndText3={content.headlineAndText3}

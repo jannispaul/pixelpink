@@ -11,11 +11,7 @@ import CookieNotice from "../CookieNotice"
 const IndexPage = (props) => (
     <StandardLayout>
         <SEO title={props.title} keywords={[...props.keywords]} />
-        <CookieNotice
-            copy={props.cookieNotice.copy}
-            linkText={props.cookieNotice.linkText}
-            cta={props.cookieNotice.cta}
-        />
+        <CookieNotice />
 
         <H1Header
             mainline={props.intro.mainline}

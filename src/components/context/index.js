@@ -20,6 +20,11 @@ export const languages = {
             title: "Kontakt",
             link: "kontakt",
         },
+        cookieNotice: {
+            copy: "Wir nutzen Cookies um Dein Erlebnis noch besser zu machen.",
+            linkText: "Mehr erfahren",
+            cta: "🍪Alles klar!",
+        },
     },
     en: {
         home: {
@@ -40,6 +45,11 @@ export const languages = {
         contact: {
             title: "Contact",
             link: "/en/contact",
+        },
+        cookieNotice: {
+            copy: "We use cookies to improve your browsing experience.",
+            linkText: "Learn more",
+            cta: "🍪Got it!",
         },
     },
 }
