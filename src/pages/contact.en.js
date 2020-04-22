@@ -1,5 +1,6 @@
 import React from "react"
 import KontaktPage from "../components/pages/KontaktPage"
+import { LanguageContext, languages } from "../components/context/index"
 
 const content = {
     seo: {
@@ -18,10 +19,12 @@ const content = {
 }
 
 const Kontakt = (props) => (
-    <KontaktPage
-        seo={content.seo}
-        socialMedia={content.socialMedia}
-        footer={content.footer}
-    />
+    <LanguageContext.Provider value={languages.en}>
+        <KontaktPage
+            seo={content.seo}
+            socialMedia={content.socialMedia}
+            footer={content.footer}
+        />
+    </LanguageContext.Provider>
 )
 export default Kontakt

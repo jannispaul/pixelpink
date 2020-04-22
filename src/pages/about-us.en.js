@@ -1,5 +1,6 @@
 import React from "react"
 import UeberUnsPage from "../components/pages/UeberUnsPage"
+import { LanguageContext, languages } from "../components/context/index"
 
 const content = {
     seo: {
@@ -41,14 +42,16 @@ const content = {
     },
 }
 const UeberUns = (props) => (
-    <UeberUnsPage
-        seo={content.seo}
-        headlineAndText1={content.headlineAndText1}
-        headlineAndText2={content.headlineAndText2}
-        headlineAndText3={content.headlineAndText3}
-        headlineAndText4={content.headlineAndText4}
-        footer={content.footer.title}
-    />
+    <LanguageContext.Provider value={languages.en}>
+        <UeberUnsPage
+            seo={content.seo}
+            headlineAndText1={content.headlineAndText1}
+            headlineAndText2={content.headlineAndText2}
+            headlineAndText3={content.headlineAndText3}
+            headlineAndText4={content.headlineAndText4}
+            footer={content.footer.title}
+        />
+    </LanguageContext.Provider>
 )
 
 export default UeberUns

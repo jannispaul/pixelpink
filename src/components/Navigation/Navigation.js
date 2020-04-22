@@ -19,7 +19,7 @@ const StyledNav = styled.div`
         justify-items: start;
         padding: 0 var(--padding-side);
         font-size: 18px;
-        position: fixed;
+        position: sticky;
         width: 100%;
         z-index: 100;
         background: var(--color-white);
@@ -28,7 +28,7 @@ const StyledNav = styled.div`
         width: 300px;
         max-height: 100%;
         height: 100vh;
-        position: fixed;
+        /* position: sticky; */
         box-shadow: 0 1px 14px rgba(0, 0, 0, 0.1);
         grid-template-columns: 1fr;
         grid-template-rows: 1fr repeat(4, auto) 1fr;
@@ -68,21 +68,14 @@ const NavItem = styled(Link)`
 
     @media (min-width: 834px) {
         &:last-of-type {
-            color: var(--color-white);
-            background: var(--color-primary);
-            border-radius: 200px;
-            transition: all 0.1s ease-in;
-            &:hover {
-                background: var(--color-primary-dark);
-                color: var(--color-white);
-                transition: all 0.1s ease-in;
-            }
+            padding-right: 0;
         }
 
         font-size: 14px;
         display: flex;
         text-transform: uppercase;
         font-weight: 700;
+
         /*Hide home link on desktop*/
         :nth-of-type(2) {
             display: none;
@@ -110,10 +103,8 @@ const NavItem = styled(Link)`
         display: flex;
         justify-content: center;
         margin-bottom: 1.3vh;
-
         &:last-of-type {
-            display: inline-block;
-            margin-top: 0.8rem;
+            padding-right: 30px;
         }
     }
 `

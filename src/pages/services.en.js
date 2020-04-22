@@ -1,7 +1,7 @@
 import React from "react"
 import ServicesPage from "../components/pages/ServicesPage"
-// import Icon from "../components/layout/Icon"
 import { ICONS } from "../theme/Icons"
+import { LanguageContext, languages } from "../components/context/index"
 
 const content = {
     seo: {
@@ -107,14 +107,16 @@ const content = {
 }
 
 const Services = (props) => (
-    <ServicesPage
-        seo={content.seo}
-        headlineAndText={content.headlineAndText}
-        serviceCategories1={content.serviceCategories1}
-        serviceCategories2={content.serviceCategories2}
-        servicesTable={content.servicesTable}
-        footer={content.footer}
-    />
+    <LanguageContext.Provider value={languages.en}>
+        <ServicesPage
+            seo={content.seo}
+            headlineAndText={content.headlineAndText}
+            serviceCategories1={content.serviceCategories1}
+            serviceCategories2={content.serviceCategories2}
+            servicesTable={content.servicesTable}
+            footer={content.footer}
+        />
+    </LanguageContext.Provider>
 )
 
 export default Services

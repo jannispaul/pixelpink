@@ -1,4 +1,6 @@
 import React from "react"
+// import { LanguageContext, languages } from "../components/context/index"
+
 import { graphql } from "gatsby"
 import StandardLayout from "../components/StandardLayout"
 import SEO from "../components/Seo"
