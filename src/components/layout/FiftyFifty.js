@@ -60,7 +60,7 @@ const Circle = styled.div`
 
 // `
 
-const div = props => (
+const div = (props) => (
     <StyledSection>
         <div>
             <div>
@@ -75,7 +75,7 @@ const div = props => (
                     data-sal-delay="50"
                     data-sal-easing="ease-out"
                 >
-                    Konzeption
+                    {props.headline1}
                 </h2>
                 <hr
                     data-sal="slide-up"
@@ -87,16 +87,7 @@ const div = props => (
                     data-sal-delay="100"
                     data-sal-easing="ease-out"
                 >
-                    Der Transformationsprozess der Digitalisierung kann schnell
-                    überwältigend wirken. Ein klares Konzept bildet den
-                    Grundstein für Dein erfolgreiches Projekt und beugt
-                    Unverständlichkeiten und somit wirtschaftlichem Misserfolg
-                    vor. Deshalb erarbeiten wir gemeinsam mit Dir die für Dich
-                    passende Digital-Strategie. Wir analysieren Deine Abläufe
-                    und beraten Dich ehrlich: Von der Optimierung interner
-                    Prozesse bis zum Außenauftritt der Marke gibt es häufig
-                    großes Verbesserungspotential, das wir mit Dir nutzen
-                    möchten.
+                    {props.body1}
                 </p>
             </div>
             <div>
@@ -111,7 +102,7 @@ const div = props => (
                     data-sal-delay="50"
                     data-sal-easing="ease-out"
                 >
-                    Design
+                    {props.headline2}
                 </h2>
                 <hr
                     data-sal="slide-up"
@@ -123,19 +114,7 @@ const div = props => (
                     data-sal-delay="100"
                     data-sal-easing="ease-out"
                 >
-                    Wir machen nicht nur hübsch! Klar, das Endergebnis sieht bei
-                    uns immer ästhetisch und ansprechend aus, aber unter Design
-                    verstehen wir sehr viel mehr: Vom ersten Konzept bis zum
-                    fertigen Design sind es viele Schritte. Beim Userresearch
-                    definieren wir die wichtigsten Merkmale der Zielgruppe und
-                    ihre Verbindung zum Produkt. In den sogenannten Customer
-                    Journeys wird der Weg der Kunden mit allen Berührungspunkten
-                    zur Marke aufgezeigt und in der Phase des
-                    Userexperiencedesigns geformt. Das Screendesign bringt
-                    letztlich Form und Funktion zusammen. In visuell
-                    ansprechender Gestaltung werden Typografie, Farben und
-                    Formen so verwendet, dass sie im Einklang mit Nutzung und
-                    Marke stehen.
+                    {props.body2}
                 </p>
             </div>
         </div>
