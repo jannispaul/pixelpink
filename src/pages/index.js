@@ -12,11 +12,6 @@ const content = {
             `design`,
         ],
     },
-    cookieNotice: {
-        copy: "Wir nutzen Cookies um Dein Erlebnis noch besser zu machen.",
-        linkText: "Mehr erfahren",
-        cta: "🍪Alles klar!",
-    },
     intro: {
         mainline: "Wir gestalten und entwickeln Lösungen",
         subline: "die Deine Kunden lieben",
