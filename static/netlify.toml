@@ -8,7 +8,15 @@
   to ="https://pixel-pink.de/:splat"
   status = 301
 
-  [[redirects]]
+[[redirects]]
   from = "/more.html"
   status = 410
+
+
+# Redirect browsers set to englisch 
+[[redirects]]
+  from = "/"
+  to = "/en/:splat"
+  status = 302
+  conditions = {Language = ["en"]}
 
