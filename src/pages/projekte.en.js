@@ -1,5 +1,6 @@
 import React from "react"
 import ProjektePage from "../components/pages/ProjektePage"
+import { LanguageContext, languages } from "../components/context/index"
 
 const content = {
     seo: {
@@ -8,8 +9,8 @@ const content = {
         description: "Eine kleine Auswahl der Arbeiten von PixelPink",
     },
     h1Header: {
-        mainline: "Eine kleine Auswahl unserer Arbeiten",
-        subline: "von der Website bis zum Appdesign",
+        mainline: "A small selection of PixelPink projects",
+        subline: "from websites to app designs",
     },
     projects: {
         ueberstunde: {
@@ -22,9 +23,9 @@ const content = {
                 "Uberstunde Gerhard Schröder Podcast",
             ],
             company: "Überstunde",
-            title:
-                "Der Feierabend-Talk mit Marina Weisband und Michael Bröcker",
+            title: "Evening talks with Marina Weisband and Michael Bröcker",
             link: "https://überstunde.com",
+            linkText: "www.überstunde.com",
         },
         wallStreetWeekly: {
             images: undefined,
@@ -37,8 +38,9 @@ const content = {
             ],
             company: "Wall Street Weekly",
             title:
-                "Börsen-Reporterin Sophie Schimansky berichtet live aus New York",
+                "Stock market journalist Sophie Schimansky reports live from New York",
             link: "https://wall-street-weekly.com",
+            linkText: "www.wall-street-weekly.com",
         },
         fuelcast: {
             images: undefined,
@@ -53,8 +55,10 @@ const content = {
                 "Felix Lebedinzew, Mattias Nilsson, Jurek Herwig at Meeting",
             ],
             company: "Fuelcast",
-            title: "Nachhaltigkeit und Effizienz in der Frachtschifffahrt",
+            title:
+                "Sustainability and efficiency in the cargo shipping industry",
             link: "https://www.fuelcast.co/",
+            linkText: "www.fuelcast.co",
         },
         mediapioneer: {
             images: undefined,
@@ -66,8 +70,9 @@ const content = {
                 "mediapioneer Website wireframes and design iterations",
             ],
             company: "Mediapioneer",
-            title: "Gabor Steingarts Vision des Journalismus",
+            title: "Gabor Steingart's vision for journalism",
             link: "https://mediapioneer.com/",
+            linkText: "www.mediapioneer.com",
         },
         qvsta: {
             images: undefined,
@@ -82,8 +87,9 @@ const content = {
                 "QVSTA design system elements",
             ],
             company: "Qvsta",
-            title: "QVSTA revolutionieren die Fashion-Tech-Branche",
+            title: "QVSTA: revolutionizing the Fashion and Tech industry",
             link: "https://qvsta.com/",
+            linkText: "www.qvsta.com",
         },
         theAmericans: {
             images: undefined,
@@ -95,8 +101,9 @@ const content = {
                 "The Americans website inside iPhone and iPad showing the responsive mobile version and clean code",
             ],
             company: "The Americans",
-            title: "Podcast und Geschichten aus dem Amerika von heute",
+            title: "Podcasts and stories from today's America",
             link: "https://the-americans.com/",
+            linkText: "www.the-americans.com",
         },
         arztpraxisSchulzendorf: {
             images: undefined,
@@ -109,8 +116,9 @@ const content = {
                 "Arztpraxis schulzendorf peggy niederhäusern examining a child and the entrance to the practice",
             ],
             company: "Arztpraxis-Schulzendorf",
-            title: "Moderne Praxiskommunikation",
+            title: "Modern communication for a medical practice",
             link: "https://arztpraxis-schulzendorf.de/",
+            linkText: "www.arztpraxis-schulzendorf.de",
         },
         dieMasterarbeit: {
             images: undefined,
@@ -122,21 +130,24 @@ const content = {
                 "Die-Masterarbeit.com styleguide and design system elements",
             ],
             company: "Die-Masterarbeit.de",
-            title: "Studenten mit Unternehmen verbinden",
+            title: "Connecting students with business",
             link: "https://www.die-masterarbeit.de",
+            linkText: "www.die-masterarbeit.de",
         },
     },
     footer: {
-        title: "Digitalen MVP bauen und User überzeugen?",
+        title: "How can we help you? Write us!",
     },
 }
 
 const Projekte = (props) => (
-    <ProjektePage
-        seo={content.seo}
-        h1Header={content.h1Header}
-        projects={content.projects}
-        footer={content.footer.title}
-    ></ProjektePage>
+    <LanguageContext.Provider value={languages.en}>
+        <ProjektePage
+            seo={content.seo}
+            h1Header={content.h1Header}
+            projects={content.projects}
+            footer={content.footer.title}
+        ></ProjektePage>
+    </LanguageContext.Provider>
 )
 export default Projekte

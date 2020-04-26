@@ -17,8 +17,9 @@ const IndexPage = (props) => (
             mainline={props.intro.mainline}
             subline={props.intro.subline}
         />
+
         <HeroProject
-            projectTitle={props.heroProject.projectTitle}
+            title={props.heroProject.title}
             linkText={props.heroProject.linkText}
             link={props.heroProject.link}
         />

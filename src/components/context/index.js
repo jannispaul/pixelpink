@@ -37,11 +37,11 @@ export const languages = {
         },
         projects: {
             title: "Projects",
-            link: "/en/projects",
+            link: "/en/projekte",
         },
         aboutUs: {
             title: "About us",
-            link: "/en/about-us",
+            link: "/en/ueber-uns",
         },
         services: {
             title: "Services",
@@ -49,7 +49,7 @@ export const languages = {
         },
         contact: {
             title: "Contact",
-            link: "/en/contact",
+            link: "/en/kontakt",
         },
         cookieNotice: {
             copy: "We use cookies to improve your browsing experience.",

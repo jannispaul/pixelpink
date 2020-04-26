@@ -7,40 +7,37 @@ import SingleProject from "../components/SingleProject"
 class HeroProject extends React.Component {
     constructor(props) {
         super(props)
-        this.projects = [
-            {
-                images: this.props.data.indexProjects.edges,
-                imgAltText: [
-                    "Uberstunde website inside Display on black",
-                    "Wall Street Weekly website inside chromebook and pixel3",
-                    "Fuelcast Application in front of a container ship",
-                    "Gabor Steingarts mediapioneer platform inside pink macbook",
-                    "QVSTA website inside iPad in front of female model",
-                    "The Americans website inside red macbook",
-                    "Arztpraxis schulzendorf website inside macpro",
-                    "Die-Masterarbeit.com website inside a blue Windows computer",
-                ],
-                company: "",
-                title: this.props.projectTitle,
-                id: "01",
-            },
-        ]
+        this.projects = {
+            images: this.props.data.indexProjects.edges,
+            imgAltText: [
+                "Uberstunde website inside Display on black",
+                "Wall Street Weekly website inside chromebook and pixel3",
+                "Fuelcast Application in front of a container ship",
+                "Gabor Steingarts mediapioneer platform inside pink macbook",
+                "QVSTA website inside iPad in front of female model",
+                "The Americans website inside red macbook",
+                "Arztpraxis schulzendorf website inside macpro",
+                "Die-Masterarbeit.com website inside a blue Windows computer",
+            ],
+            company: "",
+            title: this.props.title,
+            id: "01",
+        }
     }
 
     render() {
         return (
             <div>
-                {this.projects.map((project, i) => (
-                    <SingleProject
-                        img={project.images}
-                        imgAltText={project.imgAltText}
-                        company={project.company}
-                        title={project.title}
-                        key={i}
-                        internal={this.props.link}
-                        linkText={this.props.linkText}
-                    />
-                ))}
+              
+                <SingleProject
+                    img={this.projects.images}
+                    imgAltText={this.projects.imgAltText}
+                    company={this.projects.company}
+                    title={this.projects.title}
+                    internal={this.props.link}
+                    linkText={this.props.linkText}
+                />
+
             </div>
         )
     }

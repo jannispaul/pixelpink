@@ -11,6 +11,7 @@ const StyledLanguageSwitch = styled.div`
     font-size: 16px;
     margin-top: 10vh;
     @media (min-width: 834px) {
+        margin-top: 0;
         font-size: 14px;
     }
     div {
