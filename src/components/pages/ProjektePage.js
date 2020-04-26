@@ -47,6 +47,9 @@ class ProjektePage extends React.Component {
                         title={project.title}
                         key={i}
                         external={project.link}
+                        linkText={project.linkText}
+                        description={project.description}
+                        services={project.services}
                     />
                 ))}
 

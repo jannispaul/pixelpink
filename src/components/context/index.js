@@ -2,6 +2,7 @@ import React from "react"
 export const languages = {
     de: {
         home: {
+            title: "Home",
             link: "/",
         },
         projects: {
@@ -31,6 +32,7 @@ export const languages = {
     },
     en: {
         home: {
+            title: "Home",
             link: "/en/",
         },
         projects: {

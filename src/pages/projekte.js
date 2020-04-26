@@ -31,6 +31,10 @@ const content = {
             title:
                 "Der Feierabend-Talk mit Marina Weisband und Michael Bröcker",
             link: "https://überstunde.com",
+            linkText: "www.überstunde.com",
+            description:
+                "Test test text lorem ipsum vTest test text lorem ipsum Test test text lorem ipsumTest test text lorem ipsum Test test text lorem ipsum",
+            services: ["Test", "Text", "test"],
         },
         wallStreetWeekly: {
             images: undefined,
@@ -45,6 +49,7 @@ const content = {
             title:
                 "Börsen-Reporterin Sophie Schimansky berichtet live aus New York",
             link: "https://wall-street-weekly.com",
+            linkText: "www.wall-street-weekly.com",
         },
         fuelcast: {
             images: undefined,
@@ -60,7 +65,8 @@ const content = {
             ],
             company: "Fuelcast",
             title: "Nachhaltigkeit und Effizienz in der Frachtschifffahrt",
-            link: "https://www.fuelcast.co/",
+            link: "www.fuelcast.co/",
+            linkText: "www.fuelcast.co",
         },
         mediapioneer: {
             images: undefined,
@@ -74,6 +80,7 @@ const content = {
             company: "Mediapioneer",
             title: "Gabor Steingarts Vision des Journalismus",
             link: "https://mediapioneer.com/",
+            linkText: "www.mediapioneer.com",
         },
         qvsta: {
             images: undefined,
@@ -90,6 +97,7 @@ const content = {
             company: "Qvsta",
             title: "QVSTA revolutionieren die Fashion-Tech-Branche",
             link: "https://qvsta.com/",
+            linkText: "www.qvsta.com",
         },
         theAmericans: {
             images: undefined,
@@ -103,6 +111,7 @@ const content = {
             company: "The Americans",
             title: "Podcast und Geschichten aus dem Amerika von heute",
             link: "https://the-americans.com/",
+            linkText: "www.the-americans.com",
         },
         arztpraxisSchulzendorf: {
             images: undefined,
@@ -117,6 +126,7 @@ const content = {
             company: "Arztpraxis-Schulzendorf",
             title: "Moderne Praxiskommunikation",
             link: "https://arztpraxis-schulzendorf.de/",
+            linkText: "www.arztpraxis-schulzendorf.de",
         },
         dieMasterarbeit: {
             images: undefined,
@@ -130,6 +140,7 @@ const content = {
             company: "Die-Masterarbeit.de",
             title: "Studenten mit Unternehmen verbinden",
             link: "https://www.die-masterarbeit.de",
+            linkText: "www.die-masterarbeit.de",
         },
     },
     footer: {

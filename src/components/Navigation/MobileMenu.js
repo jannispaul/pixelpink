@@ -1,6 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import { LanguageContext } from "../context"
+import LanguageSwitch from "./LanguageSwitch"
 
 const MobileNav = styled.div`
     padding: 100px var(--padding-side);
@@ -14,11 +16,11 @@ const MobileNav = styled.div`
     width: 100%;
     z-index: 2;
     background: var(--color-white);
-    transform: ${props =>
+    transform: ${(props) =>
         props.showMobileMenu ? "translateY(0%)" : "translateY(-100%)"};
     transition: transform 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
     & a {
-        transform: ${props =>
+        transform: ${(props) =>
             props.showMobileMenu ? "translateY(0%)" : "translateY(-100px)"};
     }
 `
@@ -59,25 +61,41 @@ const StyledLink = styled(Link)`
     transition: transform 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
 `
 
-const MobileMenu = props => {
-    return (
-        <MobileNav showMobileMenu={props.showMobileMenu}>
-            <StyledLink to="/" activeClassName="active">
-                Home
-            </StyledLink>
-            <StyledLink to="/projekte/" activeClassName="active">
-                Projekte
-            </StyledLink>
-            <StyledLink to="/ueber-uns/" activeClassName="active">
-                Über uns
-            </StyledLink>
-            <StyledLink to="/services/" activeClassName="active">
-                Services
-            </StyledLink>
-            <StyledLink to="/kontakt/" activeClassName="active">
-                Kontakt
-            </StyledLink>
-        </MobileNav>
-    )
+class MobileMenu extends React.Component {
+    render() {
+        let language = this.context
+        return (
+            <MobileNav showMobileMenu={this.props.showMobileMenu}>
+                <StyledLink to={language.home.link} activeClassName="active">
+                    {language.home.title}
+                </StyledLink>
+                <StyledLink
+                    to={language.projects.link}
+                    activeClassName="active"
+                >
+                    {language.projects.title}
+                </StyledLink>
+                <StyledLink
+                    to={language.aboutUs.title}
+                    activeClassName="active"
+                >
+                    {language.aboutUs.title}
+                </StyledLink>
+                <StyledLink
+                    to={language.services.link}
+                    activeClassName="active"
+                >
+                    {language.services.title}
+                </StyledLink>
+                <StyledLink to={language.contact.link} activeClassName="active">
+                    {language.contact.title}
+                </StyledLink>
+                <LanguageSwitch></LanguageSwitch>
+            </MobileNav>
+        )
+    }
 }
+
+MobileMenu.contextType = LanguageContext
+
 export default MobileMenu

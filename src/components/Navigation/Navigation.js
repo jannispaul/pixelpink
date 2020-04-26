@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import logo from "../../../content/logos/logo.svg"
 import { LanguageContext } from "../context"
+import LanguageSwitch from "./LanguageSwitch"
 
 const StyledNav = styled.div`
     display: none;
@@ -130,24 +131,6 @@ const Logo = styled(Link)`
         margin: auto;
     }
 `
-const LanguageSwitch = styled.div`
-    display: flex;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 11px;
-    @media (min-width: 834px) {
-        font-size: 14px;
-    }
-    div {
-        display: inline;
-    }
-    a {
-        text-decoration: none;
-        opacity: 0.5;
-    }
-    span {
-    }
-`
 
 class Nav extends React.Component {
     render() {
@@ -158,7 +141,7 @@ class Nav extends React.Component {
                     <img src={logo} alt="PixelPink Logo" />
                 </Logo>
                 <NavItem to={language.home.link} activeClassName="active">
-                    <span>Home</span>
+                    <span>{language.home.title}</span>
                 </NavItem>
                 <NavItem to={language.projects.link} activeClassName="active">
                     <span>{language.projects.title}</span>
@@ -172,21 +155,7 @@ class Nav extends React.Component {
                 <NavItem to={language.contact.link} activeClassName="active">
                     <span>{language.contact.title}</span>
                 </NavItem>
-                <LanguageSwitch>
-                    <div>
-                        {language.english.active ? (
-                            <Link to="/">DE</Link>
-                        ) : (
-                            <span>DE</span>
-                        )}{" "}
-                        /{" "}
-                        {language.english.active ? (
-                            <span>EN</span>
-                        ) : (
-                            <Link to="/en/">EN</Link>
-                        )}
-                    </div>
-                </LanguageSwitch>
+                <LanguageSwitch></LanguageSwitch>
             </StyledNav>
         )
     }
