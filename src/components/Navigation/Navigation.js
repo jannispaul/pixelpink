@@ -14,8 +14,8 @@ const StyledNav = styled.div`
         top: 0;
         height: 80px;
         box-shadow: 0 1px 14px rgba(0, 0, 0, 0.1);
-        -ms-grid-columns: 1fr auto auto auto auto; /*IE grid*/
-        grid-template-columns: 1fr repeat(4, auto);
+        -ms-grid-columns: 1fr auto auto auto auto auto; /*IE grid*/
+        grid-template-columns: 1fr repeat(5, auto);
         justify-items: start;
         padding: 0 var(--padding-side);
         font-size: 18px;
@@ -67,9 +67,9 @@ const NavItem = styled(Link)`
     }
 
     @media (min-width: 834px) {
-        &:last-of-type {
+        /* &:last-of-type {
             padding-right: 0;
-        }
+        } */
 
         font-size: 14px;
         display: flex;
@@ -130,6 +130,24 @@ const Logo = styled(Link)`
         margin: auto;
     }
 `
+const LanguageSwitch = styled.div`
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 11px;
+    @media (min-width: 834px) {
+        font-size: 14px;
+    }
+    div {
+        display: inline;
+    }
+    a {
+        text-decoration: none;
+        opacity: 0.5;
+    }
+    span {
+    }
+`
 
 class Nav extends React.Component {
     render() {
@@ -154,6 +172,21 @@ class Nav extends React.Component {
                 <NavItem to={language.contact.link} activeClassName="active">
                     <span>{language.contact.title}</span>
                 </NavItem>
+                <LanguageSwitch>
+                    <div>
+                        {language.english.active ? (
+                            <Link to="/">DE</Link>
+                        ) : (
+                            <span>DE</span>
+                        )}{" "}
+                        /{" "}
+                        {language.english.active ? (
+                            <span>EN</span>
+                        ) : (
+                            <Link to="/en/">EN</Link>
+                        )}
+                    </div>
+                </LanguageSwitch>
             </StyledNav>
         )
     }

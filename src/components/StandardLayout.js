@@ -26,12 +26,9 @@ const Main = styled.div`
     position: relative;
     overflow: hidden;
     background: var(--color-white);
-    @media (min-width: 834px) {
-        margin-top: 80px;
-    }
+
     @media (min-width: 1441px) {
         grid-column-start: 2;
-        margin-top: 0px;
     }
 `
 

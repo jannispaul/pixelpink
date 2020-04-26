@@ -25,6 +25,9 @@ export const languages = {
             linkText: "Mehr erfahren",
             cta: "🍪Alles klar!",
         },
+        english: {
+            active: false,
+        },
     },
     en: {
         home: {
@@ -50,6 +53,9 @@ export const languages = {
             copy: "We use cookies to improve your browsing experience.",
             linkText: "Learn more",
             cta: "🍪Got it!",
+        },
+        english: {
+            active: true,
         },
     },
 }
