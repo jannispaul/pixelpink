@@ -187,15 +187,15 @@ const ServicesTable = (props) => (
             data-sal-easing="ease-out"
         >
             <h2>
-                Übersicht aller Leistungen
+                {props.content.mainline}
                 <br />
-                <span>Von Konzept bis Marketing</span>
+                <span>{props.content.subline}</span>
             </h2>
             <hr />
         </HeadlineContainer>
         <ScrollContainer>
             <div>
-                {props.content.map((category, i) => (
+                {props.content.table.map((category, i) => (
                     <ServiceColumn key={i}>
                         <StyledIcon icon={category.icon} />
 
