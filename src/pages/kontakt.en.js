@@ -9,12 +9,12 @@ const content = {
     },
 
     socialMedia: {
-        mainline: "Noch nicht genug?",
+        mainline: "Looking for more?",
         subline: "Let's be friends",
     },
 
     footer: {
-        title: "Auf der Suche nach innovativen Konzepten?",
+        title: "Looking for innovative concepts?",
     },
 }
 
