@@ -13,6 +13,23 @@ class WorkPage extends React.Component {
         super(props)
         this.projects = [
             {
+                images: this.props.data.thePioneer,
+                imgAltText: [
+                    "ThePioneer Landingpage Website inside Macbook and iPhone",
+                    "ThePioneer by Mediapioneer Logo ",
+                    "ThePioneer Landingpage Website inside iPad",
+                    "ThePioneer Landingpage Website displayed in Apple HDR Display",
+                    "ThePioneer Landingpage Website inside a Safari Browser Mockup",
+                    "ThePioneer Landingpage Website from Ideation to Launch Variations of Webdesign"
+                ],
+                company: "Join.ThePioneer.de",
+                title:
+                    "Landingpage für Gabor Steingarts Medien-Startup 'ThePioneer'",
+                link: "https://join.thepioneer.de",
+            },
+
+
+            {
                 images: this.props.data.ueberstunde,
                 imgAltText: [
                     "Uberstunde inside iPhone in a dark room",
@@ -179,6 +196,17 @@ class WorkPage extends React.Component {
 }
 export const query = graphql`
     query {
+        thePioneer: allFile(
+            filter: { relativeDirectory: { eq: "work/thePioneer" } }
+            sort: { fields: name }
+        ) {
+            edges {
+                node {
+                    ...ProjectImagesFragment
+                }
+            }
+        }
+
         ueberstunde: allFile(
             filter: { relativeDirectory: { eq: "work/ueberstunde" } }
             sort: { fields: name }
