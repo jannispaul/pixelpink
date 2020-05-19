@@ -64,7 +64,7 @@ const content = {
                 "By keeping things simple as possible, this website offers the perfect stage for podcast Wall Street Weekly with stock market reporter Sophie Schimansky. Here, it's all about the content — and nothing stands in the way. Clear navigation and high performance allows interested users to learn all about the podcast and find links to their preferred streaming platform.",
             link: "https://wall-street-weekly.com",
             linkText: "www.wall-street-weekly.com",
-            service: ["Brand Identity", "UX & UI Design", "Gatsby / React"],
+            services: ["Brand Identity", "UX & UI Design", "Gatsby / React"],
         },
         fuelcast: {
             images: undefined,

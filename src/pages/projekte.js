@@ -53,7 +53,7 @@ const content = {
             linkText: "www.überstunde.com",
             description:
                 "Für Mediapioneers Podcast-Reihe „Überstunde“ mit Michael Bröcker und Marina Weisband entwickelten wir eine reduzierte Website, die über den Podcast informiert, den Nutzer auf die Streamingportale weiterleitet und weitere Mediapioneer Podcasts präsentiert.",
-            services: ["Markenidentiät", "UX & UI Design", "Gatsby / React"],
+            services: ["Markenidentität", "UX & UI Design", "Gatsby / React"],
         },
         wallStreetWeekly: {
             images: undefined,
@@ -71,7 +71,7 @@ const content = {
                 "Die Website bietet dem Podcast „Wall Street Weekly“ mit Börsen-Reporterin Sophie Schimansky eine Bühne, indem sie möglichst simpel gehalten wurde. Es geht um den Inhalt und diesem steht hier nichts im Wege. Eine klare Nutzerführung und gute Performance kommen interessierten Nutzern zugute, die hier alles zum Podcast erfahren können und auch den Link zu ihrem bevorzugten Streamingportal finden.",
             link: "https://wall-street-weekly.com",
             linkText: "www.wall-street-weekly.com",
-            service: ["Markenidentiät", "UX & UI Design", "Gatsby / React"],
+            services: ["Markenidentität", "UX & UI Design", "Gatsby / React"],
         },
         fuelcast: {
             images: undefined,
@@ -155,7 +155,7 @@ const content = {
                 "Ziel des Projektes war eine simple Website zur Präsentation des Podcasts „The Americans“. Der Podcast erzählt Geschichten aus dem Amerika von heute und betrachtet Politik und Gesellschaft. Die Seite verbindet Performance mit einem klaren Navigationskonzept und hat durch ihre amerikanische Symbolismen ein hohen Wiedererkennungswert.",
             link: "https://the-americans.com/",
             linkText: "www.the-americans.com",
-            services: ["Markenidentiät", "UX & UI Design", "Gatsby / React"],
+            services: ["Markenidentität", "UX & UI Design", "Gatsby / React"],
         },
         arztpraxisSchulzendorf: {
             images: undefined,

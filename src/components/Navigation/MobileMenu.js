@@ -75,10 +75,7 @@ class MobileMenu extends React.Component {
                 >
                     {language.projects.title}
                 </StyledLink>
-                <StyledLink
-                    to={language.aboutUs.title}
-                    activeClassName="active"
-                >
+                <StyledLink to={language.aboutUs.link} activeClassName="active">
                     {language.aboutUs.title}
                 </StyledLink>
                 <StyledLink
