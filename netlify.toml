@@ -6,31 +6,31 @@
   autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address
   framework = "#custom"
 
-[[redirects]]
-  from = "https://pixelpink.netlify.app/*"
-  to ="https://pixel-pink.de/:splat"
-  status = 301
+# [[redirects]]
+#   from = "https://pixelpink.netlify.app/*"
+#   to ="https://pixel-pink.de/:splat"
 
-[[redirects]]
-  from = "https://www.pixel-pink.de/*"
-  to ="https://pixel-pink.de/:splat"
-  status = 301
+# [[redirects]]
+#   from = "https://www.pixel-pink.de/*"
+#   to ="https://pixel-pink.de/:splat"
 
-[[redirects]]
-  from = "/more.html"
-  to  = "/"
-  status = 410
+# # This page got deleted 
+# [[redirects]]
+#   from = "/more.html"
+#   to  = "/"
+#   status = 410
 
 
-# Redirect browsers set to englisch 
-[[redirects]]
-  from = "/"
-  to = "/en/"
-  status = 302
-  conditions = {Language = ["en"]}
+# # Redirect browsers set to englisch 
+# [[redirects]]
+#   from = "/"
+#   to = "/en/"
+#   status = 302
+#   conditions = {Language = ["en"]}
 
-[[redirects]]
-  from = "/en/"
-  to = "/"
-  status = 302
-  conditions = {Language = ["de"]}
+# # Redirect browsers set to german 
+# [[redirects]]
+#   from = "/en/"
+#   to = "/"
+#   status = 302
+#   conditions = {Language = ["de"]}
