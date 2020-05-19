@@ -1,26 +1,27 @@
 import React from "react"
-import SocialMedia from "../components/SocialMedia"
+import KontaktPage from "../components/pages/KontaktPage"
 
-import StandardLayout from "../components/StandardLayout"
-import SEO from "../components/Seo"
-import ContactFooter from "../components/ContactFooter"
+const content = {
+    seo: {
+        title: "Kontakt",
+        keywords: [`kontakt`, `pixelpink`],
+    },
 
-import UberUnsImageGrid from "../components/UberUnsImageGrid"
+    socialMedia: {
+        mainline: "Noch nicht genug?",
+        subline: "Let's be friends",
+    },
 
-class IndexPage extends React.Component {
-    render() {
-        return (
-            <StandardLayout>
-                <SEO title="Kontakt" keywords={[`kontakt`, `pixelpink`]} />
-
-                <ContactFooter mainline="Auf der Suche nach innovativen Konzepten?" />
-                <SocialMedia
-                    mainline="Noch nicht genug?"
-                    subline="Let's be friends"
-                />
-                <UberUnsImageGrid></UberUnsImageGrid>
-            </StandardLayout>
-        )
-    }
+    footer: {
+        title: "Auf der Suche nach innovativen Konzepten?",
+    },
 }
-export default IndexPage
+
+const Kontakt = (props) => (
+    <KontaktPage
+        seo={content.seo}
+        socialMedia={content.socialMedia}
+        footer={content.footer}
+    />
+)
+export default Kontakt

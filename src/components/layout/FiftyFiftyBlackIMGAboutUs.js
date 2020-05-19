@@ -54,7 +54,7 @@ const ContentContainer = styled.div`
     }
 `
 
-const div = props => (
+const div = (props) => (
     <StyledSection>
         <div>
             <AboutUsImage />
@@ -64,7 +64,7 @@ const div = props => (
                     data-sal-delay="00"
                     data-sal-easing="ease-out"
                 >
-                    Unser Vorteil
+                    {props.h2}
                 </h2>
                 <hr
                     data-sal="slide-up"
@@ -76,13 +76,7 @@ const div = props => (
                     data-sal-delay="100"
                     data-sal-easing="ease-out"
                 >
-                    Unser Vorteil liegt in der Zusammenarbeit: Die Mischung
-                    unserer Expertisen aus Design & Tech bietet die optimale
-                    Grundlage für kritische Diskussionen und qualitativ
-                    hochwertigen Output. Aktuell begleiten wir unsere Kunden bei
-                    der Unternehmensdigitalisierung und bemühen uns dabei, die
-                    (digitale) Welt jeden Tag ein bisschen bunter und sinnvoller
-                    zumachen. Wie können wir Dir helfen, digital durchzustarten?
+                    {props.body}
                 </p>
             </ContentContainer>
         </div>

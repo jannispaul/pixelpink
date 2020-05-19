@@ -57,8 +57,31 @@ const Company = styled.span`
     text-transform: uppercase;
     margin-bottom: var(--space-s);
 `
+const DescriptionContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-gray-dark);
+    p {
+        max-width: 680px;
+        font-size: 18px;
+        letter-spacing: 0.39px;
+        line-height: 29px;
+    }
+    h3 {
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+    li {
+        list-style: none;
+        font-size: 18px;
+        letter-spacing: 0.39px;
+        line-height: 29px;
+    }
+`
 
-const SingleProject = props => (
+const SingleProject = (props) => (
     <Project>
         <Carousel
             autoPlay={false}
@@ -80,17 +103,30 @@ const SingleProject = props => (
         <TextContainer>
             <Company>{props.company}</Company>
             <h2>{props.title}</h2>
+            {props.description ? (
+                <DescriptionContainer>
+                    <p>{props.description}</p>
+                    <div>
+                        <h3>Services</h3>
+                        <ul>
+                            {props.services.map((service, index) => (
+                                <li key={index}>{service}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </DescriptionContainer>
+            ) : (
+                ""
+            )}
             {props.external ? (
                 <Button link={props.external} target="_blank">
-                    Website öffnen
+                    {props.linkText}
                 </Button>
             ) : (
                 ""
             )}
             {props.internal ? (
-                <StyledLink to={props.internal}>
-                    Alle Projekte ansehen
-                </StyledLink>
+                <StyledLink to={props.internal}>{props.linkText}</StyledLink>
             ) : (
                 ""
             )}

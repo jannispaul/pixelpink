@@ -1,0 +1,35 @@
+[dev]
+  command = "gatsby develop" # Command to start your dev server
+  port = 8001 # Port that the dev server will be accessible on
+  targetPort = 8000 # Port of target app server
+  publish = "_site" # If you use a _redirect file, provide the path to your static content folder
+  autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address
+
+[[redirects]]
+  from = "https://pixelpink.netlify.com/*"
+  to ="https://pixel-pink.de/:splat"
+  status = 301
+
+[[redirects]]
+  from = "https://www.pixel-pink.de/*"
+  to ="https://pixel-pink.de/:splat"
+  status = 301
+
+[[redirects]]
+  from = "/more.html"
+  to  = "/"
+  status = 410
+
+
+# Redirect browsers set to englisch 
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 302
+  conditions = {Language = ["en"]}
+
+[[redirects]]
+  from = "/en/"
+  to = "/"
+  status = 302
+  conditions = {Language = ["de"]}

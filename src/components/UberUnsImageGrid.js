@@ -2,7 +2,6 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import "../theme/carousel.css"
-// import SingleProject from "../components/SingleProject"
 import Img from "gatsby-image"
 import styled from "styled-components"
 
@@ -73,7 +72,7 @@ class HeroProject extends React.Component {
     }
 }
 
-export default props => (
+export default (props) => (
     <StaticQuery
         query={graphql`
             query {
@@ -89,6 +88,6 @@ export default props => (
                 }
             }
         `}
-        render={data => <HeroProject data={data} {...props} />}
+        render={(data) => <HeroProject data={data} {...props} />}
     />
 )

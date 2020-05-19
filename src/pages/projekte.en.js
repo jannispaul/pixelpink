@@ -1,21 +1,16 @@
 import React from "react"
 import ProjektePage from "../components/pages/ProjektePage"
+import { LanguageContext, languages } from "../components/context/index"
 
 const content = {
     seo: {
-        title: "Projekte",
-        keywords: [
-            `projekte`,
-            `pixelpink`,
-            `arbeiten`,
-            `referenzen`,
-            `klienten`,
-        ],
+        title: "Projects",
+        keywords: [`projects`, `pixelpink`, `work`, `references`, `clients`],
         description: "Eine kleine Auswahl der Arbeiten von PixelPink",
     },
     h1Header: {
-        mainline: "Eine kleine Auswahl unserer Arbeiten",
-        subline: "von der Website bis zum Appdesign",
+        mainline: "A small selection of PixelPink projects",
+        subline: "from websites to app designs",
     },
     projects: {
         thePioneer: {
@@ -29,13 +24,12 @@ const content = {
                 "ThePioneer Landingpage Website from Ideation to Launch Variations of Webdesign",
             ],
             company: "ThePioneer",
-            title:
-                "Landingpage für Gabor Steingarts Medien-Startup „ThePioneer“",
+            title: "Gabor Steingart’s media startup, ThePioneer.",
             link: "https://join.thepioneer.de",
             linkText: "Join.ThePioneer.de",
             description:
-                "Für den Launch des Medien-Startups „ThePioneer“ konzipierten und entwickelten wir eine auf Conversion ausgerichtete Landingpage. Der One-Pager gibt einen Einblick in die Hintergründe und einzigartigen Vorhaben des Unternehmens und reißt aktuelle Inhalte der Plattform an. Das Design ist ganz „ThePioneer“ und besticht mit Videoinhalten und Animationen.",
-            services: ["Konzeption", "UX & UI Design", "Gatsby / React"],
+                "We designed and developed a converting landing page to launch the media startup, ThePioneer. Highlighting newly released content, this one-pager offers an exclusive look into the company’s unique mission and vision. The page design is 100% ThePioneer, impressing site visitors with its video content and animations.",
+            services: ["Concept", "UX & UI Design", "Gatsby / React"],
         },
         ueberstunde: {
             images: undefined,
@@ -47,13 +41,12 @@ const content = {
                 "Uberstunde Gerhard Schröder Podcast",
             ],
             company: "Überstunde",
-            title:
-                "Der Feierabend-Talk mit Marina Weisband und Michael Bröcker",
+            title: "Evening talks with Marina Weisband and Michael Bröcker",
             link: "https://überstunde.com",
             linkText: "www.überstunde.com",
             description:
-                "Für Mediapioneers Podcast-Reihe „Überstunde“ mit Michael Bröcker und Marina Weisband entwickelten wir eine reduzierte Website, die über den Podcast informiert, den Nutzer auf die Streamingportale weiterleitet und weitere Mediapioneer Podcasts präsentiert.",
-            services: ["Markenidentiät", "UX & UI Design", "Gatsby / React"],
+                "For Mediapioneer's podcast series Überstunde we developed a pared-down website that informs listeners about the podcast, referring them to streaming platforms and other Mediapioneer podcasts.",
+            services: ["Brand Identity ", "UX & UI Design", "Gatsby / React"],
         },
         wallStreetWeekly: {
             images: undefined,
@@ -66,12 +59,12 @@ const content = {
             ],
             company: "Wall Street Weekly",
             title:
-                "Börsen-Reporterin Sophie Schimansky berichtet live aus New York",
+                "Stock market journalist Sophie Schimansky reports live from New York",
             description:
-                "Die Website bietet dem Podcast „Wall Street Weekly“ mit Börsen-Reporterin Sophie Schimansky eine Bühne, indem sie möglichst simpel gehalten wurde. Es geht um den Inhalt und diesem steht hier nichts im Wege. Eine klare Nutzerführung und gute Performance kommen interessierten Nutzern zugute, die hier alles zum Podcast erfahren können und auch den Link zu ihrem bevorzugten Streamingportal finden.",
+                "By keeping things simple as possible, this website offers the perfect stage for podcast Wall Street Weekly with stock market reporter Sophie Schimansky. Here, it's all about the content — and nothing stands in the way. Clear navigation and high performance allows interested users to learn all about the podcast and find links to their preferred streaming platform.",
             link: "https://wall-street-weekly.com",
             linkText: "www.wall-street-weekly.com",
-            service: ["Markenidentiät", "UX & UI Design", "Gatsby / React"],
+            service: ["Brand Identity", "UX & UI Design", "Gatsby / React"],
         },
         fuelcast: {
             images: undefined,
@@ -86,10 +79,11 @@ const content = {
                 "Felix Lebedinzew, Mattias Nilsson, Jurek Herwig at Meeting",
             ],
             company: "Fuelcast",
-            title: "Nachhaltigkeit und Effizienz in der Frachtschifffahrt",
+            title:
+                "Sustainability and efficiency in the cargo shipping industry",
             description:
-                "Fuelcast ist eine mobile App, die mithilfe von Artifical Intelligence das Energie- und Tankmanagement in der Frachtschifffahrt vereinfachen und optimieren will. Zusammen mit den Gründern des Startups „Fuelcast“ erarbeiteten wir Brand-Vision und Erscheinungsbild. Um ihren Marken- und Produktauftritt über mehrere Kontaktpunkte hinweg einheitlich zu gestalten, definierten wir das Interface für die mobile App und gestalteten Pitch- sowie Investordecks.",
-            link: "www.fuelcast.co/",
+                "Fuelcast is a mobile app that uses artificial intelligence to streamline fuel and energy management in the cargo shipping industry. We worked with Fuelcast founders to develop the startup’s brand concept and corporate image. To establish a uniform brand and product identity across several touch points, we designed the mobile app interface, as well as pitch and investor decks.",
+            link: "https://fuelcast.co/",
             linkText: "www.fuelcast.co",
             services: [
                 "Branding & Logo",
@@ -108,9 +102,9 @@ const content = {
                 "mediapioneer Website wireframes and design iterations",
             ],
             company: "Mediapioneer",
-            title: "Gabor Steingarts Vision des Journalismus",
+            title: "Gabor Steingart’s vision for journalism",
             description:
-                "Für Gabor Steingarts „Mediapioneer“, das sich die Demokratisierung des Journalismus auf die Fahne geschrieben hat, brauchte es eine flexible Website, um die Werte und das Verständnis des Unternehmens zu kommunizieren. Durch das Content-Management-System der Wordpress-Seite kann der stark wachsende Betrieb eigenständig Seiten und Inhalte handhaben. Mit starken Farben haben wir eine auffällige Markenidentität geschaffen, die den Besuchern im Gedächtnis bleibt.",
+                "To effectively communicate the company’s commitment to democratized journalism, Gabor Steingart’s MediaPioneer needed a simple and flexible website. The Wordpress site and corresponding content management system we set up lets the fast-growing MediaPioneer team manage webpages and content independently. Using striking colors, we established a brand identity that site visitors are sure to remember.",
             link: "https://mediapioneer.com/",
             linkText: "www.mediapioneer.com",
             services: ["UX & UI Design", "Visual Design", "Wordpress"],
@@ -128,9 +122,9 @@ const content = {
                 "QVSTA design system elements",
             ],
             company: "Qvsta",
-            title: "QVSTA revolutionieren die Fashion-Tech-Branche",
+            title: "Revolutionizing the Fashion & Tech industry.",
             description:
-                "In der Fashion-Industrie ist es nach wie vor üblich, manuell nach Models zu suchen und diese per E-Mail-Schriftverkehr zu buchen. QVSTA digitalisiert die Fashion-Industrie und vereinfacht diese Prozesse. Über ihre Platform lassen sich Models suchen, buchen und Aufträge managen. Mit dem QVSTA-Team erarbeiteten wir ein modernes Markenerlebnis und ein komponentenbasiertes Design-System, das nun das Fundament für QVSTAs digitale Produkte bildet. ",
+                "In the fashion industry, it's still common practice to manually search for models and book them via e-mail. QVSTA helps digitalize the fashion industry by streamlining this process, enabling platform users to search, book, and manage talent all in one place. Together with the QVSTA team, we developed a modern brand identity and a component-based design system that builds the foundation for all QVSTA digital products.",
             link: "https://qvsta.com/",
             linkText: "www.qvsta.com",
             services: [
@@ -150,12 +144,12 @@ const content = {
                 "The Americans website inside iPhone and iPad showing the responsive mobile version and clean code",
             ],
             company: "The Americans",
-            title: "Podcast und Geschichten aus dem Amerika von heute",
+            title: "Podcasts and stories from today's America",
             description:
-                "Ziel des Projektes war eine simple Website zur Präsentation des Podcasts „The Americans“. Der Podcast erzählt Geschichten aus dem Amerika von heute und betrachtet Politik und Gesellschaft. Die Seite verbindet Performance mit einem klaren Navigationskonzept und hat durch ihre amerikanische Symbolismen ein hohen Wiedererkennungswert.",
+                "With this project we set out to create a simple website presenting The Americans, a podcast series chronicling American politics and society. The site combines high performance with a clear navigation concept and recognizable American symbolism.",
             link: "https://the-americans.com/",
             linkText: "www.the-americans.com",
-            services: ["Markenidentiät", "UX & UI Design", "Gatsby / React"],
+            services: ["Brand Identity", "UX & UI Design", "Gatsby / React"],
         },
         arztpraxisSchulzendorf: {
             images: undefined,
@@ -168,13 +162,13 @@ const content = {
                 "Arztpraxis schulzendorf peggy niederhäusern examining a child and the entrance to the practice",
             ],
             company: "Arztpraxis-Schulzendorf",
-            title: "Moderne Praxiskommunikation",
+            title: "Modern communication for a medical practice",
             description:
-                "Die frisch gegründete Arztpraxis in Schulzendorf wurde von uns vom Konzept bis zum Marketing begleitet. Aus dem Konzept entstand ein modernes Erscheinungsbild mit einprägsamem Logo. Der Hauptberührungspunkt mit den Patienten im Internet, die Website, punktet mit einem Fokus auf Einfachheit und Zugänglichkeit (Accessibility), ist leicht aufzufinden und verfügt über eine gute Positionierung bei Google und Jameda.",
+                "We accompanied this newly-founded medical practice in Schulzendorf, Germany from concept to marketing, starting with a memorable logo and modern visual identity. The main point of contact with patients is the practice’s website, which is simple, accessible, and easily findable, thanks to its high search ranking on Google and Jameda.",
             link: "https://arztpraxis-schulzendorf.de/",
             linkText: "www.arztpraxis-schulzendorf.de",
             services: [
-                "Kommunikationsstrategie",
+                "Communication Strategy",
                 "Branding & Logo",
                 "UX & UI Design",
                 "Gatsby / React",
@@ -191,29 +185,31 @@ const content = {
                 "Die-Masterarbeit.com styleguide and design system elements",
             ],
             company: "Die-Masterarbeit.de",
-            title: "Studenten und Unternehmen miteinander verbinden",
+            title: "Connecting students with businesses",
             description:
-                "Infolge der strategischen Neuausrichtung sowie der Erweiterung von „Partner der Wissenschaft UG”, halfen wir dem Unternehmen bei der Neu- und Umgestaltung ihrer Portale „Die-Bachelorarbeit.de” und „Die-Masterarbeit.de”. Durch die Kollaboration entstand eine Plattform mit Fokus auf erfolgsversprechende Lösungen – sowohl für den Nutzer als auch für Unternehmen, die Studenten suchen.",
+                "During their strategic reorganization and expansion, we helped Partner der Wissenschaft UG with the design and relaunch of their two job search portals, Die-Bachelorarbeit.de and Die-Masterarbeit.de. Our collaboration resulted in a practical platform focused on success-driven solutions, for both students and businesses looking for the perfect match.",
             link: "https://www.die-masterarbeit.de",
             linkText: "www.die-masterarbeit.de",
             services: [
-                "Kommunikationsstrategie",
+                "Communication Strategy",
                 "UX & UI Design",
                 "Pitch-Deck",
             ],
         },
     },
     footer: {
-        title: "Digitalen MVP bauen und User überzeugen?",
+        title: "How can we help you? Write us!",
     },
 }
 
 const Projekte = (props) => (
-    <ProjektePage
-        seo={content.seo}
-        h1Header={content.h1Header}
-        projects={content.projects}
-        footer={content.footer.title}
-    ></ProjektePage>
+    <LanguageContext.Provider value={languages.en}>
+        <ProjektePage
+            seo={content.seo}
+            h1Header={content.h1Header}
+            projects={content.projects}
+            footer={content.footer.title}
+        ></ProjektePage>
+    </LanguageContext.Provider>
 )
 export default Projekte

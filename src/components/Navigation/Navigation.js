@@ -1,9 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import logo from "../../content/logos/logo.svg"
-// import Icon from "./layout/Icon"
-// import { ICONS } from "../theme/Icons"
+import logo from "../../../content/logos/logo.svg"
+import { LanguageContext } from "../context"
+import LanguageSwitch from "./LanguageSwitch"
 
 const StyledNav = styled.div`
     display: none;
@@ -15,12 +15,12 @@ const StyledNav = styled.div`
         top: 0;
         height: 80px;
         box-shadow: 0 1px 14px rgba(0, 0, 0, 0.1);
-        -ms-grid-columns: 1fr auto auto auto auto; /*IE grid*/
-        grid-template-columns: 1fr repeat(4, auto);
+        -ms-grid-columns: 1fr auto auto auto auto auto; /*IE grid*/
+        grid-template-columns: 1fr repeat(5, auto);
         justify-items: start;
         padding: 0 var(--padding-side);
         font-size: 18px;
-        position: fixed;
+        position: sticky;
         width: 100%;
         z-index: 100;
         background: var(--color-white);
@@ -29,7 +29,7 @@ const StyledNav = styled.div`
         width: 300px;
         max-height: 100%;
         height: 100vh;
-        position: fixed;
+        /* position: sticky; */
         box-shadow: 0 1px 14px rgba(0, 0, 0, 0.1);
         grid-template-columns: 1fr;
         grid-template-rows: 1fr repeat(4, auto) 1fr;
@@ -68,22 +68,15 @@ const NavItem = styled(Link)`
     }
 
     @media (min-width: 834px) {
-        &:last-of-type {
-            color: var(--color-white);
-            background: var(--color-primary);
-            border-radius: 200px;
-            transition: all 0.1s ease-in;
-            &:hover {
-                background: var(--color-primary-dark);
-                color: var(--color-white);
-                transition: all 0.1s ease-in;
-            }
-        }
+        /* &:last-of-type {
+            padding-right: 0;
+        } */
 
         font-size: 14px;
         display: flex;
         text-transform: uppercase;
         font-weight: 700;
+
         /*Hide home link on desktop*/
         :nth-of-type(2) {
             display: none;
@@ -111,10 +104,8 @@ const NavItem = styled(Link)`
         display: flex;
         justify-content: center;
         margin-bottom: 1.3vh;
-
         &:last-of-type {
-            display: inline-block;
-            margin-top: 0.8rem;
+            padding-right: 30px;
         }
     }
 `
@@ -141,27 +132,34 @@ const Logo = styled(Link)`
     }
 `
 
-const Nav = () => (
-    <StyledNav>
-        <Logo to="/">
-            <img src={logo} alt="PixelPink Logo" />
-        </Logo>
-        <NavItem to="/" activeClassName="active">
-            <span>Home</span>
-        </NavItem>
-        <NavItem to="/projekte/" activeClassName="active">
-            <span>Projekte</span>
-        </NavItem>
-        <NavItem to="/ueber-uns/" activeClassName="active">
-            <span>Über uns</span>
-        </NavItem>
-        <NavItem to="/services/" activeClassName="active">
-            <span>Services</span>
-        </NavItem>
-        <NavItem to="/kontakt" activeClassName="active">
-            <span>Kontakt</span>
-        </NavItem>
-    </StyledNav>
-)
+class Nav extends React.Component {
+    render() {
+        let language = this.context
+        return (
+            <StyledNav>
+                <Logo to={language.home.link}>
+                    <img src={logo} alt="PixelPink Logo" />
+                </Logo>
+                <NavItem to={language.home.link} activeClassName="active">
+                    <span>{language.home.title}</span>
+                </NavItem>
+                <NavItem to={language.projects.link} activeClassName="active">
+                    <span>{language.projects.title}</span>
+                </NavItem>
+                <NavItem to={language.aboutUs.link} activeClassName="active">
+                    <span>{language.aboutUs.title} </span>
+                </NavItem>
+                <NavItem to={language.services.link} activeClassName="active">
+                    <span>{language.services.title}</span>
+                </NavItem>
+                <NavItem to={language.contact.link} activeClassName="active">
+                    <span>{language.contact.title}</span>
+                </NavItem>
+                <LanguageSwitch></LanguageSwitch>
+            </StyledNav>
+        )
+    }
+}
+Nav.contextType = LanguageContext
 
 export default Nav

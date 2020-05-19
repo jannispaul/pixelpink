@@ -5,7 +5,7 @@ import "../theme/font-face.css"
 import "../theme/variables.css"
 import "../theme/styles.css"
 
-import NavBar from "../components/Navigation"
+import NavBar from "../components/Navigation/Navigation"
 import MobileNav from "../components/Navigation/MobileNav"
 
 import MobileMenu from "../components/Navigation/MobileMenu"
@@ -26,12 +26,9 @@ const Main = styled.div`
     position: relative;
     overflow: hidden;
     background: var(--color-white);
-    @media (min-width: 834px) {
-        margin-top: 80px;
-    }
+
     @media (min-width: 1441px) {
         grid-column-start: 2;
-        margin-top: 0px;
     }
 `
 
@@ -40,7 +37,7 @@ class StandardLayout extends React.Component {
         mobileMenuOpen: false,
     }
     burgerButtonToggleClickHandler = () => {
-        this.setState(prevState => {
+        this.setState((prevState) => {
             // console.log('toggle')
             return { mobileMenuOpen: !prevState.mobileMenuOpen }
         })
