@@ -18,20 +18,21 @@ const content = {
         subline: "von der Website bis zum Appdesign",
     },
     projects: {
-        thepioneer: {
+        thePioneer: {
             images: undefined,
             imgAltText: [
-                "Uberstunde inside iPhone in a dark room",
-                "Uberstunde by Mediapioneer Logo ",
-                "Uberstunde Website inside iMac",
-                "Uberstunde Podcast Mockup",
-                "Uberstunde Gerhard Schröder Podcast",
+                "ThePioneer Landingpage Website inside Macbook and iPhone",
+                "ThePioneer by Mediapioneer Logo ",
+                "ThePioneer Landingpage Website inside iPad",
+                "ThePioneer Landingpage Website displayed in Apple HDR Display",
+                "ThePioneer Landingpage Website inside a Safari Browser Mockup",
+                "ThePioneer Landingpage Website from Ideation to Launch Variations of Webdesign",
             ],
             company: "ThePioneer",
             title:
                 "Landingpage für Gabor Steingarts Medien-Startup „ThePioneer“",
-            link: "https://überstunde.com",
-            linkText: "www.überstunde.com",
+            link: "https://join.thepioneer.de",
+            linkText: "Join.ThePioneer.de",
             description:
                 "Für den Launch des Medien-Startups „ThePioneer“ konzipierten und entwickelten wir eine auf Conversion ausgerichtete Landingpage. Der One-Pager gibt einen Einblick in die Hintergründe und einzigartigen Vorhaben des Unternehmens und reißt aktuelle Inhalte der Plattform an. Das Design ist ganz „ThePioneer“ und besticht mit Videoinhalten und Animationen.",
             services: ["Konzeption", "UX & UI Design", "Gatsby / React"],

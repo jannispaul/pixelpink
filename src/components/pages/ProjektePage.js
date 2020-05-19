@@ -14,6 +14,7 @@ class ProjektePage extends React.Component {
         this.projects = this.props.projects
 
         // Add in images from StaticQuery
+        this.projects.thePioneer.images = this.props.data.thePioneer
         this.projects.ueberstunde.images = this.props.data.ueberstunde
         this.projects.wallStreetWeekly.images = this.props.data.wallStreetWeekly
         this.projects.fuelcast.images = this.props.data.fuelcast
@@ -63,6 +64,16 @@ export default (props) => (
     <StaticQuery
         query={graphql`
             query {
+                thePioneer: allFile(
+                    filter: { relativeDirectory: { eq: "work/thePioneer" } }
+                    sort: { fields: name }
+                ) {
+                    edges {
+                        node {
+                            ...ProjectImagesFragment
+                        }
+                    }
+                }
                 ueberstunde: allFile(
                     filter: { relativeDirectory: { eq: "work/ueberstunde" } }
                     sort: { fields: name }
