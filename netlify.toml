@@ -6,31 +6,39 @@
   autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address
   framework = "#custom"
 
-# [[redirects]]
-#   from = "https://pixelpink.netlify.app/*"
-#   to ="https://pixel-pink.de/:splat"
+#Redirect netlify domain to prevent duplicate content on google
+[[redirects]]
+  from = "https://pixelpink.netlify.app/*"
+  to = "https://pixel-pink.de/:splat"
+  status = 301
+  force = true
 
-# [[redirects]]
-#   from = "https://www.pixel-pink.de/*"
-#   to ="https://pixel-pink.de/:splat"
+# Redirect www 
+[[redirects]]
+  from = "https://www.pixel-pink.de/*"
+  to = "https://pixel-pink.de/:splat"
+  status = 301
+  force = true
 
-# # This page got deleted 
-# [[redirects]]
-#   from = "/more.html"
-#   to  = "/"
-#   status = 410
+# Content got removed permanentely
+[[redirects]]
+  from = "/more.html"
+  to = "/"
+  status = 410
+  force = false
 
+# Redirect english browsers to english page
+[[redirects]]
+  from = "/*"
+  to = "/en/:splat"
+  status = 302
+  force = false
+  conditions = {Language = "en"}
 
-# # Redirect browsers set to englisch 
-# [[redirects]]
-#   from = "/*"
-#   to = "/en/:splat"
-#   status = 302
-#   conditions = {Language = ["en"]}
-
-# # Redirect browsers set to german 
-# [[redirects]]
-#   from = "/en/*"
-#   to = "/:splat"
-#   status = 302
-#   conditions = {Language = ["de"]}
+# Redirect german browsers to german page
+[[redirects]]
+  from = "/en/*"
+  to = "/:splat"
+  status = 302
+  force = false
+  conditions = {Language = "de"}
