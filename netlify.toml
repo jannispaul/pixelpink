@@ -23,14 +23,14 @@
 
 # # Redirect browsers set to englisch 
 # [[redirects]]
-#   from = "/"
-#   to = "/en/"
+#   from = "/*"
+#   to = "/en/:splat"
 #   status = 302
 #   conditions = {Language = ["en"]}
 
 # # Redirect browsers set to german 
 # [[redirects]]
-#   from = "/en/"
-#   to = "/"
+#   from = "/en/*"
+#   to = "/:splat"
 #   status = 302
 #   conditions = {Language = ["de"]}

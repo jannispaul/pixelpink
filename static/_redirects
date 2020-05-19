@@ -5,7 +5,7 @@ https://www.pixel-pink.de/*     https://pixel-pink.de/:splat 301!
 /more.html  /   410
 
 # Redirect browsers set to englisch 
-/*   /en/:splatt    302 Language=en
+/*   /en/:splat    302 Language=en
 
 # Redirect browsers set to german 
 /en/*    /:splat   302 Language=de
