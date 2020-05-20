@@ -6,7 +6,16 @@
   autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address
   framework = "#custom"
 
-#Redirect netlify domain to prevent duplicate content on google
+# Security headers. -> https://medium.com/@brandonl.4231/how-i-increased-the-security-of-my-netlify-hosted-website-with-this-one-small-trick-731f4c56efd7
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer"
+    X-Content-Type-Options = "nosniff"
+
+# Redirect netlify domain to prevent duplicate content on google
 [[redirects]]
   from = "https://pixelpink.netlify.app/*"
   to = "https://pixel-pink.de/:splat"
@@ -32,7 +41,7 @@
   from = "/*"
   to = "/en/:splat"
   status = 302
-  force = false
+  force = true
   conditions = {Language = "en"}
 
 # Redirect german browsers to german page
@@ -40,5 +49,5 @@
   from = "/en/*"
   to = "/:splat"
   status = 302
-  force = false
+  force = true
   conditions = {Language = "de"}

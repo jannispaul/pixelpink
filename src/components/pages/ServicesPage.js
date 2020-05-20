@@ -16,7 +16,7 @@ const ServicePage = (props) => (
         <ServiceImage2 />
         <HeadlineAndText
             h1={props.headlineAndText.headline}
-            subline="Wir helfen Dir in die Digitalisierung"
+            subline={props.headlineAndText.subline}
             body={props.headlineAndText.body1}
             body2={props.headlineAndText.body2}
         />

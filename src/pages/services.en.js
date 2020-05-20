@@ -11,6 +11,7 @@ const content = {
 
     headlineAndText: {
         headline: "Our service, your success",
+        subline: "We help you digitalize",
         body1: `What do we do? To put it briefly: We help you find a suitable digital strategy! Our interdisciplinary expertise enables us to create custom concepts for our clients that users will love.`,
         body2: `We take an empathetic approach to design. This means that we always have your users' perspective in mind and apply such insights to all phases of your project. Our concept, design, development, and marketing services are interlinked and benefit from one another.`,
     },

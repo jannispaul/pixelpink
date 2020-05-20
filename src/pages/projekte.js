@@ -89,7 +89,7 @@ const content = {
             title: "Nachhaltigkeit und Effizienz in der Frachtschifffahrt",
             description:
                 "Fuelcast ist eine mobile App, die mithilfe von Artifical Intelligence das Energie- und Tankmanagement in der Frachtschifffahrt vereinfachen und optimieren will. Zusammen mit den Gründern des Startups „Fuelcast“ erarbeiteten wir Brand-Vision und Erscheinungsbild. Um ihren Marken- und Produktauftritt über mehrere Kontaktpunkte hinweg einheitlich zu gestalten, definierten wir das Interface für die mobile App und gestalteten Pitch- sowie Investordecks.",
-            link: "www.fuelcast.co/",
+            link: "https://fuelcast.co/",
             linkText: "www.fuelcast.co",
             services: [
                 "Branding & Logo",

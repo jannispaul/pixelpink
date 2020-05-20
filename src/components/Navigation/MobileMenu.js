@@ -5,7 +5,7 @@ import { LanguageContext } from "../context"
 import LanguageSwitch from "./LanguageSwitch"
 
 const MobileNav = styled.div`
-    padding: 100px var(--padding-side);
+    padding: 35% var(--padding-side);
     height: 100vh;
     position: fixed;
     top: 0;

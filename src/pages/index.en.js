@@ -26,7 +26,7 @@ const content = {
     heroProject: {
         title: "Take a look at our selected work",
         linkText: "Discover here",
-        link: "/en/projects",
+        link: "/en/projekte",
     },
     logoWall: {
         title:
@@ -34,7 +34,7 @@ const content = {
         copy:
             "We create landing pages, websites for corporations and e-commerce businesses, marketing campaigns, and app designs. We work with start-ups, design agencies, and major companies. Our strengths lie in conceptualization, design, frontend development, and digital marketing. From the first point of contact to product launch and beyond, we support our customers with sound guidance and advice.",
         linkText: "Get to know us a bit better",
-        link: "/en/about-us",
+        link: "/en/ueber-uns",
     },
     services: {
         mainline: "Our Services",
@@ -62,7 +62,7 @@ const content = {
             link: "/services#marketing",
         },
         linkText: "Learn more about our services",
-        link: "/services#alle-services",
+        link: "/en/services#alle-services",
     },
     footer: {
         title: "Are you ready to go digital?",
