@@ -59,7 +59,7 @@ const Company = styled.span`
 `
 const DescriptionContainer = styled.div`
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
     color: var(--color-gray-dark);
     p {
         max-width: 680px;
@@ -71,13 +71,26 @@ const DescriptionContainer = styled.div`
         text-transform: uppercase;
         font-size: 14px;
         letter-spacing: 2px;
-        margin-bottom: 20px;
+        margin-bottom: var(--space-s);
     }
     li {
         list-style: none;
         font-size: 18px;
         letter-spacing: 0.39px;
         line-height: 29px;
+    }
+    & > div {
+        margin: 24px 0;
+    }
+    @media (min-width: 769px) {
+        flex-direction: row;
+        justify-content: space-between;
+        h3 {
+            margin-bottom: 20px;
+        }
+        & > div {
+            margin: 0;
+        }
     }
 `
 
