@@ -1,19 +1,19 @@
-[dev]
-  command = "gatsby develop" # Command to start your dev server
-  port = 8001 # Port that the dev server will be accessible on
-  targetPort = 8000 # Port of target app server
-  publish = "_site" # If you use a _redirect file, provide the path to your static content folder
-  autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address
-  framework = "#custom"
+# [dev]
+#   command = "gatsby develop" # Command to start your dev server
+#   port = 8001 # Port that the dev server will be accessible on
+#   targetPort = 8000 # Port of target app server
+#   publish = "_site" # If you use a _redirect file, provide the path to your static content folder
+#   autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address
+#   framework = "#custom"
 
 # Security headers. -> https://medium.com/@brandonl.4231/how-i-increased-the-security-of-my-netlify-hosted-website-with-this-one-small-trick-731f4c56efd7
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
-    X-XSS-Protection = "1; mode=block"
-    Referrer-Policy = "no-referrer"
-    X-Content-Type-Options = "nosniff"
+# [[headers]]
+#   for = "/*"
+#   [headers.values]
+#     X-Frame-Options = "DENY"
+#     X-XSS-Protection = "1; mode=block"
+#     Referrer-Policy = "no-referrer"
+#     X-Content-Type-Options = "nosniff"
 
 # Redirect netlify domain to prevent duplicate content on google
 [[redirects]]
