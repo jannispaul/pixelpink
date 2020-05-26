@@ -113,7 +113,11 @@ const SingleProject = (props) => (
                 />
             ))}
         </Carousel>
-        <TextContainer>
+        <TextContainer
+            data-sal="slide-up"
+            data-sal-delay="0"
+            data-sal-easing="ease-out"
+        >
             <Company>{props.company}</Company>
             <h2>{props.title}</h2>
             {props.description ? (
@@ -132,14 +136,27 @@ const SingleProject = (props) => (
                 ""
             )}
             {props.external ? (
-                <Button link={props.external} target="_blank">
+                <Button
+                    link={props.external}
+                    target="_blank"
+                    data-sal="slide-up"
+                    data-sal-delay="0"
+                    data-sal-easing="ease-out"
+                >
                     {props.linkText}
                 </Button>
             ) : (
                 ""
             )}
             {props.internal ? (
-                <StyledLink to={props.internal}>{props.linkText}</StyledLink>
+                <StyledLink
+                    to={props.internal}
+                    data-sal="slide-up"
+                    data-sal-delay="0"
+                    data-sal-easing="ease-out"
+                >
+                    {props.linkText}
+                </StyledLink>
             ) : (
                 ""
             )}
