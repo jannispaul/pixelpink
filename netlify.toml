@@ -31,7 +31,7 @@
     from = "/*"
     to = "/en/:splat"
     status = 302
-    force = true
+    force = false
     conditions = {Language = ["en"]}
 
 # Redirect german browsers to german page
@@ -39,6 +39,6 @@
     from = "/en/*"
     to = "/:splat"
     status = 302
-    force = true
+    force = false
     conditions = {Language = ["de"]}
 
