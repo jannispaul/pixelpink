@@ -1,10 +1,10 @@
-# [dev]
-#   command = "gatsby develop" # Command to start your dev server
-#   port = 8001 # Port that the dev server will be accessible on
-#   targetPort = 8000 # Port of target app server
-#   publish = "_site" # If you use a _redirect file, provide the path to your static content folder
-#   autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address
-#   framework = "#custom"
+[dev]
+  command = "gatsby develop" # Command to start your dev server
+  port = 8001 # Port that the dev server will be accessible on
+  targetPort = 8000 # Port of target app server
+  publish = "_site" # If you use a _redirect file, provide the path to your static content folder
+  autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address
+  framework = "#custom"
 
 # Redirect netlify domain to prevent duplicate content on google
 [[redirects]]
@@ -26,19 +26,26 @@
   to = "/"
   status = 410
 
+
+
 # Redirect english browsers to english page
+[[redirects]]
+    from = "/en/*"
+    to = "/en/:splat"
+
 [[redirects]]
     from = "/*"
     to = "/en/:splat"
     status = 302
-    force = false
     conditions = {Language = ["en"]}
 
-# Redirect german browsers to german page
+
+ #Redirect german browsers to german page
 [[redirects]]
-    from = "/en/*"
+    from = "/*"
     to = "/:splat"
     status = 302
-    force = false
-    conditions = {Language = ["de"]}
+    # force = false
+    # conditions = {Language = ["de"]}
+
 

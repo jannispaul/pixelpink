@@ -5,6 +5,7 @@ module.exports = {
         author: `FelixLebedinzew, Jannis Wicke`,
         //    image: "/images/gatsby-astronaut-2.png", // Path to your image you placed in the 'static' folder
         siteUrl: `https://www.pixel-pink.de`,
+        languages: ["de", "en"],
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
@@ -35,7 +36,7 @@ module.exports = {
                 langKeyDefault: "de",
                 useLangKeyLayout: false,
                 langKeyForNull: "any",
-                prefixDefault: false,
+                prefixDefault: true,
             },
         },
         `gatsby-plugin-offline`,
