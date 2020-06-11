@@ -29,22 +29,22 @@
 
 
 # Redirect english browsers to english page
-[[redirects]]
-    from = "/en/*"
-    to = "/en/:splat"
+# [[redirects]]
+#     from = "/en/*"
+#     to = "/en/:splat"
 
-[[redirects]]
-    from = "/*"
-    to = "/en/:splat"
-    status = 302
-    conditions = {Language = ["en"]}
+# [[redirects]]
+#     from = "/*"
+#     to = "/en/:splat"
+#     status = 302
+#     conditions = {Language = ["en"]}
 
 
  #Redirect german browsers to german page
-[[redirects]]
-    from = "/*"
-    to = "/:splat"
-    status = 302
+# [[redirects]]
+#     from = "/*"
+#     to = "/:splat"
+#     status = 302
     # force = false
     # conditions = {Language = ["de"]}
 

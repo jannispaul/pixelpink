@@ -31,7 +31,7 @@ class LanguageSwitch extends React.Component {
             <StyledLanguageSwitch>
                 <div>
                     {language.english.active ? (
-                        <Link to="/">DE</Link>
+                        <Link to="/de/">DE</Link>
                     ) : (
                         <span>DE</span>
                     )}{" "}
