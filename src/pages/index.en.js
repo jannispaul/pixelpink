@@ -21,7 +21,7 @@ const content = {
     },
     intro: {
         mainline: "We create and develop digital solutions",
-        subline: "that your customers love",
+        subline: "that your users love",
     },
     heroProject: {
         title: "Take a look at our selected work",

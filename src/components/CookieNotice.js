@@ -13,7 +13,7 @@ const StyledContainer = styled.div`
     & button {
         margin-bottom: 16px !important;
         margin-left: 16px !important;
-        width: calc(100% - 32px) !important;
+        width: calc(100vw - 32px) !important;
         @media (min-width: 592px) {
             width: auto !important;
             margin-top: 16px !important;
