@@ -49,7 +49,8 @@ const content = {
             company: "Überstunde",
             title:
                 "Der Feierabend-Talk mit Marina Weisband und Michael Bröcker",
-            link: "https://überstunde.com",
+            link:
+                "https://www.thepioneer.de/originals/die-ueberstunde/podcasts",
             linkText: "www.überstunde.com",
             description:
                 "Für Mediapioneers Podcast-Reihe „Überstunde“ mit Michael Bröcker und Marina Weisband entwickelten wir eine reduzierte Website, die über den Podcast informiert, den Nutzer auf die Streamingportale weiterleitet und weitere Mediapioneer Podcasts präsentiert.",
@@ -69,7 +70,8 @@ const content = {
                 "Börsen-Reporterin Sophie Schimansky berichtet live aus New York",
             description:
                 "Die Website bietet dem Podcast „Wall Street Weekly“ mit Börsen-Reporterin Sophie Schimansky eine Bühne, indem sie möglichst simpel gehalten wurde. Es geht um den Inhalt und diesem steht hier nichts im Wege. Eine klare Nutzerführung und gute Performance kommen interessierten Nutzern zugute, die hier alles zum Podcast erfahren können und auch den Link zu ihrem bevorzugten Streamingportal finden.",
-            link: "https://wall-street-weekly.com",
+            link:
+                "https://www.thepioneer.de/originals/wall-street-weekly/podcasts",
             linkText: "www.wall-street-weekly.com",
             services: ["Markenidentität", "UX & UI Design", "Gatsby / React"],
         },
@@ -153,7 +155,7 @@ const content = {
             title: "Podcast und Geschichten aus dem Amerika von heute",
             description:
                 "Ziel des Projektes war eine simple Website zur Präsentation des Podcasts „The Americans“. Der Podcast erzählt Geschichten aus dem Amerika von heute und betrachtet Politik und Gesellschaft. Die Seite verbindet Performance mit einem klaren Navigationskonzept und hat durch ihre amerikanische Symbolismen ein hohen Wiedererkennungswert.",
-            link: "https://the-americans.com/",
+            link: "https://www.thepioneer.de/originals/the-americans/podcasts",
             linkText: "www.the-americans.com",
             services: ["Markenidentität", "UX & UI Design", "Gatsby / React"],
         },

@@ -42,7 +42,8 @@ const content = {
             ],
             company: "Überstunde",
             title: "Evening talks with Marina Weisband and Michael Bröcker",
-            link: "https://überstunde.com",
+            link:
+                "https://www.thepioneer.de/originals/die-ueberstunde/podcasts",
             linkText: "www.überstunde.com",
             description:
                 "For Mediapioneer's podcast series Überstunde we developed a pared-down website that informs listeners about the podcast, referring them to streaming platforms and other Mediapioneer podcasts.",
@@ -62,7 +63,8 @@ const content = {
                 "Stock market journalist Sophie Schimansky reports live from New York",
             description:
                 "By keeping things simple as possible, this website offers the perfect stage for podcast Wall Street Weekly with stock market reporter Sophie Schimansky. Here, it's all about the content — and nothing stands in the way. Clear navigation and high performance allows interested users to learn all about the podcast and find links to their preferred streaming platform.",
-            link: "https://wall-street-weekly.com",
+            link:
+                "https://www.thepioneer.de/originals/wall-street-weekly/podcasts",
             linkText: "www.wall-street-weekly.com",
             services: ["Brand Identity", "UX & UI Design", "Gatsby / React"],
         },
@@ -147,7 +149,7 @@ const content = {
             title: "Podcasts and stories from today's America",
             description:
                 "With this project we set out to create a simple website presenting The Americans, a podcast series chronicling American politics and society. The site combines high performance with a clear navigation concept and recognizable American symbolism.",
-            link: "https://the-americans.com/",
+            link: "https://www.thepioneer.de/originals/the-americans/podcasts",
             linkText: "www.the-americans.com",
             services: ["Brand Identity", "UX & UI Design", "Gatsby / React"],
         },
