@@ -15,7 +15,7 @@ class ProjektePage extends React.Component {
 
         // Add in images from StaticQuery
         this.projects.thePioneer.images = this.props.data.thePioneer
-        this.projects.ueberstunde.images = this.props.data.ueberstunde
+        this.projects.thePioneerLP.images = this.props.data.thePioneerLP
         this.projects.wallStreetWeekly.images = this.props.data.wallStreetWeekly
         this.projects.fuelcast.images = this.props.data.fuelcast
         this.projects.mediapioneer.images = this.props.data.mediapioneer
@@ -74,8 +74,8 @@ export default (props) => (
                         }
                     }
                 }
-                ueberstunde: allFile(
-                    filter: { relativeDirectory: { eq: "work/ueberstunde" } }
+                thePioneerLP: allFile(
+                    filter: { relativeDirectory: { eq: "work/thePioneerLP" } }
                     sort: { fields: name }
                 ) {
                     edges {

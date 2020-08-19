@@ -37,7 +37,7 @@ const content = {
                 "Für den Launch des Medien-Startups „ThePioneer“ konzipierten und entwickelten wir eine auf Conversion ausgerichtete Landingpage. Der One-Pager gibt einen Einblick in die Hintergründe und einzigartigen Vorhaben des Unternehmens und reißt aktuelle Inhalte der Plattform an. Das Design ist ganz „ThePioneer“ und besticht mit Videoinhalten und Animationen.",
             services: ["Konzeption", "UX & UI Design", "Gatsby / React"],
         },
-        ueberstunde: {
+        thePioneerLP: {
             images: undefined,
             imgAltText: [
                 "Uberstunde inside iPhone in a dark room",
@@ -46,14 +46,14 @@ const content = {
                 "Uberstunde Podcast Mockup",
                 "Uberstunde Gerhard Schröder Podcast",
             ],
-            company: "Überstunde",
+            company: "The Pioneer",
             title:
-                "Der Feierabend-Talk mit Marina Weisband und Michael Bröcker",
+                "Landingpages für Podcasts und Konversion",
             link:
-                "https://www.thepioneer.de/originals/die-ueberstunde/podcasts",
-            linkText: "www.überstunde.com",
+                "https://www.thepioneer.de/podcasts",
+            linkText: "www.thepioneer.de/podcasts",
             description:
-                "Für Mediapioneers Podcast-Reihe „Überstunde“ mit Michael Bröcker und Marina Weisband entwickelten wir eine reduzierte Website, die über den Podcast informiert, den Nutzer auf die Streamingportale weiterleitet und weitere Mediapioneer Podcasts präsentiert.",
+                "Für das Medien-Startup „ThePioneer“ konzipierten und entwickelten wir mehrere Landingpages: Für die Podcasts The Armericans, Wall Street Weekly und Überstunde erstellten wir jeweils eine Website um Interessenten abzuholen und das Streamangebot vorzustellen. Zum Start von „ThePioneer“ kreierten wir einen One-Pager, auf dem ihr einen Einblick in die Hintergründe und einzigartigen Vorhaben des Unternehmens bekommt.",
             services: ["Markenidentität", "UX & UI Design", "Gatsby / React"],
         },
         wallStreetWeekly: {

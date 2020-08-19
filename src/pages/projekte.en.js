@@ -31,7 +31,7 @@ const content = {
                 "We designed and developed a converting landing page to launch the media startup, ThePioneer. Highlighting newly released content, this one-pager offers an exclusive look into the company’s unique mission and vision. The page design is 100% ThePioneer, impressing site visitors with its video content and animations.",
             services: ["Concept", "UX & UI Design", "Gatsby / React"],
         },
-        ueberstunde: {
+        thePioneerLP: {
             images: undefined,
             imgAltText: [
                 "Uberstunde inside iPhone in a dark room",
@@ -39,14 +39,23 @@ const content = {
                 "Uberstunde Website inside iMac",
                 "Uberstunde Podcast Mockup",
                 "Uberstunde Gerhard Schröder Podcast",
+                "Uberstunde Gerhard Schröder Podcast",
+                "Uberstunde Gerhard Schröder Podcast",
+                "Uberstunde Gerhard Schröder Podcast",
+                "Uberstunde Gerhard Schröder Podcast",
+                "Uberstunde Gerhard Schröder Podcast",
+                "Uberstunde Gerhard Schröder Podcast",
+                "Uberstunde Gerhard Schröder Podcast",
+                "Uberstunde Gerhard Schröder Podcast",
+                "Uberstunde Gerhard Schröder Podcast",
             ],
-            company: "Überstunde",
-            title: "Evening talks with Marina Weisband and Michael Bröcker",
+            company: "The Pioneer",
+            title: "Landingpages for Podcasts and Conversion",
             link:
-                "https://www.thepioneer.de/originals/die-ueberstunde/podcasts",
-            linkText: "www.überstunde.com",
+                "https://www.thepioneer.de/podcasts",
+            linkText: "www.thepioneer.de/podcasts",
             description:
-                "For Mediapioneer's podcast series Überstunde we developed a pared-down website that informs listeners about the podcast, referring them to streaming platforms and other Mediapioneer podcasts.",
+                "We designed and developed several landing pages for the media start-up 'ThePioneer': For each of the podcasts The Armericans, Wall Street Weekly and Überstunde we created a website spark the users interest and present the streaming offer. For the launch of 'ThePioneer' we created a one-pager, that gives you an insight into the background and unique projects of the company.",
             services: ["Brand Identity ", "UX & UI Design", "Gatsby / React"],
         },
         wallStreetWeekly: {
