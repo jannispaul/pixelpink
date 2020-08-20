@@ -54,7 +54,7 @@ const content = {
                 "Wall Street Weekly Podcast by thePioneer Logo",
                 "Wall Street Weekly Podcast by thePioneer Website inside Chromebook and Pixel mockup",
                 "Wall Street Weekly Podcast by thePioneer Website inside iPhone mockup",
-                "Wall Street Weekly Podcast by thePioneer Website inside MacBook Pro and iPhone mockup"
+                "Wall Street Weekly Podcast by thePioneer Website inside MacBook Pro and iPhone mockup",
             ],
             company: "The Pioneer",
             title: "Landingpages für Podcasts und Konversion",
@@ -66,13 +66,24 @@ const content = {
         },
         lbMarketing: {
             images: undefined,
-            imgAltText: ["Lara Bothur Marketing Website Startseite Mockup", "Lara Bothur Marketing Website Portfolio Unterseiten Mockup", "Lara Bothur Marketing Website Responsive Ansicht Mockup", "Lara Bothur Marketing Visitenkarten Design", "Lara Bothur Marketing Website mehrere Unterseiten Mockup"],
+            imgAltText: [
+                "Lara Bothur Marketing Website Startseite Mockup",
+                "Lara Bothur Marketing Website Portfolio Unterseiten Mockup",
+                "Lara Bothur Marketing Website Responsive Ansicht Mockup",
+                "Lara Bothur Marketing Visitenkarten Design",
+                "Lara Bothur Marketing Website mehrere Unterseiten Mockup",
+            ],
             company: "Lara Bothur Marketing",
             title: "Portfolio Website für Marketingberaterin",
-            description: "Zusammen mit Lara Bothur gestalteten und definierten wir Ihre digitale Markenpräsenz. Die Website repräsentiert Ihre Werte, hebt Servicediensteleistungen hervor und spiegelt Ihre Expertise aus Marketing und Wirtschaftspsychologischen Perspektiven wieder.",
+            description:
+                "Zusammen mit Lara Bothur gestalteten und definierten wir ihre digitale Markenpräsenz. Die Website repräsentiert ihre Werte, hebt Servicediensteleistungen hervor und spiegelt ihre Expertise aus Marketing und Wirtschaftspsychologischen Perspektiven wieder.",
             link: "https://www.larabothur.de",
             linkText: "www.larabothur.de",
-            services: ["Markenidentität", "UX & UI Design", "Wordpress Entwicklung"],
+            services: [
+                "Markenidentität",
+                "UX & UI Design",
+                "Wordpress Entwicklung",
+            ],
         },
         musikVersicherung: {
             images: undefined,
