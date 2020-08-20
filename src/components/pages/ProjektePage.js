@@ -16,11 +16,11 @@ class ProjektePage extends React.Component {
         // Add in images from StaticQuery
         this.projects.thePioneer.images = this.props.data.thePioneer
         this.projects.thePioneerLP.images = this.props.data.thePioneerLP
-        this.projects.wallStreetWeekly.images = this.props.data.wallStreetWeekly
+        this.projects.lbMarketing.images = this.props.data.lbMarketing
         this.projects.fuelcast.images = this.props.data.fuelcast
         this.projects.mediapioneer.images = this.props.data.mediapioneer
         this.projects.qvsta.images = this.props.data.qvsta
-        this.projects.theAmericans.images = this.props.data.theAmericans
+        this.projects.musikVersicherung.images = this.props.data.musikVersicherung
         this.projects.arztpraxisSchulzendorf.images = this.props.data.arztpraxisSchulzendorf
         this.projects.dieMasterarbeit.images = this.props.data.dieMasterarbeit
 
@@ -85,10 +85,8 @@ export default (props) => (
                     }
                 }
 
-                wallStreetWeekly: allFile(
-                    filter: {
-                        relativeDirectory: { eq: "work/wallStreetWeekly" }
-                    }
+                lbMarketing: allFile(
+                    filter: { relativeDirectory: { eq: "work/lbmarketing" } }
                     sort: { fields: name }
                 ) {
                     edges {
@@ -131,8 +129,10 @@ export default (props) => (
                     }
                 }
 
-                theAmericans: allFile(
-                    filter: { relativeDirectory: { eq: "work/theAmericans" } }
+                musikVersicherung: allFile(
+                    filter: {
+                        relativeDirectory: { eq: "work/musikversicherung" }
+                    }
                     sort: { fields: name }
                 ) {
                     edges {

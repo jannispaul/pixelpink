@@ -47,33 +47,37 @@ const content = {
                 "Uberstunde Gerhard Schröder Podcast",
             ],
             company: "The Pioneer",
-            title:
-                "Landingpages für Podcasts und Konversion",
-            link:
-                "https://www.thepioneer.de/podcasts",
+            title: "Landingpages für Podcasts und Konversion",
+            link: "https://www.thepioneer.de/podcasts",
             linkText: "www.thepioneer.de/podcasts",
             description:
                 "Für das Medien-Startup „ThePioneer“ konzipierten und entwickelten wir mehrere Landingpages: Für die Podcasts The Armericans, Wall Street Weekly und Überstunde erstellten wir jeweils eine Website um Interessenten abzuholen und das Streamangebot vorzustellen. Zum Start von „ThePioneer“ kreierten wir einen One-Pager, auf dem ihr einen Einblick in die Hintergründe und einzigartigen Vorhaben des Unternehmens bekommt.",
             services: ["Markenidentität", "UX & UI Design", "Gatsby / React"],
         },
-        wallStreetWeekly: {
+        lbMarketing: {
+            images: undefined,
+            imgAltText: ["XXX", "XXX", "XXX", "XXX", "XXX"],
+            company: "XXX",
+            title: "XXX",
+            description: "XXX",
+            link: "XXX",
+            linkText: "XXX",
+            services: ["Markenidentität", "UX & UI Design", "Gatsby / React"],
+        },
+        musikVersicherung: {
             images: undefined,
             imgAltText: [
-                "wallStreetWeekly Website in Chromebook and Pixel4",
-                "wallStreetWeekly by Mediapioneer Logo",
-                "wallStreetWeekly Website inside iPhone showing resposnive home-layout",
-                "wallStreetWeekly Website in MacBook Pro and iPhone laying on a white table",
-                "wallStreetWeekly Webdesign progress from first iteration to final state",
+                "Musikversicherung.com dargestellt in einem Laptop",
+                "Layout von 2 Unterseiten von Musikversicherung.com",
+                "Mobile Darstellung von Musikversichernug.com",
             ],
-            company: "Wall Street Weekly",
-            title:
-                "Börsen-Reporterin Sophie Schimansky berichtet live aus New York",
+            company: "B!-Das Versicherungsbüro",
+            title: "Instrumentenversicherung einfach online abschließen",
             description:
-                "Die Website bietet dem Podcast „Wall Street Weekly“ mit Börsen-Reporterin Sophie Schimansky eine Bühne, indem sie möglichst simpel gehalten wurde. Es geht um den Inhalt und diesem steht hier nichts im Wege. Eine klare Nutzerführung und gute Performance kommen interessierten Nutzern zugute, die hier alles zum Podcast erfahren können und auch den Link zu ihrem bevorzugten Streamingportal finden.",
-            link:
-                "https://www.thepioneer.de/originals/wall-street-weekly/podcasts",
-            linkText: "www.wall-street-weekly.com",
-            services: ["Markenidentität", "UX & UI Design", "Gatsby / React"],
+                "Das Projekt sah den Relaunch der bis dahin mit Wordpress betriebenen Seite mit verbessertem, dynamischem Design, stärkerer SEO und sehr guter Performance vor. All das wurde erreicht und zusätzlich punktet die Seite mit einem klaren Navigationskonzept, starken Farben, verschiedenen interaktiven Anfrageformularen und einem statischen Bewertungssystem.",
+            link: "http://musikversicherung.com/",
+            linkText: "www.musikversicherung.com",
+            services: ["Markenidentität", "UX & UI Design", "Eleventy / JS"],
         },
         fuelcast: {
             images: undefined,
@@ -142,23 +146,7 @@ const content = {
                 "UX & UI Design",
             ],
         },
-        theAmericans: {
-            images: undefined,
-            imgAltText: [
-                "The Americans website inside red macbook",
-                "The Americans by mediapioneer logo",
-                "The Americans podcast inside iPhone next to player",
-                "The Americans website design iterations and versions",
-                "The Americans website inside iPhone and iPad showing the responsive mobile version and clean code",
-            ],
-            company: "The Americans",
-            title: "Podcast und Geschichten aus dem Amerika von heute",
-            description:
-                "Ziel des Projektes war eine simple Website zur Präsentation des Podcasts „The Americans“. Der Podcast erzählt Geschichten aus dem Amerika von heute und betrachtet Politik und Gesellschaft. Die Seite verbindet Performance mit einem klaren Navigationskonzept und hat durch ihre amerikanische Symbolismen ein hohen Wiedererkennungswert.",
-            link: "https://www.thepioneer.de/originals/the-americans/podcasts",
-            linkText: "www.the-americans.com",
-            services: ["Markenidentität", "UX & UI Design", "Gatsby / React"],
-        },
+
         arztpraxisSchulzendorf: {
             images: undefined,
             imgAltText: [

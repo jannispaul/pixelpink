@@ -51,31 +51,36 @@ const content = {
             ],
             company: "The Pioneer",
             title: "Landingpages for Podcasts and Conversion",
-            link:
-                "https://www.thepioneer.de/podcasts",
+            link: "https://www.thepioneer.de/podcasts",
             linkText: "www.thepioneer.de/podcasts",
             description:
                 "We designed and developed several landing pages for the media start-up 'ThePioneer': For each of the podcasts The Armericans, Wall Street Weekly and Überstunde we created a website spark the users interest and present the streaming offer. For the launch of 'ThePioneer' we created a one-pager, that gives you an insight into the background and unique projects of the company.",
             services: ["Brand Identity ", "UX & UI Design", "Gatsby / React"],
         },
-        wallStreetWeekly: {
+        lbMarketing: {
+            images: undefined,
+            imgAltText: ["XXX", "XXX", "XXX", "XXX", "XXX"],
+            company: "Wall Street Weekly",
+            title: "XXX",
+            description: "XXX",
+            link: "XXX",
+            linkText: "XXX",
+            services: ["Brand Identity", "UX & UI Design", "Gatsby / React"],
+        },
+        musikVersicherung: {
             images: undefined,
             imgAltText: [
-                "wallStreetWeekly Website in Chromebook and Pixel4",
-                "wallStreetWeekly by Mediapioneer Logo",
-                "wallStreetWeekly Website inside iPhone showing resposnive home-layout",
-                "wallStreetWeekly Website in MacBook Pro and iPhone laying on a white table",
-                "wallStreetWeekly Webdesign progress from first iteration to final state",
+                "Musikversicherung.com displayed in laptop",
+                "Layout of 2 pages of Musikversicherung.com",
+                "Mobile version of Musikversichernug.com",
             ],
-            company: "Wall Street Weekly",
-            title:
-                "Stock market journalist Sophie Schimansky reports live from New York",
+            company: "B!-Das Versicherungsbüro",
+            title: "Podcasts and stories from today's America",
             description:
-                "By keeping things simple as possible, this website offers the perfect stage for podcast Wall Street Weekly with stock market reporter Sophie Schimansky. Here, it's all about the content — and nothing stands in the way. Clear navigation and high performance allows interested users to learn all about the podcast and find links to their preferred streaming platform.",
-            link:
-                "https://www.thepioneer.de/originals/wall-street-weekly/podcasts",
-            linkText: "www.wall-street-weekly.com",
-            services: ["Brand Identity", "UX & UI Design", "Gatsby / React"],
+                "The project involved a relaunch of the site, which previously ran on Wordpress. The new version includes an improved and dynamic design, stronger SEO and very good performance. In addition the site scores with a clear navigation concept, strong colors, various interactive inquiry forms and a static rating system.",
+            link: "http://musikversicherung.com/",
+            linkText: "www.musikversicherung.com",
+            services: ["Brand Identity", "UX & UI Design", "Eleventy / JS"],
         },
         fuelcast: {
             images: undefined,
@@ -145,23 +150,7 @@ const content = {
                 "UX & UI Design",
             ],
         },
-        theAmericans: {
-            images: undefined,
-            imgAltText: [
-                "The Americans website inside red macbook",
-                "The Americans by mediapioneer logo",
-                "The Americans podcast inside iPhone next to player",
-                "The Americans website design iterations and versions",
-                "The Americans website inside iPhone and iPad showing the responsive mobile version and clean code",
-            ],
-            company: "The Americans",
-            title: "Podcasts and stories from today's America",
-            description:
-                "With this project we set out to create a simple website presenting The Americans, a podcast series chronicling American politics and society. The site combines high performance with a clear navigation concept and recognizable American symbolism.",
-            link: "https://www.thepioneer.de/originals/the-americans/podcasts",
-            linkText: "www.the-americans.com",
-            services: ["Brand Identity", "UX & UI Design", "Gatsby / React"],
-        },
+
         arztpraxisSchulzendorf: {
             images: undefined,
             imgAltText: [
