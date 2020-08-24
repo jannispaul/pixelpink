@@ -48,7 +48,7 @@ const content = {
                 "Wall Street Weekly Podcast by thePioneer Logo",
                 "Wall Street Weekly Podcast by thePioneer Website inside Chromebook and Pixel mockup",
                 "Wall Street Weekly Podcast by thePioneer Website inside iPhone mockup",
-                "Wall Street Weekly Podcast by thePioneer Website inside MacBook Pro and iPhone mockup"
+                "Wall Street Weekly Podcast by thePioneer Website inside MacBook Pro and iPhone mockup",
             ],
             company: "The Pioneer",
             title: "Landingpages for Podcasts and Conversion",
@@ -60,13 +60,24 @@ const content = {
         },
         lbMarketing: {
             images: undefined,
-            imgAltText: ["Lara Bothur Marketing Homepage Website Mockup", "Lara Bothur Marketing Website Portfolio Pages Mockup", "Lara Bothur Marketing Website in responsive view mockup", "Lara Bothur Marketing Businesscard Design", "Lara Bothur Marketing multiple Subpages Website mockup"],
+            imgAltText: [
+                "Lara Bothur Marketing Homepage Website Mockup",
+                "Lara Bothur Marketing Website Portfolio Pages Mockup",
+                "Lara Bothur Marketing Website in responsive view mockup",
+                "Lara Bothur Marketing Businesscard Design",
+                "Lara Bothur Marketing multiple Subpages Website mockup",
+            ],
             company: "Lara Bothur Marketing",
             title: "Personal Website for Marketing consultant",
-            description: "For Lara Bothur, working as freelance marketing consultant we designed a personal and unnique brand experience. The website is reflecting her values, highlighting services and emphasing her expertise combining marketing and business psychology.",
+            description:
+                "Together with Lara Bothur, working as a freelance marketing consultant we designed a personal and unique brand experience. The website is reflecting her values, highlighting services and emphasing her expertise combining marketing and business psychology.",
             link: "https://www.larabothur.de",
             linkText: "www.larabothur.de",
-            services: ["Brand Identity", "UX & UI Design", "Wordpress Development"],
+            services: [
+                "Brand Identity",
+                "UX & UI Design",
+                "Wordpress Development",
+            ],
         },
         musikVersicherung: {
             images: undefined,
