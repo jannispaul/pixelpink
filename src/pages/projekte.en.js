@@ -87,7 +87,7 @@ const content = {
                 "Mobile version of Musikversichernug.com",
             ],
             company: "B!-Das Versicherungsbüro",
-            title: "Podcasts and stories from today's America",
+            title: "Insure your instruments simply online",
             description:
                 "The project involved a relaunch of the site, which previously ran on Wordpress. The new version includes an improved and dynamic design, stronger SEO and very good performance. In addition the site scores with a clear navigation concept, strong colors, various interactive inquiry forms and a static rating system.",
             link: "http://musikversicherung.com/",
