@@ -19,7 +19,7 @@ export const languages = {
         },
         contact: {
             title: "Kontakt",
-            link: "kontakt",
+            link: "/kontakt",
         },
         cookieNotice: {
             copy: "Wir nutzen Cookies um Dein Erlebnis noch besser zu machen.",
