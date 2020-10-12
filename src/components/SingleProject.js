@@ -169,7 +169,7 @@ export const query = graphql`
     fragment ProjectImagesFragment on File {
         id
         childImageSharp {
-            fluid(quality: 80) {
+            fluid(maxWidth: 1000, quality: 100) {
                 ...GatsbyImageSharpFluid_withWebp
             }
         }
