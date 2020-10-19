@@ -13,6 +13,23 @@ const content = {
         subline: "from websites to app designs",
     },
     projects: {
+        joinPolitics: {
+            images: undefined,
+            imgAltText: [
+                "joinPolitics Website Mockup",
+                "joinPolitics Website floating Mockup",
+                "joinPolitics Website inside iPhone Mockup",
+                "joinPolitics Website inside iPad Mockup",
+                "joinPolitics Website inside iPhone and Xdr Display Mockup",
+            ],
+            company: "JoinPolitics",
+            title: "New Website for JoinPolitics",
+            link: "https://www.joinpolitics.org",
+            linkText: "Join.Politics.org",
+            description:
+                "The Startup JoinPolitics promotes political talents who concern with courage and passion for the big questions of our time. They support their talents in administration with capital, know-how and a network. Together with the whole team we created the new website, focused on clear bold design and ease of use thanks to the underlying Webflow technology.",
+            services: ["Webflow-Design", "Webflow-Development", "Consulting"],
+        },
         thePioneer: {
             images: undefined,
             imgAltText: [

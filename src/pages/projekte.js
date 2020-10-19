@@ -18,6 +18,24 @@ const content = {
         subline: "von der Website bis zum Appdesign",
     },
     projects: {
+        joinPolitics: {
+            images: undefined,
+            imgAltText: [
+                "joinPolitics Website Mockup",
+                "joinPolitics Website floating Mockup",
+                "joinPolitics Website inside iPhone Mockup",
+                "joinPolitics Website inside iPad Mockup",
+                "joinPolitics Website inside iPhone and Xdr Display Mockup",
+            ],
+            company: "joinPolitics",
+            title:
+                "Neue Website für JoinPolitics",
+            link: "https://www.joinpolitics.org",
+            linkText: "Join.Politics.org",
+            description:
+                "Das Startup JoinPolitics fördert politische Talente, die mit Mut und Leidenschaft Lösungen für die großen Fragen unserer Zeit entwickeln. Sie unterstützen Ihre Talente in der Umsetzung mit Kapital, Know-how und Netzwerk. Zusammen mit Ihrem Team entwickelten wir die neue Website, fokussiert auf ein klares Design, technische Exzellenz und einfache Bedienbarkeit dank des zugrundeliegenden Webflows CMS.",
+            services: ["Webflow-Design", "Webflow-Entwicklung", "Beratung"],
+        },
         thePioneer: {
             images: undefined,
             imgAltText: [

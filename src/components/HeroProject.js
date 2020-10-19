@@ -10,12 +10,14 @@ class HeroProject extends React.Component {
         this.projects = {
             images: this.props.data.indexProjects.edges,
             imgAltText: [
-                "Uberstunde website inside Display on black",
-                "Wall Street Weekly website inside chromebook and pixel3",
+                "JoinPolitics Website Mockup",
+                "Join ThePioneer Website Mockup responsive Setup",
+                "ThePioneer Landingpages for Podcast Mockup, TheAmericans, WallStreetWeekly and Überstunde",
+                "Lara Bothur Marketing Website Mockup",
+                "Musikversicherung.com Website Mockup",
                 "Fuelcast Application in front of a container ship",
                 "Gabor Steingarts mediapioneer platform inside pink macbook",
                 "QVSTA website inside iPad in front of female model",
-                "The Americans website inside red macbook",
                 "Arztpraxis schulzendorf website inside macpro",
                 "Die-Masterarbeit.com website inside a blue Windows computer",
             ],
