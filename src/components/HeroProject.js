@@ -10,6 +10,7 @@ class HeroProject extends React.Component {
         this.projects = {
             images: this.props.data.indexProjects.edges,
             imgAltText: [
+                "Dam-Podcast.de Website in Mockup mit AirPods pro blutig daneben",
                 "JoinPolitics Website Mockup",
                 "Join ThePioneer Website Mockup responsive Setup",
                 "ThePioneer Landingpages for Podcast Mockup, TheAmericans, WallStreetWeekly and Überstunde",

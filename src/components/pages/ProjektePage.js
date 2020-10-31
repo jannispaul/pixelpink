@@ -14,6 +14,7 @@ class ProjektePage extends React.Component {
         this.projects = this.props.projects
 
         // Add in images from StaticQuery
+        this.projects.damPodcast.images = this.props.data.damPodcast
         this.projects.joinPolitics.images = this.props.data.joinPolitics
         this.projects.thePioneer.images = this.props.data.thePioneer
         this.projects.thePioneerLP.images = this.props.data.thePioneerLP
@@ -65,6 +66,16 @@ export default (props) => (
     <StaticQuery
         query={graphql`
             query {
+                damPodcast: allFile(
+                    filter: { relativeDirectory: { eq: "work/damPodcast" } }
+                    sort: { fields: name }
+                ) {
+                    edges {
+                        node {
+                            ...ProjectImagesFragment
+                        }
+                    }
+                }
                 joinPolitics: allFile(
                     filter: { relativeDirectory: { eq: "work/joinPolitics" } }
                     sort: { fields: name }

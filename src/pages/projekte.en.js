@@ -13,6 +13,22 @@ const content = {
         subline: "from websites to app designs",
     },
     projects: {
+        damPodcast: {
+            images: undefined,
+            imgAltText: [
+                "dam-podcast.de Website in iMac Mockup",
+                "dam-podcast.de Website in iPad und iPhone Mockup",
+                "dam-podcast.de Website Mockup",
+            ],
+            company: "Axel Springer Audio",
+            title:
+                "A digital home for a Fiction-Podcast Series in 3D Audio",
+            link: "https://dam-podcast.de",
+            linkText: "www.dam-podcast.de",
+            description:
+                "DAM - Dark Audio Moments is Germany’s first fiction podcast series in 3D audio! In cooperation with the team from AxelSpringer Audio, we created and developed the website for DAM. The podcast launched just in time for Halloween and you can find it here:following this link:",
+            services: ["Design", "Webflow-Entwicklung", "Beratung"],
+        },
         joinPolitics: {
             images: undefined,
             imgAltText: [
