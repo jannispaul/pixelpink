@@ -1,13 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 import StyledLink from "../components/StyledLink"
-// import { Link } from "gatsby"
-import boschLogo from "../../content/logos/boschLogo.svg"
-import commerzbankLogo from "../../content/logos/commerzbankLogo.svg"
-import fuelcastLogo from "../../content/logos/fuelcastLogo.svg"
-import lhhLogo from "../../content/logos/lhhLogo.svg"
-import mediapioneerLogo from "../../content/logos/mediapioneerLogo.svg"
-import telekomLogo from "../../content/logos/telekomLogo.svg"
+import boschLogo from "../../content/logos/bosch-logo.svg"
+import commerzbankLogo from "../../content/logos/commerzbank-logo.svg"
+import lhhLogo from "../../content/logos/lhh-logo.svg"
+import mediapioneerLogo from "../../content/logos/thepioneer-logo.svg"
+import telekomLogo from "../../content/logos/telekom-logo.svg"
+import adobeLogo from "../../content/logos/adobe-logo.svg"
+import axelSpringerAudioLogo from "../../content/logos/axel-springer-audio-logo.svg"
+import ysRealEstateLogo from "../../content/logos/ys-real-estate-logo.svg"
+import raulLogo from "../../content/logos/raul-krauthausen-logo.png"
 import logo from "../../content/logos/logo.svg"
 
 const StyledSection = styled.section`
@@ -51,41 +53,40 @@ const StyledSection = styled.section`
 const StyledGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 110px);
+    grid-template-rows: repeat(4, 100px);
     align-items: center;
     justify-content: center;
     grid-gap: 20px;
 
-    @media (min-width: 769px) {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 110px);
-    }
-
     & > div {
-        background: #fff;
-        box-shadow: 9px 10px 67px -17px rgba(51, 51, 51, 0.2);
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
-        border-radius: 8px;
+        &:last-of-type {
+            display: none;
+        }
     }
     & > div {
         & > img {
             margin: auto;
-            max-width: 70%;
-            max-height: 40px;
-            /* filter: grayscale(100%) opacity(70%); */
-            transition: filter 0.1s ease-in;
+            max-width: 60%;
+            max-height: 60px;
         }
-        &:hover img {
-            -webkit-filter: grayscale(0%) opacity(100%); /* Safari 6.0 - 9.0 */
-            filter: grayscale(0%) opacity(100%);
-            -webkit-transition: filter 0.1s ease-in;
-            -moz-transition: filter 0.1s ease-in;
-            -o-transition: filter 0.1s ease-in;
-            -ms-transition: filter 0.1s ease-in;
-            transition: filter 0.1s ease-in;
+    }
+
+    @media (min-width: 769px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 110px);
+        & > div {
+            &:last-of-type {
+                display: flex;
+            }
+            & > img {
+                margin: auto;
+                max-width: 50%;
+                max-height: 70px;
+            }
         }
     }
 `
@@ -118,28 +119,35 @@ const LogoWall = (props) => (
                 data-sal-delay="50"
                 data-sal-easing="ease-out"
             >
-                <img src={fuelcastLogo} alt="Logo von Fuelcast" />
+                <img src={adobeLogo} alt="Logo von Adobe" />
             </div>
             <div
                 data-sal="slide-up"
                 data-sal-delay="50"
                 data-sal-easing="ease-out"
             >
-                <img src={commerzbankLogo} alt="Logo von Commerzbank" />
+                <img src={commerzbankLogo} alt="Logo der Commerzbank" />
             </div>
             <div
                 data-sal="slide-up"
                 data-sal-delay="50"
                 data-sal-easing="ease-out"
             >
-                <img src={telekomLogo} alt="Logo von Telekom" />
+                <img src={telekomLogo} alt="Logo der Telekom" />
             </div>
             <div
                 data-sal="slide-up"
                 data-sal-delay="50"
                 data-sal-easing="ease-out"
             >
-                <img src={mediapioneerLogo} alt="Logo von Mediapioneer" />
+                <img src={mediapioneerLogo} alt="Logo von ThePioneer" />
+            </div>
+            <div
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease-out"
+            >
+                <img src={lhhLogo} alt="Logo von Lee Hecht Harrison" />
             </div>
             <div
                 data-sal="slide-up"
@@ -153,7 +161,24 @@ const LogoWall = (props) => (
                 data-sal-delay="50"
                 data-sal-easing="ease-out"
             >
-                <img src={lhhLogo} alt="Logo von Lee Hecht Harrison" />
+                <img src={ysRealEstateLogo} alt="Logo von YS Real Estate" />
+            </div>
+            <div
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease-out"
+            >
+                <img
+                    src={axelSpringerAudioLogo}
+                    alt="Logo von Axel Springer Audio"
+                />
+            </div>
+            <div
+                data-sal="slide-up"
+                data-sal-delay="50"
+                data-sal-easing="ease-out"
+            >
+                <img src={raulLogo} alt="Logo von Raul Krauthausen" />
             </div>
         </StyledGrid>
     </StyledSection>
