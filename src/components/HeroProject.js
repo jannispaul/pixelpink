@@ -10,13 +10,13 @@ class HeroProject extends React.Component {
         this.projects = {
             images: this.props.data.indexProjects.edges,
             imgAltText: [
-                "Dam-Podcast.de Website in Mockup mit AirPods pro blutig daneben",
+                "Forget.finance Website in iMac, iPad und iPhone Mockup",
                 "JoinPolitics Website Mockup",
                 "Join ThePioneer Website Mockup responsive Setup",
-                "ThePioneer Landingpages for Podcast Mockup, TheAmericans, WallStreetWeekly and Überstunde",
-                "Lara Bothur Marketing Website Mockup",
                 "Musikversicherung.com Website Mockup",
+                "ThePioneer Landingpages for Podcast Mockup, TheAmericans, WallStreetWeekly and Überstunde",
                 "Fuelcast Application in front of a container ship",
+                "Dam-Podcast.de Website in Mockup mit AirPods pro blutig daneben",
                 "Gabor Steingarts mediapioneer platform inside pink macbook",
                 "QVSTA website inside iPad in front of female model",
                 "Arztpraxis schulzendorf website inside macpro",

@@ -13,6 +13,24 @@ const content = {
         subline: "from websites to app designs",
     },
     projects: {
+
+        ff: {
+            images: undefined,
+            imgAltText: [
+                "ff Website Mockup",
+                "ff Website floating Mockup",
+                "ff Website Mockup",
+                "ff Website inside Monitor Mockup",
+                "ff Website inside iPhone Mockup",
+            ],
+            company: "Forget.finance",
+            title: "Branded Communication for Website and App",
+            link: "https://forget.finance",
+            linkText: "forget.finance",
+            description:
+                "Together with the Fintech startup Forget.finance we concepted and designed a fresh website. The site is serving the pre-seed communication strategy of the startup and supports their value-added service. In further cooperation we are helping to shape the products UX and UI of their App. ",
+            services: ["communication strategy", "UX", "UI"],
+        },
         
 
         joinPolitics: {

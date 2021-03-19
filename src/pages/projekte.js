@@ -18,6 +18,24 @@ const content = {
         subline: "von der Website bis zum Appdesign",
     },
     projects: {
+        ff: {
+            images: undefined,
+            imgAltText: [
+                "ff Website Mockup",
+                "ff Website floating Mockup",
+                "ff Website Mockup",
+                "ff Website inside Monitor Mockup",
+                "ff Website inside iPhone Mockup",
+            ],
+            company: "Forget.finance",
+            title:
+                "Kommunikationskonzept- und Design für Website und App",
+            link: "https://forget.finance",
+            linkText: "forget.finance",
+            description:
+                "Zusammen mit dem Fintech startup forget.finance konzipierten und designten wir eine brandneue Website. Die Website dient der Kommunikation für die pre-seed Runde und Strategie des Startups und unterstützt dabei die Promotion des Produktes. In weiterer Zusammenarbeit unterstützen wir bei der holistischen Gestaltung der UX und UI Ihrer App. ",
+            services: ["Kommunikationskonzept", "UX", "UI"],
+        },
         joinPolitics: {
             images: undefined,
             imgAltText: [
