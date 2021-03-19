@@ -18,22 +18,6 @@ const content = {
         subline: "von der Website bis zum Appdesign",
     },
     projects: {
-        damPodcast: {
-            images: undefined,
-            imgAltText: [
-                "dam-podcast.de Website in iMac Mockup",
-                "dam-podcast.de Website in iPad und iPhone Mockup",
-                "dam-podcast.de Website Mockup",
-            ],
-            company: "Axel Springer Audio",
-            title:
-                "Ein digitales Zuhause für eine Fiction-Podcast Serie in 3D Audio",
-            link: "https://dam-podcast.de",
-            linkText: "www.dam-podcast.de",
-            description:
-                "DAM - Dark Audio Moments ist Deutschlands neue Fiction-Podcast-Serie in 3D Audio! Zusammen mit dem Team von AxelSpringer Audio gestalteten und entwickelten wir die Webpräsenz für DAM. Passend zu Halloween geht der Podcast an den Start und findet sein digitales Zuhause unter folgendem Link:",
-            services: ["Design", "Webflow-Entwicklung", "Beratung"],
-        },
         joinPolitics: {
             images: undefined,
             imgAltText: [
@@ -71,6 +55,23 @@ const content = {
                 "Für den Launch des Medien-Startups „ThePioneer“ konzipierten und entwickelten wir eine auf Conversion ausgerichtete Landingpage. Der One-Pager gibt einen Einblick in die Hintergründe und einzigartigen Vorhaben des Unternehmens und reißt aktuelle Inhalte der Plattform an. Das Design ist ganz „ThePioneer“ und besticht mit Videoinhalten und Animationen.",
             services: ["Konzeption", "UX & UI Design", "Gatsby / React"],
         },
+
+        musikVersicherung: {
+            images: undefined,
+            imgAltText: [
+                "Musikversicherung.com dargestellt in einem Laptop",
+                "Layout von 2 Unterseiten von Musikversicherung.com",
+                "Mobile Darstellung von Musikversichernug.com",
+            ],
+            company: "B!-Das Versicherungsbüro",
+            title: "Instrumentenversicherung einfach online abschließen",
+            description:
+                "Das Projekt sah den Relaunch der bis dahin mit Wordpress betriebenen Seite mit verbessertem, dynamischem Design, stärkerer SEO und sehr guter Performance vor. All das wurde erreicht und zusätzlich punktet die Seite mit einem klaren Navigationskonzept, starken Farben, verschiedenen interaktiven Anfrageformularen und einem statischen Bewertungssystem.",
+            link: "http://musikversicherung.com/",
+            linkText: "www.musikversicherung.com",
+            services: ["Markenidentität", "UX & UI Design", "Eleventy / JS"],
+        },
+
         thePioneerLP: {
             images: undefined,
             imgAltText: [
@@ -98,42 +99,10 @@ const content = {
                 "Für das Medien-Startup „ThePioneer“ konzipierten und entwickelten wir mehrere Landingpages: Für die Podcasts The Armericans, Wall Street Weekly und Überstunde erstellten wir jeweils eine Website um Interessenten abzuholen und das Streamangebot vorzustellen. Zum Start von „ThePioneer“ kreierten wir einen One-Pager, auf dem ihr einen Einblick in die Hintergründe und einzigartigen Vorhaben des Unternehmens bekommt.",
             services: ["Markenidentität", "UX & UI Design", "Gatsby / React"],
         },
-        lbMarketing: {
-            images: undefined,
-            imgAltText: [
-                "Lara Bothur Marketing Website Startseite Mockup",
-                "Lara Bothur Marketing Website Portfolio Unterseiten Mockup",
-                "Lara Bothur Marketing Website Responsive Ansicht Mockup",
-                "Lara Bothur Marketing Visitenkarten Design",
-                "Lara Bothur Marketing Website mehrere Unterseiten Mockup",
-            ],
-            company: "Lara Bothur Marketing",
-            title: "Portfolio Website für Marketingberaterin",
-            description:
-                "Zusammen mit Lara Bothur gestalteten und definierten wir ihre digitale Markenpräsenz. Die Website repräsentiert ihre Werte, hebt Servicediensteleistungen hervor und spiegelt ihre Expertise aus Marketing und Wirtschaftspsychologischen Perspektiven wieder.",
-            link: "https://www.larabothur.de",
-            linkText: "www.larabothur.de",
-            services: [
-                "Markenidentität",
-                "UX & UI Design",
-                "Wordpress Entwicklung",
-            ],
-        },
-        musikVersicherung: {
-            images: undefined,
-            imgAltText: [
-                "Musikversicherung.com dargestellt in einem Laptop",
-                "Layout von 2 Unterseiten von Musikversicherung.com",
-                "Mobile Darstellung von Musikversichernug.com",
-            ],
-            company: "B!-Das Versicherungsbüro",
-            title: "Instrumentenversicherung einfach online abschließen",
-            description:
-                "Das Projekt sah den Relaunch der bis dahin mit Wordpress betriebenen Seite mit verbessertem, dynamischem Design, stärkerer SEO und sehr guter Performance vor. All das wurde erreicht und zusätzlich punktet die Seite mit einem klaren Navigationskonzept, starken Farben, verschiedenen interaktiven Anfrageformularen und einem statischen Bewertungssystem.",
-            link: "http://musikversicherung.com/",
-            linkText: "www.musikversicherung.com",
-            services: ["Markenidentität", "UX & UI Design", "Eleventy / JS"],
-        },
+
+
+
+
         fuelcast: {
             images: undefined,
             imgAltText: [
@@ -159,6 +128,25 @@ const content = {
                 "Pitch-Deck",
             ],
         },
+
+        damPodcast: {
+            images: undefined,
+            imgAltText: [
+                "dam-podcast.de Website in iMac Mockup",
+                "dam-podcast.de Website in iPad und iPhone Mockup",
+                "dam-podcast.de Website Mockup",
+            ],
+            company: "Axel Springer Audio",
+            title:
+                "Ein digitales Zuhause für eine Fiction-Podcast Serie in 3D Audio",
+            link: "https://dam-podcast.de",
+            linkText: "www.dam-podcast.de",
+            description:
+                "DAM - Dark Audio Moments ist Deutschlands neue Fiction-Podcast-Serie in 3D Audio! Zusammen mit dem Team von AxelSpringer Audio gestalteten und entwickelten wir die Webpräsenz für DAM. Passend zu Halloween geht der Podcast an den Start und findet sein digitales Zuhause unter folgendem Link:",
+            services: ["Design", "Webflow-Entwicklung", "Beratung"],
+        },
+
+
         mediapioneer: {
             images: undefined,
             imgAltText: [

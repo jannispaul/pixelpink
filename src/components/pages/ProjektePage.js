@@ -18,7 +18,6 @@ class ProjektePage extends React.Component {
         this.projects.joinPolitics.images = this.props.data.joinPolitics
         this.projects.thePioneer.images = this.props.data.thePioneer
         this.projects.thePioneerLP.images = this.props.data.thePioneerLP
-        this.projects.lbMarketing.images = this.props.data.lbMarketing
         this.projects.fuelcast.images = this.props.data.fuelcast
         this.projects.mediapioneer.images = this.props.data.mediapioneer
         this.projects.qvsta.images = this.props.data.qvsta
@@ -66,16 +65,7 @@ export default (props) => (
     <StaticQuery
         query={graphql`
             query {
-                damPodcast: allFile(
-                    filter: { relativeDirectory: { eq: "work/damPodcast" } }
-                    sort: { fields: name }
-                ) {
-                    edges {
-                        node {
-                            ...ProjectImagesFragment
-                        }
-                    }
-                }
+                
                 joinPolitics: allFile(
                     filter: { relativeDirectory: { eq: "work/joinPolitics" } }
                     sort: { fields: name }
@@ -96,6 +86,20 @@ export default (props) => (
                         }
                     }
                 }
+
+                musikVersicherung: allFile(
+                    filter: {
+                        relativeDirectory: { eq: "work/musikversicherung" }
+                    }
+                    sort: { fields: name }
+                ) {
+                    edges {
+                        node {
+                            ...ProjectImagesFragment
+                        }
+                    }
+                }
+
                 thePioneerLP: allFile(
                     filter: { relativeDirectory: { eq: "work/thePioneerLP" } }
                     sort: { fields: name }
@@ -107,8 +111,8 @@ export default (props) => (
                     }
                 }
 
-                lbMarketing: allFile(
-                    filter: { relativeDirectory: { eq: "work/lbmarketing" } }
+                fuelcast: allFile(
+                    filter: { relativeDirectory: { eq: "work/fuelcast" } }
                     sort: { fields: name }
                 ) {
                     edges {
@@ -118,8 +122,8 @@ export default (props) => (
                     }
                 }
 
-                fuelcast: allFile(
-                    filter: { relativeDirectory: { eq: "work/fuelcast" } }
+                damPodcast: allFile(
+                    filter: { relativeDirectory: { eq: "work/damPodcast" } }
                     sort: { fields: name }
                 ) {
                     edges {
@@ -151,18 +155,6 @@ export default (props) => (
                     }
                 }
 
-                musikVersicherung: allFile(
-                    filter: {
-                        relativeDirectory: { eq: "work/musikversicherung" }
-                    }
-                    sort: { fields: name }
-                ) {
-                    edges {
-                        node {
-                            ...ProjectImagesFragment
-                        }
-                    }
-                }
 
                 arztpraxisSchulzendorf: allFile(
                     filter: {
