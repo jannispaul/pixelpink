@@ -224,7 +224,7 @@ const Footer = props => (
                     data-sal-delay="0"
                     data-sal-easing="ease-out"
                 >
-                    © 2020 PixelPink
+                    © 2021 PixelPink
                     <br />
                     All Rights Reserved
                 </p>
