@@ -28,8 +28,7 @@ const content = {
                 "ff Website inside iPhone Mockup",
             ],
             company: "Forget.finance",
-            title:
-                "Kommunikationskonzept- und Design für Website und App",
+            title: "Kommunikationskonzept- und Design für Website und App",
             link: "https://forget.finance",
             linkText: "forget.finance",
             description:
@@ -46,8 +45,7 @@ const content = {
                 "joinPolitics Website inside iPhone and Xdr Display Mockup",
             ],
             company: "joinPolitics",
-            title:
-                "Neue Website für JoinPolitics",
+            title: "Neue Website für JoinPolitics",
             link: "https://www.joinpolitics.org",
             linkText: "Join.Politics.org",
             description:
@@ -90,36 +88,33 @@ const content = {
             services: ["Markenidentität", "UX & UI Design", "Eleventy / JS"],
         },
 
-        thePioneerLP: {
-            images: undefined,
-            imgAltText: [
-                "The Americans Podcast, Ueberstunnde Podcast, Wall Street Weekly Podcast Website im Mockup",
-                "Ideation Wall Street Weekly Podcast Website",
-                "The Americans Podcast by thePioneer Logo",
-                "The Americans Podcast by thePioneer inside iPhone Mockup",
-                "The Americans Podcast by thePioneer Website inside iPhone and iPad Mockup",
-                "The Americans Podcast by thePioneer Website inside iPad Mockup",
-                "The Americans Podcast by thePioneer Website Ideation from start to launch",
-                "Ueberstunde Podcast by thePioneer Logo",
-                "Ueberstunde Podcast by thePioneer Website inside iPhone mockup",
-                "Ueberstunde Podcast by thePioneer Website inside iPad mockup",
-                "Ueberstunde Podcast by thePioneer Website inside iPhone mockup with headphones",
-                "Wall Street Weekly Podcast by thePioneer Logo",
-                "Wall Street Weekly Podcast by thePioneer Website inside Chromebook and Pixel mockup",
-                "Wall Street Weekly Podcast by thePioneer Website inside iPhone mockup",
-                "Wall Street Weekly Podcast by thePioneer Website inside MacBook Pro and iPhone mockup",
-            ],
-            company: "The Pioneer",
-            title: "Landingpages für Podcasts und Konversion",
-            link: "https://www.thepioneer.de/podcasts",
-            linkText: "www.thepioneer.de/podcasts",
-            description:
-                "Für das Medien-Startup „ThePioneer“ konzipierten und entwickelten wir mehrere Landingpages: Für die Podcasts The Armericans, Wall Street Weekly und Überstunde erstellten wir jeweils eine Website um Interessenten abzuholen und das Streamangebot vorzustellen. Zum Start von „ThePioneer“ kreierten wir einen One-Pager, auf dem ihr einen Einblick in die Hintergründe und einzigartigen Vorhaben des Unternehmens bekommt.",
-            services: ["Markenidentität", "UX & UI Design", "Gatsby / React"],
-        },
-
-
-
+        // thePioneerLP: {
+        //     images: undefined,
+        //     imgAltText: [
+        //         "The Americans Podcast, Ueberstunnde Podcast, Wall Street Weekly Podcast Website im Mockup",
+        //         "Ideation Wall Street Weekly Podcast Website",
+        //         "The Americans Podcast by thePioneer Logo",
+        //         "The Americans Podcast by thePioneer inside iPhone Mockup",
+        //         "The Americans Podcast by thePioneer Website inside iPhone and iPad Mockup",
+        //         "The Americans Podcast by thePioneer Website inside iPad Mockup",
+        //         "The Americans Podcast by thePioneer Website Ideation from start to launch",
+        //         "Ueberstunde Podcast by thePioneer Logo",
+        //         "Ueberstunde Podcast by thePioneer Website inside iPhone mockup",
+        //         "Ueberstunde Podcast by thePioneer Website inside iPad mockup",
+        //         "Ueberstunde Podcast by thePioneer Website inside iPhone mockup with headphones",
+        //         "Wall Street Weekly Podcast by thePioneer Logo",
+        //         "Wall Street Weekly Podcast by thePioneer Website inside Chromebook and Pixel mockup",
+        //         "Wall Street Weekly Podcast by thePioneer Website inside iPhone mockup",
+        //         "Wall Street Weekly Podcast by thePioneer Website inside MacBook Pro and iPhone mockup",
+        //     ],
+        //     company: "The Pioneer",
+        //     title: "Landingpages für Podcasts und Konversion",
+        //     link: "https://www.thepioneer.de/podcasts",
+        //     linkText: "www.thepioneer.de/podcasts",
+        //     description:
+        //         "Für das Medien-Startup „ThePioneer“ konzipierten und entwickelten wir mehrere Landingpages: Für die Podcasts The Armericans, Wall Street Weekly und Überstunde erstellten wir jeweils eine Website um Interessenten abzuholen und das Streamangebot vorzustellen. Zum Start von „ThePioneer“ kreierten wir einen One-Pager, auf dem ihr einen Einblick in die Hintergründe und einzigartigen Vorhaben des Unternehmens bekommt.",
+        //     services: ["Markenidentität", "UX & UI Design", "Gatsby / React"],
+        // },
 
         fuelcast: {
             images: undefined,
@@ -163,7 +158,6 @@ const content = {
                 "DAM - Dark Audio Moments ist Deutschlands neue Fiction-Podcast-Serie in 3D Audio! Zusammen mit dem Team von AxelSpringer Audio gestalteten und entwickelten wir die Webpräsenz für DAM. Passend zu Halloween geht der Podcast an den Start und findet sein digitales Zuhause unter folgendem Link:",
             services: ["Design", "Webflow-Entwicklung", "Beratung"],
         },
-
 
         mediapioneer: {
             images: undefined,

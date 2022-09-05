@@ -41,7 +41,7 @@ module.exports = {
         },
         `gatsby-plugin-offline`,
         `gatsby-plugin-sitemap`,
-        `gatsby-plugin-preact`,
+        // `gatsby-plugin-preact`,
         `gatsby-plugin-netlify`,
         `gatsby-plugin-scroll-reveal`,
         {
@@ -58,7 +58,7 @@ module.exports = {
                 // Add any options here
             },
         },
-         {
+        {
             resolve: `gatsby-plugin-gtag`,
             options: {
                 // your google analytics tracking id

@@ -18,7 +18,7 @@ class ProjektePage extends React.Component {
         this.projects.damPodcast.images = this.props.data.damPodcast
         this.projects.joinPolitics.images = this.props.data.joinPolitics
         this.projects.thePioneer.images = this.props.data.thePioneer
-        this.projects.thePioneerLP.images = this.props.data.thePioneerLP
+        // this.projects.thePioneerLP.images = this.props.data.thePioneerLP
         this.projects.fuelcast.images = this.props.data.fuelcast
         this.projects.mediapioneer.images = this.props.data.mediapioneer
         this.projects.qvsta.images = this.props.data.qvsta
@@ -66,7 +66,6 @@ export default (props) => (
     <StaticQuery
         query={graphql`
             query {
-
                 ff: allFile(
                     filter: { relativeDirectory: { eq: "work/ff" } }
                     sort: { fields: name }
@@ -77,7 +76,7 @@ export default (props) => (
                         }
                     }
                 }
-                
+
                 joinPolitics: allFile(
                     filter: { relativeDirectory: { eq: "work/joinPolitics" } }
                     sort: { fields: name }
@@ -166,7 +165,6 @@ export default (props) => (
                         }
                     }
                 }
-
 
                 arztpraxisSchulzendorf: allFile(
                     filter: {
